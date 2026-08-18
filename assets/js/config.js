@@ -5,11 +5,14 @@
    ============================================================ */
 window.MG = {
   // --- Stripe Payment Links (see README) ---
-  // Stack: 199€ one-time. Teardown: 399€ one-time, with its
-  // success URL set (in Stripe) to the Calendly booking page:
-  // https://calendly.com/madalena-madgrowth/1-1-strategy-session
+  // Stack: 199€ one-time. Launch Audit: 399€ one-time — fully async,
+  // no call to book, so its success URL should point at wherever the
+  // intake happens (a form collecting site/LinkedIn/offer details),
+  // not Calendly. That intake form doesn't exist yet — set one up
+  // (Tally/Typeform/Google Form) and point the Stripe success URL at
+  // it before launch.
   STRIPE_LINK_STACK: "STRIPE_LINK_STACK",
-  STRIPE_LINK_TEARDOWN: "STRIPE_LINK_TEARDOWN",
+  STRIPE_LINK_AUDIT: "STRIPE_LINK_AUDIT",
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on the Program card (per brief §3.5).

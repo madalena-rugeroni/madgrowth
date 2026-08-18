@@ -13,8 +13,8 @@ Everything lives in **`assets/js/config.js`** — one source of truth. Replace:
 
 | Constant | What to put there |
 |---|---|
-| `STRIPE_LINK_STACK` | Stripe Payment Link URL for The Operator Stack (199€ one-time) |
-| `STRIPE_LINK_TEARDOWN` | Stripe Payment Link URL for The Teardown (399€ one-time) |
+| `STRIPE_LINK_STACK` | Stripe Payment Link URL for The Skills Stack (199€ one-time) |
+| `STRIPE_LINK_AUDIT` | Stripe Payment Link URL for The Launch Audit (399€ one-time) |
 | `CALENDLY_FIT_CHECK` | Calendly URL for the free 15-min fit check |
 | `KIT_FORM_ID` | Kit (ConvertKit) form ID the site posts subscribers to |
 | `KIT_TAGS.*` | Numeric Kit tag IDs for the five archetypes (`broadcaster`, `advisor`, `productizer`, `venture-builder`, `orchestrator`) plus `newsletter-direct` (Kit → Grow → Tags; the ID is in the tag's URL) |
@@ -25,8 +25,8 @@ Until a placeholder is replaced, the affected button stays visible but is inert 
 
 ### Stripe setup (do this in Stripe, not in code)
 
-1. Create the two Payment Links at exactly the advertised prices: **199€** (Stack) and **399€** (Teardown). Advertised price must equal charged price.
-2. On the **Teardown** link, set the confirmation behavior to **redirect** to `https://calendly.com/madalena-madgrowth/1-1-strategy-session` — payment first, booking after.
+1. Create the two Payment Links at exactly the advertised prices: **199€** (Stack) and **399€** (Launch Audit). Advertised price must equal charged price.
+2. The Launch Audit is fully async — no call to book. Its confirmation/redirect should go to an intake form (site URL, LinkedIn, current offer) so you have what you need to write the audit. That form doesn't exist yet; build one (Tally/Typeform/Google Form) and point the Stripe success URL at it. The old plan (redirect to a Calendly booking) no longer applies since there's no call.
 3. On the **Stack** link, set the confirmation/redirect to wherever the Stack is delivered.
 
 Both buy buttons on the site go straight to Stripe checkout (never to a booking page or form).
@@ -43,11 +43,11 @@ The site posts to `https://app.kit.com/forms/<KIT_FORM_ID>/subscriptions` with:
 In Kit, set up:
 
 1. An automation on the form that **delivers the free Expertise Audit skill** to every diagnostic subscriber.
-2. Subscribe everyone from the form to **The Operator Letter**. The diagnostic gate makes the deal explicit and consent **required**: the checkbox (unchecked by default, must be ticked to submit) states that the free profile + skill arrive by email and that the email is subscribed to the newsletter, unsubscribe anytime. No email reaches Kit without that consent, so `newsletter_consent` is always `yes` from the diagnostic. The newsletter band (`newsletter-direct` tag) is self-evidently consent.
+2. Subscribe everyone from the form to **the Madgrowth newsletter**. The diagnostic gate makes the deal explicit and consent **required**: the checkbox (unchecked by default, must be ticked to submit) states that the free profile + skill arrive by email and that the email is subscribed to the newsletter, unsubscribe anytime. No email reaches Kit without that consent, so `newsletter_consent` is always `yes` from the diagnostic. The newsletter band (`newsletter-direct` tag) is self-evidently consent.
 
 ### Analytics
 
-- **GA4** `G-6H3NDWYBL8` is live on both pages. Events fired: `diagnostic_start`, `diagnostic_complete` (with `archetype`, `archetype_secondary`), `email_capture` (with `archetype`), `newsletter_subscribe`, `stack_checkout_click`, `teardown_checkout_click`, `fit_check_click`, `mazo_click`.
+- **GA4** `G-6H3NDWYBL8` is live on both pages. Events fired: `diagnostic_start`, `diagnostic_complete` (with `archetype`, `archetype_secondary`), `email_capture` (with `archetype`), `newsletter_subscribe`, `stack_checkout_click`, `audit_checkout_click`, `fit_check_click`, `mazo_click`.
 - **LinkedIn Insight Tag** loads only once `LINKEDIN_PARTNER_ID` is set.
 - All outbound links get `utm_source=site&utm_medium=web&utm_campaign=core` appended automatically (existing UTM params are never overwritten).
 
@@ -69,7 +69,7 @@ Title, meta description, and OG tags are set per the brief. The old Framer site 
 
 The final wiring vector is matched (euclidean distance) against five archetype prototypes. Nearest = primary archetype, second-nearest = secondary.
 
-**Gated reveal (the funnel logic):** finishing the scenarios shows only the hook — archetype name, tagline, and the five wiring bars. The full profile (personalized narrative, built-for-you / fights-your-wiring businesses, thrive/stress modes) unlocks **only after** the visitor submits their email with the required consent. The same submission triggers Kit to send the written profile + the Expertise Audit skill and subscribes them to The Operator Letter — that's the trade, stated plainly on the gate.
+**Gated reveal (the funnel logic):** finishing the scenarios shows only the hook — archetype name, tagline, and the five wiring bars. The full profile (personalized narrative, built-for-you / fights-your-wiring businesses, thrive/stress modes) unlocks **only after** the visitor submits their email with the required consent. The same submission triggers Kit to send the written profile + the Expertise Audit skill and subscribes them to the Madgrowth newsletter — that's the trade, stated plainly on the gate.
 
 The five Builder Archetypes:
 
@@ -84,7 +84,7 @@ The five Builder Archetypes:
 1. **One pricing section** — a single `#pricing` block in the DOM; breakpoints only change the grid layout, never the content or prices.
 2. **All anchors resolve** — `#howitworks`, `#who`, `#pricing`, `#about` all exist; nav, footer, and in-page links point at them.
 3. **Advertised = charged** — no strike-throughs anywhere; prices in copy must match the Stripe links you create.
-4. **Buy buttons → checkout** — Stack and Teardown buttons link to Stripe Payment Links directly.
+4. **Buy buttons → checkout** — Stack and Launch Audit buttons link to Stripe Payment Links directly. The Launch Audit's post-payment intake form (if any) comes *after* checkout, never before it.
 5. **No duplicate offer cards** — three cards, rendered once. (The pain **marquee** duplicates its track once for the seamless loop; the duplicate is `aria-hidden` and hidden entirely under reduced motion. Testimonials render once each.)
 6. The word "quiz" appears nowhere in the rendered output.
 7. The hero logo bar is an infinite CSS marquee (grayscale, edge-masked, pauses on hover); under `prefers-reduced-motion` it falls back to a static wrapped grid and the duplicate track is hidden.

@@ -127,7 +127,6 @@
     if (!reduced) {
       initHeroReveal();
       if (fine) {
-        initHeroParallax();
         initMagneticButtons();
         initCardTilt();
       } else {
@@ -258,27 +257,6 @@
     }, 1000);
   }
 
-  // Soft cursor-follow spotlight + parallax drift on the hero blobs.
-  // rAF-throttled; writes CSS custom properties, no layout thrash.
-  function initHeroParallax() {
-    var hero = document.querySelector(".hero");
-    var bg = hero && hero.querySelector(".hero-bg");
-    if (!hero || !bg) return;
-    var raf = null;
-    hero.addEventListener("mousemove", function (e) {
-      var x = e.clientX, y = e.clientY;
-      if (raf) return;
-      raf = requestAnimationFrame(function () {
-        var rect = hero.getBoundingClientRect();
-        var mx = ((x - rect.left) / rect.width) * 100;
-        var my = ((y - rect.top) / rect.height) * 100;
-        bg.style.setProperty("--mx", mx + "%");
-        bg.style.setProperty("--my", my + "%");
-        raf = null;
-      });
-    });
-  }
-
   // Buttons marked .btn-magnetic drift a few px toward the cursor
   // while hovered, and spring back to rest on leave.
   function initMagneticButtons() {
@@ -311,7 +289,7 @@
   function initCardTilt() {
     document.querySelectorAll(".tilt").forEach(function (card) {
       var raf = null;
-      var max = 5; // degrees
+      var max = 3; // degrees — subtle, not showy
       card.addEventListener("mousemove", function (e) {
         card.classList.remove("settling");
         if (raf) return;
