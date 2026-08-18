@@ -18,7 +18,7 @@ Everything lives in **`assets/js/config.js`** — one source of truth. Replace:
 | `CALENDLY_FIT_CHECK` | Calendly URL for the free 15-min fit check |
 | `KIT_FORM_ID` | Kit (ConvertKit) form ID the site posts subscribers to |
 | `KIT_TAGS.*` | Numeric Kit tag IDs for the five archetypes (`broadcaster`, `advisor`, `productizer`, `venture-builder`, `orchestrator`) plus `newsletter-direct` (Kit → Grow → Tags; the ID is in the tag's URL) |
-| `LOOM_URL` | Loom **embed** URL for the 3-min Program walkthrough (`https://www.loom.com/embed/<id>`) |
+| `LOOM_URL` | Loom **embed** URL for the 3-min Partnership walkthrough (`https://www.loom.com/embed/<id>`) |
 | `LINKEDIN_PARTNER_ID` | LinkedIn Insight Tag partner ID |
 
 Until a placeholder is replaced, the affected button stays visible but is inert and logs a console warning (`data-missing-config` attribute set) — nothing links to a dead URL.
