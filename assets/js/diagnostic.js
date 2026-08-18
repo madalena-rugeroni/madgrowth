@@ -267,6 +267,50 @@
   function pad(n) { return n < 10 ? "0" + n : "" + n; }
 
   var KEYS = ["A", "B", "C", "D"];
+  var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Reveals newly-inserted .reveal elements a tick later so the CSS
+  // transition actually runs (setting opacity:0→1 in the same paint
+  // as insertion would skip straight to the end state). setTimeout,
+  // not rAF: rAF is suspended in some backgrounded/occluded tab
+  // states (confirmed in testing) while timers keep firing, and this
+  // content must never end up permanently stuck invisible.
+  function revealSoon(root) {
+    var scope = root || document;
+    // querySelectorAll only matches descendants, never the scope
+    // element itself — so a root that's directly .reveal (like
+    // #email-gate) needs adding back in explicitly.
+    var els = Array.prototype.slice.call(scope.querySelectorAll(".reveal:not(.is-visible)"));
+    if (scope.nodeType === 1 && scope.classList.contains("reveal") && !scope.classList.contains("is-visible")) {
+      els.unshift(scope);
+    }
+    if (!els.length) return;
+    if (reducedMotion) {
+      els.forEach(function (el) { el.classList.add("is-visible"); });
+      return;
+    }
+    window.setTimeout(function () {
+      els.forEach(function (el) { el.classList.add("is-visible"); });
+    }, 20);
+  }
+
+  // Wraps a scenario-index mutation (advance/back) in a brief fade+dip
+  // transition on the statement card, skipped entirely under reduced
+  // motion so nothing ever waits on an animation that won't play.
+  function renderTransitioned(mutate) {
+    var card = document.querySelector(".statement-card");
+    if (!card || reducedMotion) {
+      mutate();
+      render();
+      return;
+    }
+    card.classList.add("is-switching");
+    window.setTimeout(function () {
+      mutate();
+      render();
+      card.classList.remove("is-switching");
+    }, 200);
+  }
 
   function render() {
     var s = SCENARIOS[current];
@@ -294,8 +338,7 @@
     }
     answers[current] = optionIndex;
     if (current < SCENARIOS.length - 1) {
-      current++;
-      render();
+      renderTransitioned(function () { current++; });
     } else {
       finish();
     }
@@ -303,9 +346,7 @@
 
   function back() {
     if (current > 0) {
-      current--;
-      answers.length = current;
-      render();
+      renderTransitioned(function () { current--; answers.length = current; });
     }
   }
 
@@ -368,42 +409,53 @@
     el.name.textContent = A.name;
     el.tagline.textContent = A.tagline;
 
-    // Wiring dimension bars
+    // Wiring dimension bars — marker/fill start centered and animate
+    // out to their real value a frame after insertion (see below),
+    // so the bars visibly sweep into place instead of appearing preset.
     el.dims.innerHTML = "";
+    el.dims.classList.add("stagger");
+    var dimTargets = [];
     DIMENSIONS.forEach(function (d) {
       var v = pct(result.wiring[d.key]);
       var row = document.createElement("div");
-      row.className = "dim-row";
+      row.className = "dim-row reveal";
       row.innerHTML =
         '<span class="dim-name">' + d.name + "</span>" +
-        '<div class="dim-bar"><span class="marker" style="left:' + v + '%"></span></div>' +
+        '<div class="dim-bar"><span class="fill" style="width:50%"></span><span class="marker" style="left:50%"></span></div>' +
         '<div class="dim-labels">' +
           '<span class="' + (v < 50 ? "active" : "") + '">' + d.neg + "</span>" +
           '<span class="' + (v > 50 ? "active" : "") + '">' + d.pos + "</span>" +
         "</div>";
       el.dims.appendChild(row);
+      dimTargets.push({ row: row, v: v });
     });
 
     // Narrative: personalized signal line + archetype story + secondary blend
     el.narrative.innerHTML = "";
+    el.narrative.classList.add("stagger");
     var paras = [result.signal + " " + A.narrative[0]]
       .concat(A.narrative.slice(1))
       .concat(["Your secondary <strong>" + S.name + "</strong> wiring adds a layer: " + S.flavor]);
     paras.forEach(function (p) {
       var elP = document.createElement("p");
+      elP.className = "reveal";
       elP.innerHTML = p;
       el.narrative.appendChild(elP);
     });
 
     el.builds.innerHTML = "";
+    el.builds.classList.add("stagger");
     A.builds.forEach(function (b) {
       var li = document.createElement("li");
+      li.className = "reveal";
       li.textContent = b;
       el.builds.appendChild(li);
     });
     el.avoids.innerHTML = "";
+    el.avoids.classList.add("stagger");
     A.avoids.forEach(function (a) {
       var li = document.createElement("li");
+      li.className = "reveal";
       li.textContent = a;
       el.avoids.appendChild(li);
     });
@@ -413,6 +465,25 @@
     el.run.classList.add("hidden");
     el.result.classList.remove("hidden");
     window.scrollTo({ top: 0 });
+
+    // Reveal the wiring bars + gate now (they're visible pre-unlock);
+    // sweep marker + fill to their real values in the same pass.
+    // setTimeout, not rAF — see revealSoon() for why.
+    revealSoon(el.dims);
+    revealSoon(el.gate);
+    if (reducedMotion) {
+      dimTargets.forEach(function (t) {
+        t.row.querySelector(".fill").style.width = t.v + "%";
+        t.row.querySelector(".marker").style.left = t.v + "%";
+      });
+    } else {
+      window.setTimeout(function () {
+        dimTargets.forEach(function (t) {
+          t.row.querySelector(".fill").style.width = t.v + "%";
+          t.row.querySelector(".marker").style.left = t.v + "%";
+        });
+      }, 20);
+    }
   }
 
   // ---------- Email gate ----------
@@ -447,6 +518,10 @@
         el.gate.classList.add("hidden");
         el.thanks.classList.remove("hidden");
         el.fullReport.classList.remove("hidden");
+        // The narrative/fit/edge content was hidden inside #full-report
+        // until now, so its .reveal elements need triggering here.
+        revealSoon(el.fullReport);
+        el.fullReport.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
       })
       .catch(function () {
         el.gateStatus.textContent = "Something went wrong — try again, or email madalena@madgrowth.io.";

@@ -82,12 +82,25 @@ The five Builder Archetypes:
 ## Acceptance criteria mapping (brief §1 / §5)
 
 1. **One pricing section** — a single `#pricing` block in the DOM; breakpoints only change the grid layout, never the content or prices.
-2. **All anchors resolve** — `#howitworks`, `#who`, `#pricing`, `#newsletter`, `#about` all exist; nav, footer, and in-page links point at them.
+2. **All anchors resolve** — `#howitworks`, `#who`, `#pricing`, `#about` all exist; nav, footer, and in-page links point at them.
 3. **Advertised = charged** — no strike-throughs anywhere; prices in copy must match the Stripe links you create.
 4. **Buy buttons → checkout** — Stack and Teardown buttons link to Stripe Payment Links directly.
 5. **No duplicate offer cards** — three cards, rendered once. (The pain **marquee** duplicates its track once for the seamless loop; the duplicate is `aria-hidden` and hidden entirely under reduced motion. Testimonials render once each.)
 6. The word "quiz" appears nowhere in the rendered output.
 7. The hero logo bar is an infinite CSS marquee (grayscale, edge-masked, pauses on hover); under `prefers-reduced-motion` it falls back to a static wrapped grid and the duplicate track is hidden.
+
+## Motion system
+
+Both pages share one motion layer (`assets/js/main.js` + the "Motion system" block in `assets/css/style.css`):
+
+- **Scroll reveal** — elements marked `.reveal` (optionally `.reveal-scale`, and staggered via a `.stagger` parent or `.reveal-d1`/`-d2`/`-d3`) fade/rise into view once. Driven by one shared `IntersectionObserver`, with a `getBoundingClientRect`-based backup tied to the scroll tick plus a short bounded poll — belt-and-suspenders so a slow or unusual environment can't leave real content stuck invisible.
+- **Progressive enhancement, not a gamble** — an inline script in `<head>` adds `.js` to `<html>` before first paint. All hidden-by-default reveal states are scoped under `html.js`, so a no-JS visitor (or a failed script load) sees the full page immediately — verified by removing the `.js` class and confirming every `.reveal` element resolves to `opacity:1; transform:none`.
+- **Hero** — staggered entrance on load (not scroll-triggered, since it's always above the fold), plus a decorative `.hero-bg` layer: slow-drifting blurred blobs, a cursor-tracking spotlight (`--mx`/`--my` written on `mousemove`, pointer-fine only), and a faint grain overlay.
+- **Buttons** — a shine sweep on hover (`::before`, CSS only) and an opt-in magnetic pull (`.btn-magnetic`, pointer-fine only) that drifts a few px toward the cursor.
+- **Cards** — `.tilt` cards (steps, who-cards, pricing cards) get a cursor-following perspective tilt with no transition while the pointer is moving (crisp tracking), then a `.settling` class adds a spring-back transition on `mouseleave`.
+- **Diagnostic page** — scenario changes get a brief fade+dip on the statement card; the wiring bars sweep their marker/fill out from center to value on reveal; the narrative, fit-cards, and edge-cards fade in staggered, gated to the actual unlock moment (they live inside `#full-report`, so they can't animate before the visitor has actually unlocked them).
+- **Reduced motion** — `prefers-reduced-motion: reduce` is checked in both CSS (kills all animations/transitions globally) and JS (skips the parallax/magnetic/tilt effects entirely and reveals content immediately instead of animating it in).
+- **Timers, not `requestAnimationFrame`, for deferred reveals** — some browser states (backgrounded/occluded tabs) suspend `requestAnimationFrame` and `IntersectionObserver` callback delivery entirely. Every "wait a tick, then apply the visible state" spot uses `setTimeout` instead, confirmed in testing to keep firing when rAF doesn't — so a visibility-API edge case degrades to "appears instantly, no animation" rather than "stuck invisible."
 
 ## Notes
 

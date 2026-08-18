@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.classList.add("js");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Builder Diagnostic — Madgrowth</title>
@@ -72,7 +73,7 @@
       <div class="dim-grid" id="dim-grid"></div>
     </div>
 
-    <div class="email-gate" id="email-gate">
+    <div class="email-gate reveal" id="email-gate">
       <h2>Unlock your full profile + the Expertise Audit skill — free</h2>
       <p class="gate-sub">That's the headline. The full profile is where it gets useful — and with the skill, it becomes a starting point: you'll know <strong>what kind of builder you are</strong> and <strong>which business fits</strong>, so you can actually start.</p>
       <ul class="gate-list">
@@ -101,29 +102,29 @@
     <div class="hidden" id="full-report">
       <div class="result-narrative" id="result-narrative"></div>
 
-      <div class="fit-grid">
-        <div class="fit-card">
+      <div class="fit-grid stagger">
+        <div class="fit-card reveal">
           <h3>Built for you</h3>
           <ul id="result-builds"></ul>
         </div>
-        <div class="fit-card avoid">
+        <div class="fit-card avoid reveal">
           <h3>Fights your wiring</h3>
           <ul id="result-avoids"></ul>
         </div>
       </div>
 
-      <div class="edge-grid">
-        <div class="edge-card">
+      <div class="edge-grid stagger">
+        <div class="edge-card reveal">
           <p class="edge-label">At your best</p>
           <p id="result-thrive"></p>
         </div>
-        <div class="edge-card">
+        <div class="edge-card reveal">
           <p class="edge-label">Under pressure</p>
           <p id="result-stress"></p>
         </div>
       </div>
 
-      <a class="btn btn-primary" href="../#pricing">See where to go next →</a>
+      <a class="btn btn-primary btn-magnetic reveal" href="../#pricing">See where to go next →</a>
     </div>
   </div>
 
