@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Builder Diagnostic — Madgrowth</title>
+  <meta name="description" content="8 scenarios. 2 minutes. Find out what kind of builder you are — and which businesses fit your wiring.">
+  <link rel="canonical" href="https://www.madgrowth.io/diagnostic/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.madgrowth.io/diagnostic/">
+  <meta property="og:title" content="The Builder Diagnostic — Madgrowth">
+  <meta property="og:description" content="8 scenarios. 2 minutes. Find out what kind of builder you are — and which businesses fit your wiring.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3NDWYBL8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6H3NDWYBL8');
+  </script>
+  <script src="../assets/js/config.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="/">madgrowth</a>
+    <a class="textlink" href="/">← Back to site</a>
+  </nav>
+</header>
+
+<main class="diag-main">
+  <!-- ===== Intro / run screen ===== -->
+  <div id="diag-run">
+    <div class="diag-header">
+      <span class="eyebrow">The Builder Diagnostic</span>
+      <h1>What kind of builder are you?</h1>
+      <p class="lead">8 scenarios. 2 minutes. Find out how you're wired to build — and which businesses actually fit that wiring. No right answers: pick the one that's true, not the one that sounds smart.</p>
+    </div>
+
+    <div class="diag-progress">
+      <div class="meta">
+        <span id="progress-label">Scenario 1 of 8</span>
+        <span id="progress-dim"></span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    </div>
+
+    <div class="statement-card">
+      <span class="num" id="scenario-num">01</span>
+      <p class="statement" id="scenario-text"></p>
+      <div class="option-stack" id="option-stack"></div>
+    </div>
+    <button class="diag-back" id="btn-back" type="button" disabled>← Previous scenario</button>
+  </div>
+
+  <!-- ===== Result screen ===== -->
+  <div id="diag-result" class="hidden">
+    <p class="result-score">Your Builder Archetype</p>
+    <h2 class="result-profile" id="result-name"></h2>
+    <p class="result-tagline" id="result-tagline"></p>
+
+    <div class="wiring-card">
+      <p class="wiring-title">Your wiring</p>
+      <div class="dim-grid" id="dim-grid"></div>
+    </div>
+
+    <div class="email-gate" id="email-gate">
+      <h2>Unlock your full profile + the Expertise Audit skill — free</h2>
+      <p class="gate-sub">That's the headline. The full profile is where it gets useful — and with the skill, it becomes a starting point: you'll know <strong>what kind of builder you are</strong> and <strong>which business fits</strong>, so you can actually start.</p>
+      <ul class="gate-list">
+        <li>The complete written breakdown of your wiring</li>
+        <li>The businesses built for you — and the ones that fight your wiring</li>
+        <li>Your thrive and stress modes</li>
+        <li>The Expertise Audit skill: the three strongest monetizable angles in your own career, in ~10 minutes</li>
+      </ul>
+      <form class="subscribe-form" id="gate-form" novalidate>
+        <label class="sr-only" for="gate-email">Email address</label>
+        <input type="email" id="gate-email" name="email_address" placeholder="you@company.com" autocomplete="email" required>
+        <button class="btn btn-primary" type="submit">Unlock it — free</button>
+      </form>
+      <div class="consent-row">
+        <input type="checkbox" id="gate-consent" required>
+        <label for="gate-consent">I get it: my full profile and the Expertise Audit skill are free, delivered by email — and that email also subscribes me to the Madgrowth newsletter — one idea a week on turning expertise into owned income. Unsubscribe anytime, keep everything.</label>
+      </div>
+      <p class="form-status" id="gate-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="thanks hidden" id="gate-thanks">
+      <h2>Unlocked — full profile below.</h2>
+      <p>The written version and the free Expertise Audit skill are on their way to your inbox, along with the Madgrowth newsletter — one idea a week. Run the skill today: the diagnostic told you what kind of builder you are; the skill tells you which business fits. That's the moment this stops being a result and starts being a plan.</p>
+    </div>
+
+    <div class="hidden" id="full-report">
+      <div class="result-narrative" id="result-narrative"></div>
+
+      <div class="fit-grid">
+        <div class="fit-card">
+          <h3>Built for you</h3>
+          <ul id="result-builds"></ul>
+        </div>
+        <div class="fit-card avoid">
+          <h3>Fights your wiring</h3>
+          <ul id="result-avoids"></ul>
+        </div>
+      </div>
+
+      <div class="edge-grid">
+        <div class="edge-card">
+          <p class="edge-label">At your best</p>
+          <p id="result-thrive"></p>
+        </div>
+        <div class="edge-card">
+          <p class="edge-label">Under pressure</p>
+          <p id="result-stress"></p>
+        </div>
+      </div>
+
+      <a class="btn btn-primary" href="/#pricing">See where to go next →</a>
+    </div>
+  </div>
+
+  <noscript>
+    <p><strong>The diagnostic needs JavaScript to run.</strong> Enable JavaScript, or email <a href="mailto:madalena@madgrowth.io">madalena@madgrowth.io</a> and I'll send you the scenarios directly.</p>
+  </noscript>
+</main>
+
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/diagnostic.js" defer></script>
+</body>
+</html>
