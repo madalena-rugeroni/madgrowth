@@ -11,7 +11,7 @@ window.MG = {
   // not Calendly. That intake form doesn't exist yet — set one up
   // (Tally/Typeform/Google Form) and point the Stripe success URL at
   // it before launch.
-  STRIPE_LINK_STACK: "STRIPE_LINK_STACK",
+  STRIPE_LINK_STACK: "https://buy.stripe.com/9B6eVe2JXftc7xZ2WJ0Ny01",
   STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
   // --- Calendly ---
