@@ -32,7 +32,15 @@ window.MG = {
   },
 
 
+  // --- PostHog: pageviews, clicks, session replay ---
+  // Project API key (public, safe in client code) and region host.
+  // PostHog runs cookieless until the visitor accepts the cookie banner.
+  POSTHOG_KEY: "POSTHOG_KEY",
+  POSTHOG_HOST: "https://us.i.posthog.com",
+
   // --- LinkedIn Insight Tag partner ID ---
+  // Note: the Insight Tag sets cookies. Leave it as a placeholder
+  // unless the site gets a consent banner.
   LINKEDIN_PARTNER_ID: "LINKEDIN_PARTNER_ID",
 
   // --- UTM params appended to every outbound link ---

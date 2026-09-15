@@ -20,66 +20,66 @@
   // ---------- Scenarios ----------
   var SCENARIOS = [
     {
-      text: "The side project. What was the last thing you made outside your job description?",
+      text: "The warm intro. A founder you used to report to just closed a seed round and asks for a few hours a week of your time. What do you send back?",
       options: [
-        { text: "A post, deck or doc that got passed around", w: { b: -2, l: 2, p: 1 } },
-        { text: "A script, tool or automation I built in a weekend", w: { b: 2, p: 2, r: 1 } },
-        { text: "Nothing I made, but people started booking 30 minutes with me", w: { b: -1, l: -1, v: -2 } },
-        { text: "A plan or playbook the company adopted", w: { b: 1, p: -2, r: -1 } }
+        { text: "A monthly advisory retainer with a tight scope and a 90-day review", w: { v: -2, r: -1, l: -1 } },
+        { text: "Less cash, more equity. If they're going somewhere, I want a real piece of it", w: { r: 1, b: 1, p: -2 } },
+        { text: "A fixed-price sprint on my playbook, with a contractor I trust doing the build", w: { b: 2, r: -1, v: -1 } },
+        { text: "A yes, as long as I can write publicly about what we learn", w: { b: -2, l: 2, p: 1 } }
       ]
     },
     {
-      text: "The win. Which win at work did you enjoy most?",
+      text: "The viral post. Your post about a call you got wrong in your last role hits 400k impressions. By Monday there are 60 DMs. What's the move?",
       options: [
-        { text: "A launch with thousands of signups", w: { v: 2, l: 2 } },
-        { text: "A deal I closed myself, with the CEO", w: { v: -2, l: -1 } },
-        { text: "Something that kept selling after the team moved on", w: { v: 2, b: 1, p: 1 } },
-        { text: "A quarter with zero churn", w: { v: -1, p: -2, r: -1 } }
+        { text: "Start a weekly newsletter while the window's open and keep the posts coming", w: { l: 2, p: 2, b: -1 } },
+        { text: "Package the framework from the post into a $49 template and ship it by Friday", w: { v: 2, p: 1, b: 1 } },
+        { text: "Book calls with the five DMs from companies that could afford a retainer", w: { v: -2, l: -1, r: -2 } },
+        { text: "Set up an intake form and a short qualifying call so the spike turns into pipeline", w: { b: 2, p: -2, r: -1 } }
       ]
     },
     {
-      text: "The slack. The last time you had real free time, between jobs or after a launch, what did you do with it?",
+      text: "The runway. You leave your job with six months of runway and no non-compete. What does month one look like?",
       options: [
-        { text: "Wrote and posted; my network grew", w: { l: 2, b: -1, p: 1 } },
-        { text: "Shipped something rough and showed people", w: { b: 1, p: 2, r: 1 } },
-        { text: "Took a paid project for someone's company", w: { v: -2, r: -1, p: -1 } },
-        { text: "Worked on the plan: niche, offer, pipeline", w: { b: 2, p: -1, r: -1 } }
+        { text: "Calling the ten people most likely to pay me for a first project", w: { v: -2, r: -1 } },
+        { text: "Building v1 of the tool I wished I'd had for the last five years", w: { b: 2, r: 2, p: -2 } },
+        { text: "Posting daily, so there's an audience waiting by month three", w: { b: -2, l: 2, p: 2 } },
+        { text: "Pre-selling a small product to 50 people before I build any of it", w: { v: 2, p: 1 } }
       ]
     },
     {
-      text: "The risk. The biggest professional risk you've actually taken?",
+      text: "The custom build. A year in, your biggest customer offers $80k for a custom version of what you sell. It'd eat a quarter. What do you say?",
       options: [
-        { text: "Announced something publicly before I knew how to do it", w: { r: 2, l: 2, p: 1 } },
-        { text: "Spent a year on one thing people said was too early", w: { r: 2, b: 2, p: -1 } },
-        { text: "Asked for much more money than the going rate", w: { r: 1, v: -2 } },
-        { text: "I don't take risks I can't undo. I pilot first", w: { r: -2, p: -1 } }
+        { text: "Yes. $80k in the bank buys me a calm year", w: { r: -2, v: -1 } },
+        { text: "Yes, if I keep the IP and can sell it to the next ten companies like them", w: { b: 2, v: 1, r: 1 } },
+        { text: "No. I point them to the standard plan and keep the roadmap clean", w: { v: 2, r: 1, p: 1 } },
+        { text: "Yes, scoped tight and priced for margin, with a small team doing the delivery", w: { b: 2, v: -1, r: -2 } }
       ]
     },
     {
-      text: "The inbox. The last three times a colleague asked for your help, what did they need?",
+      text: "The recruiter. Three months into building your own thing, a recruiter pitches a VP role at a Series B: big base, real equity. What do you do?",
       options: [
-        { text: "Explain it so leadership gets it", w: { b: -2, l: 1 } },
-        { text: "Get it over the line", w: { p: 2, b: 1 } },
-        { text: "A call on something ambiguous", w: { v: -2, l: -1 } },
-        { text: "Fix why the process isn't working", w: { b: 2, p: -1, v: -1 } }
+        { text: "Take it, keep building on the side and leave once the side thing pays", w: { r: -1, p: -1 } },
+        { text: "Pass. If I stop at month three, I'm never coming back to this", w: { r: 2, b: 1, p: -2 } },
+        { text: "Counter with two days a week as a fractional VP, with a clear scope", w: { v: -2, r: -1, b: -1 } },
+        { text: "Pass, and post about why. That post will do more for my pipeline than the job would", w: { l: 1, r: 1, b: -1 } }
       ]
     },
     {
-      text: "The failure. Which past failure still bothers you?",
+      text: "The funded competitor. A competitor raises $15M and starts outspending you on ads in your category. What changes on Monday?",
       options: [
-        { text: "Something good that nobody heard about", w: { l: 2 } },
-        { text: "Something loud with nothing real behind it", w: { l: -1, b: 1, v: 1 } },
-        { text: "Years of selling my time with nothing to show for it", w: { v: 2, b: 1 } },
-        { text: "A rushed launch that broke in public", w: { r: -2, p: -2 } }
+        { text: "I go narrower and own the one segment they're too big to care about", w: { v: -2, l: -1 } },
+        { text: "I get louder. A point of view with my name on it is hard to buy with ads", w: { l: 2, b: -2, r: 1 } },
+        { text: "I ship faster. What they're planning for Q3, I can have live in two weeks", w: { p: 1, v: 1, b: 1 } },
+        { text: "I tighten delivery and retention. Their ad budget runs out before my margins do", w: { b: 2, r: -1, p: -2 } }
       ]
     },
     {
-      text: "The best week. What made your best working week ever?",
+      text: "The distribution deal. A year in, a platform with 200k of your exact buyers offers to bundle your offer for 40% of revenue. They keep the customer relationship. Your call?",
       options: [
-        { text: "Something I wrote reached the right people", w: { b: -2, l: 2, v: 1 } },
-        { text: "Heads-down building; the numbers moved on their own", w: { b: 2, v: 1, p: -1 } },
-        { text: "Two conversations that changed someone's decision, then a free afternoon", w: { v: -2, l: -1, p: -1 } },
-        { text: "It ran without me; I checked in for 30 minutes", w: { b: 2, v: -1, p: -2 } }
+        { text: "Take it. Distribution is the hard part, and they just handed it to me", w: { v: 2, p: 1 } },
+        { text: "Walk. If I don't own the customer, I don't own the business", w: { r: 1, p: -2, b: 1 } },
+        { text: "Counter with a 90-day pilot and a clause that gets me the customer emails", w: { r: -1, p: -1 } },
+        { text: "Pass, and grow my own list. It's slower, and every subscriber is mine", w: { l: 2, b: -2, r: 1 } }
       ]
     },
     {
@@ -101,12 +101,12 @@
       ]
     },
     {
-      text: "The near-miss. The last time something you owned was about to fail in public, what did you do?",
+      text: "The year-one number. Twelve months from now, which revenue line would you be proudest of?",
       options: [
-        { text: "Said so early and asked for help", w: { r: 2, l: 2 } },
-        { text: "Doubled down quietly until it worked", w: { r: 2, b: 2, p: -1 } },
-        { text: "Cut scope and shipped the safe version", w: { r: -2, p: 1 } },
-        { text: "Pulled it before anyone saw", w: { r: -2, p: -2 } }
+        { text: "$30k a month from four retainer clients who renew", w: { v: -2, l: -1 } },
+        { text: "$30k a month from a course and templates, sold in two launches", w: { v: 2, p: 1, l: 1 } },
+        { text: "$15k a month in software revenue, growing 20% month over month", w: { r: 1, b: 2, p: -2 } },
+        { text: "$30k a month from a small team delivering, on 20 hours of my week", w: { b: 2, v: -1, r: -2 } }
       ]
     }
   ];
@@ -374,9 +374,10 @@
   // Per-axis mean/std of the raw sums over every possible answer
   // combination — used to standardize scores so no archetype captures
   // the "mixed answers" middle by accident. Recompute if SCENARIO
-  // weights change (see README).
-  var AXIS_MEAN = { b: 3.75, r: 0.0, p: -2.75, l: 3.0, v: -1.0 };
-  var AXIS_STD  = { b: 3.33, r: 3.12, p: 3.21, l: 2.98, v: 3.59 };
+  // weights change: per axis, mean = sum of each scenario's option mean,
+  // std = sqrt(sum of each scenario's population variance).
+  var AXIS_MEAN = { b: 3.25, r: -0.75, p: -2.25, l: 2.5, v: -0.5 };
+  var AXIS_STD  = { b: 3.46, r: 3.13, p: 3.31, l: 2.67, v: 3.95 };
 
   function computeResult() {
     var sums = { b: 0, r: 0, p: 0, l: 0, v: 0 };

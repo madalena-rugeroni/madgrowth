@@ -10,7 +10,7 @@
   var MG = window.MG || {};
 
   function isPlaceholder(v) {
-    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LINKEDIN_PARTNER)/.test(String(v));
+    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LINKEDIN_PARTNER|POSTHOG_)/.test(String(v));
   }
 
   function withUTM(url) {
@@ -31,7 +31,68 @@
 
   function track(name, params) {
     if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    if (window.posthog && typeof window.posthog.capture === "function") window.posthog.capture(name, params || {});
     if (window.lintrk) window.lintrk("track", { event: name });
+  }
+
+  // ---------- Consent (GA4 Consent Mode + PostHog) ----------
+  // GA4 starts with analytics_storage denied (see the inline head snippet).
+  // PostHog uses cookieless_mode "on_reject": nothing is stored on the
+  // device until the visitor accepts. The choice itself is saved in
+  // localStorage so the banner only shows once.
+  var CONSENT_KEY = "mg_consent";
+  function getConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  }
+  function applyConsent(v) {
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", { analytics_storage: v === "granted" ? "granted" : "denied" });
+    }
+    if (window.posthog && typeof window.posthog.opt_in_capturing === "function") {
+      if (v === "granted") window.posthog.opt_in_capturing();
+      else window.posthog.opt_out_capturing();
+    }
+  }
+  function setConsent(v) {
+    try { localStorage.setItem(CONSENT_KEY, v); } catch (e) {}
+    applyConsent(v);
+  }
+
+  // ---------- PostHog (only with a real project key, never on localhost) ----------
+  var isLocal = /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
+  if (!isPlaceholder(MG.POSTHOG_KEY) && !isLocal) {
+    // Official PostHog loader snippet (posthog.com/docs/libraries/js)
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    window.posthog.init(MG.POSTHOG_KEY, {
+      api_host: MG.POSTHOG_HOST || "https://us.i.posthog.com",
+      defaults: "2026-05-30",
+      person_profiles: "identified_only",
+      cookieless_mode: "on_reject"
+    });
+    var stored = getConsent();
+    if (stored) applyConsent(stored);
+  }
+
+  function siteBase() {
+    var s = document.querySelector('script[src$="assets/js/main.js"]');
+    return s ? s.getAttribute("src").replace("assets/js/main.js", "") : "";
+  }
+
+  function showConsentBanner() {
+    if (document.querySelector(".consent-bar")) return;
+    var bar = document.createElement("div");
+    bar.className = "consent-bar";
+    bar.setAttribute("role", "dialog");
+    bar.setAttribute("aria-label", "Cookie preferences");
+    bar.innerHTML =
+      '<p>I use Google Analytics and PostHog to see which pages help and where people get stuck. OK to set cookies? <a href="' + siteBase() + 'privacy/">Privacy policy</a></p>' +
+      '<div class="consent-actions">' +
+      '<button type="button" class="consent-accept">Accept</button>' +
+      '<button type="button" class="consent-decline">Decline</button>' +
+      "</div>";
+    bar.querySelector(".consent-accept").addEventListener("click", function () { setConsent("granted"); bar.remove(); });
+    bar.querySelector(".consent-decline").addEventListener("click", function () { setConsent("denied"); bar.remove(); });
+    document.body.appendChild(bar);
   }
 
   // ---------- LinkedIn Insight Tag (only with a real partner ID) ----------
@@ -92,7 +153,20 @@
       if (a.host !== window.location.host) a.setAttribute("href", withUTM(a.href));
     });
 
-    // ---------- GA4 click events ----------
+    // ---------- Cookie banner + "Cookie settings" footer link ----------
+    if (!getConsent()) showConsentBanner();
+    var footerLinks = document.querySelector(".footer-links");
+    if (footerLinks) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = "#";
+      a.textContent = "Cookie settings";
+      a.addEventListener("click", function (e) { e.preventDefault(); showConsentBanner(); });
+      li.appendChild(a);
+      footerLinks.appendChild(li);
+    }
+
+    // ---------- Analytics click events ----------
     document.querySelectorAll("[data-event]").forEach(function (el) {
       el.addEventListener("click", function () {
         track(el.getAttribute("data-event"));

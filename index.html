@@ -4,31 +4,325 @@
   <script>document.documentElement.classList.add("js");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madgrowth · Turn your tech career into something you own</title>
-  <meta name="description" content="For leaders in tech with 5 to 10+ years of experience. Work out what to sell, who buys it, how to package it and what to charge, with AI skills you run yourself or 1:1 with Madalena Rugeroni. Fractional, services or software.">
+  <title>Go fractional or start a business from your tech career · Madgrowth</title>
+  <meta name="description" content="For tech leaders with 5 to 10+ years: work out what to sell, who buys it and what to charge, for a fractional role, a consulting business or software.">
+  <meta name="author" content="Madalena Rugeroni">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://www.madgrowth.io/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madgrowth">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://www.madgrowth.io/">
-  <meta property="og:title" content="Madgrowth · Turn your tech career into something you own">
-  <meta property="og:description" content="For leaders in tech with 5 to 10+ years of experience. Work out what to sell, who buys it, how to package it and what to charge, with AI skills you run yourself or 1:1 with Madalena Rugeroni. Fractional, services or software.">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Madgrowth · Turn your tech career into something you own">
-  <meta name="twitter:description" content="For leaders in tech with 5 to 10+ years of experience. Work out what to sell, who buys it, how to package it and what to charge, with AI skills you run yourself or 1:1 with Madalena Rugeroni. Fractional, services or software.">
+  <meta property="og:title" content="Turn your tech career into a business you own">
+  <meta property="og:description" content="For tech leaders with 5 to 10+ years: work out what to sell, who buys it and what to charge, for a fractional role, a consulting business or software.">
+  <meta property="og:image" content="https://www.madgrowth.io/assets/img/og/home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Madgrowth: turn your tech career into a business you own">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Turn your tech career into a business you own">
+  <meta name="twitter:description" content="For tech leaders with 5 to 10+ years: work out what to sell, who buys it and what to charge, for a fractional role, a consulting business or software.">
+  <meta name="twitter:image" content="https://www.madgrowth.io/assets/img/og/home.jpg">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3NDWYBL8"></script>
+  <!-- GA4 with Consent Mode: analytics cookies only after the visitor accepts -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    var mgConsent = null;
+    try { mgConsent = localStorage.getItem("mg_consent"); } catch (e) {}
+    gtag('consent', 'default', {
+      analytics_storage: mgConsent === 'granted' ? 'granted' : 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
     gtag('js', new Date());
     gtag('config', 'G-6H3NDWYBL8');
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3NDWYBL8"></script>
   <script src="assets/js/config.js"></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.madgrowth.io/#org",
+      "name": "Madgrowth",
+      "url": "https://www.madgrowth.io/",
+      "logo": "https://www.madgrowth.io/assets/img/logo.png",
+      "email": "madalena@madgrowth.io",
+      "legalName": "Madalena Rugeroni, Unipessoal Lda",
+      "vatID": "PT517207427",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PT"
+      },
+      "founder": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
+      "description": "Madgrowth helps leaders in tech with 5 to 10+ years of experience turn that experience into a business they own: a fractional role, a services business or software.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Madgrowth offers",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "The Builder Diagnostic",
+            "url": "https://www.madgrowth.io/diagnostic/",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Builder Diagnostic",
+              "description": "A free 3-minute diagnostic that identifies your Builder Archetype and the business models that fit how you work."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "The Stack",
+            "url": "https://www.madgrowth.io/stack/",
+            "price": "299",
+            "priceCurrency": "EUR",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "The Stack",
+              "description": "Fifteen AI skills that position, package, price and launch an offer, with a playbook for each business model."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "The Audit",
+            "url": "https://www.madgrowth.io/#audit",
+            "price": "599",
+            "priceCurrency": "EUR",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Audit",
+              "description": "A written diagnosis within 48 hours that scores your angle, positioning, offer, audience and launch plan, with a 90-day roadmap."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "1200",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "1200",
+              "priceCurrency": "EUR",
+              "unitText": "month",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            },
+            "eligibleDuration": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "unitCode": "MON"
+            },
+            "name": "The Build",
+            "url": "https://www.madgrowth.io/#build",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "The Build",
+              "description": "Three months of 1:1 work with Madalena Rugeroni to position, package, price and launch your business. Limited to 10 active clients."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "3000",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "3000",
+              "priceCurrency": "EUR",
+              "unitText": "month",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            },
+            "eligibleDuration": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "unitCode": "MON"
+            },
+            "name": "Startup Go-to-Market Advisory",
+            "url": "https://www.madgrowth.io/startups/",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Startup Go-to-Market Advisory",
+              "description": "1:1 go-to-market advisory for startup founders from 0 to $1M in revenue."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.madgrowth.io/#madalena",
+      "name": "Madalena Rugeroni",
+      "url": "https://www.madgrowth.io/#about",
+      "image": "https://www.madgrowth.io/assets/img/madalena.jpg",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/madalenarugeroni"
+      ],
+      "description": "Go-to-market operator, advisor and investor. Former Google, scaled startups from zero to $10M in revenue and runs a portfolio of internet businesses, including Madgrowth and the software company Mazo.",
+      "knowsAbout": [
+        "Go-to-market strategy",
+        "Positioning",
+        "Pricing",
+        "Offer design",
+        "Fractional leadership",
+        "Consulting business models",
+        "Startup growth",
+        "B2B SaaS"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.madgrowth.io/#website",
+      "url": "https://www.madgrowth.io/",
+      "name": "Madgrowth",
+      "publisher": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.madgrowth.io/#webpage",
+      "url": "https://www.madgrowth.io/",
+      "name": "Go fractional or start a business from your tech career · Madgrowth",
+      "description": "For tech leaders with 5 to 10+ years: work out what to sell, who buys it and what to charge, for a fractional role, a consulting business or software.",
+      "isPartOf": {
+        "@id": "https://www.madgrowth.io/#website"
+      },
+      "about": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "primaryImageOfPage": "https://www.madgrowth.io/assets/img/og/home.jpg",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.madgrowth.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to quit my job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The system is built to run alongside a job, and most clients create their first offer while still employed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I don't know what I'd sell?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most people start there. The free Expertise Audit skill finds your three strongest angles in about ten minutes, using the career you already have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I already use ChatGPT or Claude. Why pay for skills?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Stack asks about your business once and remembers it across fifteen skills. Each skill applies the playbook for your business model, uses what the earlier skills produced and ends with a document you keep: an ICP, an offer, a price, a launch plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fractional, services or software: does it matter which?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at the start. All three begin with what you sell, who buys it and what it costs. The skills use a different playbook for each, and the Go / No-Go scores the idea against your Builder Archetype before you commit months to it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I have around 5 years of experience. Is that enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you've owned an outcome, like a number, a team or a launch, yes. The Expertise Audit looks for the angle in the work you've done, whatever your title was."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a big audience?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The audience step builds inbound from a small, focused presence. A few hundred of the right people is enough to launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I go from a tech job to fractional or consulting work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with a problem you've solved more than once and a type of company that has that problem and the budget to fix it. Package it as a monthly retainer with a clear scope and sell it to your network first. The Builder Diagnostic shows whether fractional work suits how you operate, and The Stack takes you through positioning, the offer and pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I price a fractional role or consulting offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Price against the cost of the problem and the full-time hire the client would otherwise make, and sell a defined monthly scope in place of hours. The Pricing skill in The Stack runs this with Blair Enns and Alan Weiss for services and Madhavan Ramanujam for software."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The Stack, The Audit or The Build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They use the same system. The Stack is the fifteen skills on your own (299€ once). The Audit is my written diagnosis of what you have (599€). The Build is the skills plus me, 1:1, with a guarantee (1,200€/month). If you're unsure, book the free 15-minute call from The Build card."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to run the skills in order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The first skill you run asks eight questions about your business, once. Every other skill reads those answers, so you can start with pricing, the landing page or the Go / No-Go. There's a recommended sequence, and you're free to skip around."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I talk to you before starting The Build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Book the 15-minute call from The Build card and bring your diagnostic profile. If you want an in-depth review of your plan, that's The Audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I'm already running a startup. Is this for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This page is for building something new. For startups between 0 and $1M, I offer 1:1 go-to-market advisory:"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -54,6 +348,8 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="wrap">
+      <div class="hero-split">
+        <div class="hero-copy">
       <span class="eyebrow reveal">For leaders in tech with 5 to 10+ years of experience</span>
       <h1 class="reveal">You've built the pipeline. Grown the team. Hit the number. Now build something that belongs to you.</h1>
       <p class="lead reveal">You have the track record. What's missing is a sharp answer to <strong>what you sell, who buys it and what you charge</strong>. Madgrowth turns your experience into a positioned, priced offer for a fractional role, a services business or software, with AI skills you run yourself or 1:1 with me.</p>
@@ -63,8 +359,14 @@
       </div>
       <a class="founder-line reveal" href="#about">
         <img src="assets/img/madalena.jpg" alt="Madalena Rugeroni" width="44" height="44" onerror="this.hidden=true">
-        <span><strong>Madalena Rugeroni</strong> · ex-Google · scaled startups from 0 to $10M in revenue · runs three businesses today</span>
+        <span><strong>Madalena Rugeroni</strong> · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today</span>
       </a>
+        </div>
+        <figure class="hero-portrait reveal">
+          <img src="assets/img/madalena.jpg" alt="Madalena Rugeroni, founder of Madgrowth" width="800" height="800" fetchpriority="high">
+          <figcaption><strong>Madalena Rugeroni</strong>Founder, Madgrowth</figcaption>
+        </figure>
+      </div>
 
       <div class="logo-bar reveal">
         <p>Advising leaders in tech from companies like</p>
@@ -414,7 +716,7 @@
           <p>We build your business together over three months, and you do the work between sessions. Month 1: angle and positioning locked. Month 2: offer and pricing set. Month 3: website live and launch done. After that it's month to month, and you can cancel anytime.</p>
           <ul>
             <li>2 × 60-min 1:1 working sessions a month</li>
-            <li>Chat access between sessions</li>
+            <li>Unlimited chat access between sessions</li>
             <li>A strategy doc updated after every session</li>
             <li>Reviews of your positioning, offer page, website copy and launch plan</li>
             <li>The Stack included</li>
@@ -444,7 +746,7 @@
             <p>Over the last decade, I've lived the tech operator trap.</p>
             <p>Leading teams at Google. Scaling startups from zero to $10M in revenue. Six-figure salary, fancy titles, and zero ownership of my time.</p>
             <p>I had built everything the playbook said to build. But my income still depended on one employer, my expertise was trapped inside someone else's company, and my time wasn't my own.</p>
-            <p>So I built a way out. Then I built Madgrowth to help others do the same. Today I run three businesses of my own: this practice, the toolkit and Mazo, my software company.</p>
+            <p>So I built a way out. Then I built Madgrowth to help others do the same. Today I advise and invest in startups and run a portfolio of internet businesses, including this practice and Mazo, my software company.</p>
             <p>I work with leaders in tech who are done building for others and ready to build for themselves, whether that's a fractional role, a services business or software.</p>
             <p>I've been where you are: the knowledge, the experience and the drive, with no clear path to make it work independently.</p>
             <p><strong>That's the path I'll help you find.</strong></p>
@@ -483,6 +785,14 @@
         <details class="reveal">
           <summary>Do I need a big audience?</summary>
           <p>No. The audience step builds inbound from a small, focused presence. A few hundred of the right people is enough to launch.</p>
+        </details>
+        <details class="reveal">
+          <summary>How do I go from a tech job to fractional or consulting work?</summary>
+          <p>Start with a problem you've solved more than once and a type of company that has that problem and the budget to fix it. Package it as a monthly retainer with a clear scope and sell it to your network first. The Builder Diagnostic shows whether fractional work suits how you operate, and The Stack takes you through positioning, the offer and pricing.</p>
+        </details>
+        <details class="reveal">
+          <summary>How should I price a fractional role or consulting offer?</summary>
+          <p>Price against the cost of the problem and the full-time hire the client would otherwise make, and sell a defined monthly scope in place of hours. The Pricing skill in The Stack runs this with Blair Enns and Alan Weiss for services and Madhavan Ramanujam for software.</p>
         </details>
         <details class="reveal">
           <summary>The Stack, The Audit or The Build?</summary>
@@ -533,6 +843,8 @@
       <li><a href="stack/">The Stack</a></li>
       <li><a href="diagnostic/">The Builder Diagnostic</a></li>
       <li><a href="startups/">Startup advisory</a></li>
+      <li><a href="privacy/">Privacy</a></li>
+      <li><a href="terms/">Terms</a></li>
     </ul>
   </div>
 </footer>
