@@ -20,11 +20,11 @@
   // ---------- Scenarios ----------
   var SCENARIOS = [
     {
-      text: "The side project. The last thing you made outside your job description — what was it?",
+      text: "The side project. What was the last thing you made outside your job description?",
       options: [
         { text: "A post, deck or doc that got passed around", w: { b: -2, l: 2, p: 1 } },
         { text: "A script, tool or automation I built in a weekend", w: { b: 2, p: 2, r: 1 } },
-        { text: "Nothing — but people started booking 30 minutes with me", w: { b: -1, l: -1, v: -2 } },
+        { text: "Nothing I made, but people started booking 30 minutes with me", w: { b: -1, l: -1, v: -2 } },
         { text: "A plan or playbook the company adopted", w: { b: 1, p: -2, r: -1 } }
       ]
     },
@@ -38,7 +38,7 @@
       ]
     },
     {
-      text: "The slack. The last time you had real free time — between jobs, after a launch — what did you do with it?",
+      text: "The slack. The last time you had real free time, between jobs or after a launch, what did you do with it?",
       options: [
         { text: "Wrote and posted; my network grew", w: { l: 2, b: -1, p: 1 } },
         { text: "Shipped something rough and showed people", w: { b: 1, p: 2, r: 1 } },
@@ -52,7 +52,7 @@
         { text: "Announced something publicly before I knew how to do it", w: { r: 2, l: 2, p: 1 } },
         { text: "Spent a year on one thing people said was too early", w: { r: 2, b: 2, p: -1 } },
         { text: "Asked for much more money than the going rate", w: { r: 1, v: -2 } },
-        { text: "I don't take risks I can't undo — I pilot first", w: { r: -2, p: -1 } }
+        { text: "I don't take risks I can't undo. I pilot first", w: { r: -2, p: -1 } }
       ]
     },
     {
@@ -74,7 +74,7 @@
       ]
     },
     {
-      text: "The best week. Your best working week ever — what made it?",
+      text: "The best week. What made your best working week ever?",
       options: [
         { text: "Something I wrote reached the right people", w: { b: -2, l: 2, v: 1 } },
         { text: "Heads-down building; the numbers moved on their own", w: { b: 2, v: 1, p: -1 } },
@@ -85,19 +85,19 @@
     {
       text: "The offers. Four offers land the same week. Which do you take?",
       options: [
-        { text: "Head of growth at a consumer brand — thousands of customers", w: { v: 2, l: 1 } },
+        { text: "Head of growth at a consumer brand with thousands of customers", w: { v: 2, l: 1 } },
         { text: "Fractional exec for five companies who pay properly", w: { v: -2 } },
-        { text: "A royalty deal — less now, paid for years, no hours", w: { v: 1, p: -2, b: 1 } },
-        { text: "Co-founder with real equity — two years before you know", w: { r: 2, b: 1, p: -1 } }
+        { text: "A royalty deal: less now, paid for years, no hours", w: { v: 1, p: -2, b: 1 } },
+        { text: "Co-founder with real equity, and two years before you know if it worked", w: { r: 2, b: 1, p: -1 } }
       ]
     },
     {
       text: "The side money. Have you made money outside a salary? What came closest?",
       options: [
         { text: "Advice or a project someone paid me for", w: { v: -2, l: -1 } },
-        { text: "Something I made and sold — a template, a course, a product", w: { v: 2, b: 1 } },
+        { text: "Something I made and sold: a template, a course, a product", w: { v: 2, b: 1 } },
         { text: "Sponsorship, ads or affiliate on something I published", w: { l: 2, v: 1 } },
-        { text: "Not yet — salary only, so far", w: { r: -1, p: -1 } }
+        { text: "Not yet. Salary only so far", w: { r: -1, p: -1 } }
       ]
     },
     {
@@ -116,122 +116,122 @@
   var ARCHETYPES = {
     broadcaster: {
       name: "The Broadcaster",
-      tagline: "Your name is the distribution. You build in public — and demand comes to you.",
+      tagline: "Your name is the distribution. You build in public, and demand comes to you.",
       proto: { b: -2, r: 1, p: 2, l: 2, v: 1 },
       narrative: [
-        "You're wired to build as yourself, not behind a brand. Your unfair advantage isn't a product or a process — it's that when you say the thing everyone's thinking, the right people show up in your inbox. Attention is your raw material, and unlike most operators, you actually enjoy the exposure.",
-        "That means the businesses that fit you are the ones where <strong>your voice is a feature, not a liability</strong>: audience-first launches, media-style brands, digital offers with demand built in before the product exists. You don't need to build the machine first. You need to be visible first — the machine comes second.",
-        "The blind spot: Broadcasters generate demand faster than they can fulfill it. Reach without an offer is a hobby with good analytics. Your risk isn't obscurity — it's being three announcements deep with nothing packaged to sell behind them."
+        "When you say what everyone else is thinking, the right people show up in your inbox. Attention is your raw material, and unlike most operators, you enjoy the exposure.",
+        "The businesses that fit you are the ones where <strong>your voice is part of the product</strong>: audience-first launches, media-style brands and digital offers with demand in place before the product exists. Get visible first, then build the machine behind it.",
+        "The blind spot: Broadcasters create demand faster than they can deliver on it. Reach without an offer is a hobby with good analytics. The risk is being three announcements in with nothing packaged to sell."
       ],
       builds: [
-        "Audience-first launches with demand built in before day one",
-        "A newsletter or media brand that compounds into paid offers",
+        "Audience-first launches with demand in place before day one",
+        "A newsletter or media brand that grows into paid offers",
         "Cohort programs and time-boxed drops",
-        "Digital products sold to many at once",
+        "Digital products sold to many people at once",
         "Anything where your voice and perspective are the moat"
       ],
       avoids: [
         "White-label or behind-the-scenes work where you're invisible",
         "Slow infrastructure builds with nothing to show for months"
       ],
-      thrive: "You turn attention into pipeline — one sharp post creates more inbound than most people's quarter of outreach.",
-      stress: "You chase reach over revenue — publishing daily, converting nothing, mistaking impressions for a business.",
-      flavor: "you want the work visible. Whatever you build, keep a public surface on it — your voice pulls people in."
+      thrive: "You turn attention into pipeline. One sharp post brings more inbound than most people get from a quarter of outreach.",
+      stress: "You chase reach over revenue: publishing daily, converting nothing and treating impressions as a business.",
+      flavor: "you want the work visible. Whatever you build, give it a public side, because your voice is what pulls people in."
     },
     advisor: {
       name: "The Advisor",
-      tagline: "Depth over reach. A few clients who pay properly for judgment that took a decade to build.",
+      tagline: "A few clients who pay properly for judgment that took a decade to build.",
       proto: { b: -1, r: -1, p: -1, l: -1, v: -2 },
       narrative: [
-        "You're wired for depth: fewer people, harder problems, higher trust. In a room with a genuinely ambiguous call to make, you're the calmest person there — and the one they call back. That's not a personality trait, it's an asset class. Most operators never learn to price it.",
-        "The businesses that fit you <strong>sell judgment, not hours</strong>: fractional leadership, high-ticket consulting with a sharp named offer, advisory retainers, a paid teardown with a fixed price on it. You don't need an audience of thousands — you need fifteen people with budget who know exactly what you fix.",
-        "The blind spot: Advisors under-price and over-deliver. The calendar fills, the rate stays flat, and eighteen months in you've rebuilt a job with worse benefits. Your risk isn't finding clients — it's never packaging, so every engagement starts from zero."
+        "You're wired for depth: fewer people, harder problems, more trust. When a genuinely ambiguous call needs making, you're the calmest person in the room and the one they call back. That trait is an asset, and most operators never learn to price it.",
+        "The businesses that fit you <strong>sell judgment</strong>: fractional leadership, high-ticket consulting with a sharp named offer, advisory retainers or a paid teardown at a fixed price. Fifteen people with budget who know exactly what you fix is enough.",
+        "The blind spot: Advisors undercharge and overdeliver. The calendar fills, the rate stays flat, and eighteen months in you've rebuilt a job with worse benefits. Without a packaged offer, every engagement starts from zero."
       ],
       builds: [
         "Fractional leadership across two or three companies",
         "High-ticket consulting with one sharp, named offer",
-        "Advisory retainers with clear scope and a waitlist",
+        "Advisory retainers with a clear scope and a waitlist",
         "A productized audit or teardown at a fixed price",
         "A small paid community of senior peers"
       ],
       avoids: [
-        "Volume plays — low-ticket products that need thousands of buyers",
+        "Volume plays: low-ticket products that need thousands of buyers",
         "Businesses that depend on daily content output to survive"
       ],
-      thrive: "You're the person senior people trust with the decision they can't take to anyone else — and they pay accordingly.",
-      stress: "You under-price and over-deliver until the calendar is full and the leverage is gone — a job, rebuilt.",
-      flavor: "you sell judgment, not hours. Price for depth, keep the client list short, and protect the calendar."
+      thrive: "Senior people trust you with the decision they can't take to anyone else, and they pay accordingly.",
+      stress: "You undercharge and overdeliver until the calendar is full and the leverage is gone. You've rebuilt a job.",
+      flavor: "you sell judgment. Price for depth, keep the client list short and protect your calendar."
     },
     productizer: {
       name: "The Productizer",
-      tagline: "Package once, sell many. You turn what you know into things that work without you.",
+      tagline: "Package once, sell many times. You turn what you know into things that work without you.",
       proto: { b: 1, r: 0, p: 2, l: 0, v: 2 },
       narrative: [
-        "You're wired to ship. While others are still naming the planning doc, you have a v1 in someone's hands — and your instinct is always to turn messy, bespoke work into a thing with edges: a template, a system, a fixed price. That instinct is the whole game.",
-        "The businesses that fit you are <strong>packaged and repeatable</strong>: toolkits and templates people buy off the shelf, self-serve courses with zero delivery time, productized services with fixed scope and fixed price. Your revenue should scale with copies sold, not hours worked — you feel that in your bones already.",
-        "The blind spot: Productizers ship five small things instead of selling one properly. A graveyard of launches, each abandoned at the hard part — distribution. Your risk isn't building it. It's that nobody's job, including yours, is selling it."
+        "You're wired to ship. While others are still naming the planning doc, you have a v1 in someone's hands. Your instinct is to turn messy, bespoke work into something with edges: a template, a system, a fixed price. That instinct is most of the job.",
+        "The businesses that fit you are <strong>packaged and repeatable</strong>: toolkits and templates people buy off the shelf, self-serve courses with no delivery time and productized services with a fixed scope and price. Revenue should grow with copies sold, and you already sense that.",
+        "The blind spot: Productizers ship five small things instead of selling one properly. Launches get abandoned at the hard part, which is distribution. Selling needs an owner, and that owner has to be you."
       ],
       builds: [
         "Toolkits, templates and systems sold off the shelf",
-        "Self-serve courses with zero delivery time",
-        "Productized services — fixed scope, fixed price",
+        "Self-serve courses with no delivery time",
+        "Productized services with a fixed scope and fixed price",
         "Digital products that improve with small weekly iterations",
         "A portfolio of small bets sharing one audience"
       ],
       avoids: [
-        "Bespoke client work that reinvents the wheel every engagement",
+        "Bespoke client work that starts from scratch every engagement",
         "Long enterprise sales cycles"
       ],
-      thrive: "You compress a decade of expertise into a product someone can buy at 2am — and it actually works.",
-      stress: "You launch a sixth thing instead of marketing the fifth — momentum mistaken for progress.",
-      flavor: "you instinctively turn messy work into packaged things — use that to productize the core of whatever you build."
+      thrive: "You compress a decade of expertise into a product someone can buy at 2am, and it works.",
+      stress: "You launch a sixth thing while the fifth still hasn't been marketed, and momentum starts to feel like progress.",
+      flavor: "you turn messy work into packaged things. Use that to productize the core of whatever you build."
     },
     "venture-builder": {
       name: "The Venture Builder",
       tagline: "The long game. You'd rather spend two years building something that could be worth twenty.",
       proto: { b: 2, r: 2, p: -1, l: -1, v: 1 },
       narrative: [
-        "You're wired to build the machine itself. Where others see a service to sell, you see a workflow to automate, a product to own, equity-style upside that doesn't cap out at your calendar. And you're willing to bet big on it — patience plus conviction is a rare wiring.",
-        "The businesses that fit you are <strong>owned systems</strong>: SaaS or micro-SaaS in a niche you know cold, AI tools that replace a workflow you've personally run a hundred times, software where the moat is the build itself. Your industry knowledge is the unfair advantage most technical founders never have.",
-        "The blind spot: Venture Builders build for one more quarter before talking to a customer. Perfect architecture, zero distribution. Your risk isn't the product failing — it's the product working and nobody ever finding out."
+        "You're wired to build the machine itself. Where others see a service to sell, you see a workflow to automate, a product to own and upside your calendar can't cap. You're also willing to bet big on it, and that mix of patience and conviction is rare.",
+        "The businesses that fit you are <strong>owned systems</strong>: SaaS or micro-SaaS in a niche you know well, AI tools that replace a workflow you've run a hundred times, and software where the build itself is the moat. Your industry knowledge is an advantage most technical founders lack.",
+        "The blind spot: Venture Builders keep building for one more quarter before talking to a customer. The architecture is great and distribution is zero. The bigger risk is a product that works and nobody ever hears about."
       ],
       builds: [
-        "SaaS or micro-SaaS in a niche you know cold",
-        "AI-powered tools that replace a workflow you've run yourself",
+        "SaaS or micro-SaaS in a niche you know well",
+        "AI tools that replace a workflow you've run yourself",
         "A marketplace or platform inside your industry",
         "Software with equity-style upside you fully own",
-        "Products where the moat is the build"
+        "Products where the build is the moat"
       ],
       avoids: [
-        "Services businesses that cap out at your calendar",
+        "Services businesses capped by your calendar",
         "Anything that needs daily public visibility to survive"
       ],
-      thrive: "You see the system behind the problem — and build the thing that makes the old way obsolete.",
-      stress: "You build one more quarter before talking to a single customer — architecture perfect, pipeline empty.",
-      flavor: "part of you wants to build the machine itself. Keep a product bet on the roadmap — but ship distribution first."
+      thrive: "You see the system behind the problem and build the thing that makes the old way obsolete.",
+      stress: "You build for one more quarter before talking to a single customer. The architecture is perfect and the pipeline is empty.",
+      flavor: "part of you wants to build the machine itself. Keep a product bet on the roadmap, and ship distribution first."
     },
     orchestrator: {
       name: "The Orchestrator",
-      tagline: "You don't do the work — you build the machine that does. Teams, systems, leverage.",
+      tagline: "You build the machine that does the work: teams, systems and leverage.",
       proto: { b: 2, r: -1, p: -1, l: -1, v: -1 },
       narrative: [
-        "You're wired to run things. Your talent isn't the deliverable — it's the delivery: the system that makes quality boringly repeatable, the machine that runs on the weeks you're away. Most builders romanticize doing the work. You know the leverage is in orchestrating it.",
-        "The businesses that fit you are <strong>machines with margins</strong>: a boutique agency or studio with a small senior team, AI-augmented service delivery running your playbook, done-for-you offers where the system — not your hours — is the product. You scale past your own calendar faster than any other archetype.",
-        "The blind spot: Orchestrators optimize the machine before there's demand to feed it. Process built for ten clients, pipeline built for one. Your risk isn't operations — it's that nobody owns getting customers, because that part never felt like a system."
+        "You're wired to run things. Your talent is delivery: the system that makes quality reliably repeatable and keeps running in the weeks you're away. You get your leverage from orchestrating the work, and you're comfortable handing the doing to others.",
+        "The businesses that fit you are <strong>machines with margins</strong>: a boutique agency or studio with a small senior team, AI-assisted service delivery that runs your playbook, and done-for-you offers where the system is the product. You can scale past your own calendar faster than any other archetype.",
+        "The blind spot: Orchestrators perfect the machine before there's demand to feed it. The process is built for ten clients and the pipeline holds one. Getting customers needs an owner and a system of its own."
       ],
       builds: [
         "A boutique agency or studio with a small senior team",
-        "AI-augmented service delivery — your playbook, automated",
+        "AI-assisted service delivery that runs your playbook",
         "Done-for-you offers with systematized delivery",
-        "A portfolio run on operators and systems, not your hours",
+        "A portfolio run on operators and systems instead of your hours",
         "Licensing your playbook to other operators"
       ],
       avoids: [
         "Solo creator businesses where everything needs your face",
         "One-off gigs with no repeatable system behind them"
       ],
-      thrive: "You make delivery boringly reliable — clients feel it, margins show it, and it runs while you're away.",
-      stress: "You perfect the process for ten clients while the pipeline holds one — the machine starves.",
+      thrive: "You make delivery reliably good. Clients feel it, margins show it and it keeps running while you're away.",
+      stress: "You perfect the process for ten clients while the pipeline holds one, and the machine starves.",
       flavor: "you think in systems. Whatever you launch, you'll scale it past your own hours faster than most."
     }
   };
@@ -240,14 +240,14 @@
   var SIGNAL_LINES = {
     "b-": "The strongest signal in your answers: you're built to work under your own name, in the open.",
     "b+": "The strongest signal in your answers: you'd rather build the system than be the show.",
-    "r-": "The strongest signal in your answers: you de-risk before you leap — evidence first, commitment second.",
+    "r-": "The strongest signal in your answers: you reduce risk before you commit, with evidence first.",
     "r+": "The strongest signal in your answers: you back yourself when the stakes are real.",
     "p-": "The strongest signal in your answers: you play long games and let them compound.",
-    "p+": "The strongest signal in your answers: you move in sprints — ship, read the signal, ship again.",
-    "l-": "The strongest signal in your answers: your moat is what you know — the work itself is what people pay for.",
-    "l+": "The strongest signal in your answers: your moat is who knows you — distribution finds you when you're visible.",
-    "v-": "The strongest signal in your answers: you want fewer, deeper clients — high trust, high ticket.",
-    "v+": "The strongest signal in your answers: you want revenue that scales with copies, not hours."
+    "p+": "The strongest signal in your answers: you work in sprints. Ship, read the signal, ship again.",
+    "l-": "The strongest signal in your answers: your moat is what you know, and people pay for the work itself.",
+    "l+": "The strongest signal in your answers: your moat is who knows you, and opportunities find you when you're visible.",
+    "v-": "The strongest signal in your answers: you want fewer, deeper clients with high trust and high fees.",
+    "v+": "The strongest signal in your answers: you want revenue that grows with copies sold."
   };
 
   // ---------- State ----------
@@ -453,7 +453,7 @@
     el.narrative.classList.add("stagger");
     var paras = [result.signal + " " + A.narrative[0]]
       .concat(A.narrative.slice(1))
-      .concat(["Your secondary <strong>" + S.name + "</strong> wiring adds a layer: " + S.flavor]);
+      .concat(["Your secondary archetype is <strong>" + S.name + "</strong>: " + S.flavor]);
     paras.forEach(function (p) {
       var elP = document.createElement("p");
       elP.className = "reveal";
@@ -516,7 +516,7 @@
     // the email is subscribed to The Operator Letter. Explicit, required
     // (EU audience) — no email is sent to Kit without the box checked.
     if (!el.gateConsent.checked) {
-      el.gateStatus.textContent = "Tick the box above — it's how you get the profile and the skill (and the newsletter that comes with them).";
+      el.gateStatus.textContent = "Tick the box above. It's how you get the profile, the skill and the newsletter that comes with them.";
       el.gateStatus.className = "form-status err";
       return;
     }
@@ -542,7 +542,7 @@
         el.fullReport.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
       })
       .catch(function () {
-        el.gateStatus.textContent = "Something went wrong — try again, or email madalena@madgrowth.io.";
+        el.gateStatus.textContent = "Something went wrong. Try again, or email madalena@madgrowth.io.";
         el.gateStatus.className = "form-status err";
       });
   });
