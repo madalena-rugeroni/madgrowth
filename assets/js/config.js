@@ -16,7 +16,7 @@ window.MG = {
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on The Build card (per brief §3.5).
-  CALENDLY_FIT_CHECK: "https://calendly.com/madalena-madgrowth/20min",
+  CALENDLY_FIT_CHECK: "https://calendly.com/madalena-madgrowth/fit-check",
 
   // --- Kit (ConvertKit) ---
   // Public form the diagnostic posts to.
