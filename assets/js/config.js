@@ -12,7 +12,7 @@ window.MG = {
   // (Tally/Typeform/Google Form) and point the Stripe success URL at
   // it before launch.
   STRIPE_LINK_STACK: "STRIPE_LINK_STACK",
-  STRIPE_LINK_AUDIT: "STRIPE_LINK_AUDIT",
+  STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on The Build card (per brief §3.5).
