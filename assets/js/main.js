@@ -1,7 +1,7 @@
 /* ============================================================
    Madgrowth — main.js
    Shared behavior: link wiring, UTM appending, GA4 events,
-   LinkedIn Insight Tag, Loom embed, mobile nav, motion system
+   LinkedIn Insight Tag, mobile nav, motion system
    (scroll reveal, nav shrink, hero parallax, magnetic buttons,
    card tilt). Every motion feature checks prefers-reduced-motion
    and pointer:fine before doing anything — see initMotion().
@@ -10,7 +10,7 @@
   var MG = window.MG || {};
 
   function isPlaceholder(v) {
-    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LOOM_URL|LINKEDIN_PARTNER)/.test(String(v));
+    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LINKEDIN_PARTNER)/.test(String(v));
   }
 
   function withUTM(url) {
@@ -98,20 +98,6 @@
         track(el.getAttribute("data-event"));
       });
     });
-
-    // ---------- Loom embed ----------
-    var loomSlot = document.getElementById("loom-slot");
-    if (loomSlot && !isPlaceholder(MG.LOOM_URL)) {
-      var ph = loomSlot.querySelector(".placeholder");
-      if (ph) {
-        var iframe = document.createElement("iframe");
-        iframe.src = MG.LOOM_URL;
-        iframe.title = "The Program — 3-minute walkthrough";
-        iframe.setAttribute("loading", "lazy");
-        iframe.setAttribute("allowfullscreen", "");
-        ph.replaceWith(iframe);
-      }
-    }
 
     initMotion();
   });

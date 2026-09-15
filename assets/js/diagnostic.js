@@ -1,6 +1,6 @@
 /* ============================================================
    Madgrowth — diagnostic.js
-   The Builder Diagnostic: 8 scenarios, multiple choice, scored
+   The Builder Diagnostic: 10 scenarios, multiple choice, scored
    across 5 wiring dimensions into a Builder Archetype —
    what kind of builder you are and which businesses fit.
    ============================================================ */
@@ -10,85 +10,103 @@
   // ---------- Wiring dimensions ----------
   // Each axis runs -2 .. +2. Negative pole first.
   var DIMENSIONS = [
-    { key: "b", name: "Build",    neg: "Creator-Led", pos: "System-Led" },
-    { key: "r", name: "Risk",     neg: "De-Risked",   pos: "Bet Big" },
-    { key: "p", name: "Pace",     neg: "Compound",    pos: "Sprint-First" },
-    { key: "l", name: "Leverage", neg: "Craft",       pos: "Audience" },
-    { key: "v", name: "Revenue",  neg: "High-Ticket", pos: "Volume" }
+    { key: "b", name: "Engine", neg: "You",                 pos: "The machine" },
+    { key: "r", name: "Bet",    neg: "Reversible",          pos: "All-in" },
+    { key: "p", name: "Tempo",  neg: "Long game",           pos: "This week" },
+    { key: "l", name: "Moat",   neg: "What you know",       pos: "Who knows you" },
+    { key: "v", name: "Buyers", neg: "A handful",           pos: "Thousands" }
   ];
 
   // ---------- Scenarios ----------
   var SCENARIOS = [
     {
-      text: "It's Saturday morning. No plans, no obligations. Where does your energy actually go?",
+      text: "The side project. The last thing you made outside your job description — what was it?",
       options: [
-        { text: "Writing something worth publishing", w: { b: -2, l: 2, p: 1 } },
-        { text: "Building something that works by tonight", w: { b: 2, p: 2, r: 1 } },
-        { text: "A long conversation about someone's hard problem", w: { b: -1, l: -1, v: -2 } },
-        { text: "Designing the plan — systems, sequence, next quarter", w: { b: 1, p: -2, r: -1 } }
+        { text: "A post, deck or doc that got passed around", w: { b: -2, l: 2, p: 1 } },
+        { text: "A script, tool or automation I built in a weekend", w: { b: 2, p: 2, r: 1 } },
+        { text: "Nothing — but people started booking 30 minutes with me", w: { b: -1, l: -1, v: -2 } },
+        { text: "A plan or playbook the company adopted", w: { b: 1, p: -2, r: -1 } }
       ]
     },
     {
-      text: "Your first 1,000€ of owned income lands. Which version feels best?",
+      text: "The win. Which win at work did you enjoy most?",
       options: [
-        { text: "1,000 people paid 1€ for something I made", w: { v: 2, l: 2 } },
-        { text: "One client paid 1,000€ for my judgment", w: { v: -2, l: -1 } },
-        { text: "A product sold overnight while I slept", w: { v: 2, b: 1, p: 1 } },
-        { text: "Four clients on 250€/month retainers", w: { v: -1, p: -2, r: -1 } }
+        { text: "A launch with thousands of signups", w: { v: 2, l: 2 } },
+        { text: "A deal I closed myself, with the CEO", w: { v: -2, l: -1 } },
+        { text: "Something that kept selling after the team moved on", w: { v: 2, b: 1, p: 1 } },
+        { text: "A quarter with zero churn", w: { v: -1, p: -2, r: -1 } }
       ]
     },
     {
-      text: "You get 10 extra hours a week for 90 days. You spend them:",
+      text: "The slack. The last time you had real free time — between jobs, after a launch — what did you do with it?",
       options: [
-        { text: "Posting daily — audience and distribution first", w: { l: 2, b: -1, p: 1 } },
-        { text: "Shipping a v1 and iterating in public", w: { b: 1, p: 2, r: 1 } },
-        { text: "Taking one paid engagement to learn the market", w: { v: -2, r: -1, p: -1 } },
-        { text: "Building the machine: niche, offer, pipeline", w: { b: 2, p: -1, r: -1 } }
+        { text: "Wrote and posted; my network grew", w: { l: 2, b: -1, p: 1 } },
+        { text: "Shipped something rough and showed people", w: { b: 1, p: 2, r: 1 } },
+        { text: "Took a paid project for someone's company", w: { v: -2, r: -1, p: -1 } },
+        { text: "Worked on the plan: niche, offer, pipeline", w: { b: 2, p: -1, r: -1 } }
       ]
     },
     {
-      text: "Which risk would you actually enjoy taking?",
+      text: "The risk. The biggest professional risk you've actually taken?",
       options: [
-        { text: "Announcing the launch publicly before it's built", w: { r: 2, l: 2, p: 1 } },
-        { text: "Going all-in on a product for a year", w: { r: 2, b: 2, p: -1 } },
-        { text: "Tripling your price on the next client", w: { r: 1, v: -2 } },
-        { text: "None. I test small until the data says go", w: { r: -2, p: -1 } }
+        { text: "Announced something publicly before I knew how to do it", w: { r: 2, l: 2, p: 1 } },
+        { text: "Spent a year on one thing people said was too early", w: { r: 2, b: 2, p: -1 } },
+        { text: "Asked for much more money than the going rate", w: { r: 1, v: -2 } },
+        { text: "I don't take risks I can't undo — I pilot first", w: { r: -2, p: -1 } }
       ]
     },
     {
-      text: "At work, people come to you when they need:",
+      text: "The inbox. The last three times a colleague asked for your help, what did they need?",
       options: [
-        { text: "Someone to make the complicated thing clear", w: { b: -2, l: 1 } },
-        { text: "Someone to just get it shipped", w: { p: 2, b: 1 } },
-        { text: "Judgment on a hard, ambiguous call", w: { v: -2, l: -1 } },
-        { text: "Someone to make the machine actually run", w: { b: 2, p: -1, v: -1 } }
+        { text: "Explain it so leadership gets it", w: { b: -2, l: 1 } },
+        { text: "Get it over the line", w: { p: 2, b: 1 } },
+        { text: "A call on something ambiguous", w: { v: -2, l: -1 } },
+        { text: "Fix why the process isn't working", w: { b: 2, p: -1, v: -1 } }
       ]
     },
     {
-      text: "Which failure would sting the most?",
+      text: "The failure. Which past failure still bothers you?",
       options: [
-        { text: "Building something great nobody ever hears about", w: { l: 2 } },
-        { text: "Being visible everywhere with nothing real to sell", w: { l: -1, b: 1, v: 1 } },
-        { text: "Trading time for money forever", w: { v: 2, b: 1 } },
-        { text: "Launching fast and watching it break in public", w: { r: -2, p: -2 } }
+        { text: "Something good that nobody heard about", w: { l: 2 } },
+        { text: "Something loud with nothing real behind it", w: { l: -1, b: 1, v: 1 } },
+        { text: "Years of selling my time with nothing to show for it", w: { v: 2, b: 1 } },
+        { text: "A rushed launch that broke in public", w: { r: -2, p: -2 } }
       ]
     },
     {
-      text: "Your ideal Tuesday, two years from now:",
+      text: "The best week. Your best working week ever — what made it?",
       options: [
-        { text: "Morning writing; the audience grows while you sleep", w: { b: -2, l: 2, v: 1 } },
-        { text: "Deep work on the product; the dashboard is up and to the right", w: { b: 2, v: 1, p: -1 } },
-        { text: "Two great client sessions; the afternoon is yours", w: { v: -2, l: -1, p: -1 } },
-        { text: "A 30-minute ops review; the machine ran without you", w: { b: 2, v: -1, p: -2 } }
+        { text: "Something I wrote reached the right people", w: { b: -2, l: 2, v: 1 } },
+        { text: "Heads-down building; the numbers moved on their own", w: { b: 2, v: 1, p: -1 } },
+        { text: "Two conversations that changed someone's decision, then a free afternoon", w: { v: -2, l: -1, p: -1 } },
+        { text: "It ran without me; I checked in for 30 minutes", w: { b: 2, v: -1, p: -2 } }
       ]
     },
     {
-      text: "Be honest about money. You'd rather earn:",
+      text: "The offers. Four offers land the same week. Which do you take?",
       options: [
-        { text: "100k€/year from thousands of small customers", w: { v: 2, l: 1 } },
-        { text: "100k€/year from five clients who love you", w: { v: -2 } },
-        { text: "60k€/year today — fully passive, still growing", w: { v: 1, p: -2, b: 1 } },
-        { text: "A real shot at 1M€ — equity-style upside, all yours", w: { r: 2, b: 1, p: -1 } }
+        { text: "Head of growth at a consumer brand — thousands of customers", w: { v: 2, l: 1 } },
+        { text: "Fractional exec for five companies who pay properly", w: { v: -2 } },
+        { text: "A royalty deal — less now, paid for years, no hours", w: { v: 1, p: -2, b: 1 } },
+        { text: "Co-founder with real equity — two years before you know", w: { r: 2, b: 1, p: -1 } }
+      ]
+    },
+    {
+      text: "The side money. Have you made money outside a salary? What came closest?",
+      options: [
+        { text: "Advice or a project someone paid me for", w: { v: -2, l: -1 } },
+        { text: "Something I made and sold — a template, a course, a product", w: { v: 2, b: 1 } },
+        { text: "Sponsorship, ads or affiliate on something I published", w: { l: 2, v: 1 } },
+        { text: "Not yet — salary only, so far", w: { r: -1, p: -1 } }
+      ]
+    },
+    {
+      text: "The near-miss. The last time something you owned was about to fail in public, what did you do?",
+      options: [
+        { text: "Said so early and asked for help", w: { r: 2, l: 2 } },
+        { text: "Doubled down quietly until it worked", w: { r: 2, b: 2, p: -1 } },
+        { text: "Cut scope and shipped the safe version", w: { r: -2, p: 1 } },
+        { text: "Pulled it before anyone saw", w: { r: -2, p: -2 } }
       ]
     }
   ];
@@ -226,8 +244,8 @@
     "r+": "The strongest signal in your answers: you back yourself when the stakes are real.",
     "p-": "The strongest signal in your answers: you play long games and let them compound.",
     "p+": "The strongest signal in your answers: you move in sprints — ship, read the signal, ship again.",
-    "l-": "The strongest signal in your answers: your leverage is the craft itself — the work is what people pay for.",
-    "l+": "The strongest signal in your answers: your leverage is attention — distribution finds you when you're visible.",
+    "l-": "The strongest signal in your answers: your moat is what you know — the work itself is what people pay for.",
+    "l+": "The strongest signal in your answers: your moat is who knows you — distribution finds you when you're visible.",
     "v-": "The strongest signal in your answers: you want fewer, deeper clients — high trust, high ticket.",
     "v+": "The strongest signal in your answers: you want revenue that scales with copies, not hours."
   };
@@ -357,8 +375,8 @@
   // combination — used to standardize scores so no archetype captures
   // the "mixed answers" middle by accident. Recompute if SCENARIO
   // weights change (see README).
-  var AXIS_MEAN = { b: 3, r: 0.25, p: -2, l: 2.25, v: -1.25 };
-  var AXIS_STD  = { b: 3.18, r: 2.36, p: 2.98, l: 2.63, v: 3.27 };
+  var AXIS_MEAN = { b: 3.75, r: 0.0, p: -2.75, l: 3.0, v: -1.0 };
+  var AXIS_STD  = { b: 3.33, r: 3.12, p: 3.21, l: 2.98, v: 3.59 };
 
   function computeResult() {
     var sums = { b: 0, r: 0, p: 0, l: 0, v: 0 };

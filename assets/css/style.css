@@ -176,6 +176,7 @@ section.alt { background: var(--bg-alt); }
 .nav-links a { color: var(--ink-soft); font-size: 0.95rem; font-weight: 500; }
 .nav-links a:hover { color: var(--ink); text-decoration: none; }
 .nav-cta { padding: 10px 20px; font-size: 0.92rem; }
+.nav-links a.btn-primary, .nav-links a.btn-primary:hover { color: #fff; }
 .nav-toggle {
   display: none;
   background: none;
@@ -272,6 +273,10 @@ html.js .hero .reveal.is-visible { opacity: 1; transform: none; }
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
+/* Three rows of logos: alternate direction and speed so the rows never sync up */
+.logo-rows { display: flex; flex-direction: column; gap: 28px; }
+.logo-marquee-reverse .logo-track { animation-direction: reverse; animation-duration: 48s; }
+.logo-marquee-slow .logo-track { animation-duration: 56s; }
 .logo-track img {
   height: 34px;
   width: auto;
@@ -281,6 +286,8 @@ html.js .hero .reveal.is-visible { opacity: 1; transform: none; }
   transition: opacity 0.2s ease;
 }
 .logo-track img:hover { opacity: 0.9; }
+/* Logos drawn white on dark in their source files: invert to dark, push the old dark box to white, blend it away */
+.logo-track img.logo-invert { filter: invert(1) grayscale(1) brightness(1.15); mix-blend-mode: multiply; }
 @media (prefers-reduced-motion: reduce) {
   .logo-marquee { -webkit-mask-image: none; mask-image: none; }
   .logo-track { animation: none; flex-wrap: wrap; width: auto; gap: 28px 40px; }
@@ -345,9 +352,92 @@ html.js .hero .reveal.is-visible { opacity: 1; transform: none; }
 .step p { font-size: 0.92rem; color: var(--ink-soft); }
 .steps-footer { margin-top: 32px; font-weight: 600; }
 
+.step .step-q {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* ---------- Hero credibility line ---------- */
+.founder-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.founder-line:hover { text-decoration: none; color: var(--ink-soft); }
+.founder-line img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  border: 1px solid var(--line);
+}
+.founder-line strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- About: photo beside the story ---------- */
+.about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start; }
+@media (max-width: 767px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
+/* No photo file yet → the figure hides itself; let the story take the full width */
+.about-grid:has(> .about-photo[hidden]) { grid-template-columns: 1fr; }
+.about-photo img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* ---------- The real problem: four questions ---------- */
+.questions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; }
+@media (max-width: 1023px) { .questions { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 599px) { .questions { grid-template-columns: 1fr; } }
+.question {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 24px 22px;
+}
+.question .num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-ink);
+  display: block;
+  margin-bottom: 12px;
+}
+.question h3 { margin-bottom: 8px; }
+.question p { font-size: 0.93rem; color: var(--ink-soft); }
+
+/* ---------- Why not just… ---------- */
+.alt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; }
+@media (max-width: 767px) { .alt-grid { grid-template-columns: 1fr; } }
+.alt-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  background: var(--bg-alt);
+}
+.alt-card h3 { margin-bottom: 10px; }
+.alt-card p { color: var(--ink-soft); }
+.alt-card ul { list-style: none; display: grid; gap: 10px; }
+.alt-card li { padding-left: 24px; position: relative; color: var(--ink-soft); }
+.alt-card li::before { content: "→"; position: absolute; left: 0; color: var(--accent-ink); }
+.alt-card.fit-no li::before { content: "×"; color: var(--muted); }
+section.alt .alt-card { background: #fff; }
+
+/* ---------- Startups page: single offer card ---------- */
+.offer-single { max-width: 620px; margin-top: 40px; }
+
 /* ---------- Who it's for ---------- */
-.who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; }
-@media (max-width: 767px) { .who-grid { grid-template-columns: 1fr; } }
+.who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 40px; }
+@media (max-width: 899px) { .who-grid { grid-template-columns: 1fr; } }
+#who .who-card { background: #fff; }
 .who-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -395,29 +485,6 @@ html.js .hero .reveal.is-visible { opacity: 1; transform: none; }
 .card .cta-zone { margin-top: auto; display: grid; gap: 12px; }
 .smalltext { font-size: 0.82rem; color: var(--muted); }
 .fit-check { font-size: 0.92rem; text-align: center; }
-.loom-slot { margin-top: 40px; }
-.loom-slot .placeholder {
-  border: 1px dashed var(--line);
-  border-radius: var(--radius);
-  padding: 36px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-.loom-slot iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  border-radius: var(--radius);
-}
-.loom-caption {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 14px;
-}
 
 .subscribe-form { display: flex; gap: 10px; flex-wrap: wrap; }
 .subscribe-form input[type="email"] {
