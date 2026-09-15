@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit intake · Madgrowth</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .intake { max-width: 720px; }
+    .intake h1 { margin-bottom: 12px; }
+    .intake .lead { margin-bottom: 36px; }
+    .intake fieldset { border: 0; margin: 0 0 40px; padding: 0; display: grid; gap: 22px; }
+    .intake legend { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 18px; }
+    .intake label { display: grid; gap: 8px; font-weight: 600; font-size: 0.98rem; }
+    .intake label small { font-weight: 400; color: var(--muted); font-size: 0.86rem; }
+    .intake input[type="text"], .intake input[type="email"], .intake input[type="url"], .intake select, .intake textarea {
+      font: inherit; font-weight: 400; font-size: 0.97rem; color: var(--ink); background: #fff;
+      border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; width: 100%;
+    }
+    .intake textarea { min-height: 110px; resize: vertical; }
+    .intake input:focus, .intake select:focus, .intake textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+    .intake .hp { position: absolute; left: -9999px; }
+    .intake .submit-row { display: grid; gap: 12px; justify-items: start; }
+    .intake .form-status { margin-top: 4px; }
+    .intake-done { max-width: 620px; }
+    .intake-done h1 { margin-bottom: 14px; }
+    .intake-done p { color: var(--ink-soft); }
+    .intake-done p + p { margin-top: 12px; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="../../">madgrowth</a>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <form class="intake" id="intake" novalidate>
+        <span class="eyebrow">The Audit · intake</span>
+        <h1>Tell me about the business you want to build</h1>
+        <p class="lead">This takes 20 to 25 minutes. The more specific you are, the sharper the diagnosis. Rough answers are fine. Everything you share stays confidential. Once it's in, I'll review it and email you to confirm your Audit has started, with your delivery date.</p>
+
+        <input type="hidden" name="order" id="order">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+        <fieldset>
+          <legend>About you</legend>
+          <label>Your name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Email
+            <small>Use the email you paid with, so I can match your order.</small>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>LinkedIn profile
+            <input type="url" name="linkedin" placeholder="https://www.linkedin.com/in/…">
+          </label>
+          <label>Where are you now?
+            <select name="situation" required>
+              <option value="">Choose one</option>
+              <option>Still employed</option>
+              <option>Leaving my job soon</option>
+              <option>Independent for less than 6 months</option>
+              <option>Independent for longer</option>
+              <option>Already running a product or company</option>
+            </select>
+          </label>
+          <label>Your career in five lines
+            <small>Roles, companies and the results you're proudest of, with numbers.</small>
+            <textarea name="career" required></textarea>
+          </label>
+          <label>What do people already come to you for?
+            <small>Colleagues' questions, DMs, people who've paid you on the side.</small>
+            <textarea name="come_to_you_for" required></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Angle and positioning</legend>
+          <label>What do you want to sell?
+            <small>Your own words. Rough is fine.</small>
+            <textarea name="what_to_sell" required></textarea>
+          </label>
+          <label>Who is it for?
+            <small>Role, type of company, stage and size.</small>
+            <textarea name="who_for" required></textarea>
+          </label>
+          <label>What problem does it solve, and what does it cost them to leave it unsolved?
+            <textarea name="problem" required></textarea>
+          </label>
+          <label>What do they do today instead?
+            <small>Hire someone, use an agency or a freelancer, or live with it.</small>
+            <textarea name="alternatives"></textarea>
+          </label>
+          <label>Why would they pick you over those options?
+            <textarea name="why_you"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Offer and pricing</legend>
+          <label>What's included, in what format, for how long and at what price?
+            <small>Current thinking is fine.</small>
+            <textarea name="offer"></textarea>
+          </label>
+          <label>What proof do you have so far?
+            <small>Conversations, paying clients, a waitlist, revenue. Numbers, please.</small>
+            <textarea name="proof" required></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Audience and launch</legend>
+          <label>Where can you reach buyers today?
+            <small>LinkedIn followers, email list size, network, communities.</small>
+            <textarea name="reach"></textarea>
+          </label>
+          <label>What have you already tried, and what happened?
+            <textarea name="tried"></textarea>
+          </label>
+          <label>Your constraints
+            <small>Hours a week, runway or income target, and anything you won't do.</small>
+            <textarea name="constraints"></textarea>
+          </label>
+          <label>What would make the next 90 days a success?
+            <small>A number if you can.</small>
+            <textarea name="success_90_days"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Materials</legend>
+          <label>Links
+            <small>Website, landing page, deck, offer doc, posts that did well. Share Google Drive or Notion links with view access.</small>
+            <textarea name="links"></textarea>
+          </label>
+          <label>Your Builder Diagnostic result
+            <small>Optional.</small>
+            <input type="text" name="archetype" placeholder="For example: The Advisor">
+          </label>
+          <label>The one question you most want this Audit to answer
+            <textarea name="main_question" required></textarea>
+          </label>
+        </fieldset>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary">Send my intake →</button>
+          <p class="smalltext">Your answers go straight to my inbox. <a href="../../privacy/">Privacy policy</a></p>
+          <p class="form-status" id="intake-status" role="status"></p>
+        </div>
+      </form>
+
+      <div class="intake-done" id="intake-done" hidden>
+        <span class="eyebrow">The Audit · intake received</span>
+        <h1>Got it. Thank you.</h1>
+        <p>I'll read through everything and email you to confirm your Audit has started, with your delivery date. You'll receive the written diagnosis within 5 business days of that confirmation.</p>
+        <p>If you remember something important in the meantime, reply to my email and add it.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <a class="brand" href="../../">madgrowth</a>
+      <div class="footer-meta">
+        <a href="mailto:madalena@madgrowth.io">madalena@madgrowth.io</a>
+      </div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="../../privacy/">Privacy</a></li>
+      <li><a href="../../terms/">Terms</a></li>
+    </ul>
+  </div>
+</footer>
+<script>
+(function () {
+  var ENDPOINT = "https://formsubmit.co/ajax/madalena@madgrowth.io";
+  var form = document.getElementById("intake");
+  var status = document.getElementById("intake-status");
+  var params = new URLSearchParams(window.location.search);
+  document.getElementById("order").value = params.get("order") || "";
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var missing = Array.prototype.filter.call(form.querySelectorAll("[required]"), function (el) {
+      return !String(el.value || "").trim();
+    });
+    if (missing.length) {
+      status.className = "form-status err";
+      status.textContent = "A few required answers are still empty.";
+      missing[0].focus();
+      return;
+    }
+    if (form._honey.value) return;
+    var data = {};
+    new FormData(form).forEach(function (v, k) { if (k !== "_honey") data[k] = v; });
+    data._subject = "Audit intake: " + (data.name || "new client");
+    data._template = "table";
+    data._replyto = data.email;
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    status.className = "form-status";
+    status.textContent = "Sending…";
+    fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(data)
+    })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+      .then(function (res) {
+        if (!res.ok || String(res.body.success) !== "true") throw new Error(res.body.message || "Send failed");
+        form.hidden = true;
+        document.getElementById("intake-done").hidden = false;
+        window.scrollTo(0, 0);
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status.className = "form-status err";
+        status.textContent = "That didn't send. Please try again, or email your answers to madalena@madgrowth.io.";
+      });
+  });
+})();
+</script>
+</body>
+</html>
