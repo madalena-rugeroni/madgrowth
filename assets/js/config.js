@@ -16,7 +16,7 @@ window.MG = {
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on The Build card (per brief §3.5).
-  CALENDLY_FIT_CHECK: "CALENDLY_FIT_CHECK",
+  CALENDLY_FIT_CHECK: "https://calendly.com/madalena-madgrowth/20min",
 
   // --- Kit (ConvertKit) ---
   // Public form the diagnostic posts to.
@@ -35,7 +35,7 @@ window.MG = {
   // --- PostHog: pageviews, clicks, session replay ---
   // Project API key (public, safe in client code) and region host.
   // PostHog runs cookieless until the visitor accepts the cookie banner.
-  POSTHOG_KEY: "POSTHOG_KEY",
+  POSTHOG_KEY: "phc_mkVCJMPFNQ932qRPFQ8bNEsZ9gSk4KXWgmCqyrwGwqQW",
   POSTHOG_HOST: "https://us.i.posthog.com",
 
   // --- LinkedIn Insight Tag partner ID ---
