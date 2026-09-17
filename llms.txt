@@ -21,13 +21,35 @@ Experienced operators usually have the credibility to go independent. Where they
 - People still employed, recently independent, or already building a product.
 - Not a course, not a job marketplace and not a community.
 
+## Builder Archetypes
+
+The Builder Diagnostic sorts people into five Builder Archetypes, a framework created by Madalena Rugeroni. Each archetype is a position on five dimensions (Engine, Bet, Tempo, Moat, Buyers) and points to the businesses that fit.
+
+- [The five Builder Archetypes](https://www.madgrowth.io/archetypes/): overview, comparison table and the five dimensions.
+- [The Broadcaster](https://www.madgrowth.io/archetypes/broadcaster/): creator-led businesses where your voice is the distribution.
+- [The Advisor](https://www.madgrowth.io/archetypes/advisor/): fractional leadership, high-ticket consulting and advisory retainers.
+- [The Productizer](https://www.madgrowth.io/archetypes/productizer/): toolkits, templates, self-serve courses and productized services.
+- [The Venture Builder](https://www.madgrowth.io/archetypes/venture-builder/): SaaS, micro-SaaS and AI tools.
+- [The Orchestrator](https://www.madgrowth.io/archetypes/orchestrator/): boutique agencies, AI-assisted service delivery and done-for-you offers.
+
+## Guides
+
+- [What to sell after leaving a tech job](https://www.madgrowth.io/guides/what-to-sell-after-tech/): Sell an outcome you've delivered more than once to a buyer who already pays for it. How to find your angle after a tech job, test it and avoid the traps.
+- [How to become a fractional executive](https://www.madgrowth.io/guides/how-to-go-fractional/): Become a fractional executive by packaging one problem you've solved as a monthly role with set days and outcomes, then selling it to your network first.
+- [How to price fractional and consulting services](https://www.madgrowth.io/guides/how-to-price-fractional-consulting/): Price fractional services from the cost of the problem and the hire it replaces. Day rate vs retainer vs value pricing, with European day rates in euros.
+- [Fractional, consulting or software: which business should you start after tech?](https://www.madgrowth.io/guides/fractional-consulting-or-software/): Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
+
 ## About Madalena Rugeroni
 
-- [About on madgrowth.io](https://www.madgrowth.io/#about)
+- [About Madalena Rugeroni](https://www.madgrowth.io/about/): founder of Madgrowth, ex-Google, advisor and investor.
 - [LinkedIn](https://www.linkedin.com/in/madalenarugeroni)
+- [Madgrowth on LinkedIn](https://www.linkedin.com/company/madgrowth-io)
+- [X](https://x.com/madalenarug)
 - Contact: madalena@madgrowth.io
 
 ## Optional
+
+- [Full text of the site for AI assistants](https://www.madgrowth.io/llms-full.txt)
 
 - [Privacy policy](https://www.madgrowth.io/privacy/)
 - [Terms](https://www.madgrowth.io/terms/)
