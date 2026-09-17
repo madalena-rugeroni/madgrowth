@@ -42,6 +42,10 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 - [How to become a fractional executive](https://www.madgrowth.io/guides/how-to-go-fractional/): Become a fractional executive by packaging one problem you've solved as a monthly role with set days and outcomes, then selling it to your network first.
 - [How to price fractional and consulting services](https://www.madgrowth.io/guides/how-to-price-fractional-consulting/): Price fractional services from the cost of the problem and the hire it replaces. Day rate vs retainer vs value pricing, with European day rates in euros.
 - [Fractional, consulting or software: which business should you start after tech?](https://www.madgrowth.io/guides/fractional-consulting-or-software/): Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
+- [How to build a micro SaaS from your tech career](https://www.madgrowth.io/guides/how-to-build-a-micro-saas/): Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.
+- [How to build an audience business from your expertise](https://www.madgrowth.io/guides/how-to-build-an-audience-business/): Build an audience business: pick a narrow beat from your career, one platform and a weekly cadence, then sell services or products before subscriptions.
+- [How to start an agency after a career in tech](https://www.madgrowth.io/guides/how-to-start-an-agency/): To start an agency, pick one client type and outcome, sell a productized offer first, price for margin and hand delivery to a small senior team and systems.
+- [How to sell digital products from your expertise](https://www.madgrowth.io/guides/how-to-sell-digital-products/): Sell digital products by choosing a format your buyer already pays for, pre-selling it, then doing the distribution. Formats, pricing and platforms compared.
 
 ## Claude skills
 

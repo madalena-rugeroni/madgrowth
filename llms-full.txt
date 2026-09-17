@@ -5,13 +5,13 @@
 ---
 
 URL: https://www.madgrowth.io/
-Title: How to go fractional, start an agency or build a SaaS · Madgrowth
+Title: How to go fractional or build a SaaS · Madgrowth
 
-For leaders in tech with 5 to 10+ years of experience
+For leaders in tech and solopreneurs with 5+ years of experience
 
-# You know what you want to build. Here's how to launch it.
+# From operator to owner.
 
-Going fractional, advising, starting an agency or building a product: Madgrowth gives you the playbooks to decide, position, price and launch it. Run them yourself with AI, or build it 1:1 with me.
+You have the experience, the network and more ideas than time. Madgrowth helps you pick the one business worth building, turn it into an offer people pay for and land your first clients, with playbooks you run yourself or 1:1 with me.
 
 See which business fits how you work → See how it works ↓
 Free Builder Diagnostic · 3 minutes
@@ -64,7 +64,7 @@ It's the sequence I used to build my own businesses. Every product below follows
 
 ### Decide
 Is this worth building?
-The Go / No-Go scores your idea against the market and your Builder Archetype, names the assumption that decides it and the cheapest way to test it. No idea yet? The free Expertise Audit finds your three strongest angles first.
+The Go / No-Go scores your idea against the market and your Builder Archetype, then gives you the cheapest way to test it. No idea yet? Start with the free Expertise Audit.
 
 02
 
@@ -118,11 +118,11 @@ Why not just…
 
 ### …ask ChatGPT or Claude?
 
-You'll get a reasonable answer to whatever you ask, written to fit any business. A fractional practice, an agency and a SaaS product get positioned, priced and sold in different ways. The Stack knows which one you're building and runs that playbook, based on my own go-to-market work and on the people who wrote the book on each step, like April Dunford on positioning and Blair Enns on pricing expertise. Each step ends in a decision.
+You'll get generic advice that could fit any business. The Stack runs the playbook for the business you're building, whether that's a fractional or advisory practice, a service or a SaaS. Each playbook comes from my own go-to-market work and from experts in that specific topic. See the playbooks →
 
 ### …take a creator course?
 
-You'll need an audience, so it's worth starting early. The catch with courses is finishing them: most people stop partway through the videos. With The Stack you do each step on your own business as you go, and in The Build I review the work and keep you moving.
+The catch with courses is finishing them: most people stop partway through the videos. The Stack has you build your audience as you go, with a content plan from your positioning and a lead magnet that leads to your offer. In The Build I review it with you and keep you posting.
 
 ### …join a fractional marketplace?
 
@@ -208,8 +208,6 @@ I've been where you are: the knowledge, the experience and the drive, with no cl
 
 That's the path I'll help you find.
 
-More about me →
-
 FAQ
 
 ## Questions, answered
@@ -266,9 +264,9 @@ This page is for building something new. For a startup that's already running, t
 
 Self-serve, for B2B SaaS. Mazo is my AI go-to-market advisor. It reviews your go-to-market using your own numbers, pushes back when it disagrees and sets the tests to run next. Try Mazo →
 
-## Check the business fits you before you spend months building it.
+## What kind of business are you built for?
 
-Ten scenarios, three minutes. You'll see your Builder Archetype, the businesses that suit how you work and the ones that will wear you down. Your full profile and the free Expertise Audit arrive by email.
+Answer 10 quick scenarios and find out in 3 minutes. It's free, and your full profile lands in your inbox.
 See which business fits how you work →
 
 ---
@@ -531,7 +529,7 @@ Startup GTM advisor · a fractional CMO alternative for founders from 0 to $1M
 
 1:1 go-to-market advisory for founders who need CMO-level thinking before a full-time CMO makes sense: positioning, ICP, pricing, demand and a repeatable path to revenue. You work every week with an operator who scaled startups from zero to $10M.
 
-Find what's capping your revenue → See what's included ↓    Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today     Madalena RugeroniFounder, Madgrowth
+Find what's capping your revenue → See what's included ↓    Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today     Madalena RugeroniFounder of Madgrowth, Mazo and Favorite People
 
 Advising founders at startups like
 
@@ -703,6 +701,40 @@ Then the main Madgrowth path fits better: work out what to sell, who it's for an
 
 Five founders at a time. It starts with a free 15-minute call.
 Find what's capping your revenue →
+
+---
+
+URL: https://www.madgrowth.io/newsletter/
+Title: Newsletter for leaders in tech building a business · Madgrowth
+
+The Madgrowth newsletter
+
+# From operator to owner
+
+A weekly email for leaders in tech who want income beyond their job. I write about what I learn building my own businesses: the experiments, the numbers and the mistakes.
+
+Every Thursday3-minute readFree, unsubscribe anytimePrivacy policy
+Written by Madalena Rugeroni · founder of Madgrowth, Mazo and Favorite People · ex-Google · scaled startups from 0 to $10M in revenue
+
+What's in it
+
+## Notes from building, written for people about to start
+
+### What I'm testing
+
+The experiments running across my businesses that week, and what came of them, including the ones that didn't work.
+
+### The numbers
+
+Pricing, conversion and revenue from real launches, so you can see what a first offer looks like before you build yours.
+
+### One idea to use
+
+A practical piece on positioning, pricing or finding clients that you can apply to your own business the same week.
+
+## Get Thursday's issue.
+
+Three minutes a week on turning a tech career into a business you own.
 
 ---
 
@@ -1134,15 +1166,15 @@ Claude skills
 
 # Claude skills for business: position, price and launch an offer
 
-Sixteen Claude skills that turn your experience into a business: who buys, how you're positioned, what you sell, what it costs and how you launch it. Each one asks about your business, applies the playbook for your model and hands you a finished document.
+Fifteen AI playbooks, plus a free one, that install as Claude skills and turn your experience into a business: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch it. Each one asks about your business, uses the version for your model and hands you a finished document.
 
 Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026
 
 The short answer
 - Claude skills are folders of instructions that Claude loads when a request matches them, so it runs the same method every time.
 - They work in Claude Code (as folders) and in the Claude app (uploaded as a zip under Customize > Skills), on every Claude plan with code execution turned on.
-- The Madgrowth library has 15 business skills plus a free one, the Expertise Audit, covering customers, positioning, offer, pricing, go/no-go, content, launch, acquisition, conversion and retention.
-- Each skill reads one shared context file and uses the playbook for your business model: services, software, product, local, media or marketplaces.
+- The Stack by Madgrowth is 15 AI playbooks that install as Claude skills, plus the free Expertise Audit, covering go/no-go, customers, positioning, offer, pricing, content, launch, acquisition, conversion and retention.
+- Each playbook reads one shared context file and uses the version for your business model: services, software, product, local, media or marketplaces.
 
 ## What are Claude skills?
 
@@ -1152,56 +1184,56 @@ For business work, the difference from a prompt is consistency. A prompt depends
 
 ## Which Claude skills does a business need?
 
-A business needs skills for the decisions that are expensive to get wrong: who the customer is, how you're positioned, what you sell, what you charge and how you get the first customers. These are the skills in The Stack, grouped in the order most people run them.
+A business needs skills for the decisions that are expensive to get wrong: whether to build it, who the customer is, how you're positioned, what you sell, what you charge and how you get the first customers. These are the playbooks in The Stack, each installed as a Claude skill, grouped in the order most people run them.
 
 ### Start here
 
-| Skill | # | What it produces
+| Playbook | # | What it produces
 | Expertise Audit | Free | Your three strongest angles from the career you already have: who buys, the problem in their words and your proof.
-| Start | Setup | A context file every other skill reads: business model, stage, sales motion, price band, team, geography and build capacity.
-
-### Position it
-
-| Skill | # | What it produces
-| Talk to Customers | 01 | An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
-| Your Customer | 02 | An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
-| Positioning | 03 | Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
-| Messaging | 04 | A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and objection answers.
-
-### Package it
-
-| Skill | # | What it produces
-| Your Offer | 05 | Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
-| Pricing | 06 | The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
-| The Numbers | 07 | The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
+| Start | Setup | A context file every other playbook reads: business model, stage, sales motion, price band, team, geography and build capacity.
 
 ### Decide
 
-| Skill | # | What it produces
-| Go / No-Go | 08 | A go, no-go or not-yet verdict, the assumption that decides it, the cheapest way to test it and a pre-mortem.
+| Playbook | # | What it produces
+| Go / No-Go | 01 | A go, no-go or not-yet verdict on your idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest test and a pre-mortem.
+
+### Position it
+
+| Playbook | # | What it produces
+| Talk to Customers | 02 | An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
+| Your Customer | 03 | An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
+| Positioning | 04 | Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
+| Messaging | 05 | A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and objection answers.
+
+### Package it
+
+| Playbook | # | What it produces
+| Your Offer | 06 | Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
+| Pricing | 07 | The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
+| The Numbers | 08 | The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
 
 ### Audience
 
-| Skill | # | What it produces
+| Playbook | # | What it produces
 | Founder Content | 09 | Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
 | Lead Magnet | 10 | One lead magnet with its promise, format, the segment it captures and the bridge to your paid offer.
 
 ### Launch it
 
-| Skill | # | What it produces
+| Playbook | # | What it produces
 | Landing Page | 11 | A section-by-section page spec with the copy, ordered for one conversion goal.
 | Launch | 12 | A pre-launch, launch and post-launch plan with your warm list, the assets and a day-by-day calendar.
 | Get Customers | 13 | Three channels to test, one to focus on, the numbers that decide and your weekly routine.
 | Convert | 14 | Your path from lead to paid: discovery call, proposal and follow-up, or funnel, checkout and lifecycle emails.
 | Retain | 15 | A client's first 90 days after they say yes: onboarding, the engagement loop and when to ask for renewal or referrals.
-Every skill credits the frameworks it uses, like April Dunford on positioning, Blair Enns and Madhavan Ramanujam on pricing and Bob Moesta on customer interviews. The full list of methods per business model is on The Stack page.
+Every playbook credits the frameworks it uses, like April Dunford on positioning, Blair Enns and Madhavan Ramanujam on pricing and Bob Moesta on customer interviews. The full list of methods per business model is on The Stack page.
 
-## How are these skills different from a folder of prompts?
+## How are these playbooks different from a folder of prompts?
 
-They work as one system. A setup skill classifies your business once, writes it to a context file and every other skill reads it. Later skills also read what earlier ones produced, so your pricing skill knows your ICP and your landing page skill knows your messaging.
+They work as one system. A setup step classifies your business once, writes it to a context file and every other playbook reads it. Later playbooks also read what earlier ones produced, so pricing knows your ICP and the landing page knows your messaging.
 
-- A playbook per business model. A fractional CMO pricing a retainer and a SaaS founder pricing a plan need different methods. Each skill loads the one for your model.
-- Questions before answers. Each skill asks for what's missing before it writes, so the output is about your business and not a plausible guess.
+- A playbook per business model. A fractional CMO pricing a retainer and a SaaS founder pricing a plan need different methods. Each playbook loads the one for your model.
+- Questions before answers. Each playbook asks for what's missing before it writes, so the output is about your business and not a plausible guess.
 - A document at the end. An ICP, an offer, a price, a launch calendar. Files you keep and edit.
 
 ## How do you install Claude skills?
@@ -1213,7 +1245,7 @@ Skills don't sync between Claude Code and the app, so install them wherever you 
 
 ## Are third-party Claude skills safe?
 
-Only install skills from sources you trust, and read the files first. Anthropic's documentation warns that a skill can direct Claude to run tools or code in ways that don't match its stated purpose. The Madgrowth skills are Markdown instructions and reference files, with no scripts and nothing that fetches content from the internet, so you can read every line before you install them.
+Only install skills from sources you trust, and read the files first. Anthropic's documentation warns that a skill can direct Claude to run tools or code in ways that don't match its stated purpose. The Madgrowth playbooks are Markdown instructions and reference files, with no scripts and nothing that fetches content from the internet, so you can read every line before you install them.
 
 ## Questions people ask
 
@@ -1223,7 +1255,7 @@ Claude skills are folders of instructions, and optionally reference files and sc
 
 Are Claude skills free to use?
 
-The Claude help center lists skills as available on Free, Pro, Max, Team and Enterprise plans, with code execution turned on. Some skills are free to download and others are sold, like The Stack. The free Expertise Audit skill comes with the Madgrowth Builder Diagnostic.
+The Claude help center lists skills as available on Free, Pro, Max, Team and Enterprise plans, with code execution turned on. Some skills are free to download and others are sold, like The Stack. The free Expertise Audit comes by email with the Madgrowth Builder Diagnostic.
 
 What are the best Claude skills for business?
 
@@ -1237,28 +1269,48 @@ Is Madgrowth affiliated with Anthropic?
 
 No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic.
 
-## Start with the free skill
+## Start with the free Expertise Audit
 
 The Expertise Audit finds your three strongest monetizable angles from the career you already have, in about ten minutes. It comes by email with the free Builder Diagnostic. When you're ready for the rest, The Stack is 299€ one-time.
-Get the free Expertise Audit skill →
+Get the free Expertise Audit →
 Madgrowth is independent and not affiliated with Anthropic. Claude is a product of Anthropic.
 
 ---
 
 URL: https://www.madgrowth.io/guides/
-Title: Guides: go fractional, price and launch your offer · Madgrowth
+Title: Guides: start a SaaS, agency or media business · Madgrowth
 
 Guides
 
 # Guides for leaders in tech building a business of their own
 
-Plain answers to the questions that stop experienced operators: what to sell, who buys it, how to go fractional, what to charge and whether to build services or software.
+Plain answers to the questions that stop experienced operators: what to sell, which business to build, and how to launch it, whether that's software, an audience, an agency, digital products or a fractional practice.
 
 Madalena Rugeroni · Founder of Madgrowth · ex-Google
 
 ### What to sell after leaving a tech job
 
 Sell an outcome you've delivered more than once to a buyer who already pays for it. How to find your angle after a tech job, test it and avoid the traps.
+
+### Fractional, consulting or software: which business should you start after tech?
+
+Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
+
+### How to build a micro SaaS from your tech career
+
+Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.
+
+### How to build an audience business from your expertise
+
+Build an audience business: pick a narrow beat from your career, one platform and a weekly cadence, then sell services or products before subscriptions.
+
+### How to start an agency after a career in tech
+
+To start an agency, pick one client type and outcome, sell a productized offer first, price for margin and hand delivery to a small senior team and systems.
+
+### How to sell digital products from your expertise
+
+Sell digital products by choosing a format your buyer already pays for, pre-selling it, then doing the distribution. Formats, pricing and platforms compared.
 
 ### How to become a fractional executive
 
@@ -1267,10 +1319,6 @@ Become a fractional executive by packaging one problem you've solved as a monthl
 ### How to price fractional and consulting services
 
 Price fractional services from the cost of the problem and the hire it replaces. Day rate vs retainer vs value pricing, with European day rates in euros.
-
-### Fractional, consulting or software: which business should you start after tech?
-
-Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
 
 ### How to create a Claude skill (with a working example)
 
@@ -1928,6 +1976,699 @@ A fractional executive holds an ongoing role inside one company, part-time, and 
 
 ---
 
+URL: https://www.madgrowth.io/guides/how-to-build-a-micro-saas/
+Title: How to build a micro SaaS from your tech career · Madgrowth
+
+Guide
+
+# How to build a micro SaaS from your tech career
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+
+To build a micro SaaS from a tech career, pick a painful workflow you've run many times at work, sell a fix to the people who still run it before you write much code, and price it for businesses. Expect a first payment within months and several years before it replaces a senior salary.
+
+The short answer
+- A micro SaaS is a small, usually self-funded software business, run by one to three people, that sells a subscription to a narrow group of customers.
+- The best micro SaaS ideas for tech leaders come from workflows you've owned: the spreadsheet your team lived in, the report you rebuilt every month, the gap between two tools your industry uses.
+- Validate a SaaS idea by getting people to pay before the product exists, through pre-sales or a manual "concierge" version you run by hand.
+- Price for businesses, in the tens or hundreds of euros a month. In ChartMogul's 2025 retention data, AI-native products under $50 a month kept 23% of revenue, against 70% for those above $250.
+- Plan for years: ChartMogul's 2025 growth report found 13.4% of software companies reached $1M ARR within three years of first charging customers.
+
+## What is a micro SaaS, and how is it different from a startup?
+
+A micro SaaS is a software business built to be profitable and small: a tight niche, a small team, no outside investors required, and revenue that can pay its founders well without ever becoming a unicorn. A venture-backed SaaS startup raises money to chase a large market fast, and it needs to become very big for the investment to work.
+
+For someone with a job, that difference matters. A narrow micro SaaS can be built in evenings and weekends. Investors in a venture-scale startup expect full-time founders.
+
+The third option people weigh is a productized service: a fixed-scope service at a fixed price, delivered by you.
+
+|  | Micro SaaS | Venture-backed SaaS | Productized service
+| Who funds it | You, then customers | Investors | You, then customers
+| Team | 1 to 3 people | Grows with each round | You, maybe a contractor
+| Market | One niche you can name in a sentence | A large market with room for a big company | One buyer type with one recurring problem
+| Can start alongside a job | Yes | Rarely | Yes, if delivery fits your evenings
+| Time to first revenue | Weeks with pre-sales, months without | Months to years | Weeks
+| What limits income | Distribution and churn | Capital and execution | Your hours
+| What you give up | Speed, and the chance of a huge outcome | Control and much of the equity | Income past your own hours
+If you're still deciding, I compare software and client work side by side in a separate guide. This guide assumes you've picked software.
+
+## Where do good micro SaaS ideas come from?
+
+Good micro SaaS ideas come from work you've done yourself, repeatedly, and found painful. Ten years in product, engineering or growth means you know which workflows break, who owns them and what people already pay to patch them. Most technical founders have to guess at that.
+
+Generic lists of b2b saas ideas give you a product and no insight into the buyer. Your work history gives you both. These are the places I'd look.
+
+| Where to look | What it sounds like | Why it works | Watch out for
+| The spreadsheet a team runs on | "Ops keeps the renewal tracker in a shared sheet with 40 tabs" | People already do the work manually, so the demand is proven | Some teams like their spreadsheet and won't switch
+| The report you rebuilt every month | "Every board pack took two days of exports and copy-paste" | Clear time cost, a clear owner, a clear deadline | A BI tool they already pay for may add it
+| The gap between two tools | "Our product analytics never matched what finance saw in billing" | Incumbents rarely build for each other | You depend on two APIs you don't control
+| An app store or integration marketplace | "The Shopify or HubSpot app for this is abandoned" | Buyers are already searching inside the platform | Platform fees, and the platform can copy you
+| Something you already do for clients | "I run the same pricing audit for every company I advise" | You've been paid for it, so you know it's worth money | Software can't carry the judgment part
+| A regulated or compliance-heavy workflow | "Every EU customer asks us for the same data-processing paperwork" | Deadlines and penalties create budget | Errors carry real liability
+
+### Examples by background
+
+These are illustrative patterns, not tested ideas.
+
+- Product leaders: tools that turn scattered customer feedback into a weekly prioritised list for one kind of company, such as B2B marketplaces.
+- Engineering leaders: tools for the chores nobody owns, like tracking on-call load across teams or keeping vendor security reviews up to date.
+- Growth leaders: reporting that joins ad spend, product signups and billing for a single channel or industry.
+If you don't know which part of your career to build from, start with what to sell after a tech job. The same angle can become a service or software.
+
+## How do you validate a SaaS idea before building it?
+
+You validate a SaaS idea by getting buyers to commit money or a firm next step before the product exists. A waitlist signup or an "I'd use that" costs the person nothing, so it proves very little.
+
+### 1. Ask four questions first
+
+- Is there a budget line? Ask what they spent on this problem last year, in tools or contractors. If the answer is nothing, you'll be asking them to find new money.
+- Did the problem cost someone something? A lost deal, a missed close, a weekend. That's a painkiller. "It would be nice" is a vitamin.
+- Is it a product or a feature? If a tool they already pay for could add it in a quarter, you need a niche that tool won't bother serving.
+- Can you reach buyers at this price? Brian Balfour calls this channel-model fit. A 79€ a month product can't pay for a salesperson.
+
+### 2. Interview without pitching
+
+Talk to ten to fifteen people who run the workflow today. Rob Fitzpatrick's The Mom Test is the best guide I know: ask what they did the last time the problem came up and what it cost them, and hold back the idea until the end.
+
+### 3. Pre-sell or run a concierge version
+
+A concierge MVP is a version of your product that you deliver manually while the customer pays as if it were software. You run the exports, build the report and send it every Monday. You learn how the work actually gets done, and you find out whether anyone pays.
+
+Pre-sales work the same way: offer a founding-customer deal, such as a discounted annual plan paid now for access when the first version ships. A few people paying in advance tells you more than a hundred signups.
+
+The Stack's Go/No-Go playbook runs this check for software ideas and gives a go, no-go or not-yet verdict with the one assumption to test next. It's part of The Stack, fifteen playbooks that run in Claude.
+
+## Can you build a micro SaaS MVP with AI tools?
+
+Yes. AI coding tools like Claude Code, Cursor and Lovable make it realistic for a product or growth leader to build a working first version, and for an engineering leader to build one in weeks of evenings. The hard part of a micro SaaS is still finding buyers, and AI doesn't do that for you.
+
+- Build only the concierge workflow. The first version should do the one job customers already pay you to do by hand.
+- Buy the boring parts. Use an existing service for login, payments and email. Stripe or Paddle for billing, a hosted database, a managed auth provider.
+- Take security and privacy seriously early. B2B buyers, especially in Europe, will ask where data is stored and whether you have a data processing agreement. AI-generated code needs a proper review before customer data goes into it.
+- Plan for maintenance. Integrations break and dependencies need upgrading long after launch, and that work lands on your evenings too.
+AI products can grow quickly. ChartMogul's 2025 SaaS Growth Report found AI-native startups were 3x more likely to reach $1M ARR within 6 months. The same company's retention data, below, shows the catch.
+
+## How should you price a micro SaaS?
+
+Price a B2B micro SaaS against the time or money the workflow costs your customer, usually somewhere from tens to a few hundred euros a month per account, and avoid consumer-style prices like 9€. Low prices attract buyers who churn, and they force you to find far more customers.
+
+The retention numbers are stark. ChartMogul's 2025 SaaS Retention Report, covering 3,500 software companies, found AI-native products priced under $50 a month kept 23% of their revenue over a year (gross revenue retention), while those priced above $250 a month kept 70%.
+
+The maths matters too. Say you want 10,000€ a month in recurring revenue:
+
+- At 19€ a month, you need 527 paying customers.
+- At 99€ a month, you need 102.
+- At 299€ a month, you need 34.
+Thirty-four customers is a list you can build from your network and one niche community. Five hundred needs paid acquisition or a large audience, and you probably don't have either yet.
+
+### How to set the number
+
+- Pick a value metric that grows with the value customers get: per seat, per location, per connected account, per report.
+- Talk price during validation. Madhavan Ramanujam's Monetizing Innovation makes the case for testing willingness to pay before you build. Ask what they'd expect to pay, and at what price it becomes too expensive to consider.
+- Offer annual plans. Cash upfront pays for the build and gives you a full year to earn the renewal.
+- Keep founding prices honest. Discount for early customers, and write down when the discount ends.
+
+## How do you get your first 10 SaaS customers?
+
+Your first 10 SaaS customers usually come from people you already know and from the few places your niche gathers online, through direct conversations you have yourself. Ads, SEO and Product Hunt come later, once you know who buys and why.
+
+- Convert your validation conversations. Everyone you interviewed gets a personal note when the first version is ready, with the founding offer.
+- Go through your network by role. List former colleagues who now hold the job that owns this workflow. Ask for a 20-minute call, and ask each one who else has the problem.
+- Show up in niche communities. Slack groups, subreddits, LinkedIn groups and associations for your buyers. Answer questions for weeks before you mention the product.
+- List it where buyers already search. If you integrate with a platform, the platform's app marketplace is a free, high-intent channel.
+- Publish what you learn. Posts about the workflow itself, with numbers from your own experience, bring in the people who have the problem. I cover this in how to build an audience business.
+Paul Graham's essay "Do Things That Don't Scale" is worth rereading here. Onboard every early customer yourself, on a call, and write down every question they ask.
+
+## How long does it take a micro SaaS to make money?
+
+A micro SaaS can take its first payment within weeks, but reaching salary-level revenue usually takes years. Stripe's 2025 review of Atlas startups put the median time from incorporation to first payment at 34 days. First payments are the easy part.
+
+In ChartMogul's 2025 growth data on 6,525 software companies, 3.3% reached $1M in annual recurring revenue within a year of first charging customers, 13.4% within three years and 25.1% within five. Those that got there usually took between two and five years.
+
+For someone keeping a job, much smaller milestones decide whether it's working. The timings below are my rough estimates, not benchmarks:
+
+- Months 0 to 3: interviews, a concierge version and your first few paying customers.
+- Months 3 to 12: a working product, 10 to 30 customers, and enough revenue to cover tools and some of your time.
+- Years 1 to 3: a repeatable channel, and the point where you decide whether revenue is high enough to reduce your hours at work.
+Rob Walling's "stair step" approach is a sensible way to get there: start with something small that sells through a single channel, then take on a recurring software product once you've learned to sell. Keep your job until the revenue says you can leave.
+
+## Is a micro SaaS the right business for you?
+
+A micro SaaS suits people who want to own a system and can wait for it to pay: in my Builder Archetypes, that's the Venture Builder. If you'd rather have income next month from a skill you've already proven, a fractional role or consulting fits better.
+
+Venture Builders have one predictable blind spot. They keep building for another quarter before talking to a customer, and end up with good architecture and no pipeline. If that sounds like you, put the concierge version and the first ten sales on the calendar before the build.
+
+Some signs it's a good fit:
+
+- You enjoy the product work itself, including the dull parts like support and billing.
+- You can give it one steady block of time each week for two years or more.
+- You know a niche well enough to name 50 people who'd buy.
+- You're comfortable selling directly, at least to the first ten customers.
+
+## Find out if software fits how you work
+
+The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, which business models suit you and which ones will wear you down, so you know whether a micro SaaS is worth your evenings. If it is, The Stack takes you from the go/no-go through pricing and launch.
+Take the Builder Diagnostic
+
+## Questions people ask
+
+Can I build a micro SaaS while keeping my full-time job?
+
+Yes, and it's the safer way to start, because the first year rarely pays a salary. Read your employment contract for intellectual property and conflict-of-interest clauses before you build, and keep the work off company laptops and company time. If a clause is unclear, pay a lawyer for an hour before you sign your first customer.
+
+Do I need to know how to code to build a micro SaaS?
+
+Not to start. You can validate the idea and take your first payments with a concierge version you run by hand, and AI coding tools make a simple first version buildable without an engineering background. Once customers depend on it, get an experienced engineer to review security, billing and data handling.
+
+How many customers does a micro SaaS need to replace a salary?
+
+Divide the monthly income you need by your price. Say you want 8,000€ a month before tax and costs: at 49€ a month that's 164 customers, at 149€ it's 54, and at 399€ it's 21. Higher B2B prices make the target reachable through your network and one niche.
+
+Is it better to build a micro SaaS alone or with a co-founder?
+
+Alone works if you can both build and sell, or if AI tools cover the build well enough for your product. A co-founder helps when your skills are one-sided, for example a growth leader who can sell but can't maintain code. Agree on equity, time commitment and what happens if one of you stops before you write anything.
+
+Should I launch my micro SaaS on Product Hunt?
+
+Only after you have paying customers from direct conversations. A Product Hunt launch brings a short burst of attention from a broad tech audience, and the niche B2B buyer a micro SaaS needs is rarely in it. Treat it as a credibility bonus once the product already sells.
+
+---
+
+URL: https://www.madgrowth.io/guides/how-to-build-an-audience-business/
+Title: How to build an audience business and newsletter · Madgrowth
+
+Guide
+
+# How to build an audience business from your expertise
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+
+To build an audience business from your expertise, pick a narrow beat you know from your career, say something specific about it on one platform where your readers already spend time, publish on a schedule you can keep for a year, and move readers onto an email list you control. Design the offer early: at small audience sizes, services and products earn far more than subscriptions or sponsorships.
+
+The short answer
+- An audience business earns money from people who follow your work regularly, through sponsorships, paid subscriptions, community, products or services.
+- Start with one narrow beat taken from your career and one point of view on it, published on one primary platform at a fixed cadence you can sustain alongside other work.
+- Grow an email list you own by turning platform followers into subscribers, with a lead magnet, referrals and cross-promotion with other newsletters.
+- Paid subscriptions pay little at small sizes: across beehiiv, the median free-to-paid conversion rate is 0.62% and the median monthly price is $10, so 5,000 subscribers at those medians bring in about $310 a month.
+- Services, workshops and digital products are the models that work first for a small expert audience, because one sale is worth hundreds of subscriptions.
+
+## What is an audience business, and is it right for you?
+
+An audience business is a company built on the attention and trust of a defined group of readers, who come back for what you publish and then pay you, or your sponsors, in some form.
+
+For a tech leader with 5 to 10+ years behind them, this usually means a newsletter or media brand about one specific part of the job: B2B pricing, platform engineering, product operations in fintech, growth for developer tools. Anyone can start a newsletter. Very few people have run a pricing change across 4,000 customers, and that experience is what readers come for.
+
+It suits people who like thinking in public and don't mind being visible. In my Builder Archetypes framework that's the Broadcaster: someone whose voice is the distribution and who enjoys the exposure. If you'd rather sell a defined leadership role to two or three companies and never post, going fractional is the closer fit.
+
+An audience grows slowly, so it works best when a job or advisory work pays the bills for the first year.
+
+## How do you pick a beat and a point of view?
+
+Pick the narrowest topic where you have real experience and where a specific group of people has a recurring problem, then take a clear position on how that problem should be solved. A beat is the subject you cover. A point of view is the belief that makes your coverage different from everyone else's on the same subject.
+
+"Leadership" is a category. "Engineering management at Series A to C startups" is a beat. "Engineering managers at that stage should stay hands-on for another year" is a point of view. The beat tells readers whether it's for them. The point of view gives them a reason to pick you.
+
+### Find the beat in your career
+
+List the problems people already ask you about, in Slack, over coffee or on calls you did as a favour. Keep the ones where you've done the work more than once and seen it go wrong. You'll have real stories and numbers to write from, and readers can tell.
+
+Then check each candidate:
+
+- Depth. Can you list 50 issue topics without researching? If you run out at 15, the beat is too narrow or too far from your experience.
+- Buyers. Do the readers have budgets, or work at companies that do? Heads of growth at SaaS companies can support sponsors, services and products. Students mostly can't.
+- Staying power. Will you still care about this in three years? You'll be writing about it every week.
+
+### Write the point of view in one sentence
+
+April Dunford's positioning work applies to media too: readers judge you against the alternatives they already have. If those are generic newsletters on your topic, your point of view is what they can't get there. Write it as a sentence someone could disagree with.
+
+## Which platform should you start on?
+
+Start on the one platform where your target readers already spend professional time, and repurpose from there to everything else. For most B2B tech audiences that's LinkedIn plus an email newsletter, with podcasts and communities working better as a second step.
+
+The two do different jobs. On LinkedIn, the platform decides who sees each post, which helps you reach new people fast and means your reach can change without warning. On email, you own the list and every issue lands in the inbox, but nobody discovers you there. So publish on LinkedIn to get found, and give people a reason to join your list.
+
+- LinkedIn suits B2B beats read by managers, founders and buyers. I built a LinkedIn audience of over 15,000 followers, and it's where I'd start again for a B2B beat.
+- A newsletter on beehiiv, Substack, Kit or similar is the asset you keep. Start it on day one, even with a tiny list.
+- A podcast is slower to grow, and good for building relationships with guests who could become clients.
+- A community needs an existing audience to seed it, so it's the hardest place to start.
+Pick one primary platform and one owned channel. Spreading across five platforms usually costs you the cadence on the one that matters.
+
+## How often should you publish?
+
+Publish at the highest cadence you could keep for 12 months during your busiest quarter, on a fixed day, in a fixed format. For most people with a job or clients, that's one newsletter issue a week and two or three posts a week on the primary platform.
+
+Readers build a habit around a predictable issue, and that habit turns into opens, replies and eventually sales.
+
+What keeps the cadence alive through a bad month:
+
+- A fixed shape. Same day, same structure, similar length. One main idea, one example, one takeaway. Your energy goes into the idea because the format is already decided.
+- A buffer. Keep one finished issue in reserve for the week you're sick or travelling.
+- A topic bank. Keep a running list of questions readers ask. Replies to your issues are the best source of next month's topics.
+- Repurposing. Each issue becomes several posts on your primary platform, each pointing back to the newsletter.
+To work this through for your own beat, the Founder Content playbook in The Stack produces your content pillars, point of view, platform choice, cadence and repurposing plan in one document.
+
+## How do you grow a newsletter or audience list?
+
+Newsletters grow through a handful of repeatable methods: converting followers on a social platform, a lead magnet, reader referrals, swaps and recommendations with other newsletters, and appearances in front of someone else's audience. Pick two, do them every week, and track new subscribers by source.
+
+### Turn followers into subscribers
+
+Put the subscribe link everywhere the platform allows it, such as your profile and featured section, and mention the newsletter when a post touches a topic you've covered in depth.
+
+### Offer a lead magnet
+
+A lead magnet is something useful you give away in exchange for an email address, such as a template, a benchmark or a short email course. The best ones are an upgrade to a popular piece: the spreadsheet behind the pricing post, the full question list behind the hiring post. It should also point towards what you'll sell later. The Lead Magnet playbook in The Stack designs one, including the bridge from the free piece to the paid offer.
+
+### Use referrals and cross-promotion
+
+Ask readers to forward the issue, in one line, in every issue. Newsletter platforms have referral programmes and recommendation networks where newsletters suggest each other to new subscribers. Swaps with writers on adjacent beats work well because their readers already read about your topic.
+
+### Show up in other people's channels
+
+Guest posts, podcast interviews, talks and co-hosted webinars put you in front of an audience that already trusts the host. For a tech leader these are often the easiest to get, because hosts want operators with real experience.
+
+## How do you make money with a newsletter?
+
+You make money with a newsletter through five models: sponsorships, paid subscriptions, a paid community, digital products, and services such as advising, workshops or consulting. They start to work at very different audience sizes, and for an expert with a small, specific audience the higher-priced models work first.
+
+Where the table has a number, it comes from beehiiv's public reports. Elsewhere I've left numbers out, because I haven't found reliable public benchmarks.
+
+| Model | How it earns | When it starts to work | Main risk
+| Services (advising, consulting, workshops) | A few clients paying high prices | Early, with a small list of readers who hold budgets | Your time caps the income
+| Digital products (templates, courses, toolkits) | One-off sales to many readers | Once you know which problem readers ask about most | Building before anyone has asked for it
+| Sponsorships | Companies pay to reach your readers, often per thousand opens (CPM) or per click | When you can describe your readers precisely enough that a company wants that exact group | Sponsors your readers don't trust
+| Paid subscriptions | Monthly or yearly fees for premium issues or access | At larger list sizes, given a median 0.62% conversion at $10 a month on beehiiv | Churn and the weight of a paid weekly promise
+| Paid community | Membership fees for access to peers and to you | After you have an engaged audience to seed it | It depends on you showing up constantly
+
+### What the data says about paid subscriptions
+
+beehiiv's State of Paid Newsletters 2026 report, based on first-party data from thousands of publications, puts the median free-to-paid conversion rate at 0.62%, the median monthly price at $10 and the median yearly price at $100. The top 10% of technology newsletters convert 5.55%. The typical creator launched a paid tier 45 days after starting, and subscriber count doesn't meaningfully change the price.
+
+At those medians, the maths looks like this:
+
+| Subscribers | Paying at 0.62% | Monthly revenue at $10
+| 1,000 | 6 | about $62
+| 5,000 | 31 | about $310
+| 20,000 | 124 | about $1,240
+Compare an illustrative services offer. Say 2,000 people read your newsletter on B2B pricing and you sell a 3,000€ pricing workshop to their companies. Two bookings a quarter is 24,000€ a year. At the medians above, 5,000 subscribers pay about $3,700 a year. So I'd put a service or product first and add subscriptions or sponsors once the list is big enough for them to matter.
+
+The first dollar comes faster than people expect. beehiiv's State of Newsletters 2026 report says the median newsletter launched on the platform in 2025 earned its first dollar in 66 days. A living income takes longer, and it depends on the offer.
+
+## Why do audiences without an offer stall?
+
+An audience without an offer stalls because readers have no next step, you can't tell whether the work pays off, and motivation fades after a year of unpaid weekly publishing. If you're good at content, it's the trap to watch for most.
+
+It tends to go like this. Followers go up, people leave kind comments, and selling starts to feel like it might spoil the goodwill. The offer gets pushed to "when the audience is bigger". A year later there are 8,000 followers, no revenue and no idea what anyone would pay for.
+
+- Decide the first offer before issue one. It can change later. Knowing it shapes what you write and who you write for. If you don't know what to sell yet, read what to sell after a career in tech.
+- Mention it from the start. A one-line footer ("I run pricing workshops for Series A SaaS teams, reply if that's you") teaches readers that you sell something.
+- Treat replies as research. When readers ask for help with the same problem more than once, you've found a product. Bob Moesta's jobs-to-be-done interviews help you find out what made them ask.
+If your offer is a template, course or toolkit, the guide on how to sell digital products covers packaging and pricing.
+
+## How do you start a media company alongside a job?
+
+Start a media company alongside a job by running it as a weekly publishing habit for the first six months, with one beat, one platform, one newsletter and one offer, and add people or formats only once readers and revenue justify it. Before you publish, check your employment contract for rules on outside work.
+
+- Weeks 1 to 2. Choose the beat, write the point of view sentence and list 50 topics. Write the first offer in one paragraph. Set up the newsletter and a simple subscribe page.
+- Weeks 3 to 4. Write three issues before announcing anything, so you start with a buffer. Build one lead magnet from your strongest topic.
+- Weeks 5 to 12. Publish one issue a week and two or three posts a week. Ask for forwards in every issue. Line up one guest appearance or newsletter swap a month.
+- End of week 12. Review subscribers by source, the issues with the most replies and the questions people asked. Pitch the first offer to the readers who replied most.
+By then you'll know whether you enjoy the weekly rhythm and whether readers respond to the beat, which tells you more at this stage than the subscriber count.
+
+## Find out if an audience business fits how you work
+
+The free Builder Diagnostic takes about three minutes and shows your Builder Archetype, including whether you're a Broadcaster, and which business models suit you. If it points to media, the Founder Content and Lead Magnet playbooks in The Stack help you plan your beat, cadence and first offer.
+Take the Builder Diagnostic
+
+## Questions people ask
+
+How many subscribers do you need to make money from a newsletter?
+
+There's no fixed number, because it depends on what you sell. At beehiiv's median paid conversion rate of 0.62% and a $10 monthly price, subscriptions need thousands of readers to add up to much. A service or workshop sold to readers who hold budgets can pay from a much smaller list, because one sale is worth hundreds of subscriptions.
+
+Should I start my newsletter on Substack, beehiiv or LinkedIn?
+
+Pick the social platform where your readers already are for discovery, and an email platform such as beehiiv, Substack or Kit for the list you own. For a B2B tech beat that's usually LinkedIn plus one email tool. Compare the tools on subscriber export, referral features and paid options, then commit to one and keep publishing.
+
+Can I write a newsletter about my industry while I'm still employed?
+
+Usually yes, if your contract allows outside work and you keep your employer's confidential information out of it. Read the clauses on outside activities, public statements and intellectual property first. Write from patterns across your career, and don't name your employer or its clients without permission.
+
+How long does it take to grow a newsletter audience?
+
+Longer than most people expect, so plan for at least a year of weekly publishing alongside other income. beehiiv reports that the median newsletter launched on its platform in 2025 earned its first dollar in 66 days, and a full income takes much longer. After 90 days, judge progress by replies, forwards and where subscribers come from, as well as the total.
+
+Should a new newsletter be free or paid?
+
+Start free unless your beat is one where readers already pay for information, because a free list grows faster and gives you people to sell to. beehiiv's 2026 data shows the typical creator launched a paid tier 45 days after starting. For an expert, a free newsletter with a clear service or product offer gives you more ways to earn early on than a paywall.
+
+---
+
+URL: https://www.madgrowth.io/guides/how-to-start-an-agency/
+Title: How to start an agency after a career in tech · Madgrowth
+
+Guide
+
+# How to start an agency after a career in tech
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+
+To start an agency after a career in tech, pick one type of client and one outcome you've already delivered, sell it as a fixed, productized offer before you take custom work, and set up delivery so a small senior team and written processes do the work. Win the first clients from people who know your work, and price for a margin that holds once you're paying other people.
+
+The short answer
+- An agency is a services business where a team delivers the client work and the founder runs the system: the offer, the process, quality and the pipeline.
+- Niche by client type and outcome. In Promethean Research's data for 2025, agencies that cut services averaged 30% net margins and agencies that added services averaged 10%.
+- Start with one productized offer with a fixed scope, timeline and price. Take custom work once a contractor can deliver that offer from your documents.
+- Use retainers for ongoing work, fixed fees for projects and performance fees only as a component on top of a base fee. Avoid hourly billing, because AI keeps cutting the hours a task takes.
+- AI shortens execution work and lowers what clients will pay for it. Automated workflows still need maintenance, and clients still hire an agency they trust.
+
+## What kind of agency should you start?
+
+Four agency models work with a small senior team: the niche specialist, the productized agency, the AI automation agency and the studio. They differ in what you sell, how you price it and where the margin comes from.
+
+A boutique agency is a services firm with a small senior team, often under ten people, that sells a narrow set of services to a defined type of client and runs delivery on documented processes and contractors.
+
+| Model | What you sell | Usual pricing | Where the margin comes from | Main risk
+| Niche specialist | One service, such as paid acquisition or RevOps, for one client type | Monthly retainer | Solving the same problem repeatedly, so senior people work faster | The service gets cheaper to do in-house or with software
+| Productized agency | A fixed package at a published price, such as a CRM migration in four weeks | Fixed price per package, or a subscription | Identical steps, templates, more work done by junior people | Low prices attract clients who want custom work
+| AI automation agency | Automated workflows and AI agents built into a client's tools | Build fee plus monthly maintenance | Components reused across clients, recurring maintenance | Builds break when tools change; client data raises legal duties
+| Studio | Senior strategic or product work: brand, product design, a first product version | Fixed project fees, often in phases | High fees for senior judgment with very few people | Gaps between projects; demand tied to the founders' reputations
+Start with one model, because each needs its own offer page, sales pitch and delivery process. An agency suits people who like designing how work gets done and are happy to hand the doing to others. In my Builder Archetypes that profile is the Orchestrator. If you'd rather hold one leadership role inside a company for part of the week, read how to go fractional instead.
+
+## How do you pick a niche for an agency?
+
+Pick a niche by combining a client type with an outcome that client already pays for, such as paid acquisition for Series A B2B SaaS companies in DACH. "Marketing agency" on its own is too broad to be a niche.
+
+Choose the client type before the channel or the tool. Clients in the same segment talk to each other, so referrals travel and one case study persuades the next.
+
+Narrow also pays. Promethean Research's Digital Agency Industry Report (2026, based on surveys of 1,452 agency leaders) found that agencies that reduced their services in 2025 grew almost twice as fast as the average and averaged 30% net margins. Agencies that expanded their services averaged 10%.
+
+A niche is worth testing when most of these are true:
+
+- You've delivered the outcome more than once, in a job or for clients.
+- You can name 30 companies that fit and reach at least 10 people inside them.
+- The buyer already spends on the problem: another agency, a tool or a hire.
+- Something makes them buy now, such as a funding round, a new head of growth or a migration deadline.
+- The tenth client will look enough like the second that your process carries over.
+If you're still choosing between angles from your career, start with what to sell after a tech job.
+
+## What should a new agency sell first?
+
+A new agency should sell one productized offer first: a defined deliverable, for a defined client, in a fixed time, at a fixed price.
+
+A productized service is a service packaged like a product, with the same scope, steps and price for every client. You can document it, train a contractor on it and know your margin before you start.
+
+A useful shape is an entry offer that leads into ongoing work. Say you run tracking and attribution for e-commerce brands. The entry offer is a three-week tracking audit at a fixed price that ends with a prioritised list of fixes. The core offer is a monthly retainer to implement and run those fixes.
+
+Before you sell it, write down the outcome in the buyer's words, what's included and what isn't, what the client must provide, the timeline and the price. Alex Hormozi's advice in $100M Offers helps here: list what could stop the client getting the result, then build the fixes for the likely ones into the offer. The Offer playbook in The Stack runs this for a services business and writes the result up as one paragraph you can put on a page.
+
+Take custom work once the core offer has sold several times and someone other than you can deliver it.
+
+## How should you price agency work, and what margin should you aim for?
+
+Charge a monthly retainer for ongoing work with defined outputs, a fixed project fee for work with a clear end, and add a performance fee only when the result is measurable and your work clearly causes it.
+
+- Retainer. A retainer is a fixed monthly fee for a defined scope of ongoing work. Predictable revenue lets you commit to contractors. Define it by outputs per month, because clients question a retainer when they can't see what it produces.
+- Project fee. One price for a defined deliverable, paid in milestones. Keep hours out of the proposal, so a faster process raises your margin. Expect uneven revenue between projects.
+- Performance fee. Part of your pay tied to a result such as revenue or qualified leads. Use it on top of a base fee. On its own it invites arguments about attribution, and Promethean notes it tends to position an agency as a vendor.
+Most agencies mix these: Promethean found that 8% or fewer rely on a single pricing model. The report also warns that agencies billing time and materials are exposed to AI, because when the same output takes fewer hours, the invoice shrinks.
+
+Blair Enns, in Pricing Creativity, argues for presenting several options at once, at different scopes and prices. The Pricing playbook in The Stack uses his approach for services. For day rates and value pricing in euros, see how to price consulting services.
+
+### Margins: a worked example
+
+Gross margin on a client is the fee minus the direct cost of delivering it. Net margin is what's left after every cost, overhead and tax included. In Promethean's report, the average digital agency earned a 13% net margin in 2025, and studios with fewer than 10 full-time staff earned more than twice the average margin of agencies with 50 or more.
+
+Here's an illustrative client. Say you charge 5,000€ a month for a lifecycle email retainer:
+
+- Senior contractor, 3 days at 600€: 1,800€
+- Production contractor, 4 days at 250€: 1,000€
+- Tools and AI usage: 150€
+- Your own review and client time, 1 day valued at 800€: 800€
+Delivery costs 3,750€, leaving 1,250€ of gross margin, or 25%. Sales, admin, insurance and software still come out of that.
+
+Now say templates and a review checklist cut the senior work to 2 days and your time to half a day, and you raise the fee to 6,500€ because the offer now includes a monthly test plan. Delivery costs 2,750€ and gross margin is 3,750€, about 58%. Always count your own delivery time at a market rate. Leave it out and the numbers only work while you work for free.
+
+## How do you deliver without doing all the work yourself?
+
+Write down how the work gets done before you hire anyone, then hand steps to senior contractors one at a time while you keep the kickoff, the review and the client relationship.
+
+### Build the delivery system
+
+Deliver the first two or three clients yourself and document as you go: an intake form and onboarding checklist, a written process for each step with a short screen recording, templates for every deliverable, a quality checklist someone else can use, and a fixed format for client updates. Keep every client's work on one project board.
+
+### First hires and contractors
+
+Your first person should be a senior contractor who can deliver the core offer from your documents with light review. A cheap junior who needs you at every step adds cost and saves you no time.
+
+Your second person may not be in delivery at all. Promethean describes the founder of a studio-sized agency as its only seller, so decide early who owns the pipeline.
+
+Hire employees once the workload has been steady for months. Until then contractors keep costs flexible. In many European countries, a contractor who works set hours only for you, under your direction, can be reclassified as an employee, so check with a local accountant or lawyer first.
+
+## How do you get your first agency clients?
+
+Your first agency clients will most likely come from people who have already seen your work: former colleagues, managers, founders and vendors. Promethean reports that most agencies still get the bulk of their leads through referrals, and that the average agency spends 7% of revenue on sales and marketing.
+
+- List 50 to 100 people who know your work. Mark the ones at companies in your niche, and the ones whose company is in a buying moment now.
+- Message them about the specific problem your offer solves and ask for a conversation.
+- Sell the entry offer first. A fixed-price audit is an easier yes than a year-long retainer.
+- After each engagement, write a short case with the problem, what you did and the result in the client's numbers, with their permission.
+- Publish the thinking you'd sell. David C. Baker argues that experts should publish their point of view, and a buyer who has read yours already knows how you'd work.
+- Find partners who meet your clients first: software vendors whose tools you implement, investors' portfolio teams, agencies that don't offer your service.
+
+## What does AI change about agency delivery?
+
+AI shortens execution work such as first drafts, analysis, code and design options, so clients expect to pay less for execution and more for strategy and for changing how their work runs.
+
+Promethean's report says a third of the agency industry had fully implemented AI by March 2026, 70% of agencies changed their service mix in 2025, and some recent margin pressure comes from clients expecting cheaper services because of AI. It also sees new demand for workflow redesign and automation.
+
+Client adoption is uneven. Eurostat reported that 20.0% of EU enterprises with 10 or more employees used AI in 2025, up from 13.5% in 2024. Its detailed statistics put the figure at 17% for small enterprises and 55% for large ones, with marketing or sales the most common purpose.
+
+An AI automation agency designs, builds and maintains automated workflows that combine AI models with a client's existing tools, for tasks like lead routing, support triage or document processing. If you start one, plan for three things:
+
+- Maintenance. Tools, APIs and models change. Sell a monthly maintenance fee with every build, or you'll fix things for free.
+- Client data. If your workflows process personal data for an EU client, you're usually a processor under GDPR and need a data processing agreement with them.
+- Pricing. A workflow you build in two days can save a team hours every week. Set a fixed fee based on that saving, and automate the same process for the same kind of company so you can reuse components.
+
+## What mistakes turn a new agency into a freelancer with overhead?
+
+A new agency becomes a freelancer with overhead when the founder still does most of the delivery and now also pays for a company, contractors and software. The test: if you took two weeks off, would client work still ship?
+
+- Scope creep. Scope creep is work added to an engagement after the price is agreed, with no change to price or timeline. Prevent it with an out-of-scope list in every proposal and a priced change request for anything new.
+- Saying yes to every service. Each new service needs its own process, templates and people. The 30% versus 10% margin gap above is what that costs.
+- Building the machine before demand. Processes designed for ten clients don't help while the pipeline holds one. Spend the first months selling, and document as you deliver.
+- Taking any client who pays. Clients outside your niche break your process and give you case studies your niche ignores.
+- Selling hours. Hourly billing caps revenue and hands every efficiency gain, AI included, to the client.
+
+## Find out whether an agency fits how you work
+
+The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, whether you lean Orchestrator, and which business models suit you. If you already have a niche and a draft offer and want my written view before you sell it, that's The Audit.
+Run the Builder Diagnostic
+
+## Questions people ask
+
+How much money do I need to start a small agency?
+
+Very little capital, because you can start with contractors instead of employees and pay them from client fees. The main costs are setting up a company or registering as self-employed, an accountant, insurance, a few tools and the months of your own income before clients pay. Keep contractor costs variable until revenue is steady.
+
+Can I start an AI automation agency without being an engineer?
+
+Yes, if you understand the business process you're automating and can work with no-code automation tools, but you need someone technical for anything that touches client systems deeply. Clients pay for a process that works and keeps working, so plan who fixes a workflow when a tool or model changes. Pair up with an engineer as a contractor or partner before you sell complex builds.
+
+Do I need case studies before I sign my first agency client?
+
+No. Your first clients buy on what they've seen you do in your previous roles, so describe results you delivered in a job, without sharing anything confidential. Offer a fixed-price entry project to lower the risk for them, and ask for permission to write up the result when it's done.
+
+Should I start an agency alone or with a co-founder?
+
+Both work. A co-founder helps when they cover what you don't, most often sales if you're strong on delivery or the reverse. Agree in writing who owns what, how you split equity and profit, and what happens if one of you leaves, before the first client signs.
+
+Can I start an agency while I still have a full-time job?
+
+You can test one, but an agency is harder to run alongside a job than solo consulting because clients expect responses during working hours. Start with a small fixed-price offer you can deliver on evenings and weekends, check your employment contract for conflicts first, and leave when you have enough recurring revenue to cover the gap.
+
+---
+
+URL: https://www.madgrowth.io/guides/how-to-sell-digital-products/
+Title: How to sell digital products from your expertise · Madgrowth
+
+Guide
+
+# How to sell digital products from your expertise
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+
+To sell digital products from your expertise, pick one format your buyer already pays for (a template, a toolkit, an AI playbook, a course or a fixed-scope service), pre-sell it before you build it, and plan more time for distribution than for the product.
+
+The short answer
+- A digital product is something you package once and sell many times without your hours attached: templates, toolkits, AI playbooks, self-serve courses and paid communities.
+- Choose the format by who pays. Individuals paying with their own card compare you to a book or a subscription. A manager with a team budget compares you to a contractor's time, so B2B products can charge more and need fewer sales.
+- Pre-sell before you build: a sales page, a price, a ship date and direct asks to 20 people who have the problem. Set the number of sales that decides go or no-go before you start.
+- For a first product sold into Europe, a merchant of record such as Gumroad or Lemon Squeezy handles VAT for you. Your own site with Stripe costs less per sale and gives you more admin.
+- With no audience yet, start with a productized service: a fixed scope at a fixed price. It pays sooner and shows you which parts are worth turning into a product.
+
+## What counts as a digital product when you sell expertise?
+
+A digital product is anything you package once and sell repeatedly without delivering it by hand each time. For someone with 10 years in tech, that usually means taking a method you've used at work and turning it into a file, a system or a set of lessons another person can apply without you.
+
+The formats that fit experienced operators:
+
+- Templates. One asset that saves a specific piece of work: a board deck, a hiring scorecard, a pricing calculator, an incident review doc.
+- Toolkits. Several templates plus instructions for one job, such as everything a new head of product needs for their first quarterly planning cycle.
+- AI playbooks and Claude skills. A Claude skill is a folder of instructions (a SKILL.md file plus optional reference files) that Claude loads when a task matches it. You can sell your method in this format, so the buyer runs it on their own situation. The Stack is my example: 15 AI playbooks for positioning, pricing and launching a business, sold for 299€ and installed as Claude skills. The format itself is explained in Claude skills for business.
+- Self-serve courses. Recorded lessons with exercises, bought once and watched at the buyer's pace.
+- Paid communities. A monthly membership around a shared problem. The value depends on you showing up every week, which makes it closer to an audience business than to a product.
+A productized service is a fixed scope of work at a fixed price, sold like a product and delivered by you. It isn't a digital product, but it's often the right first step, so it gets its own section below.
+
+If turning messy, bespoke work into something with edges is how you like to work, you're probably a Productizer. The known blind spot of that archetype: shipping five small products and never properly selling one.
+
+## Which digital product format should you sell first?
+
+Sell the format your buyer already buys, at a price they can approve without a meeting. Who pays decides the price, the size of audience you need and how you'll reach them.
+
+Price levels in the table are relative to each other, since real prices vary widely by niche and buyer.
+
+| Format | Typical buyer | Relative price | Time to build | Ongoing work | Hardest part
+| Template | Individual practitioner, own card | Low | Days | Almost none | Standing out from free versions
+| Toolkit | Manager or team lead, often expensed | Low to mid | Weeks | Occasional updates | Explaining why it beats building your own
+| AI playbook or Claude skill | Operators and founders already using AI tools | Mid | Weeks | Updates as the tools change | Helping buyers install and use it
+| Self-serve course | Individual, sometimes expensed | Mid | 1 to 3 months | Support questions, re-recording | Trust before purchase, completion after
+| Paid community | Individuals at the same stage | Low, monthly | Days to start | High, every week | Keeping members active
+| Productized service | Company budget holder | High | Days to define | Your hours on every sale | Your calendar caps revenue
+The pattern to notice: the lower the price, the bigger the audience you need. A template for individuals only works if you can reach a lot of them. A toolkit sold to engineering managers at a team price can work with a few hundred people who know your name.
+
+If you're still unsure what the underlying expertise is, work that out first with what to sell after leaving a tech job.
+
+## How do you validate a digital product before you build it?
+
+You validate a digital product by getting people to pay before it exists. Likes, comments and waitlist sign-ups cost the buyer nothing, so they tell you very little about whether anyone will pay. Madhavan Ramanujam makes the case in Monetizing Innovation for discussing price with customers before you design the product, and the same logic works for a 99€ toolkit.
+
+### Step 1: write the promise in one sentence
+
+Who it's for, what they'll be able to do after using it, and how fast. "Engineering managers at 50 to 200 person companies run their first calibration round in a week, with the templates and scripts I used at three scale-ups." If you can't write this sentence, you don't have a product yet.
+
+### Step 2: build the sales page before the product
+
+Put up a page with the promise, the contents, one sample, the price and a ship date. Add a clear refund if you don't ship. A Stripe Payment Link or a Gumroad or Lemon Squeezy product page is enough.
+
+### Step 3: ask 20 specific people directly
+
+Send individual messages to people you know have the problem: former colleagues, people who've asked you about it, peers in your network. Offer an early-buyer price in exchange for feedback on the draft. Direct asks show you the objections in people's own words.
+
+### Step 4: decide the threshold before you start
+
+Say you decide: if 10 people pay by Friday, I build it; if not, I refund and change the offer. Pick your own number, and pick it in advance, so you can't talk yourself into building something nobody bought.
+
+### If it's an online course
+
+The cheapest way to create an online course is to teach it live first. Pre-sell a small cohort, run the sessions over video calls, record them and note where people get stuck. Then fix those parts and sell the edited recordings as a self-serve course. You get paid for writing the curriculum, and the self-serve version is built on real questions from buyers.
+
+## How should you price and bundle digital products?
+
+Price a digital product from the result the buyer gets and what they'd otherwise spend to get it. A hiring toolkit that saves a head of engineering a week of work gets judged against that week, or against a recruiter's fee.
+
+Alex Hormozi's value equation in $100M Offers is useful here: perceived value goes up with the size of the outcome and the buyer's confidence they'll get it, and down with the time and effort it takes. For digital products, effort is the cheapest part to fix. Filled-in examples, a 15-minute quick start and a "use this first" page all raise what people will pay.
+
+### Use tiers to capture different buyers
+
+Three versions work for most expertise products:
+
+- The core product on its own.
+- The core plus extras for a specific situation: more examples, versions by company stage, a team licence.
+- The core plus a live element, such as a group call or a written review of how the buyer applied it.
+The top tier makes the middle one look reasonable, and it limits your time by design because only a few people buy it.
+
+### Bundle once you have a second product
+
+When you have two or three products for the same buyer, sell them together for less than the sum. Bundles work for people who already trust you. Strangers still need to buy one thing first.
+
+### Run the numbers before you build
+
+Say your goal is 3,000€ a month from a 99€ toolkit. That's about 31 sales a month before fees and VAT. If 2% of sales page visitors buy (an assumption for this example, so replace it with your own numbers once you have them), you need around 1,550 visitors a month. Sell a 499€ team version instead and you need 7 sales.
+
+## Where should you sell digital products?
+
+Sell your first digital product through a platform that handles payment and tax, and move to your own setup when the fees start to cost more than the admin you'd take on. There are three common setups.
+
+### Merchant of record platforms: Gumroad, Lemon Squeezy
+
+A merchant of record is the company that legally sells to your customer: it takes the payment, charges and files the right VAT or sales tax, then pays you. Gumroad lists fees of 10% + $0.50 per direct sale and 30% on sales through its Discover marketplace, and states it has handled sellers' tax obligations since 1 January 2025 (Gumroad pricing, 2026). Lemon Squeezy lists 5% + 50¢ per transaction and acts as merchant of record (Lemon Squeezy pricing, 2026). You pay more per sale and do less tax work.
+
+### Your own site with Stripe
+
+Stripe Payment Links let you sell without building a checkout. On Stripe's Portugal pricing page, standard EEA cards cost 1.5% + 0.25€ per transaction, and Stripe also lists Stripe Tax and its own merchant of record option (Stripe pricing, 2026). With plain Stripe, you're the seller and the VAT is your responsibility.
+
+That matters in Europe. If you're based in the EU, VAT on digital services sold to consumers in other EU countries follows the customer's country once your cross-border sales to consumers pass 10,000€ a year, and the One Stop Shop lets you declare it through a single country (European Commission, VAT One Stop Shop). Check your own situation with an accountant before you pick a setup.
+
+### Course and community platforms: Kajabi and similar
+
+All-in-one platforms host the course, the community, email and the sales pages in one account. You pay a subscription: Kajabi's Basic plan is listed at $179 a month on monthly billing, and Kajabi says it takes no revenue share on top of payment fees (Kajabi pricing, 2026). A fixed monthly cost like that makes more sense once a course has sold than before.
+
+## How do you find buyers for a digital product?
+
+Buyers come from distribution, and distribution decides whether a digital product sells. Plan as much time for selling as for building. Four routes work for tech leaders.
+
+### Your network
+
+Your first 20 sales should come from people who already know your work. Former colleagues, people you've managed, founders you've helped.
+
+### An audience you build
+
+A newsletter or a regular LinkedIn presence where you publish the thinking behind the product: the method, the mistakes, one free template. Readers who've followed your thinking for months already trust the method when you ask them to buy. The full model is in how to build an audience business.
+
+### Search
+
+Write pages that answer the exact problem your product solves, in the words buyers type into Google and ChatGPT. Offer one free piece of the product on each page and collect emails. Search takes months to show results, and it keeps sending buyers after you stop writing.
+
+### Partners
+
+Find people who already have your buyer's attention: niche newsletters, communities, consultancies, software companies whose customers need your templates. Offer a revenue share, a bundle or a co-hosted session.
+
+## When is a productized service the better first step?
+
+A productized service is the better first step when you don't have an audience yet, your buyer is a company, or you haven't applied your method outside your own teams enough to write it down. You get paid in the first weeks, per sale, and every delivery shows you which parts repeat.
+
+Productized service examples for tech leaders:
+
+- A pricing page review for B2B SaaS companies: written findings and a revised draft, fixed price, delivered in a set number of days.
+- A two-week product analytics setup: tracking plan, implementation checklist and one dashboard.
+- A security readiness assessment for a startup preparing for its first enterprise deals.
+- An onboarding teardown: a recorded walkthrough of a product's first-run experience plus a prioritised fix list.
+- My own Audit: a written diagnosis of where someone is in building their business, 599€, delivered within 5 business days of confirming the intake.
+It also asks less of you than a fractional role: a defined piece of work with an end date, and no weekly seat in a leadership team.
+
+The path from service to product is short. Deliver the service, keep the templates and checklists you use internally, then sell those to the buyers who can't afford the service. The service funds the product and tells you what to put in it. If demand outgrows your calendar and you'd rather hire than productize, that's an agency, covered in how to start an agency.
+
+## Find out which format fits how you work
+
+The Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, including whether you're a Productizer, and which business models fit how you like to work. If you already know what you want to sell, The Stack walks you through the offer, the pricing and the launch plan.
+Take the Builder Diagnostic
+
+## Questions people ask
+
+Do I need an audience to sell digital products?
+
+You need some way to reach buyers, and it doesn't have to be a big following. Your first sales can come from direct messages to former colleagues and people in your network who have the problem. If you have no network in the niche either, start with a productized service and build the audience while it pays you.
+
+Can I sell digital products while I still have a full-time job?
+
+Often yes, but read your employment contract first. Check the clauses on outside work, conflicts of interest and intellectual property, because templates built on company time or with company material may belong to your employer. Build from your own methods and your own examples, on your own time.
+
+How long does it take to create an online course?
+
+It depends on the scope, so start with the smallest version that delivers one result. Pre-selling a live cohort lets you write the curriculum week by week as you teach it, so there's no long build before the first sale. You then edit the recordings into a self-serve course.
+
+Can you make money selling Claude skills?
+
+Yes, if the skill packages a method people already pay for and ends with a clear output they can use. The buyers are people who already work in Claude, so the market is smaller than for a PDF template and the install step needs clear instructions. I sell The Stack this way: 15 AI playbooks installed as Claude skills, 299€.
+
+Should my first digital product be free?
+
+Give away one small piece and charge for the product itself. A free template collects emails and shows people how you think, but only a payment tells you whether the full product is worth building. Pre-sell the paid version at an early-buyer price instead of launching it for free.
+
+---
+
 URL: https://www.madgrowth.io/guides/how-to-create-a-claude-skill/
 Title: How to create a Claude skill: SKILL.md example · Madgrowth
 
@@ -1952,7 +2693,7 @@ A Claude skill is a reusable set of instructions, and optionally reference files
 
 That design is why skills are useful for business work. You can install fifteen of them and Claude only reads the one that fits the conversation. A prompt has to be pasted in every time. A skill waits until it's needed and runs the same method each time.
 
-I build skills for my own businesses and sell a set of them in The Stack, so the advice below comes from writing skills that have to produce a document someone can use the next morning.
+I build skills for my own businesses and sell a set of them as playbooks in The Stack, so the advice below comes from writing skills that have to produce a document someone can use the next morning.
 
 ## What goes inside a skill folder?
 
@@ -2029,8 +2770,8 @@ Skills don't sync between Claude Code, the Claude app and the API, so install th
 
 ## Skip the build: skills for your business
 
-If you'd rather use skills than write them, the Madgrowth Claude skills library covers positioning, pricing, offers and launches, with a playbook for each business model. Start with the free Expertise Audit skill, which comes with the Builder Diagnostic.
-Get the free skill →
+If you'd rather use skills than write them, The Stack is 15 AI playbooks that install as Claude skills and cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.
+Get the free Expertise Audit →
 
 ## Questions people ask
 

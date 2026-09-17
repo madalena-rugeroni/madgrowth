@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to build a micro SaaS from your tech career · Madgrowth</title>
+  <meta name="description" content="Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.">
+  <meta name="author" content="Madalena Rugeroni">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.madgrowth.io/guides/how-to-build-a-micro-saas/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Madgrowth">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://www.madgrowth.io/guides/how-to-build-a-micro-saas/">
+  <meta property="og:title" content="How to build a micro SaaS from your tech career: ideas, validation, pricing and first customers">
+  <meta property="og:description" content="Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.">
+  <meta property="og:image" content="https://www.madgrowth.io/assets/img/og/home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="How to build a micro SaaS from your tech career">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to build a micro SaaS from your tech career: ideas, validation, pricing and first customers">
+  <meta name="twitter:description" content="Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.">
+  <meta name="twitter:image" content="https://www.madgrowth.io/assets/img/og/home.jpg">
+  <link rel="apple-touch-icon" href="../../assets/img/logo.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!-- GA4 with Consent Mode: analytics cookies only after the visitor accepts -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var mgConsent = null;
+    try { mgConsent = localStorage.getItem("mg_consent"); } catch (e) {}
+    gtag('consent', 'default', {
+      analytics_storage: mgConsent === 'granted' ? 'granted' : 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-6H3NDWYBL8');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3NDWYBL8"></script>
+  <script src="../../assets/js/config.js"></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.madgrowth.io/#org",
+      "name": "Madgrowth",
+      "url": "https://www.madgrowth.io/",
+      "logo": "https://www.madgrowth.io/assets/img/logo.png",
+      "email": "madalena@madgrowth.io",
+      "legalName": "Madalena Rugeroni, Unipessoal Lda",
+      "vatID": "PT517207427",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PT"
+      },
+      "founder": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/madgrowth-io"
+      ],
+      "description": "Madgrowth helps leaders in tech with 5 to 10+ years of experience turn that experience into a business they own: a fractional role, a services business or software."
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.madgrowth.io/#madalena",
+      "name": "Madalena Rugeroni",
+      "url": "https://www.madgrowth.io/#about",
+      "image": "https://www.madgrowth.io/assets/img/madalena.jpg",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/madalenarugeroni",
+        "https://x.com/madalenarug"
+      ],
+      "description": "Go-to-market operator, advisor and investor. Former Google, scaled startups from zero to $10M in revenue and runs a portfolio of internet businesses, including Madgrowth and the software company Mazo.",
+      "knowsAbout": [
+        "Go-to-market strategy",
+        "Positioning",
+        "Pricing",
+        "Offer design",
+        "Fractional leadership",
+        "Consulting business models",
+        "Startup growth",
+        "B2B SaaS"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.madgrowth.io/#website",
+      "url": "https://www.madgrowth.io/",
+      "name": "Madgrowth",
+      "publisher": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/#article",
+      "headline": "How to build a micro SaaS from your tech career",
+      "description": "Build a micro SaaS from a workflow you know: validate with pre-sales, price it for B2B and win your first 10 customers. Ideas, AI MVPs and real timelines.",
+      "url": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/",
+      "mainEntityOfPage": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/",
+      "image": "https://www.madgrowth.io/assets/img/og/home.jpg",
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
+      "publisher": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "isPartOf": {
+        "@id": "https://www.madgrowth.io/#website"
+      },
+      "keywords": "micro saas ideas, how to build a micro saas, b2b saas ideas, how to validate a saas idea, how to get first saas customers, business ideas for software engineers, micro saas pricing, how long does it take a saas to make money",
+      "wordCount": 2238,
+      "citation": [
+        "https://chartmogul.com/reports/saas-growth-the-odds-of-making-it/",
+        "https://chartmogul.com/reports/saas-retention-the-ai-churn-wave/",
+        "https://stripe.com/blog/stripe-atlas-startups-in-2025-year-in-review"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I build a micro SaaS while keeping my full-time job?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and it's the safer way to start, because the first year rarely pays a salary. Read your employment contract for intellectual property and conflict-of-interest clauses before you build, and keep the work off company laptops and company time. If a clause is unclear, pay a lawyer for an hour before you sign your first customer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to know how to code to build a micro SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not to start. You can validate the idea and take your first payments with a concierge version you run by hand, and AI coding tools make a simple first version buildable without an engineering background. Once customers depend on it, get an experienced engineer to review security, billing and data handling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many customers does a micro SaaS need to replace a salary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide the monthly income you need by your price. Say you want 8,000€ a month before tax and costs: at 49€ a month that's 164 customers, at 149€ it's 54, and at 399€ it's 21. Higher B2B prices make the target reachable through your network and one niche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to build a micro SaaS alone or with a co-founder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alone works if you can both build and sell, or if AI tools cover the build well enough for your product. A co-founder helps when your skills are one-sided, for example a growth leader who can sell but can't maintain code. Agree on equity, time commitment and what happens if one of you stops before you write anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I launch my micro SaaS on Product Hunt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only after you have paying customers from direct conversations. A Product Hunt launch brings a short burst of attention from a broad tech audience, and the niche B2B buyer a micro SaaS needs is rarely in it. Treat it as a credibility bonus once the product already sells."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Madgrowth",
+          "item": "https://www.madgrowth.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://www.madgrowth.io/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to build a micro SaaS",
+          "item": "https://www.madgrowth.io/guides/how-to-build-a-micro-saas/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="../../">madgrowth</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../guides/">Guides</a></li>
+      <li><a href="../../archetypes/">Archetypes</a></li>
+      <li><a href="../../#about">About</a></li>
+      <li><a href="../../#pricing">Products</a></li>
+      <li><a class="btn btn-primary nav-cta" href="../../diagnostic/" data-event="diagnostic_start">Run the diagnostic</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap article-hero">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Madgrowth</a> / <a href="../../guides/">Guides</a> / <span>How to build a micro SaaS</span></nav>
+    <span class="eyebrow">Guide</span>
+    <h1>How to build a micro SaaS from your tech career</h1>
+    <div class="byline">
+      <img src="/assets/img/madalena.jpg" alt="Madalena Rugeroni" width="40" height="40">
+      <span><strong><a href="../../#about">Madalena Rugeroni</a></strong> · Founder of Madgrowth · ex-Google · Updated <time datetime="2026-09-17">17 September 2026</time> · 10 min read</span>
+    </div>
+  </div>
+
+  <article class="wrap article">
+    <div class="prose">
+<p>To build a micro SaaS from a tech career, pick a painful workflow you've run many times at work, sell a fix to the people who still run it before you write much code, and price it for businesses. Expect a first payment within months and several years before it replaces a senior salary.</p>
+
+<div class="tldr"><span class="eyebrow">The short answer</span><ul>
+<li>A micro SaaS is a small, usually self-funded software business, run by one to three people, that sells a subscription to a narrow group of customers.</li>
+<li>The best micro SaaS ideas for tech leaders come from workflows you've owned: the spreadsheet your team lived in, the report you rebuilt every month, the gap between two tools your industry uses.</li>
+<li>Validate a SaaS idea by getting people to pay before the product exists, through pre-sales or a manual "concierge" version you run by hand.</li>
+<li>Price for businesses, in the tens or hundreds of euros a month. In ChartMogul's 2025 retention data, AI-native products under $50 a month kept 23% of revenue, against 70% for those above $250.</li>
+<li>Plan for years: ChartMogul's 2025 growth report found 13.4% of software companies reached $1M ARR within three years of first charging customers.</li>
+</ul></div>
+
+<h2>What is a micro SaaS, and how is it different from a startup?</h2>
+<p>A micro SaaS is a software business built to be profitable and small: a tight niche, a small team, no outside investors required, and revenue that can pay its founders well without ever becoming a unicorn. A venture-backed SaaS startup raises money to chase a large market fast, and it needs to become very big for the investment to work.</p>
+<p>For someone with a job, that difference matters. A narrow micro SaaS can be built in evenings and weekends. Investors in a venture-scale startup expect full-time founders.</p>
+<p>The third option people weigh is a productized service: a fixed-scope service at a fixed price, delivered by you.</p>
+
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th></th><th>Micro SaaS</th><th>Venture-backed SaaS</th><th>Productized service</th></tr>
+</thead>
+<tbody>
+<tr><td>Who funds it</td><td>You, then customers</td><td>Investors</td><td>You, then customers</td></tr>
+<tr><td>Team</td><td>1 to 3 people</td><td>Grows with each round</td><td>You, maybe a contractor</td></tr>
+<tr><td>Market</td><td>One niche you can name in a sentence</td><td>A large market with room for a big company</td><td>One buyer type with one recurring problem</td></tr>
+<tr><td>Can start alongside a job</td><td>Yes</td><td>Rarely</td><td>Yes, if delivery fits your evenings</td></tr>
+<tr><td>Time to first revenue</td><td>Weeks with pre-sales, months without</td><td>Months to years</td><td>Weeks</td></tr>
+<tr><td>What limits income</td><td>Distribution and churn</td><td>Capital and execution</td><td>Your hours</td></tr>
+<tr><td>What you give up</td><td>Speed, and the chance of a huge outcome</td><td>Control and much of the equity</td><td>Income past your own hours</td></tr>
+</tbody>
+</table>
+</div>
+<p>If you're still deciding, I compare <a href="../../guides/fractional-consulting-or-software/">software and client work side by side</a> in a separate guide. This guide assumes you've picked software.</p>
+
+<h2>Where do good micro SaaS ideas come from?</h2>
+<p>Good micro SaaS ideas come from work you've done yourself, repeatedly, and found painful. Ten years in product, engineering or growth means you know which workflows break, who owns them and what people already pay to patch them. Most technical founders have to guess at that.</p>
+<p>Generic lists of b2b saas ideas give you a product and no insight into the buyer. Your work history gives you both. These are the places I'd look.</p>
+
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Where to look</th><th>What it sounds like</th><th>Why it works</th><th>Watch out for</th></tr>
+</thead>
+<tbody>
+<tr><td>The spreadsheet a team runs on</td><td>"Ops keeps the renewal tracker in a shared sheet with 40 tabs"</td><td>People already do the work manually, so the demand is proven</td><td>Some teams like their spreadsheet and won't switch</td></tr>
+<tr><td>The report you rebuilt every month</td><td>"Every board pack took two days of exports and copy-paste"</td><td>Clear time cost, a clear owner, a clear deadline</td><td>A BI tool they already pay for may add it</td></tr>
+<tr><td>The gap between two tools</td><td>"Our product analytics never matched what finance saw in billing"</td><td>Incumbents rarely build for each other</td><td>You depend on two APIs you don't control</td></tr>
+<tr><td>An app store or integration marketplace</td><td>"The Shopify or HubSpot app for this is abandoned"</td><td>Buyers are already searching inside the platform</td><td>Platform fees, and the platform can copy you</td></tr>
+<tr><td>Something you already do for clients</td><td>"I run the same pricing audit for every company I advise"</td><td>You've been paid for it, so you know it's worth money</td><td>Software can't carry the judgment part</td></tr>
+<tr><td>A regulated or compliance-heavy workflow</td><td>"Every EU customer asks us for the same data-processing paperwork"</td><td>Deadlines and penalties create budget</td><td>Errors carry real liability</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Examples by background</h3>
+<p>These are illustrative patterns, not tested ideas.</p>
+<ul>
+<li><strong>Product leaders:</strong> tools that turn scattered customer feedback into a weekly prioritised list for one kind of company, such as B2B marketplaces.</li>
+<li><strong>Engineering leaders:</strong> tools for the chores nobody owns, like tracking on-call load across teams or keeping vendor security reviews up to date.</li>
+<li><strong>Growth leaders:</strong> reporting that joins ad spend, product signups and billing for a single channel or industry.</li>
+</ul>
+<p>If you don't know which part of your career to build from, start with <a href="../../guides/what-to-sell-after-tech/">what to sell after a tech job</a>. The same angle can become a service or software.</p>
+
+<h2>How do you validate a SaaS idea before building it?</h2>
+<p>You validate a SaaS idea by getting buyers to commit money or a firm next step before the product exists. A waitlist signup or an "I'd use that" costs the person nothing, so it proves very little.</p>
+
+<h3>1. Ask four questions first</h3>
+<ul>
+<li><strong>Is there a budget line?</strong> Ask what they spent on this problem last year, in tools or contractors. If the answer is nothing, you'll be asking them to find new money.</li>
+<li><strong>Did the problem cost someone something?</strong> A lost deal, a missed close, a weekend. That's a painkiller. "It would be nice" is a vitamin.</li>
+<li><strong>Is it a product or a feature?</strong> If a tool they already pay for could add it in a quarter, you need a niche that tool won't bother serving.</li>
+<li><strong>Can you reach buyers at this price?</strong> Brian Balfour calls this channel-model fit. A 79€ a month product can't pay for a salesperson.</li>
+</ul>
+
+<h3>2. Interview without pitching</h3>
+<p>Talk to ten to fifteen people who run the workflow today. Rob Fitzpatrick's <em>The Mom Test</em> is the best guide I know: ask what they did the last time the problem came up and what it cost them, and hold back the idea until the end.</p>
+
+<h3>3. Pre-sell or run a concierge version</h3>
+<p>A concierge MVP is a version of your product that you deliver manually while the customer pays as if it were software. You run the exports, build the report and send it every Monday. You learn how the work actually gets done, and you find out whether anyone pays.</p>
+<p>Pre-sales work the same way: offer a founding-customer deal, such as a discounted annual plan paid now for access when the first version ships. A few people paying in advance tells you more than a hundred signups.</p>
+<p>The Stack's Go/No-Go playbook runs this check for software ideas and gives a go, no-go or not-yet verdict with the one assumption to test next. It's part of <a href="../../stack/">The Stack</a>, fifteen playbooks that run in Claude.</p>
+
+<h2>Can you build a micro SaaS MVP with AI tools?</h2>
+<p>Yes. AI coding tools like Claude Code, Cursor and Lovable make it realistic for a product or growth leader to build a working first version, and for an engineering leader to build one in weeks of evenings. The hard part of a micro SaaS is still finding buyers, and AI doesn't do that for you.</p>
+<ul>
+<li><strong>Build only the concierge workflow.</strong> The first version should do the one job customers already pay you to do by hand.</li>
+<li><strong>Buy the boring parts.</strong> Use an existing service for login, payments and email. Stripe or Paddle for billing, a hosted database, a managed auth provider.</li>
+<li><strong>Take security and privacy seriously early.</strong> B2B buyers, especially in Europe, will ask where data is stored and whether you have a data processing agreement. AI-generated code needs a proper review before customer data goes into it.</li>
+<li><strong>Plan for maintenance.</strong> Integrations break and dependencies need upgrading long after launch, and that work lands on your evenings too.</li>
+</ul>
+<p>AI products can grow quickly. <a href="https://chartmogul.com/reports/saas-growth-the-odds-of-making-it/" rel="noopener">ChartMogul's 2025 SaaS Growth Report</a> found AI-native startups were 3x more likely to reach $1M ARR within 6 months. The same company's retention data, below, shows the catch.</p>
+
+<h2>How should you price a micro SaaS?</h2>
+<p>Price a B2B micro SaaS against the time or money the workflow costs your customer, usually somewhere from tens to a few hundred euros a month per account, and avoid consumer-style prices like 9€. Low prices attract buyers who churn, and they force you to find far more customers.</p>
+<p>The retention numbers are stark. <a href="https://chartmogul.com/reports/saas-retention-the-ai-churn-wave/" rel="noopener">ChartMogul's 2025 SaaS Retention Report</a>, covering 3,500 software companies, found AI-native products priced under $50 a month kept 23% of their revenue over a year (gross revenue retention), while those priced above $250 a month kept 70%.</p>
+<p>The maths matters too. Say you want 10,000€ a month in recurring revenue:</p>
+<ul>
+<li>At 19€ a month, you need 527 paying customers.</li>
+<li>At 99€ a month, you need 102.</li>
+<li>At 299€ a month, you need 34.</li>
+</ul>
+<p>Thirty-four customers is a list you can build from your network and one niche community. Five hundred needs paid acquisition or a large audience, and you probably don't have either yet.</p>
+<h3>How to set the number</h3>
+<ul>
+<li><strong>Pick a value metric</strong> that grows with the value customers get: per seat, per location, per connected account, per report.</li>
+<li><strong>Talk price during validation.</strong> Madhavan Ramanujam's <em>Monetizing Innovation</em> makes the case for testing willingness to pay before you build. Ask what they'd expect to pay, and at what price it becomes too expensive to consider.</li>
+<li><strong>Offer annual plans.</strong> Cash upfront pays for the build and gives you a full year to earn the renewal.</li>
+<li><strong>Keep founding prices honest.</strong> Discount for early customers, and write down when the discount ends.</li>
+</ul>
+
+<h2>How do you get your first 10 SaaS customers?</h2>
+<p>Your first 10 SaaS customers usually come from people you already know and from the few places your niche gathers online, through direct conversations you have yourself. Ads, SEO and Product Hunt come later, once you know who buys and why.</p>
+<ol>
+<li><strong>Convert your validation conversations.</strong> Everyone you interviewed gets a personal note when the first version is ready, with the founding offer.</li>
+<li><strong>Go through your network by role.</strong> List former colleagues who now hold the job that owns this workflow. Ask for a 20-minute call, and ask each one who else has the problem.</li>
+<li><strong>Show up in niche communities.</strong> Slack groups, subreddits, LinkedIn groups and associations for your buyers. Answer questions for weeks before you mention the product.</li>
+<li><strong>List it where buyers already search.</strong> If you integrate with a platform, the platform's app marketplace is a free, high-intent channel.</li>
+<li><strong>Publish what you learn.</strong> Posts about the workflow itself, with numbers from your own experience, bring in the people who have the problem. I cover this in <a href="../../guides/how-to-build-an-audience-business/">how to build an audience business</a>.</li>
+</ol>
+<p>Paul Graham's essay "Do Things That Don't Scale" is worth rereading here. Onboard every early customer yourself, on a call, and write down every question they ask.</p>
+
+<h2>How long does it take a micro SaaS to make money?</h2>
+<p>A micro SaaS can take its first payment within weeks, but reaching salary-level revenue usually takes years. <a href="https://stripe.com/blog/stripe-atlas-startups-in-2025-year-in-review" rel="noopener">Stripe's 2025 review of Atlas startups</a> put the median time from incorporation to first payment at 34 days. First payments are the easy part.</p>
+<p>In <a href="https://chartmogul.com/reports/saas-growth-the-odds-of-making-it/" rel="noopener">ChartMogul's 2025 growth data</a> on 6,525 software companies, 3.3% reached $1M in annual recurring revenue within a year of first charging customers, 13.4% within three years and 25.1% within five. Those that got there usually took between two and five years.</p>
+<p>For someone keeping a job, much smaller milestones decide whether it's working. The timings below are my rough estimates, not benchmarks:</p>
+<ul>
+<li><strong>Months 0 to 3:</strong> interviews, a concierge version and your first few paying customers.</li>
+<li><strong>Months 3 to 12:</strong> a working product, 10 to 30 customers, and enough revenue to cover tools and some of your time.</li>
+<li><strong>Years 1 to 3:</strong> a repeatable channel, and the point where you decide whether revenue is high enough to reduce your hours at work.</li>
+</ul>
+<p>Rob Walling's "stair step" approach is a sensible way to get there: start with something small that sells through a single channel, then take on a recurring software product once you've learned to sell. Keep your job until the revenue says you can leave.</p>
+
+<h2>Is a micro SaaS the right business for you?</h2>
+<p>A micro SaaS suits people who want to own a system and can wait for it to pay: in my Builder Archetypes, that's <a href="../../archetypes/venture-builder/">the Venture Builder</a>. If you'd rather have income next month from a skill you've already proven, a fractional role or consulting fits better.</p>
+<p>Venture Builders have one predictable blind spot. They keep building for another quarter before talking to a customer, and end up with good architecture and no pipeline. If that sounds like you, put the concierge version and the first ten sales on the calendar before the build.</p>
+<p>Some signs it's a good fit:</p>
+<ul>
+<li>You enjoy the product work itself, including the dull parts like support and billing.</li>
+<li>You can give it one steady block of time each week for two years or more.</li>
+<li>You know a niche well enough to name 50 people who'd buy.</li>
+<li>You're comfortable selling directly, at least to the first ten customers.</li>
+</ul>
+
+<div class="article-cta"><h2>Find out if software fits how you work</h2><p>The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, which business models suit you and which ones will wear you down, so you know whether a micro SaaS is worth your evenings. If it is, The Stack takes you from the go/no-go through pricing and launch.</p><a class="btn btn-primary" href="../../diagnostic/">Take the Builder Diagnostic</a></div>
+
+      <h2>Questions people ask</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Can I build a micro SaaS while keeping my full-time job?</summary>
+          <p>Yes, and it&#x27;s the safer way to start, because the first year rarely pays a salary. Read your employment contract for intellectual property and conflict-of-interest clauses before you build, and keep the work off company laptops and company time. If a clause is unclear, pay a lawyer for an hour before you sign your first customer.</p>
+        </details>
+        <details>
+          <summary>Do I need to know how to code to build a micro SaaS?</summary>
+          <p>Not to start. You can validate the idea and take your first payments with a concierge version you run by hand, and AI coding tools make a simple first version buildable without an engineering background. Once customers depend on it, get an experienced engineer to review security, billing and data handling.</p>
+        </details>
+        <details>
+          <summary>How many customers does a micro SaaS need to replace a salary?</summary>
+          <p>Divide the monthly income you need by your price. Say you want 8,000€ a month before tax and costs: at 49€ a month that&#x27;s 164 customers, at 149€ it&#x27;s 54, and at 399€ it&#x27;s 21. Higher B2B prices make the target reachable through your network and one niche.</p>
+        </details>
+        <details>
+          <summary>Is it better to build a micro SaaS alone or with a co-founder?</summary>
+          <p>Alone works if you can both build and sell, or if AI tools cover the build well enough for your product. A co-founder helps when your skills are one-sided, for example a growth leader who can sell but can&#x27;t maintain code. Agree on equity, time commitment and what happens if one of you stops before you write anything.</p>
+        </details>
+        <details>
+          <summary>Should I launch my micro SaaS on Product Hunt?</summary>
+          <p>Only after you have paying customers from direct conversations. A Product Hunt launch brings a short burst of attention from a broad tech audience, and the niche B2B buyer a micro SaaS needs is rarely in it. Treat it as a credibility bonus once the product already sells.</p>
+        </details>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="../../">madgrowth</a>
+        <p>Playbooks and 1:1 advisory for leaders in tech starting their own business.</p>
+        <a class="footer-person" href="../../#about">
+          <img src="/assets/img/madalena.jpg" alt="" width="40" height="40" loading="lazy">
+          <span><strong>Madalena Rugeroni</strong>Founder of Madgrowth, Mazo and Favorite People</span>
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Products">
+        <h2>Products</h2>
+        <ul class="footer-list">
+          <li><a href="../../stack/">The Stack</a></li>
+          <li><a href="../../#audit">The Audit</a></li>
+          <li><a href="../../#build">The Build</a></li>
+          <li><a href="../../startups/">Startup GTM advisory</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Free resources">
+        <h2>Free</h2>
+        <ul class="footer-list">
+          <li><a href="../../diagnostic/">Builder Diagnostic</a></li>
+          <li><a href="../../archetypes/">Builder Archetypes</a></li>
+          <li><a href="../../guides/">Guides</a></li>
+          <li><a href="../../claude-skills/">Claude skills</a></li>
+          <li><a href="../../newsletter/">Newsletter</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Company">
+        <h2>Company</h2>
+        <ul class="footer-links">
+          <li><a href="../../#about">About Madalena</a></li>
+          <li><a href="mailto:madalena@madgrowth.io">Contact</a></li>
+          <li><a href="../../privacy/">Privacy</a></li>
+          <li><a href="../../terms/">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-news">
+      <div><strong>From operator to owner</strong><span>A weekly newsletter on building a business after tech. 3-minute read, every Thursday.</span></div>
+      <a class="btn btn-primary" href="../../newsletter/" data-event="newsletter_footer_click">Get the newsletter →</a>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-social"><a href="https://www.linkedin.com/in/madalenarugeroni">LinkedIn</a><a href="https://x.com/madalenarug">X</a><a href="mailto:madalena@madgrowth.io">madalena@madgrowth.io</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
