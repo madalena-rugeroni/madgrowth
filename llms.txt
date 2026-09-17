@@ -39,6 +39,11 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 - [How to price fractional and consulting services](https://www.madgrowth.io/guides/how-to-price-fractional-consulting/): Price fractional services from the cost of the problem and the hire it replaces. Day rate vs retainer vs value pricing, with European day rates in euros.
 - [Fractional, consulting or software: which business should you start after tech?](https://www.madgrowth.io/guides/fractional-consulting-or-software/): Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
 
+## Claude skills
+
+- [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app, and the full list of The Stack's 15 AI playbooks (installed as Claude skills) with what each one produces.
+- [How to create a Claude skill](https://www.madgrowth.io/guides/how-to-create-a-claude-skill/): folder structure, a working SKILL.md example, how to write descriptions Claude triggers on, and how to install and test a skill.
+
 ## About Madalena Rugeroni
 
 - [About Madalena Rugeroni](https://www.madgrowth.io/about/): founder of Madgrowth, ex-Google, advisor and investor.

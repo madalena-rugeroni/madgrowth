@@ -1027,3 +1027,7 @@ html.js .reveal-scale.is-visible { transform: none; }
 .compare-table a { color: inherit; border-bottom: 1px solid currentColor; }
 .compare-table .compare-us { background: var(--bg-alt); }
 .compare-table .compare-us th, .compare-table .compare-us td { color: var(--ink); }
+.prose code { font-family: var(--font-mono); font-size: 0.88em; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; }
+.prose pre { background: #0f0f0f; color: #eaeaea; border-radius: 12px; padding: 18px 20px; overflow-x: auto; font-size: 0.86rem; line-height: 1.6; }
+.prose pre code { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; }
+.prose .updated { font-size: 0.85rem; color: var(--muted); }
