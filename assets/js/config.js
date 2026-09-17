@@ -21,6 +21,9 @@ window.MG = {
   // --- Kit (ConvertKit) ---
   // Public form the diagnostic posts to.
   KIT_FORM_ID: "9916138",
+  // Newsletter form ("Newsletter form" in Kit, the one the welcome
+  // automation listens to). Used by /newsletter/.
+  KIT_NEWSLETTER_FORM_ID: "7572611",
   // Kit tag IDs (numeric). Find them in Kit → Grow → Tags.
   // One tag per Builder Archetype.
   KIT_TAGS: {

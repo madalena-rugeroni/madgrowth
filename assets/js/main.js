@@ -378,8 +378,9 @@
      * tagKeys: array of keys in MG.KIT_TAGS (e.g. ["broadcaster"]).
      * fields:  extra Kit custom fields, e.g. { archetype: "broadcaster" }.
      */
-    subscribe: function (email, tagKeys, fields) {
-      if (isPlaceholder(MG.KIT_FORM_ID)) {
+    subscribe: function (email, tagKeys, fields, formId) {
+      formId = arguments.length > 3 ? formId : MG.KIT_FORM_ID;
+      if (isPlaceholder(formId)) {
         console.warn("Madgrowth config: set KIT_FORM_ID in assets/js/config.js");
         return Promise.reject(new Error("KIT_FORM_ID not configured"));
       }
@@ -392,7 +393,7 @@
       Object.keys(fields || {}).forEach(function (k) {
         body.append("fields[" + k + "]", fields[k]);
       });
-      return fetch("https://app.kit.com/forms/" + MG.KIT_FORM_ID + "/subscriptions", {
+      return fetch("https://app.kit.com/forms/" + formId + "/subscriptions", {
         method: "POST",
         body: body,
         headers: { Accept: "application/json" }
@@ -404,4 +405,53 @@
   };
 
   window.MGutil = { withUTM: withUTM, track: track, isPlaceholder: isPlaceholder };
+
+  // ---------- Newsletter forms: <form data-kit-form="newsletter"> ----------
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('form[data-kit-form="newsletter"]').forEach(function (form) {
+      var status = form.nextElementSibling && form.nextElementSibling.classList.contains("form-status")
+        ? form.nextElementSibling : null;
+      var input = form.querySelector('input[type="email"]');
+      var button = form.querySelector('button[type="submit"]');
+      function say(msg, cls) {
+        if (!status) return;
+        status.className = "form-status" + (cls ? " " + cls : "");
+        status.textContent = "";
+        if (typeof msg === "string") status.textContent = msg; else status.appendChild(msg);
+      }
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = (input.value || "").trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          say("Enter a valid email address.", "err");
+          input.focus();
+          return;
+        }
+        button.disabled = true;
+        say("Adding you…");
+        window.MGKit.subscribe(email, [], {}, form.getAttribute("data-kit-form-id") || MG.KIT_NEWSLETTER_FORM_ID)
+          .then(function (res) {
+            if (res && res.status === "quarantined" && res.url) {
+              // Kit's bot check: the visitor confirms on Kit's page.
+              var frag = document.createDocumentFragment();
+              frag.appendChild(document.createTextNode("One more step: "));
+              var a = document.createElement("a");
+              a.href = res.url; a.target = "_blank"; a.rel = "noopener";
+              a.textContent = "confirm you're not a bot";
+              frag.appendChild(a);
+              frag.appendChild(document.createTextNode(" and you're in."));
+              say(frag, "ok");
+            } else {
+              say("You're in. Check your inbox for the welcome email (it sometimes lands in Promotions).", "ok");
+              form.reset();
+            }
+            track("newsletter_subscribe");
+          })
+          .catch(function () {
+            say("That didn't go through. Try again, or email madalena@madgrowth.io.", "err");
+          })
+          .then(function () { button.disabled = false; });
+      });
+    });
+  });
 })();

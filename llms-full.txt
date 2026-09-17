@@ -5,96 +5,98 @@
 ---
 
 URL: https://www.madgrowth.io/
-Title: Go fractional or start a business from your tech career · Madgrowth
+Title: How to go fractional, start an agency or build a SaaS · Madgrowth
 
 For leaders in tech with 5 to 10+ years of experience
 
-# You've built the pipeline. Grown the team. Hit the number. Now build something that belongs to you.
+# You know what you want to build. Here's how to launch it.
 
-You have the track record. What's missing is a sharp answer to what you sell, who buys it and what you charge. Madgrowth turns your experience into a positioned, priced offer for a fractional role, a services business or software, with AI skills you run yourself or 1:1 with me.
+Going fractional, advising, starting an agency or building a product: Madgrowth gives you the playbooks to decide, position, price and launch it. Run them yourself with AI, or build it 1:1 with me.
 
-Run the free Builder Diagnostic (3 min) → See how it works ↓    Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today     Madalena RugeroniFounder, Madgrowth
+See which business fits how you work → See how it works ↓
+Free Builder Diagnostic · 3 minutes
+Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today     Madalena RugeroniFounder of Madgrowth, Mazo and Favorite People
 
 Advising leaders in tech from companies like
 
 Where it stalls
 
-## You have the credibility. The offer is still missing.
+## Most leaders in tech know roughly what they want to build. Then it sits for months.
 
-You've shipped products, built teams and hit targets at companies people know. You want more control over your time and something you own. When you try to turn that into a business, four questions come up and stay open for months.
+You've shipped products, led teams and hit targets at companies people know. You want more control over your time and something of your own. Maybe that's a fractional role, an advisory practice, an agency or a SaaS idea you keep coming back to. Four questions keep it from starting.
 
 01
 
-### What do I sell?
+### Is this the right thing to build?
 
-Ten years of work could support a dozen businesses. Committing to one feels like closing off the rest.
+You have an idea, maybe three. With no way to test them against the market and against how you like to work, all of them stay open and none of them start.
 
 02
 
-### Who is it for?
+### Who buys it, and why me?
 
-"I help companies grow" gives nobody a reason to call you. A buyer needs to recognize their problem and see why you're the one to fix it.
+"I help companies grow" gives nobody a reason to call. A buyer has to recognize their problem in one line and see why you're the person to fix it.
 
 03
 
-### How do I package it?
+### How do I package and price it?
 
-Day rate, retainer, fixed-scope project or product. The same expertise earns very different money depending on the format.
+Day rate, retainer, project or product. Most people anchor on their last salary, charge too little and end up with more work than they planned.
 
 04
 
-### What do I charge?
+### Where do the first clients come from?
 
-Most operators anchor on their last salary, price too low and end up with more work and thinner margins.
+Your network gets you a few conversations. After that you need people who already know what you do before you pitch them, and that audience takes months to build.
 
-Not sure what to sell Too many directions to pursue Don't know how to price myself Can't explain what I do in one line Credibility, but no offer Income depends on one employer Fractional, services or software? Afraid of charging too little Ideas but no clear path Expertise trapped inside a job No time to figure it out alone No clear starting point
-Not sure what to sell Too many directions to pursue Don't know how to price myself Can't explain what I do in one line Credibility, but no offer Income depends on one employer Fractional, services or software? Afraid of charging too little Ideas but no clear path Expertise trapped inside a job No time to figure it out alone No clear starting point
+Not sure which idea to pick Too many directions Don't know how to price myself Can't explain what I do in one line No offer yet Income depends on one employer Fractional, agency or SaaS? Afraid of charging too little An idea but no plan Nobody knows what I do yet No time to figure it out alone Don't know where to start
+Not sure which idea to pick Too many directions Don't know how to price myself Can't explain what I do in one line No offer yet Income depends on one employer Fractional, agency or SaaS? Afraid of charging too little An idea but no plan Nobody knows what I do yet No time to figure it out alone Don't know where to start
 
-Recognize three or more? The free diagnostic maps what kind of builder you are and what to build first →
+Recognize three or more? See which business fits how you work, free, in 3 minutes →
 
 How it works
 
-## Five steps from experience to paying clients
+## Five steps from an idea to paying clients
 
-It's the sequence I used to build my own businesses, turned into AI skills you can run on yours.
+It's the sequence I used to build my own businesses. Every product below follows these five steps. The difference is who does the work.
 
 01
 
-### Find your angle
-What do I sell?
-The free Expertise Audit reads your career and returns your three strongest angles, each with the buyer, the problem and your proof.
+### Decide
+Is this worth building?
+The Go / No-Go scores your idea against the market and your Builder Archetype, names the assumption that decides it and the cheapest way to test it. No idea yet? The free Expertise Audit finds your three strongest angles first.
 
 02
 
 ### Position it
-Who is it for?
-Four skills: customer interviews, your ICP, positioning and messaging. Every claim gets an evidence grade, so you know what's proven and what's still a guess.
+Who buys it, and why me?
+Customer interviews, your ICP, positioning and messaging. Every claim gets an evidence grade, so you know what's proven and what's still a guess.
 
 03
 
 ### Package it
-How do I package it? What do I charge?
-Three skills: the offer, the price and the numbers behind it. Most operators underprice and describe the offer too loosely. This step fixes both.
+What do I sell, and for how much?
+The offer, the price and the numbers behind it. You end with a clear scope, a price you can defend and a check that the economics work.
 
 04
 
-### Build the audience path
+### Build the audience
 Who hears about it?
-Two skills: a content plan built from your messaging, and one lead magnet that leads to your offer. Enough to create inbound without a large following.
+A content plan built from your messaging and one lead magnet that leads to your offer. Start this early, because inbound takes months to build.
 
 05
 
 ### Launch it
 Who pays first?
-Five skills: landing page, launch plan, acquisition channels, the sales conversation and a client's first 90 days. Includes direct outreach to your first ten prospects.
+The landing page, the launch plan, your acquisition channels, the sales conversation and a client's first 90 days.
 
-Run it yourself with The Stack. Get my written diagnosis with The Audit. Build it with me 1:1 in The Build.
+The Stack · 299€ You run all five steps 15 AI playbooks, one per task, that run in Claude.   The Audit · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
 
 Who it's for
 
 ## For leaders in tech ready to build something of their own
 
-A fractional role, a services business or software all start with the same decisions: what you sell, who buys it and what you charge. The skills use a different playbook for each.
+A fractional role, an advisory practice, an agency or a SaaS product all start with the same decisions: what you sell, who buys it and what you charge.
 
 ### Still employed, ready for more autonomy
 
@@ -102,13 +104,13 @@ Product, growth, revenue and engineering leaders with 5 to 10+ years at startups
 
 ### Recently independent
 
-Fractional executives, consultants and solo founders in their first year, including anyone fresh out of a layoff. You have deep expertise and a network. You still need a clear offer, a price and your first three clients.
+Fractional executives, consultants, agency founders and solo founders in their first year, including anyone fresh out of a layoff. You have deep expertise and a network. You still need a clear offer, a price and your first three clients.
 
 ### Ready to build a product
 
 Operators who want to turn a problem they've dealt with for years into software or a digital product, with evidence people will pay before six months go into building it.
 
-Running a startup and need help with go-to-market? Startup GTM advisory →
+Already running a startup and need help with go-to-market strategy and scaling it? Startup GTM advisory →
 
 Why not just…
 
@@ -116,11 +118,11 @@ Why not just…
 
 ### …ask ChatGPT or Claude?
 
-You'll get a reasonable answer to each question and no decision at the end. The Stack remembers your business across fifteen skills, applies the playbook for your business model and passes each result to the next skill.
+You'll get a reasonable answer to whatever you ask, written to fit any business. A fractional practice, an agency and a SaaS product get positioned, priced and sold in different ways. The Stack knows which one you're building and runs that playbook, based on my own go-to-market work and on the people who wrote the book on each step, like April Dunford on positioning and Blair Enns on pricing expertise. Each step ends in a decision.
 
 ### …take a creator course?
 
-Most start with building an audience. Senior operators get paid sooner by defining the offer and the price first, then reaching the small group who'll buy it.
+You'll need an audience, so it's worth starting early. The catch with courses is finishing them: most people stop partway through the videos. With The Stack you do each step on your own business as you go, and in The Build I review the work and keep you moving.
 
 ### …join a fractional marketplace?
 
@@ -134,27 +136,27 @@ Products
 
 ## Start where you are
 
-Start free: the Builder Diagnostic shows what kind of builder you are and the Expertise Audit finds your angle. From there, do the work yourself with The Stack, get my written diagnosis with The Audit, or build it with me in The Build.
+Start free: the Builder Diagnostic shows which business fits how you work and the Expertise Audit finds your angle. From there, run the playbooks yourself with The Stack, get my written review with The Audit, or build it with me in The Build.
 
 ### The Stack
 
-Do it yourself · 15 AI skills
+Do it yourself · 15 AI playbooks
 
 299€ · one-time
 
-Fifteen AI skills that work as one system. The first asks eight questions about your business. Every skill after that reads your answers and loads the playbook for your model: services, software, product, local or media. The playbooks draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and every skill ends with a document you keep.
+Fifteen AI playbooks that run in Claude and work as one system. The first asks eight questions about your business. Every playbook after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
+- Decide: Go / No-Go, scored against your Builder Archetype and your business idea
 - Position it: Talk to Customers · Your Customer · Positioning · Messaging
 - Package it: Your Offer · Pricing · The Numbers
-- Decide: Go / No-Go, scored against your Builder Archetype
 - Audience: Founder Content · Lead Magnet
 - Launch it: Landing Page · Launch · Get Customers · Convert · Retain
 - Run them in any order. The system keeps track.
 - Free updates
 Get the Stack · 299€
-See every skill and the frameworks behind it →
+See every playbook and the frameworks behind it →
 
-Runs in Claude, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
+Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
 
 ### The Audit
 
@@ -162,7 +164,7 @@ Written diagnosis · 5 business days
 
 599€ · one-time
 
-An honest assessment before you spend three months on the wrong thing. Send me what you have: the idea, your LinkedIn, a draft offer or a live site. I'll score it against the five steps (angle, positioning, offer, audience, launch), show you where it breaks and what to fix first. It's the scorecard I use on my own launches. If the angle is weak, I'll tell you.
+An honest assessment before you spend three months on the wrong thing. Send me what you have: the idea, your LinkedIn, a draft offer or a live site. I'll score it against the five steps (decide, position, package, audience, launch), show you where it breaks and what to fix first. It's the scorecard I use on my own launches. If the angle is weak, I'll tell you.
 
 - Scored across all 5 steps, with a 90-day roadmap
 - Written diagnosis within 5 business days of confirming your intake, fully async
@@ -198,7 +200,7 @@ Leading teams at Google. Scaling startups from zero to $10M in revenue. Six-figu
 
 I had built everything the playbook said to build. But my income still depended on one employer, my expertise was trapped inside someone else's company, and my time wasn't my own.
 
-So I built a way out. Then I built Madgrowth to help others do the same. Today I advise and invest in startups and run a portfolio of internet businesses, including this practice and Mazo, my software company.
+So I built a way out. Then I built Madgrowth to help others do the same. Today I advise and invest in startups and run a portfolio of internet businesses.
 
 I work with leaders in tech who are done building for others and ready to build for themselves, whether that's a fractional role, a services business or software.
 
@@ -218,15 +220,15 @@ No. The system is built to run alongside a job, and most clients create their fi
 
 What if I don't know what I'd sell?
 
-Most people start there. The free Expertise Audit skill finds your three strongest angles in about ten minutes, using the career you already have.
+Many people have a direction and no specific offer yet. The free Expertise Audit finds your three strongest angles in about ten minutes, using the career you already have, and the Go / No-Go tells you which one is worth building.
 
-I already use ChatGPT or Claude. Why pay for skills?
+I already use ChatGPT or Claude. Why pay for The Stack?
 
-The Stack asks about your business once and remembers it across fifteen skills. Each skill applies the playbook for your business model, uses what the earlier skills produced and ends with a document you keep: an ICP, an offer, a price, a launch plan.
+A general assistant gives you a reasonable answer for any business. The Stack runs a specific playbook for the business you're building, based on my own go-to-market work and on frameworks from practitioners like April Dunford and Blair Enns. Each playbook uses what the earlier ones produced and ends with a document you keep: an ICP, an offer, a price, a launch plan.
 
 Fractional, services or software: does it matter which?
 
-Not at the start. All three begin with what you sell, who buys it and what it costs. The skills use a different playbook for each, and the Go / No-Go scores the idea against your Builder Archetype before you commit months to it.
+Not at the start. All of them begin with what you sell, who buys it and what it costs. The Stack has a version of each playbook for each model, and in The Build we adapt the plan to yours. The Go / No-Go scores the idea against your Builder Archetype before you commit months to it.
 
 I have around 5 years of experience. Is that enough?
 
@@ -234,7 +236,7 @@ If you've owned an outcome, like a number, a team or a launch, yes. The Expertis
 
 Do I need a big audience?
 
-No. The audience step builds inbound from a small, focused presence. A few hundred of the right people is enough to launch.
+Not a big one. You do need a focused one, and it pays to start early. The audience step builds it from a content plan and one lead magnet, and a few hundred of the right people is enough to launch.
 
 How do I go from a tech job to fractional or consulting work?
 
@@ -246,71 +248,75 @@ Price against the cost of the problem and the full-time hire the client would ot
 
 The Stack, The Audit or The Build?
 
-They use the same system. The Stack is the fifteen skills on your own (299€ once). The Audit is my written diagnosis of what you have (599€). The Build is the skills plus me, 1:1, with a guarantee (1,200€/month). If you're unsure, book the free 15-minute call from The Build card.
+They follow the same five steps. The Stack is the fifteen playbooks to run on your own (299€ once). The Audit is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1, with a guarantee (1,200€/month). If you're unsure, book the free 15-minute call from The Build card.
 
 Do I have to run the skills in order?
 
-No. The first skill you run asks eight questions about your business, once. Every other skill reads those answers, so you can start with pricing, the landing page or the Go / No-Go. There's a recommended sequence, and you're free to skip around.
+No. The first playbook you run asks eight questions about your business, once. Every other playbook reads those answers, so you can start with the Go / No-Go, pricing or the landing page. The recommended sequence starts with Decide, and you're free to skip around.
 
 Can I talk to you before starting The Build?
 
 Yes. Book the 15-minute call from The Build card and bring your diagnostic profile. If you want an in-depth review of your plan, that's The Audit.
 
-I'm already running a startup. Is this for me?
+I'm already running a startup. Where can I get go-to-market help?
 
-This page is for building something new. For startups between 0 and $1M, I offer 1:1 go-to-market advisory: see startup GTM advisory →
+This page is for building something new. For a startup that's already running, there are two options.
 
-## Find out what you should be selling.
+1:1 with me. I advise founders between 0 and $1M in revenue on go-to-market strategy and scaling. See startup GTM advisory →
 
-Three minutes maps what kind of builder you are. The free Expertise Audit then finds the three strongest angles in your career.
-Run the diagnostic →
+Self-serve, for B2B SaaS. Mazo is my AI go-to-market advisor. It reviews your go-to-market using your own numbers, pushes back when it disagrees and sets the tests to run next. Try Mazo →
+
+## Check the business fits you before you spend months building it.
+
+Ten scenarios, three minutes. You'll see your Builder Archetype, the businesses that suit how you work and the ones that will wear you down. Your full profile and the free Expertise Audit arrive by email.
+See which business fits how you work →
 
 ---
 
 URL: https://www.madgrowth.io/stack/
-Title: The Stack: 15 AI skills to position, price and launch · Madgrowth
+Title: The Stack: 15 AI playbooks to decide, position, price and launch · Madgrowth
 
-The Stack · 15 AI skills
+The Stack · 15 AI playbooks
 
-# Fifteen AI skills. The right playbook for your kind of business.
+# Fifteen AI playbooks, each with a version for your kind of business.
 
-A SaaS product and a fractional CMO practice need different positioning, pricing and launch playbooks. The Stack classifies your business first. Every skill then runs the frameworks built for that model and hands you a finished document.
+A SaaS product and a fractional CMO practice need different positioning, pricing and launch playbooks. The Stack classifies your business first. Every playbook then runs the frameworks built for that model and hands you a finished document.
 
-Get the Stack · 299€ → See the fifteen skills ↓    Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
+Get the Stack · 299€ → See the fifteen playbooks ↓    Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
 The Stack 299€one-time
 - Start hereAudit + setup
-- Position it4 skills
-- Package it3 skills
-- Decide1 skill
-- Audience2 skills
-- Launch it5 skills
+- Decide1 playbook
+- Position it4 playbooks
+- Package it3 playbooks
+- Audience2 playbooks
+- Launch it5 playbooks
 
 A playbook for each model
 
 ServicesSoftwareProductLocalMediaMarketplaces
-Free updates. Runs in Claude, in the app or Claude Code.
+Free updates. Installs as Claude skills, in the app or Claude Code.
 
 How it works
 
-## Answer the setup questions once. Every skill uses them.
+## Answer the setup questions once. Every playbook uses them.
 
 1
 
 ### Classify your business
 
-The setup skill asks about your model, stage, sales motion, price point, team, Builder Archetype, geography and how much you can build yourself. It takes a few minutes.
+The setup step asks about your model, stage, sales motion, price point, team, Builder Archetype, geography and how much you can build yourself. It takes a few minutes.
 
 2
 
 ### Load the playbook
 
-Every skill opens the playbook for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
+Every playbook opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
 
 3
 
 ### Keep the output
 
-Each skill ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next skill builds on it, so start wherever the pressure is.
+Each playbook ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next one builds on it, so start wherever the pressure is.
 
 ServicesFractional roles, consulting, advisory, agencies
 SoftwareB2B SaaS, sales-led or product-led
@@ -319,9 +325,9 @@ LocalBusinesses built around a place
 MediaNewsletters, podcasts, communities
 MarketplacesA layer on top of any model
 
-The skills
+The playbooks
 
-## What each skill produces and the frameworks behind it
+## What each playbook produces and the frameworks behind it
 
 Frameworks are listed for the models where they apply. They're credited to their authors, who aren't affiliated with Madgrowth.
 
@@ -340,26 +346,36 @@ A context file every other skill reads, so you answer these questions once.
 
 - CoversBusiness model, stage, sales motion, price band, solo or team, Builder Archetype, geography and build capacity
 
+### Decide
+
+Is this idea worth building, and is it right for you? A verdict before you spend months on it.
+Playbook 01
+
+01Go / No-Go
+A go, no-go or not-yet verdict on your business idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest way to test it and a pre-mortem. Run it again later with more data.
+
+- ModesQuick roast for a raw idea, full gate before you spend money, post-launch check once you have data
+
 ### Position it
 
 Who you serve, why they pick you and how you say it.
-Skills 01 to 04
+Playbooks 02 to 05
 
-01Talk to Customers
+02Talk to Customers
 An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
 
 - ServicesTrigger-moment research and Blair Enns's diagnose-first method
 - SoftwareThe Mom Test and Teresa Torres's Continuous Discovery Habits
 - ProductBob Moesta's switch interview
 
-02Your Customer
+03Your Customer
 An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
 
 - ServicesJobs to be done and trigger-moment mapping
 - SoftwareApril Dunford's best-fit customer derivation
 - ProductBob Moesta's Four Forces of Progress
 
-03Positioning
+04Positioning
 Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
 
 - ServicesDavid C. Baker and Blair Enns on expertise positioning
@@ -368,7 +384,7 @@ Your competitive alternatives, what's different, the value that enables, who car
 - LocalCategory, geography and trust
 - MediaBeat, point of view and format
 
-04Messaging
+05Messaging
 A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and answers to the top objections.
 
 - ServicesThe expertise claim from Baker and Enns, and Donald Miller's StoryBrand
@@ -378,9 +394,9 @@ A messaging house with one core message and three proof-backed pillars, plus you
 ### Package it
 
 What you sell, what it costs and whether the numbers work.
-Skills 05 to 07
+Playbooks 06 to 08
 
-05Your Offer
+06Your Offer
 Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
 
 - All modelsThe Value Proposition Canvas
@@ -388,32 +404,22 @@ Your offer in one paragraph: what's included, for whom, how it's packaged and th
 - SoftwareMadhavan Ramanujam's leaders, fillers and killers
 - ProductMark Joyner's The Irresistible Offer
 
-06Pricing
+07Pricing
 The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
 
 - ServicesBlair Enns's Pricing Creativity and Alan Weiss on value-based fees
 - SoftwareMadhavan Ramanujam's Monetizing Innovation
 - ProductDan Ariely on anchoring and William Poundstone's Priceless
 
-07The Numbers
+08The Numbers
 The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
 
 - All modelsLean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, contribution margin), bottom-up TAM and break-even
 
-### Decide
-
-A clear verdict before you spend money on a launch.
-Skill 08
-
-08Go / No-Go
-A go, no-go or not-yet verdict scored against your Builder Archetype, the assumption that decides it, the cheapest way to test it and a pre-mortem.
-
-- ModesQuick roast for a raw idea, full gate before you spend money, post-launch check once you have data
-
 ### Audience
 
 Attention and leads before you need them.
-Skills 09 and 10
+Playbooks 09 and 10
 
 09Founder Content
 Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
@@ -435,7 +441,7 @@ One lead magnet with its promise, format, the segment it captures and the bridge
 ### Launch it
 
 The page, the launch, the first customers and keeping them.
-Skills 11 to 15
+Playbooks 11 to 15
 
 11Landing Page
 A section-by-section page spec with the copy, ordered for one conversion goal and scored for clarity, relevance, value and anxiety.
@@ -480,9 +486,9 @@ A client's first 90 days after they say yes: the activation milestone, onboardin
 - ProductPost-purchase flows, RFM segmentation and Nir Eyal's Hook model
 - LocalRebooking at checkout
 
-### All fifteen skills, plus the Expertise Audit
+### All fifteen playbooks, plus the Expertise Audit
 
-299€ one-time. Free updates. Runs in Claude, in the app or Claude Code.
+299€ one-time. Free updates. Installs as Claude skills, in the app or Claude Code.
 Get the Stack · 299€ →
 
 FAQ
@@ -491,23 +497,23 @@ FAQ
 
 What do I need to run it?
 
-Claude, in the app or Claude Code. You add the skills once and run them in your own account, so your business details stay with you.
+Claude, in the app or Claude Code. Each playbook installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
 
 How is this different from a set of prompts?
 
-Each skill is a full workflow with its own questions, a playbook for each business model and an output template. The skills share one context file, so later skills use what earlier ones produced.
+Each playbook is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later playbooks use what earlier ones produced.
 
-Do I have to run the skills in order?
+Do I have to run the playbooks in order?
 
-No. Run the setup skill first, then start wherever the pressure is. There's a recommended sequence, and you're free to skip around.
+No. Run the setup step first, then start wherever the pressure is. The recommended sequence starts with the Go / No-Go, and you're free to skip around.
 
 What if my business doesn't fit one model neatly?
 
-The setup skill picks the closest model and notes the hybrid, for example services with a digital product on the side. Skills use the main playbook and flag where the second model changes the advice.
+The setup step picks the closest model and notes the hybrid, for example services with a digital product on the side. Each playbook uses the main model and flags where the second one changes the advice.
 
 What if I want help using it?
 
-The Audit gives you my written diagnosis of what the skills produced. The Build is the same system with me 1:1 for three months. Compare the options →
+The Audit gives you my written diagnosis of what the playbooks produced. The Build is the same system with me 1:1 for three months. Compare the options →
 
 ## Build your offer with the playbook that fits your business.
 
@@ -1121,6 +1127,124 @@ The long game. You'd rather spend two years building something that could be wor
 
 ---
 
+URL: https://www.madgrowth.io/claude-skills/
+Title: Claude skills for business: position, price, launch · Madgrowth
+
+Claude skills
+
+# Claude skills for business: position, price and launch an offer
+
+Sixteen Claude skills that turn your experience into a business: who buys, how you're positioned, what you sell, what it costs and how you launch it. Each one asks about your business, applies the playbook for your model and hands you a finished document.
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026
+
+The short answer
+- Claude skills are folders of instructions that Claude loads when a request matches them, so it runs the same method every time.
+- They work in Claude Code (as folders) and in the Claude app (uploaded as a zip under Customize > Skills), on every Claude plan with code execution turned on.
+- The Madgrowth library has 15 business skills plus a free one, the Expertise Audit, covering customers, positioning, offer, pricing, go/no-go, content, launch, acquisition, conversion and retention.
+- Each skill reads one shared context file and uses the playbook for your business model: services, software, product, local, media or marketplaces.
+
+## What are Claude skills?
+
+A Claude skill is a folder with a SKILL.md file that tells Claude how to do one job and when to do it. According to Anthropic's Agent Skills documentation, Claude keeps only each skill's name and description in mind, at roughly 100 tokens per skill, and reads the full instructions when your request matches. That means you can install a whole library and Claude only opens the skill it needs.
+
+For business work, the difference from a prompt is consistency. A prompt depends on what you remember to paste. A skill asks the same questions, follows the same method and produces the same document every time you run it.
+
+## Which Claude skills does a business need?
+
+A business needs skills for the decisions that are expensive to get wrong: who the customer is, how you're positioned, what you sell, what you charge and how you get the first customers. These are the skills in The Stack, grouped in the order most people run them.
+
+### Start here
+
+| Skill | # | What it produces
+| Expertise Audit | Free | Your three strongest angles from the career you already have: who buys, the problem in their words and your proof.
+| Start | Setup | A context file every other skill reads: business model, stage, sales motion, price band, team, geography and build capacity.
+
+### Position it
+
+| Skill | # | What it produces
+| Talk to Customers | 01 | An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
+| Your Customer | 02 | An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
+| Positioning | 03 | Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
+| Messaging | 04 | A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and objection answers.
+
+### Package it
+
+| Skill | # | What it produces
+| Your Offer | 05 | Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
+| Pricing | 06 | The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
+| The Numbers | 07 | The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
+
+### Decide
+
+| Skill | # | What it produces
+| Go / No-Go | 08 | A go, no-go or not-yet verdict, the assumption that decides it, the cheapest way to test it and a pre-mortem.
+
+### Audience
+
+| Skill | # | What it produces
+| Founder Content | 09 | Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
+| Lead Magnet | 10 | One lead magnet with its promise, format, the segment it captures and the bridge to your paid offer.
+
+### Launch it
+
+| Skill | # | What it produces
+| Landing Page | 11 | A section-by-section page spec with the copy, ordered for one conversion goal.
+| Launch | 12 | A pre-launch, launch and post-launch plan with your warm list, the assets and a day-by-day calendar.
+| Get Customers | 13 | Three channels to test, one to focus on, the numbers that decide and your weekly routine.
+| Convert | 14 | Your path from lead to paid: discovery call, proposal and follow-up, or funnel, checkout and lifecycle emails.
+| Retain | 15 | A client's first 90 days after they say yes: onboarding, the engagement loop and when to ask for renewal or referrals.
+Every skill credits the frameworks it uses, like April Dunford on positioning, Blair Enns and Madhavan Ramanujam on pricing and Bob Moesta on customer interviews. The full list of methods per business model is on The Stack page.
+
+## How are these skills different from a folder of prompts?
+
+They work as one system. A setup skill classifies your business once, writes it to a context file and every other skill reads it. Later skills also read what earlier ones produced, so your pricing skill knows your ICP and your landing page skill knows your messaging.
+
+- A playbook per business model. A fractional CMO pricing a retainer and a SaaS founder pricing a plan need different methods. Each skill loads the one for your model.
+- Questions before answers. Each skill asks for what's missing before it writes, so the output is about your business and not a plausible guess.
+- A document at the end. An ICP, an offer, a price, a launch calendar. Files you keep and edit.
+
+## How do you install Claude skills?
+
+| Where | How to install | How to run
+| Claude Code | Put each skill folder in ~/.claude/skills/ for all projects, or .claude/skills/ in one project | Ask naturally, or type /skill-name
+| Claude app | Turn on code execution in Settings, then upload each skill as a zip under Customize > Skills and switch it on | Ask naturally. Claude picks the skill that matches
+Skills don't sync between Claude Code and the app, so install them wherever you work. Sources: the Claude Code skills docs and the Claude help center. If you'd like to write your own, read how to create a Claude skill, with a working SKILL.md example.
+
+## Are third-party Claude skills safe?
+
+Only install skills from sources you trust, and read the files first. Anthropic's documentation warns that a skill can direct Claude to run tools or code in ways that don't match its stated purpose. The Madgrowth skills are Markdown instructions and reference files, with no scripts and nothing that fetches content from the internet, so you can read every line before you install them.
+
+## Questions people ask
+
+What are Claude skills?
+
+Claude skills are folders of instructions, and optionally reference files and scripts, that Claude loads when a request matches the skill's description. They let Claude follow the same method every time for a specific job, like writing positioning or pricing an offer, without pasting a prompt.
+
+Are Claude skills free to use?
+
+The Claude help center lists skills as available on Free, Pro, Max, Team and Enterprise plans, with code execution turned on. Some skills are free to download and others are sold, like The Stack. The free Expertise Audit skill comes with the Madgrowth Builder Diagnostic.
+
+What are the best Claude skills for business?
+
+The best ones produce a finished document and follow a named method: positioning, pricing, an offer, a launch plan. Look for skills that ask for your inputs before writing, adapt to your business model and end with a fixed output template.
+
+Do Claude skills work in Claude Code and the Claude app?
+
+Yes. In Claude Code, skills are folders in ~/.claude/skills/ or a project's .claude/skills/. In the Claude app, you upload a zip under Customize > Skills. Skills don't sync between the two, so install them in each place you use them.
+
+Is Madgrowth affiliated with Anthropic?
+
+No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic.
+
+## Start with the free skill
+
+The Expertise Audit finds your three strongest monetizable angles from the career you already have, in about ten minutes. It comes by email with the free Builder Diagnostic. When you're ready for the rest, The Stack is 299€ one-time.
+Get the free Expertise Audit skill →
+Madgrowth is independent and not affiliated with Anthropic. Claude is a product of Anthropic.
+
+---
+
 URL: https://www.madgrowth.io/guides/
 Title: Guides: go fractional, price and launch your offer · Madgrowth
 
@@ -1147,6 +1271,10 @@ Price fractional services from the cost of the problem and the hire it replaces.
 ### Fractional, consulting or software: which business should you start after tech?
 
 Fractional and consulting work pay within weeks; software pays later but grows past your hours. How ex tech leaders choose, with a side-by-side comparison.
+
+### How to create a Claude skill (with a working example)
+
+How to create a Claude skill: folder structure, a SKILL.md example to copy, descriptions Claude triggers on, and installing it in Claude Code or the app.
 
 ## Not sure which business fits you?
 
@@ -1797,3 +1925,131 @@ Not always. You can validate demand and price before writing code, and small too
 What is the difference between a fractional executive and a consultant?
 
 A fractional executive holds an ongoing role inside one company, part-time, and owns outcomes like a team or a number. A consultant is hired to diagnose or fix a defined problem, usually for a set project or an advisory retainer. Fractional work looks like a part-time job, and consulting looks like a series of projects.
+
+---
+
+URL: https://www.madgrowth.io/guides/how-to-create-a-claude-skill/
+Title: How to create a Claude skill: SKILL.md example · Madgrowth
+
+Guide
+
+# How to create a Claude skill (with a working example)
+
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 8 min read
+
+A Claude skill is a folder with one file, SKILL.md, that tells Claude how to do a specific job and when to do it. To create one, write a short description of when to use it, the steps Claude should follow and what the finished output looks like, then add the folder to Claude Code or upload it as a zip in the Claude app.
+
+The short answer
+- A skill is a folder named after the skill, containing a SKILL.md file with a name, a description and instructions.
+- The description decides whether Claude uses the skill, so it has to say what the skill does and when to use it, in the words people actually type.
+- Good business skills ask for missing inputs first, follow a fixed method and end with an output template, so every run produces the same kind of document.
+- In Claude Code, put the folder in ~/.claude/skills/ for every project or .claude/skills/ for one project. In the Claude app, zip the folder and upload it under Customize > Skills.
+- Test it with five prompts that should trigger it and two that shouldn't, then rewrite the description until Claude picks it at the right moments.
+
+## What is a Claude skill, exactly?
+
+A Claude skill is a reusable set of instructions, and optionally reference files and scripts, that Claude loads only when a task needs it. Anthropic's Agent Skills documentation describes three layers. The name and description are always loaded, at roughly 100 tokens per skill. The body of SKILL.md loads when the skill is triggered. Extra files load only when the instructions point to them.
+
+That design is why skills are useful for business work. You can install fifteen of them and Claude only reads the one that fits the conversation. A prompt has to be pasted in every time. A skill waits until it's needed and runs the same method each time.
+
+I build skills for my own businesses and sell a set of them in The Stack, so the advice below comes from writing skills that have to produce a document someone can use the next morning.
+
+## What goes inside a skill folder?
+
+At minimum, a folder with the skill's name and a SKILL.md file inside it. Anything else is optional.
+
+| File | Required? | What it's for
+| SKILL.md | Yes | The frontmatter (name, description) and the instructions Claude follows.
+| references/*.md | No | Longer material Claude reads only when needed: a framework, examples, a playbook for one type of customer.
+| templates/ | No | Output templates, like a one-page brief or a proposal outline.
+| scripts/ | No | Code Claude can run, for calculations that should give the same answer every time.
+A simple skill for writing an offer one-liner looks like this:
+offer-one-liner/ ├── SKILL.md └── references/ └── examples.md
+
+## How do you write the SKILL.md file?
+
+SKILL.md starts with YAML frontmatter between two lines of three dashes, followed by the instructions in plain Markdown. Here's a complete, working example you can copy and adapt:
+--- name: offer-one-liner description: Writes a one-sentence description of a consulting or fractional offer, plus three variants to test. Use when someone asks for a one-liner, elevator pitch or LinkedIn headline. --- # Offer one-liner ## Before you write Ask for anything missing, one question at a time: 1. Who buys this? A role and a type of company. 2. What happens that makes them look for help? 3. What result do they get, in their own words? 4. What proof exists? A number, a past role or a client result. ## Write - One sentence, under 25 words: who + problem + result + proof. - Use words the buyer would say out loud. - Then write three variants: one leading with the result, one with the problem and one with the proof. ## Check before answering - Could a competitor say the same sentence? If so, make the proof more specific. - Would the buyer recognise themselves in the first five words? ## Output The one-liner, the three variants, and one sentence on which variant to test first and why.
+
+### The rules for the frontmatter
+
+- name: lowercase letters, numbers and hyphens, up to 64 characters. Anthropic's docs also reserve the words "claude" and "anthropic", so leave them out of the name.
+- description: what the skill does and when to use it. The developer docs allow up to 1,024 characters, but the Claude help center gives a 200-character limit for skills uploaded to the Claude app. If you want one file that works everywhere, stay under 200.
+In Claude Code, the frontmatter can also control who triggers the skill. According to the Claude Code skills docs, disable-model-invocation: true means only you can run it with /skill-name, which is useful for anything you don't want Claude starting on its own.
+
+## How do you write a description Claude will actually use?
+
+Write the description as a trigger list: one clause on what the skill produces, then the phrases a person would type when they need it.
+
+Claude compares your request with every installed skill's description and loads the one that matches. A vague description like "helps with marketing" either never fires or fires for everything. Compare these two:
+
+| Weak description | Strong description
+| Helps with pricing. | Sets a price for a consulting or fractional offer: floor rate, value, three options. Use when someone asks what to charge, day rate or retainer pricing.
+| Marketing assistant for founders. | Writes a LinkedIn content plan: pillars, point of view, weekly cadence. Use when someone asks what to post, for a content strategy or a personal brand plan.
+Both strong versions fit in 200 characters, name the output and list the words people use. That second part matters most. People rarely say "value metric". They say "what should I charge".
+
+## What makes a business skill better than a prompt?
+
+A business skill is worth installing when it forces a method you'd otherwise skip. In my experience, four things make the difference:
+
+- It asks before it writes. List the inputs the skill needs and tell Claude to ask for the missing ones one at a time. Most weak output comes from Claude guessing the customer or the price.
+- It names the method. Point to a specific framework, such as April Dunford's positioning steps or Blair Enns's three pricing options, and describe how to apply it. "Write good positioning" gives you average positioning.
+- It has a quality bar. Add a short checklist Claude runs before answering, like the competitor test in the example above. This is where most of the quality comes from.
+- It ends with a template. Define the exact sections of the output. A skill that produces the same document every time is one you can build a process on.
+Once you have more than one skill, a fifth idea helps: give them a shared context file. In The Stack, a setup skill writes the business model, stage and price band to one file, and every other skill reads it, so nobody answers the same questions fifteen times. It also lets each skill load a different reference file for services, software or product businesses instead of stuffing every variant into SKILL.md.
+
+## How do you install and test your skill?
+
+Install it where you work, then test that it triggers at the right moments before you trust it.
+
+### In Claude Code
+
+- Save the folder to ~/.claude/skills/offer-one-liner/ to use it in every project, or to .claude/skills/offer-one-liner/ inside a repository to share it with whoever works there.
+- Start a session and ask for something that should trigger it, or run it directly with /offer-one-liner.
+
+### In the Claude app
+
+- Turn on code execution in Settings. Skills need it.
+- Zip the folder so the skill folder itself is at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.
+- Upload it under Customize > Skills and switch it on. Menu names change, so check the help center if you can't find it.
+Skills don't sync between Claude Code, the Claude app and the API, so install the skill separately in each place you use it.
+
+### Testing it
+
+- Write five requests that should trigger the skill, phrased the way a real person would ask, and two that shouldn't.
+- Run them in fresh conversations. If the skill doesn't fire, add the missing phrases to the description. If it fires too often, narrow it.
+- Check the output against your quality bar. When it fails the same way twice, add a line to the checklist rather than hoping for a better run.
+
+## What are the most common mistakes?
+
+- A description that says what, but not when. Claude can't match "A positioning framework" to "nobody understands what we do".
+- One giant skill. A skill that does positioning, pricing and a launch plan triggers at odd moments and produces a long, shallow answer. Split it by output.
+- No questions step. Without it, Claude fills the gaps with plausible guesses and the document looks finished when it isn't.
+- Installing skills you haven't read. Anthropic's docs warn that a skill can direct Claude to run tools or code. Only install skills you wrote or trust, and read every file first.
+
+## Skip the build: skills for your business
+
+If you'd rather use skills than write them, the Madgrowth Claude skills library covers positioning, pricing, offers and launches, with a playbook for each business model. Start with the free Expertise Audit skill, which comes with the Builder Diagnostic.
+Get the free skill →
+
+## Questions people ask
+
+Do Claude skills work on the free plan?
+
+According to the Claude help center, skills are available on Free, Pro, Max, Team and Enterprise plans, and they need code execution turned on. In Claude Code, skills are folders on your computer, so there's nothing to upload.
+
+What is the difference between a Claude skill and a prompt?
+
+A prompt lives in one conversation and has to be pasted again next time. A skill is installed once, and Claude loads it automatically when a request matches its description, so the same method runs every time.
+
+Can one skill work in both Claude Code and the Claude app?
+
+Yes, the same folder works in both, but they don't sync. Put the folder in your skills directory for Claude Code and upload it as a zip in the Claude app. Keep the description under 200 characters so the app accepts it.
+
+How long should a SKILL.md file be?
+
+Long enough to hold the questions, the method, a quality checklist and the output template. Anthropic's docs describe the body as usually under 5,000 tokens. Move longer material, like examples or a playbook per business type, into reference files.
+
+Are Claude skills safe to install?
+
+Only if you trust the source. Anthropic warns that a skill can direct Claude to run tools or code, so read every file in a skill before installing it, especially scripts and anything that fetches content from the internet.
