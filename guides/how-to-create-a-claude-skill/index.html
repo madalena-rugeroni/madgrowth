@@ -130,7 +130,7 @@
         "@id": "https://www.madgrowth.io/#website"
       },
       "keywords": "how to create claude skills, claude skills examples, claude code skills, SKILL.md example, claude skills",
-      "wordCount": 1570,
+      "wordCount": 1635,
       "citation": [
         "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
         "https://code.claude.com/docs/en/skills",
@@ -147,7 +147,7 @@
           "name": "Do Claude skills work on the free plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "According to the Claude help center, skills are available on Free, Pro, Max, Team and Enterprise plans, and they need code execution turned on. In Claude Code, skills are folders on your computer, so there's nothing to upload."
+            "text": "Yes. According to the Claude help center, skills are available on Free, Pro, Max, Team and Enterprise plans. You need code execution turned on. In Claude Code, skills are just folders on your computer, so there's nothing to upload."
           }
         },
         {
@@ -155,7 +155,7 @@
           "name": "What is the difference between a Claude skill and a prompt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A prompt lives in one conversation and has to be pasted again next time. A skill is installed once, and Claude loads it automatically when a request matches its description, so the same method runs every time."
+            "text": "A prompt lives in one conversation, and you paste it in again next time. You install a skill once. Claude loads it automatically when a request matches its description, so the same method runs every time."
           }
         },
         {
@@ -163,7 +163,7 @@
           "name": "Can one skill work in both Claude Code and the Claude app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, the same folder works in both, but they don't sync. Put the folder in your skills directory for Claude Code and upload it as a zip in the Claude app. Keep the description under 200 characters so the app accepts it."
+            "text": "Yes. The same folder works in both, but they don't sync. Put the folder in your skills directory for Claude Code and upload it as a zip in the Claude app. Keep the description under 200 characters so the app accepts it."
           }
         },
         {
@@ -171,7 +171,7 @@
           "name": "How long should a SKILL.md file be?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Long enough to hold the questions, the method, a quality checklist and the output template. Anthropic's docs describe the body as usually under 5,000 tokens. Move longer material, like examples or a playbook per business type, into reference files."
+            "text": "Long enough to hold the questions, the method, a quality checklist and the output template. Anthropic's docs describe the body as usually under 5,000 tokens. I'd move anything longer, like examples or a playbook per business type, into reference files."
           }
         },
         {
@@ -179,7 +179,7 @@
           "name": "Are Claude skills safe to install?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Only if you trust the source. Anthropic warns that a skill can direct Claude to run tools or code, so read every file in a skill before installing it, especially scripts and anything that fetches content from the internet."
+            "text": "Only if you trust the source. Anthropic warns that a skill can direct Claude to run tools or code. Read every file before you install a skill, especially scripts and anything that fetches content from the internet."
           }
         }
       ]
@@ -225,7 +225,8 @@
       <li><a href="../../archetypes/">Archetypes</a></li>
       <li><a href="../../#about">About</a></li>
       <li><a href="../../#pricing">Products</a></li>
-      <li><a class="btn btn-primary nav-cta" href="../../diagnostic/" data-event="diagnostic_start">Run the diagnostic</a></li>
+      <li><a href="../../newsletter/">Newsletter</a></li>
+      <li><a class="btn btn-primary nav-cta" href="../../diagnostic/" data-event="diagnostic_start">Find your best-fit business</a></li>
     </ul>
   </nav>
 </header>
@@ -236,47 +237,48 @@
     <span class="eyebrow">Guide</span>
     <h1>How to create a Claude skill (with a working example)</h1>
     <div class="byline">
-      <img src="/assets/img/madalena.jpg" alt="Madalena Rugeroni" width="40" height="40">
+      <img src="../../assets/img/madalena.jpg" alt="Madalena Rugeroni" width="40" height="40">
       <span><strong><a href="../../#about">Madalena Rugeroni</a></strong> · Founder of Madgrowth · ex-Google · Updated <time datetime="2026-09-17">17 September 2026</time> · 8 min read</span>
     </div>
   </div>
 
   <article class="wrap article">
     <div class="prose">
-<p>A Claude skill is a folder with one file, SKILL.md, that tells Claude how to do a specific job and when to do it. To create one, write a short description of when to use it, the steps Claude should follow and what the finished output looks like, then add the folder to Claude Code or upload it as a zip in the Claude app.</p>
+<p>A Claude skill is a folder with one file, SKILL.md, that tells Claude how to do a specific job and when to do it. To create one, you write a short description of when to use it, the steps Claude should follow and what the finished output looks like. Then you add the folder to Claude Code, or zip it and upload it in the Claude app.</p>
 
 <div class="tldr"><span class="eyebrow">The short answer</span><ul>
-<li>A skill is a folder named after the skill, containing a SKILL.md file with a name, a description and instructions.</li>
-<li>The description decides whether Claude uses the skill, so it has to say what the skill does and when to use it, in the words people actually type.</li>
-<li>Good business skills ask for missing inputs first, follow a fixed method and end with an output template, so every run produces the same kind of document.</li>
-<li>In Claude Code, put the folder in <code>~/.claude/skills/</code> for every project or <code>.claude/skills/</code> for one project. In the Claude app, zip the folder and upload it under Customize &gt; Skills.</li>
-<li>Test it with five prompts that should trigger it and two that shouldn't, then rewrite the description until Claude picks it at the right moments.</li>
+<li>A skill is a folder named after the skill, with a SKILL.md file holding a name, a description and instructions.</li>
+<li>The description decides whether Claude uses the skill. Say what it does and when, in the words people actually type.</li>
+<li>Good business skills ask for missing inputs first, follow a fixed method and end with an output template.</li>
+<li>Claude Code: <code>~/.claude/skills/</code> for every project, <code>.claude/skills/</code> for one. Claude app: zip the folder, upload under Customize &gt; Skills.</li>
+<li>Test with five prompts that should trigger it and two that shouldn't. Rewrite the description until it fires at the right moments.</li>
 </ul></div>
 
 <h2>What is a Claude skill, exactly?</h2>
-<p>A Claude skill is a reusable set of instructions, and optionally reference files and scripts, that Claude loads only when a task needs it. Anthropic's <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview" rel="noopener">Agent Skills documentation</a> describes three layers. The name and description are always loaded, at roughly 100 tokens per skill. The body of SKILL.md loads when the skill is triggered. Extra files load only when the instructions point to them.</p>
-<p>That design is why skills are useful for business work. You can install fifteen of them and Claude only reads the one that fits the conversation. A prompt has to be pasted in every time. A skill waits until it's needed and runs the same method each time.</p>
-<p>I build skills for my own businesses and sell a set of them as playbooks in <a href="../../stack/">The Stack</a>, so the advice below comes from writing skills that have to produce a document someone can use the next morning.</p>
+<p>A Claude skill is a reusable set of instructions, plus optional reference files and scripts, that Claude loads only when a task needs it.</p>
+<p>Anthropic's <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview" rel="noopener">Agent Skills documentation</a> describes three layers. The name and description are always loaded, at roughly 100 tokens per skill. The body of SKILL.md loads when the skill is triggered. Extra files load only when the instructions point to them.</p>
+<p>That design is why I like skills for business work. You can install fifteen of them and Claude only reads the one that fits the conversation. The rest sit there costing almost nothing, and the one you need runs the same method every time. You stop pasting the same prompt into every new chat.</p>
+<p>I build skills for my own businesses and sell a set of them as playbooks in <a href="../../stack/">The Stack</a>. So everything below comes from writing skills that have to produce a document someone can use the next morning.</p>
 
 <h2>What goes inside a skill folder?</h2>
-<p>At minimum, a folder with the skill's name and a SKILL.md file inside it. Anything else is optional.</p>
+<p>At minimum, a folder with the skill's name and a SKILL.md file inside it. Everything else is optional, and I'd leave it out until the skill actually needs it.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>File</th><th>Required?</th><th>What it's for</th></tr></thead>
 <tbody>
 <tr><td><code>SKILL.md</code></td><td>Yes</td><td>The frontmatter (name, description) and the instructions Claude follows.</td></tr>
-<tr><td><code>references/*.md</code></td><td>No</td><td>Longer material Claude reads only when needed: a framework, examples, a playbook for one type of customer.</td></tr>
+<tr><td><code>references/*.md</code></td><td>No</td><td>Longer material Claude only reads when it needs it: a framework, examples, a playbook for one type of customer.</td></tr>
 <tr><td><code>templates/</code></td><td>No</td><td>Output templates, like a one-page brief or a proposal outline.</td></tr>
-<tr><td><code>scripts/</code></td><td>No</td><td>Code Claude can run, for calculations that should give the same answer every time.</td></tr>
+<tr><td><code>scripts/</code></td><td>No</td><td>Code Claude can run, for any calculation that has to give the same answer every time.</td></tr>
 </tbody>
 </table></div>
-<p>A simple skill for writing an offer one-liner looks like this:</p>
+<p>Here's the folder for a simple skill that writes an offer one-liner:</p>
 <pre><code>offer-one-liner/
 ├── SKILL.md
 └── references/
     └── examples.md</code></pre>
 
 <h2>How do you write the SKILL.md file?</h2>
-<p>SKILL.md starts with YAML frontmatter between two lines of three dashes, followed by the instructions in plain Markdown. Here's a complete, working example you can copy and adapt:</p>
+<p>SKILL.md starts with YAML frontmatter between two lines of three dashes, then the instructions in plain Markdown. Here's a complete, working example. Copy it and make it yours:</p>
 <pre><code>---
 name: offer-one-liner
 description: Writes a one-sentence description of a consulting or fractional offer, plus three variants to test. Use when someone asks for a one-liner, elevator pitch or LinkedIn headline.
@@ -306,14 +308,14 @@ The one-liner, the three variants, and one sentence on
 which variant to test first and why.</code></pre>
 <h3>The rules for the frontmatter</h3>
 <ul>
-<li><strong>name</strong>: lowercase letters, numbers and hyphens, up to 64 characters. Anthropic's docs also reserve the words "claude" and "anthropic", so leave them out of the name.</li>
-<li><strong>description</strong>: what the skill does and when to use it. The developer docs allow up to 1,024 characters, but the <a href="https://support.claude.com/en/articles/12512198-creating-custom-skills" rel="noopener">Claude help center</a> gives a 200-character limit for skills uploaded to the Claude app. If you want one file that works everywhere, stay under 200.</li>
+<li><strong>name</strong>: lowercase letters, numbers and hyphens, up to 64 characters. Anthropic's docs also reserve the words "claude" and "anthropic", so keep them out of the name.</li>
+<li><strong>description</strong>: what the skill does and when to use it. The developer docs allow up to 1,024 characters, but the <a href="https://support.claude.com/en/articles/12512198-creating-custom-skills" rel="noopener">Claude help center</a> gives a 200-character limit for skills uploaded to the Claude app. My rule: stay under 200, and one file works everywhere.</li>
 </ul>
-<p>In Claude Code, the frontmatter can also control who triggers the skill. According to the <a href="https://code.claude.com/docs/en/skills" rel="noopener">Claude Code skills docs</a>, <code>disable-model-invocation: true</code> means only you can run it with <code>/skill-name</code>, which is useful for anything you don't want Claude starting on its own.</p>
+<p>In Claude Code, the frontmatter can also decide who gets to start the skill. According to the <a href="https://code.claude.com/docs/en/skills" rel="noopener">Claude Code skills docs</a>, <code>disable-model-invocation: true</code> means only you can run it with <code>/skill-name</code>. I'd use that for anything you don't want Claude kicking off on its own.</p>
 
 <h2>How do you write a description Claude will actually use?</h2>
-<p>Write the description as a trigger list: one clause on what the skill produces, then the phrases a person would type when they need it.</p>
-<p>Claude compares your request with every installed skill's description and loads the one that matches. A vague description like "helps with marketing" either never fires or fires for everything. Compare these two:</p>
+<p>Write it as a trigger list: one clause on what the skill produces, then the phrases a person would type when they need it.</p>
+<p>Claude compares your request with the description of every installed skill and loads the one that matches. So a vague description like "helps with marketing" either never fires or fires for everything. Here's what that looks like side by side:</p>
 <div class="table-scroll"><table>
 <thead><tr><th>Weak description</th><th>Strong description</th></tr></thead>
 <tbody>
@@ -321,20 +323,21 @@ which variant to test first and why.</code></pre>
 <tr><td>Marketing assistant for founders.</td><td>Writes a LinkedIn content plan: pillars, point of view, weekly cadence. Use when someone asks what to post, for a content strategy or a personal brand plan.</td></tr>
 </tbody>
 </table></div>
-<p>Both strong versions fit in 200 characters, name the output and list the words people use. That second part matters most. People rarely say "value metric". They say "what should I charge".</p>
+<p>Both strong versions fit in 200 characters, name the output and list the words people use. I'd spend most of your effort on that last part. People rarely type "value metric". They type "what should I charge", so that's the phrase your description needs.</p>
 
 <h2>What makes a business skill better than a prompt?</h2>
-<p>A business skill is worth installing when it forces a method you'd otherwise skip. In my experience, four things make the difference:</p>
+<p>A business skill earns its place when it forces a method you'd otherwise skip. Four things make the difference, and I wouldn't ship a skill without all of them:</p>
 <ol>
-<li><strong>It asks before it writes.</strong> List the inputs the skill needs and tell Claude to ask for the missing ones one at a time. Most weak output comes from Claude guessing the customer or the price.</li>
-<li><strong>It names the method.</strong> Point to a specific framework, such as April Dunford's positioning steps or Blair Enns's three pricing options, and describe how to apply it. "Write good positioning" gives you average positioning.</li>
+<li><strong>It asks before it writes.</strong> List the inputs the skill needs and tell Claude to ask for the missing ones, one at a time. Most weak output comes from Claude guessing who the customer is or what the price should be.</li>
+<li><strong>It names the method.</strong> Point to a specific framework, such as April Dunford's positioning steps or Blair Enns's three pricing options, and describe how to apply it. Ask for "good positioning" and you'll get average positioning.</li>
 <li><strong>It has a quality bar.</strong> Add a short checklist Claude runs before answering, like the competitor test in the example above. This is where most of the quality comes from.</li>
-<li><strong>It ends with a template.</strong> Define the exact sections of the output. A skill that produces the same document every time is one you can build a process on.</li>
+<li><strong>It ends with a template.</strong> Define the exact sections of the output. When a skill produces the same document every time, you can build a process on top of it.</li>
 </ol>
-<p>Once you have more than one skill, a fifth idea helps: give them a shared context file. In The Stack, a setup skill writes the business model, stage and price band to one file, and every other skill reads it, so nobody answers the same questions fifteen times. It also lets each skill load a different reference file for services, software or product businesses instead of stuffing every variant into SKILL.md.</p>
+<p>Once you have more than one skill, add a fifth thing: a shared context file. In The Stack, a setup skill writes the business model, stage and price band to one file, and every other skill reads it. Nobody answers the same questions fifteen times.</p>
+<p>It also lets each skill load a different reference file for services, software or product businesses, so SKILL.md stays short instead of carrying every variant.</p>
 
 <h2>How do you install and test your skill?</h2>
-<p>Install it where you work, then test that it triggers at the right moments before you trust it.</p>
+<p>Install it where you work. Then test that it triggers at the right moments before you trust it with anything real.</p>
 <h3>In Claude Code</h3>
 <ol>
 <li>Save the folder to <code>~/.claude/skills/offer-one-liner/</code> to use it in every project, or to <code>.claude/skills/offer-one-liner/</code> inside a repository to share it with whoever works there.</li>
@@ -343,28 +346,30 @@ which variant to test first and why.</code></pre>
 <h3>In the Claude app</h3>
 <ol>
 <li>Turn on code execution in Settings. Skills need it.</li>
-<li>Zip the folder so the skill folder itself is at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.</li>
+<li>Zip the folder so the skill folder itself sits at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.</li>
 <li>Upload it under Customize &gt; Skills and switch it on. Menu names change, so check the <a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude" rel="noopener">help center</a> if you can't find it.</li>
 </ol>
-<p>Skills don't sync between Claude Code, the Claude app and the API, so install the skill separately in each place you use it.</p>
+<p>Skills don't sync between Claude Code, the Claude app and the API. Install the skill separately in each place you use it.</p>
 <h3>Testing it</h3>
+<p>Don't skip this part. A skill that never fires is just a file you forgot you wrote.</p>
 <ul>
 <li>Write five requests that should trigger the skill, phrased the way a real person would ask, and two that shouldn't.</li>
 <li>Run them in fresh conversations. If the skill doesn't fire, add the missing phrases to the description. If it fires too often, narrow it.</li>
-<li>Check the output against your quality bar. When it fails the same way twice, add a line to the checklist rather than hoping for a better run.</li>
+<li>Check the output against your quality bar. When it fails the same way twice, add a line to the checklist. Running it again and hoping won't fix it.</li>
 </ul>
 
 <h2>What are the most common mistakes?</h2>
+<p>These are the four I'd check first when a skill misbehaves.</p>
 <ul>
 <li><strong>A description that says what, but not when.</strong> Claude can't match "A positioning framework" to "nobody understands what we do".</li>
-<li><strong>One giant skill.</strong> A skill that does positioning, pricing and a launch plan triggers at odd moments and produces a long, shallow answer. Split it by output.</li>
-<li><strong>No questions step.</strong> Without it, Claude fills the gaps with plausible guesses and the document looks finished when it isn't.</li>
-<li><strong>Installing skills you haven't read.</strong> Anthropic's docs warn that a skill can direct Claude to run tools or code. Only install skills you wrote or trust, and read every file first.</li>
+<li><strong>One giant skill.</strong> A skill that does positioning, pricing and a launch plan triggers at odd moments and gives you a long, shallow answer. Split it by output: one skill, one document.</li>
+<li><strong>No questions step.</strong> Without it, Claude fills the gaps with plausible guesses, and the document looks finished when it isn't.</li>
+<li><strong>Installing skills you haven't read.</strong> Anthropic's docs warn that a skill can direct Claude to run tools or code. Only install skills you wrote or trust, and read every file first. Mine included.</li>
 </ul>
 
 <div class="article-cta">
 <h2>Skip the build: skills for your business</h2>
-<p>If you'd rather use skills than write them, <a href="../../claude-skills/">The Stack</a> is 15 AI playbooks that install as Claude skills and cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.</p>
+<p>If you'd rather use skills than write them, <a href="../../claude-skills/">The Stack</a> is 15 AI playbooks that install as Claude skills. They cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.</p>
 <a class="btn btn-primary" href="../../diagnostic/">Get the free Expertise Audit →</a>
 </div>
 
@@ -372,23 +377,23 @@ which variant to test first and why.</code></pre>
       <div class="faq-list">
         <details>
           <summary>Do Claude skills work on the free plan?</summary>
-          <p>According to the Claude help center, skills are available on Free, Pro, Max, Team and Enterprise plans, and they need code execution turned on. In Claude Code, skills are folders on your computer, so there&#x27;s nothing to upload.</p>
+          <p>Yes. According to the Claude help center, skills are available on Free, Pro, Max, Team and Enterprise plans. You need code execution turned on. In Claude Code, skills are just folders on your computer, so there&#x27;s nothing to upload.</p>
         </details>
         <details>
           <summary>What is the difference between a Claude skill and a prompt?</summary>
-          <p>A prompt lives in one conversation and has to be pasted again next time. A skill is installed once, and Claude loads it automatically when a request matches its description, so the same method runs every time.</p>
+          <p>A prompt lives in one conversation, and you paste it in again next time. You install a skill once. Claude loads it automatically when a request matches its description, so the same method runs every time.</p>
         </details>
         <details>
           <summary>Can one skill work in both Claude Code and the Claude app?</summary>
-          <p>Yes, the same folder works in both, but they don&#x27;t sync. Put the folder in your skills directory for Claude Code and upload it as a zip in the Claude app. Keep the description under 200 characters so the app accepts it.</p>
+          <p>Yes. The same folder works in both, but they don&#x27;t sync. Put the folder in your skills directory for Claude Code and upload it as a zip in the Claude app. Keep the description under 200 characters so the app accepts it.</p>
         </details>
         <details>
           <summary>How long should a SKILL.md file be?</summary>
-          <p>Long enough to hold the questions, the method, a quality checklist and the output template. Anthropic&#x27;s docs describe the body as usually under 5,000 tokens. Move longer material, like examples or a playbook per business type, into reference files.</p>
+          <p>Long enough to hold the questions, the method, a quality checklist and the output template. Anthropic&#x27;s docs describe the body as usually under 5,000 tokens. I&#x27;d move anything longer, like examples or a playbook per business type, into reference files.</p>
         </details>
         <details>
           <summary>Are Claude skills safe to install?</summary>
-          <p>Only if you trust the source. Anthropic warns that a skill can direct Claude to run tools or code, so read every file in a skill before installing it, especially scripts and anything that fetches content from the internet.</p>
+          <p>Only if you trust the source. Anthropic warns that a skill can direct Claude to run tools or code. Read every file before you install a skill, especially scripts and anything that fetches content from the internet.</p>
         </details>
       </div>
     </div>
@@ -402,7 +407,7 @@ which variant to test first and why.</code></pre>
         <a class="brand" href="../../">madgrowth</a>
         <p>Playbooks and 1:1 advisory for leaders in tech starting their own business.</p>
         <a class="footer-person" href="../../#about">
-          <img src="/assets/img/madalena.jpg" alt="" width="40" height="40" loading="lazy">
+          <img src="../../assets/img/madalena.jpg" alt="" width="40" height="40" loading="lazy">
           <span><strong>Madalena Rugeroni</strong>Founder of Madgrowth, Mazo and Favorite People</span>
         </a>
       </div>
