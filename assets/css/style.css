@@ -212,6 +212,7 @@ section.alt { background: var(--bg-alt); }
 .hero .lead { margin-bottom: 34px; }
 .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
 .cta-note { margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
+.h1-line { display: block; margin-top: 6px; color: var(--ink-soft); font-weight: 600; font-size: 0.72em; letter-spacing: -0.01em; }
 .hero .cta-note.reveal.is-visible { transition-delay: 0.4s; }
 
 /* Ambient background: minimal by design — no color wash, no drifting
