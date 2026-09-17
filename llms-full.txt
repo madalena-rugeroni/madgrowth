@@ -517,13 +517,13 @@ Get the Stack · 299€
 ---
 
 URL: https://www.madgrowth.io/startups/
-Title: Startup go-to-market advisor for founders, 0 to $1M · Madgrowth
+Title: Fractional CMO alternative for startups: GTM advisor · Madgrowth
 
-Startup go-to-market advisory · for founders from 0 to $1M
+Startup GTM advisor · a fractional CMO alternative for founders from 0 to $1M
 
 # You've built the product. Now build the go-to-market that gets you to $1M.
 
-1:1 go-to-market advisory for startup founders: positioning, ICP, pricing, demand and a repeatable path to revenue. You work every week with an operator who scaled startups from zero to $10M.
+1:1 go-to-market advisory for founders who need CMO-level thinking before a full-time CMO makes sense: positioning, ICP, pricing, demand and a repeatable path to revenue. You work every week with an operator who scaled startups from zero to $10M.
 
 Find what's capping your revenue → See what's included ↓    Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue · runs a portfolio of internet businesses today     Madalena RugeroniFounder, Madgrowth
 
@@ -608,6 +608,18 @@ Senior go-to-market support for founders who own GTM themselves and need a repea
 Find what's capping your revenue →
 A free 15-minute call. You'll leave knowing the first thing to fix.
 
+Fractional CMO, consultant or advisor?
+
+## Four ways to get senior go-to-market help before $1M
+
+A fractional CMO joins your team part-time and runs marketing. A GTM consultant delivers a project and leaves. A GTM advisor works with you every week while your team does the work. Here's how they compare.
+
+|  | What you get | Typical cost | Best when
+| Full-time CMO | A senior leader who owns marketing and builds the team | A full executive salary, plus months of hiring | You have a proven motion and budget to scale it
+| Fractional CMO | A part-time CMO inside the team, usually a few days a month | £4,800 to £7,200 a month for four days in the UK (Primewise, 2026) | You need someone to run marketing and manage people
+| GTM consultant | A defined project: a positioning sprint, a pricing study, a launch plan | A fixed project fee | You know the one problem and want it solved once
+| Startup GTM Advisory | Weekly working sessions, unlimited chat and reviews before things ship. Your team executes | 3,000€ a month, 3-month minimum | You own go-to-market as a founder and want to find what's capping revenue
+
 Who it's for
 
 ## Built for founders between 0 and $1M
@@ -640,6 +652,18 @@ More about me →
 FAQ
 
 ## Questions, answered
+
+Are you a fractional CMO?
+
+I work as your go-to-market advisor, which sits one step before a fractional CMO. A fractional CMO usually joins the team a few days a month and runs marketing. I work with you every week on positioning, pricing, ICP and channels, review what your team builds, and your team does the execution. When you're ready for a fractional or full-time CMO, we define the role together.
+
+How much does a fractional CMO cost compared with this?
+
+A 2026 benchmark of 53 UK fractional CMOs by Primewise puts a four-day-a-month retainer at £4,800 to £7,200 a month. Startup GTM Advisory is 3,000€ a month with a 3-month minimum, for up to four working sessions plus unlimited chat. It suits founders who need senior thinking and have a team that ships.
+
+Do you take one-off go-to-market consulting projects?
+
+No. The work is monthly, because go-to-market changes need a few cycles to test and adjust. The 3-month minimum covers finding what's capping revenue, changing it and seeing whether the change worked.
 
 Do you only work with SaaS startups?
 

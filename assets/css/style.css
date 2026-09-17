@@ -1017,3 +1017,13 @@ html.js .reveal-scale.is-visible { transform: none; }
 .link-card p { color: var(--ink-soft); font-size: 0.94rem; }
 .about-portrait { float: right; width: 240px; margin: 4px 0 18px 32px; border-radius: 16px; }
 @media (max-width: 640px) { .about-portrait { float: none; width: 160px; margin: 0 0 18px; } .article-hero { padding-block-start: 48px; } }
+
+/* ============ Startups: comparison table ============ */
+.table-scroll { overflow-x: auto; }
+.compare-table { width: 100%; min-width: 640px; border-collapse: collapse; margin-top: 36px; font-size: 0.94rem; }
+.compare-table th, .compare-table td { text-align: left; vertical-align: top; padding: 14px 16px; border-bottom: 1px solid var(--line); color: var(--ink-soft); }
+.compare-table thead th { color: var(--muted); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+.compare-table tbody th { color: var(--ink); font-weight: 600; min-width: 120px; }
+.compare-table a { color: inherit; border-bottom: 1px solid currentColor; }
+.compare-table .compare-us { background: var(--bg-alt); }
+.compare-table .compare-us th, .compare-table .compare-us td { color: var(--ink); }
