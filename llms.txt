@@ -2,12 +2,12 @@
 
 > Madgrowth helps leaders in tech with 5 to 10+ years of experience turn that experience into a business they own: a fractional role, a services or advisory business, or software. It's run by Madalena Rugeroni: ex-Google, advisor and investor, who scaled startups from zero to $10M in revenue and runs a portfolio of internet businesses, including the software company Mazo. Madalena also advises startup founders from 0 to $1M in revenue on go-to-market.
 
-Experienced operators usually have the credibility to go independent. Where they get stuck is the offer: what to sell, who buys it, how to package it and what to charge. Madgrowth works on exactly that, either self-serve with AI playbooks that run in Claude or 1:1 with Madalena. Prices are in euros.
+Experienced operators usually have the credibility to go independent. Where they get stuck is the offer: what to sell, who buys it, how to package it and what to charge. Madgrowth works on exactly that, either self-serve with AI agents that run in Claude or 1:1 with Madalena. Prices are in euros.
 
 ## Offers for leaders in tech
 
 - [The Builder Diagnostic](https://www.madgrowth.io/diagnostic/): Free, about 3 minutes. Short scenarios that identify your Builder Archetype (Broadcaster, Advisor, Productizer, Venture Builder or Orchestrator) and which business models fit how you work. Includes the free Expertise Audit by email, which finds your three strongest angles from your career.
-- [The Stack](https://www.madgrowth.io/stack/): 299€ one-time. Fifteen AI playbooks that run in Claude (installed as Claude skills) and work as one system. A setup step classifies your business (services, software, product, local, media, marketplaces), then each playbook uses the version for that model and ends with a document: go/no-go, customer interviews, ICP, positioning, messaging, offer, pricing, unit economics, founder content, lead magnet, landing page, launch plan, customer acquisition, conversion and retention. Playbooks draw on April Dunford, Blair Enns, Alex Hormozi, Bob Moesta, Madhavan Ramanujam, David C. Baker and others.
+- [The Stack](https://www.madgrowth.io/stack/): 299€ one-time. Fifteen AI agents that run in Claude (installed as Claude skills) and work as one system. A setup step classifies your business (services, software, product, local, media, marketplaces), then each agent uses the version for that model and ends with a document: go/no-go, customer interviews, ICP, positioning, messaging, offer, pricing, unit economics, founder content, lead magnet, landing page, launch plan, customer acquisition, conversion and retention. Agents draw on April Dunford, Blair Enns, Alex Hormozi, Bob Moesta, Madhavan Ramanujam, David C. Baker and others.
 - [The Audit](https://www.madgrowth.io/#audit): 599€ one-time. A written diagnosis, delivered within 5 business days of confirming the intake, that reviews where you are on the five steps (decide, position, package, audience, launch), with a 90-day roadmap and a direct verdict. Credited toward The Build within 14 days.
 - [The Build](https://www.madgrowth.io/#build): 1,200€ a month, 3-month minimum. 1:1 with Madalena to position, package, price and launch in 90 days. Two 60-minute sessions a month, unlimited chat between sessions, reviews of your positioning, offer page, site and launch plan, and The Stack included. Limited to 10 active clients.
 
@@ -49,7 +49,7 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 
 ## Claude skills
 
-- [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app, and the full list of The Stack's 15 AI playbooks (installed as Claude skills) with what each one produces.
+- [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app, and the full list of The Stack's 15 AI agents (installed as Claude skills) with what each one produces.
 - [How to create a Claude skill](https://www.madgrowth.io/guides/how-to-create-a-claude-skill/): folder structure, a working SKILL.md example, how to write descriptions Claude triggers on, and how to install and test a skill.
 
 ## About Madalena Rugeroni

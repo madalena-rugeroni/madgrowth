@@ -11,7 +11,7 @@ For leaders in tech and solopreneurs with 5+ years of experience
 
 # From operator to owner.
 
-You have the experience, the network and more ideas than time. Madgrowth helps you pick the one business worth building, turn it into an offer people pay for and land your first clients, with playbooks you run yourself or 1:1 with me.
+You have the experience, the network and more ideas than time. Madgrowth helps you pick the one business worth building, turn it into an offer people pay for and land your first clients, with agents you run yourself or 1:1 with me.
 
 See which business fits how you work → See how it works ↓
 Free Builder Diagnostic · 3 minutes
@@ -90,7 +90,7 @@ A content plan built from your messaging and one lead magnet that leads to your 
 Who pays first?
 The landing page, the launch plan, your acquisition channels, the sales conversation and a client's first 90 days.
 
-The Stack · 299€ You run all five steps 15 AI playbooks, one per task, that run in Claude.   The Audit · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
+The Stack · 299€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Audit · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
 
 Who it's for
 
@@ -118,7 +118,7 @@ Why not just…
 
 ### …ask ChatGPT or Claude?
 
-You'll get generic advice that could fit any business. The Stack runs the playbook for the business you're building, whether that's a fractional or advisory practice, a service or a SaaS. Each playbook comes from my own go-to-market work and from experts in that specific topic. See the playbooks →
+You'll get generic advice that could fit any business. The Stack runs the agent for the business you're building, whether that's a fractional or advisory practice, a service or a SaaS. Each agent comes from my own go-to-market work and from experts in that specific topic. See the agents →
 
 ### …take a creator course?
 
@@ -136,15 +136,15 @@ Products
 
 ## Start where you are
 
-Start free: the Builder Diagnostic shows which business fits how you work and the Expertise Audit finds your angle. From there, run the playbooks yourself with The Stack, get my written review with The Audit, or build it with me in The Build.
+Start free: the Builder Diagnostic shows which business fits how you work and the Expertise Audit finds your angle. From there, run the agents yourself with The Stack, get my written review with The Audit, or build it with me in The Build.
 
 ### The Stack
 
-Do it yourself · 15 AI playbooks
+Do it yourself · 15 AI agents
 
 299€ · one-time
 
-Fifteen AI playbooks that run in Claude and work as one system. The first asks eight questions about your business. Every playbook after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
+Fifteen AI agents that run in Claude and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
 - Decide: Go / No-Go, scored against your Builder Archetype and your business idea
 - Position it: Talk to Customers · Your Customer · Positioning · Messaging
@@ -154,7 +154,7 @@ Fifteen AI playbooks that run in Claude and work as one system. The first asks e
 - Run them in any order. The system keeps track.
 - Free updates
 Get the Stack · 299€
-See every playbook and the frameworks behind it →
+See every agent and the frameworks behind it →
 
 Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
 
@@ -198,7 +198,7 @@ Over the last decade, I've lived the tech operator trap.
 
 Leading teams at Google. Scaling startups from zero to $10M in revenue. Six-figure salary, fancy titles, and zero ownership of my time.
 
-I had built everything the playbook said to build. But my income still depended on one employer, my expertise was trapped inside someone else's company, and my time wasn't my own.
+I had built everything the agent said to build. But my income still depended on one employer, my expertise was trapped inside someone else's company, and my time wasn't my own.
 
 So I built a way out. Then I built Madgrowth to help others do the same. Today I advise and invest in startups and run a portfolio of internet businesses.
 
@@ -222,11 +222,11 @@ Many people have a direction and no specific offer yet. The free Expertise Audit
 
 I already use ChatGPT or Claude. Why pay for The Stack?
 
-A general assistant gives you a reasonable answer for any business. The Stack runs a specific playbook for the business you're building, based on my own go-to-market work and on frameworks from practitioners like April Dunford and Blair Enns. Each playbook uses what the earlier ones produced and ends with a document you keep: an ICP, an offer, a price, a launch plan.
+A general assistant gives you a reasonable answer for any business. The Stack runs a specific agent for the business you're building, based on my own go-to-market work and on frameworks from practitioners like April Dunford and Blair Enns. Each agent uses what the earlier ones produced and ends with a document you keep: an ICP, an offer, a price, a launch plan.
 
 Fractional, services or software: does it matter which?
 
-Not at the start. All of them begin with what you sell, who buys it and what it costs. The Stack has a version of each playbook for each model, and in The Build we adapt the plan to yours. The Go / No-Go scores the idea against your Builder Archetype before you commit months to it.
+Not at the start. All of them begin with what you sell, who buys it and what it costs. The Stack has a version of each agent for each model, and in The Build we adapt the plan to yours. The Go / No-Go scores the idea against your Builder Archetype before you commit months to it.
 
 I have around 5 years of experience. Is that enough?
 
@@ -246,11 +246,11 @@ Price against the cost of the problem and the full-time hire the client would ot
 
 The Stack, The Audit or The Build?
 
-They follow the same five steps. The Stack is the fifteen playbooks to run on your own (299€ once). The Audit is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1, with a guarantee (1,200€/month). If you're unsure, book the free 15-minute call from The Build card.
+They follow the same five steps. The Stack is the fifteen agents to run on your own (299€ once). The Audit is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1, with a guarantee (1,200€/month). If you're unsure, book the free 15-minute call from The Build card.
 
 Do I have to run the skills in order?
 
-No. The first playbook you run asks eight questions about your business, once. Every other playbook reads those answers, so you can start with the Go / No-Go, pricing or the landing page. The recommended sequence starts with Decide, and you're free to skip around.
+No. The first agent you run asks eight questions about your business, once. Every other agent reads those answers, so you can start with the Go / No-Go, pricing or the landing page. The recommended sequence starts with Decide, and you're free to skip around.
 
 Can I talk to you before starting The Build?
 
@@ -272,31 +272,31 @@ See which business fits how you work →
 ---
 
 URL: https://www.madgrowth.io/stack/
-Title: The Stack: 15 AI playbooks to decide, position, price and launch · Madgrowth
+Title: The Stack: 15 AI agents to decide, position, price and launch · Madgrowth
 
-The Stack · 15 AI playbooks
+The Stack · 15 AI agents
 
-# Fifteen AI playbooks, each with a version for your kind of business.
+# Fifteen AI agents, each with a version for your kind of business.
 
-A SaaS product and a fractional CMO practice need different positioning, pricing and launch playbooks. The Stack classifies your business first. Every playbook then runs the frameworks built for that model and hands you a finished document.
+A SaaS product and a fractional CMO practice need different positioning, pricing and launch methods. The Stack classifies your business first. Every agent then runs the frameworks built for that model and hands you a finished document.
 
-Get the Stack · 299€ → See the fifteen playbooks ↓    Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
+Get the Stack · 299€ → See the fifteen agents ↓    Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
 The Stack 299€one-time
 - Start hereAudit + setup
-- Decide1 playbook
-- Position it4 playbooks
-- Package it3 playbooks
-- Audience2 playbooks
-- Launch it5 playbooks
+- Decide1 agent
+- Position it4 agents
+- Package it3 agents
+- Audience2 agents
+- Launch it5 agents
 
-A playbook for each model
+An agent for each model
 
 ServicesSoftwareProductLocalMediaMarketplaces
 Free updates. Installs as Claude skills, in the app or Claude Code.
 
 How it works
 
-## Answer the setup questions once. Every playbook uses them.
+## Answer the setup questions once. Every agent uses them.
 
 1
 
@@ -306,15 +306,15 @@ The setup step asks about your model, stage, sales motion, price point, team, Bu
 
 2
 
-### Load the playbook
+### Load the agent
 
-Every playbook opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
+Every agent opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
 
 3
 
 ### Keep the output
 
-Each playbook ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next one builds on it, so start wherever the pressure is.
+Each agent ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next one builds on it, so start wherever the pressure is.
 
 ServicesFractional roles, consulting, advisory, agencies
 SoftwareB2B SaaS, sales-led or product-led
@@ -323,9 +323,9 @@ LocalBusinesses built around a place
 MediaNewsletters, podcasts, communities
 MarketplacesA layer on top of any model
 
-The playbooks
+The agents
 
-## What each playbook produces and the frameworks behind it
+## What each agent produces and the frameworks behind it
 
 Frameworks are listed for the models where they apply. They're credited to their authors, who aren't affiliated with Madgrowth.
 
@@ -347,7 +347,7 @@ A context file every other skill reads, so you answer these questions once.
 ### Decide
 
 Is this idea worth building, and is it right for you? A verdict before you spend months on it.
-Playbook 01
+Agent 01
 
 01Go / No-Go
 A go, no-go or not-yet verdict on your business idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest way to test it and a pre-mortem. Run it again later with more data.
@@ -357,7 +357,7 @@ A go, no-go or not-yet verdict on your business idea, scored against your Builde
 ### Position it
 
 Who you serve, why they pick you and how you say it.
-Playbooks 02 to 05
+Agents 02 to 05
 
 02Talk to Customers
 An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
@@ -392,7 +392,7 @@ A messaging house with one core message and three proof-backed pillars, plus you
 ### Package it
 
 What you sell, what it costs and whether the numbers work.
-Playbooks 06 to 08
+Agents 06 to 08
 
 06Your Offer
 Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
@@ -417,7 +417,7 @@ The five metrics for your model, a 12-month model and a verdict on whether the e
 ### Audience
 
 Attention and leads before you need them.
-Playbooks 09 and 10
+Agents 09 and 10
 
 09Founder Content
 Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
@@ -439,7 +439,7 @@ One lead magnet with its promise, format, the segment it captures and the bridge
 ### Launch it
 
 The page, the launch, the first customers and keeping them.
-Playbooks 11 to 15
+Agents 11 to 15
 
 11Landing Page
 A section-by-section page spec with the copy, ordered for one conversion goal and scored for clarity, relevance, value and anxiety.
@@ -484,7 +484,7 @@ A client's first 90 days after they say yes: the activation milestone, onboardin
 - ProductPost-purchase flows, RFM segmentation and Nir Eyal's Hook model
 - LocalRebooking at checkout
 
-### All fifteen playbooks, plus the Expertise Audit
+### All fifteen agents, plus the Expertise Audit
 
 299€ one-time. Free updates. Installs as Claude skills, in the app or Claude Code.
 Get the Stack · 299€ →
@@ -495,25 +495,25 @@ FAQ
 
 What do I need to run it?
 
-Claude, in the app or Claude Code. Each playbook installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
+Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
 
 How is this different from a set of prompts?
 
-Each playbook is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later playbooks use what earlier ones produced.
+Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced.
 
-Do I have to run the playbooks in order?
+Do I have to run the agents in order?
 
 No. Run the setup step first, then start wherever the pressure is. The recommended sequence starts with the Go / No-Go, and you're free to skip around.
 
 What if my business doesn't fit one model neatly?
 
-The setup step picks the closest model and notes the hybrid, for example services with a digital product on the side. Each playbook uses the main model and flags where the second one changes the advice.
+The setup step picks the closest model and notes the hybrid, for example services with a digital product on the side. Each agent uses the main model and flags where the second one changes the advice.
 
 What if I want help using it?
 
-The Audit gives you my written diagnosis of what the playbooks produced. The Build is the same system with me 1:1 for three months. Compare the options →
+The Audit gives you my written diagnosis of what the agents produced. The Build is the same system with me 1:1 for three months. Compare the options →
 
-## Build your offer with the playbook that fits your business.
+## Build your offer with the agent that fits your business.
 
 299€ one-time, with free updates. Or start free with the Builder Diagnostic.
 Get the Stack · 299€
@@ -1166,15 +1166,15 @@ Claude skills
 
 # Claude skills for business: position, price and launch an offer
 
-Claude is only as good as the method you give it. These are fifteen AI playbooks, plus a free one, that install as Claude skills and take you from idea to launch: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch. Each one asks about your business first and hands you a finished document.
+Claude is only as good as the method you give it. These are fifteen AI agents, plus a free one, that install as Claude skills and take you from idea to launch: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch. Each one asks about your business first and hands you a finished document.
 
 Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026
 
 The short answer
 - Claude skills are folders of instructions that Claude loads when a request matches them, so it runs the same method every time.
 - They work in Claude Code (as folders) and in the Claude app (uploaded as a zip under Customize > Skills), on every Claude plan with code execution turned on.
-- The Stack by Madgrowth is 15 AI playbooks that install as Claude skills, plus the free Expertise Audit, covering go/no-go, customers, positioning, offer, pricing, content, launch, acquisition, conversion and retention.
-- Each playbook reads one shared context file and uses the version for your business model: services, software, product, local, media or marketplaces.
+- The Stack by Madgrowth is 15 AI agents that install as Claude skills, plus the free Expertise Audit, covering go/no-go, customers, positioning, offer, pricing, content, launch, acquisition, conversion and retention.
+- Each agent reads one shared context file and uses the version for your business model: services, software, product, local, media or marketplaces.
 
 ## What are Claude skills?
 
@@ -1184,22 +1184,22 @@ For business work, that consistency is the whole point. A prompt depends on what
 
 ## Which Claude skills does a business need?
 
-A business needs skills for the decisions that are expensive to get wrong: whether to build it, who the customer is, how you're positioned, what you sell, what you charge and how you get the first customers. I put Go / No-Go before anything that looks like marketing, because a beautiful launch plan for the wrong idea is still the wrong idea. These are the playbooks in The Stack, each installed as a Claude skill, in the order I'd run them.
+A business needs skills for the decisions that are expensive to get wrong: whether to build it, who the customer is, how you're positioned, what you sell, what you charge and how you get the first customers. I put Go / No-Go before anything that looks like marketing, because a beautiful launch plan for the wrong idea is still the wrong idea. These are the agents in The Stack, each installed as a Claude skill, in the order I'd run them.
 
 ### Start here
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Expertise Audit | Free | Your three strongest angles from the career you already have: who buys, the problem in their words and your proof.
-| Start | Setup | A context file every other playbook reads: business model, stage, sales motion, price band, team, geography and build capacity.
+| Start | Setup | A context file every other agent reads: business model, stage, sales motion, price band, team, geography and build capacity.
 
 ### Decide
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Go / No-Go | 01 | A go, no-go or not-yet verdict on your idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest test and a pre-mortem.
 
 ### Position it
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Talk to Customers | 02 | An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
 | Your Customer | 03 | An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
 | Positioning | 04 | Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
@@ -1207,33 +1207,33 @@ A business needs skills for the decisions that are expensive to get wrong: wheth
 
 ### Package it
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Your Offer | 06 | Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
 | Pricing | 07 | The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
 | The Numbers | 08 | The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
 
 ### Audience
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Founder Content | 09 | Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
 | Lead Magnet | 10 | One lead magnet with its promise, format, the segment it captures and the bridge to your paid offer.
 
 ### Launch it
 
-| Playbook | # | What it produces
+| Agent | # | What it produces
 | Landing Page | 11 | A section-by-section page spec with the copy, ordered for one conversion goal.
 | Launch | 12 | A pre-launch, launch and post-launch plan with your warm list, the assets and a day-by-day calendar.
 | Get Customers | 13 | Three channels to test, one to focus on, the numbers that decide and your weekly routine.
 | Convert | 14 | Your path from lead to paid: discovery call, proposal and follow-up, or funnel, checkout and lifecycle emails.
 | Retain | 15 | A client's first 90 days after they say yes: onboarding, the engagement loop and when to ask for renewal or referrals.
-Every playbook credits the frameworks it uses, like April Dunford on positioning, Blair Enns and Madhavan Ramanujam on pricing and Bob Moesta on customer interviews. The full list of methods per business model is on The Stack page.
+Every agent credits the frameworks it uses, like April Dunford on positioning, Blair Enns and Madhavan Ramanujam on pricing and Bob Moesta on customer interviews. The full list of methods per business model is on The Stack page.
 
-## How are these playbooks different from a folder of prompts?
+## How are these agents different from a folder of prompts?
 
-They work as one system. A setup step classifies your business once, writes it to a context file and every other playbook reads it. Later playbooks also read what earlier ones produced, so pricing knows your ICP and the landing page knows your messaging.
+They work as one system. A setup step classifies your business once, writes it to a context file and every other agent reads it. Later agents also read what earlier ones produced, so pricing knows your ICP and the landing page knows your messaging.
 
-- A playbook per business model. A fractional CMO pricing a retainer and a SaaS founder pricing a plan need different methods. Each playbook loads the one for your model.
-- Questions before answers. Each playbook asks for what's missing before it writes, so the output is about your business and not a plausible guess.
+- A method per business model. A fractional CMO pricing a retainer and a SaaS founder pricing a plan need different methods. Each agent loads the one for your model.
+- Questions before answers. Each agent asks for what's missing before it writes, so the output is about your business and not a plausible guess.
 - A document at the end. An ICP, an offer, a price, a launch calendar. Files you keep and edit.
 
 ## How do you install Claude skills?
@@ -1245,7 +1245,7 @@ Skills don't sync between Claude Code and the app, so install them wherever you 
 
 ## Are third-party Claude skills safe?
 
-Treat a skill like software you install: if you didn't write it and can't read it, don't run it. Anthropic's documentation warns that a skill can direct Claude to run tools or code in ways that don't match its stated purpose. The Madgrowth playbooks are Markdown instructions and reference files, with no scripts and nothing that fetches content from the internet, so you can read every line before you install them.
+Treat a skill like software you install: if you didn't write it and can't read it, don't run it. Anthropic's documentation warns that a skill can direct Claude to run tools or code in ways that don't match its stated purpose. The Madgrowth agents are Markdown instructions and reference files, with no scripts and nothing that fetches content from the internet, so you can read every line before you install them.
 
 ## Questions people ask
 
@@ -1357,7 +1357,7 @@ A fractional executive takes a real role at one or more companies, part time (fr
 
 Software and digital products (tools, templates, courses, paid newsletters) sell without your hours attached. They also take the longest to earn anything.
 
-All four run on the same raw material: an outcome someone will pay for. My rule is outcome first, format second. I run both kinds myself. Madgrowth sells advice and AI playbooks, and Mazo is software I built. The format question has its own guide: fractional, consulting or software.
+All four run on the same raw material: an outcome someone will pay for. My rule is outcome first, format second. I run both kinds myself. Madgrowth sells advice and AI agents, and Mazo is software I built. The format question has its own guide: fractional, consulting or software.
 
 ## How do you find your niche from the career you already have?
 
@@ -1802,7 +1802,7 @@ What I'd check in an offer like this:
 - The middle option compares well with the alternative. 7,000€ a month is 84,000€ a year. Say the company's other option is a full-time head of growth at 150,000€ a year in salary and employer costs, plus a hiring process of several months. The fractional option is the obvious first step.
 - The diagnostic can lead into the retainer. A client who buys the entry option has a plan and often wants help carrying it out. You can credit part of the fee against the first month.
 - Capacity sets your ceiling. Three clients on the middle option is 21,000€ a month for about 12 billed days, which leaves time to sell and deliver well. Past that point, raise prices or productize.
-If you'd like to run these numbers on your own offer, the Pricing skill in The Stack works through the floor, the value conversation and the three options with Claude, using the playbook for services businesses.
+If you'd like to run these numbers on your own offer, the Pricing skill in The Stack works through the floor, the value conversation and the three options with Claude, using the method for services businesses.
 
 ## When should you raise your prices?
 
@@ -2094,7 +2094,7 @@ A concierge MVP is your product delivered by hand while the customer pays as if 
 
 Pre-sales work the same way. Offer a founding-customer deal, like a discounted annual plan paid now for access when the first version ships. A few people paying in advance tell you more than a hundred signups.
 
-The Stack's Go/No-Go playbook runs this check for software ideas and gives a go, no-go or not-yet verdict, with the one assumption to test next. It's part of The Stack, fifteen playbooks that run in Claude.
+The Stack's Go/No-Go agent runs this check for software ideas and gives a go, no-go or not-yet verdict, with the one assumption to test next. It's part of The Stack, fifteen agents that run in Claude.
 
 ## Can you build a micro SaaS MVP with AI tools?
 
@@ -2270,7 +2270,7 @@ What keeps you publishing through a bad month:
 - A buffer. Always keep one finished issue in reserve for the week you're sick or travelling.
 - A topic bank. Keep a running list of the questions readers ask. Replies to your issues are the best source of next month's topics.
 - Repurposing. Every issue becomes several posts on your main platform, each one pointing back to the newsletter.
-If you want to work this through for your own beat, the Founder Content playbook in The Stack gives you your content pillars, point of view, platform choice, cadence and repurposing plan in one document.
+If you want to work this through for your own beat, the Founder Content agent in The Stack gives you your content pillars, point of view, platform choice, cadence and repurposing plan in one document.
 
 ## How do you grow a newsletter?
 
@@ -2284,7 +2284,7 @@ Put the subscribe link everywhere the platform lets you, like your profile and f
 
 A lead magnet is something useful you give away for an email address: a template, a benchmark, a short email course. The best ones upgrade a piece that's already popular, like the spreadsheet behind the pricing post or the full question list behind the hiring post.
 
-It should also point towards what you'll sell later. The Lead Magnet playbook in The Stack designs one with you, including the bridge from the free piece to the paid offer.
+It should also point towards what you'll sell later. The Lead Magnet agent in The Stack designs one with you, including the bridge from the free piece to the paid offer.
 
 ### Use referrals and cross-promotion
 
@@ -2348,7 +2348,7 @@ By then you'll know two things: whether you enjoy the weekly rhythm, and whether
 
 ## Find out if an audience business fits how you work
 
-The free Builder Diagnostic takes about three minutes. It shows your Builder Archetype, including whether you're a Broadcaster, and which business models suit you. If it points to media, the Founder Content and Lead Magnet playbooks in The Stack help you plan your beat, cadence and first offer.
+The free Builder Diagnostic takes about three minutes. It shows your Builder Archetype, including whether you're a Broadcaster, and which business models suit you. If it points to media, the Founder Content and Lead Magnet agents in The Stack help you plan your beat, cadence and first offer.
 Take the Builder Diagnostic
 
 ## Questions people ask
@@ -2431,7 +2431,7 @@ A productized service is packaged like a product, with the same scope, steps and
 
 The shape I like is an entry offer that leads into ongoing work. Say you run tracking and attribution for e-commerce brands. The entry offer is a three-week tracking audit at a fixed price that ends with a prioritised list of fixes. The core offer is a monthly retainer to implement and run those fixes.
 
-Before you sell it, write down the outcome in the buyer's words, what's included and what isn't, what the client must provide, the timeline and the price. Alex Hormozi's advice in $100M Offers helps here: list what could stop the client getting the result, then build fixes for the likely ones into the offer. The Offer playbook in The Stack runs this for a services business and writes it up as one paragraph you can put on a page.
+Before you sell it, write down the outcome in the buyer's words, what's included and what isn't, what the client must provide, the timeline and the price. Alex Hormozi's advice in $100M Offers helps here: list what could stop the client getting the result, then build fixes for the likely ones into the offer. The Offer agent in The Stack runs this for a services business and writes it up as one paragraph you can put on a page.
 
 Take custom work once the core offer has sold several times and someone other than you can deliver it.
 
@@ -2444,7 +2444,7 @@ Charge a monthly retainer for ongoing work with defined outputs and a fixed proj
 - Performance fee. Part of your pay tied to a result such as revenue or qualified leads. Put it on top of a base fee. On its own it invites arguments about attribution, and Promethean notes it tends to make an agency look like a vendor.
 Most agencies mix these: Promethean found that 8% or fewer rely on a single pricing model. The report also warns that agencies billing time and materials are exposed to AI, because when the same output takes fewer hours, the invoice shrinks. I wouldn't start an agency on hourly billing in 2026.
 
-Blair Enns, in Pricing Creativity, argues for showing several options at once, at different scopes and prices. The Pricing playbook in The Stack uses his approach for services. For day rates and value pricing in euros, see how to price consulting services.
+Blair Enns, in Pricing Creativity, argues for showing several options at once, at different scopes and prices. The Pricing agent in The Stack uses his approach for services. For day rates and value pricing in euros, see how to price consulting services.
 
 ### Margins: a worked example
 
@@ -2549,10 +2549,10 @@ Guide
 
 Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
 
-To sell digital products from your expertise, pick one format your buyer already pays for (a template, a toolkit, an AI playbook, a course or a fixed-scope service), pre-sell it before you build it, and plan more time for distribution than for the product. The selling is what decides whether it works.
+To sell digital products from your expertise, pick one format your buyer already pays for (a template, a toolkit, an AI agent, a course or a fixed-scope service), pre-sell it before you build it, and plan more time for distribution than for the product. The selling is what decides whether it works.
 
 The short answer
-- A digital product is packaged once and sold many times without your hours: templates, toolkits, AI playbooks, self-serve courses, paid communities.
+- A digital product is packaged once and sold many times without your hours: templates, toolkits, AI agents, self-serve courses, paid communities.
 - Who pays sets the price. A personal card compares you to a book; a team budget compares you to a contractor, so B2B needs fewer sales.
 - Pre-sell first: a sales page, a price, a ship date and direct asks to 20 people. Set your go/no-go number before you start.
 - Selling into Europe for the first time, use a merchant of record (Gumroad, Lemon Squeezy) for VAT. Stripe is cheaper per sale, with more admin.
@@ -2568,7 +2568,7 @@ The formats that fit experienced operators:
 
 - Templates. One asset that saves one specific piece of work: a board deck, a hiring scorecard, a pricing calculator, an incident review doc.
 - Toolkits. Several templates plus instructions for one job. For example, everything a new head of product needs for their first quarterly planning cycle.
-- AI playbooks and Claude skills. A Claude skill is a folder of instructions (a SKILL.md file plus optional reference files) that Claude loads when a task matches it. You sell your method, and the buyer runs it on their own situation. This is the format I'd bet on for operators right now, because it applies your thinking to the buyer's case every time they run it. The Stack is my example: 15 AI playbooks for positioning, pricing and launching a business, sold for 299€ and installed as Claude skills. The format itself is explained in Claude skills for business.
+- AI agents and Claude skills. A Claude skill is a folder of instructions (a SKILL.md file plus optional reference files) that Claude loads when a task matches it. You sell your method, and the buyer runs it on their own situation. This is the format I'd bet on for operators right now, because it applies your thinking to the buyer's case every time they run it. The Stack is my example: 15 AI agents for positioning, pricing and launching a business, sold for 299€ and installed as Claude skills. The format itself is explained in Claude skills for business.
 - Self-serve courses. Recorded lessons with exercises, bought once and watched at the buyer's pace.
 - Paid communities. A monthly membership around a shared problem. It only works if you show up every week, so I'd treat it as an audience business more than a product.
 A productized service is a fixed scope of work at a fixed price, sold like a product and delivered by you. You're still doing the work, so it sits outside the definition above. It's often the right first step anyway, so it gets its own section below.
@@ -2584,7 +2584,7 @@ The prices in the table are relative to each other, because real prices swing a 
 | Format | Typical buyer | Relative price | Time to build | Ongoing work | Hardest part
 | Template | Individual practitioner, own card | Low | Days | Almost none | Standing out from the free versions
 | Toolkit | Manager or team lead, often expensed | Low to mid | Weeks | An update now and then | Showing why it beats building their own
-| AI playbook or Claude skill | Operators and founders already using AI tools | Mid | Weeks | Updates as the tools change | Getting buyers to install and use it
+| AI agent or Claude skill | Operators and founders already using AI tools | Mid | Weeks | Updates as the tools change | Getting buyers to install and use it
 | Self-serve course | Individual, sometimes expensed | Mid | 1 to 3 months | Support questions, re-recording | Trust before they buy, finishing after
 | Paid community | Individuals at the same stage | Low, monthly | Days to start | High, every week | Keeping members showing up
 | Productized service | Company budget holder | High | Days to define | Your hours on every sale | Your calendar caps revenue
@@ -2729,7 +2729,7 @@ It depends on scope, so I'd start with the smallest version that delivers one re
 
 Can you make money selling Claude skills?
 
-Yes, if the skill packages a method people already pay for and ends with an output they can use straight away. The buyers already work in Claude, so the market is smaller than for a PDF template, and the install step needs clear instructions. I sell The Stack this way: 15 AI playbooks installed as Claude skills, 299€.
+Yes, if the skill packages a method people already pay for and ends with an output they can use straight away. The buyers already work in Claude, so the market is smaller than for a PDF template, and the install step needs clear instructions. I sell The Stack this way: 15 AI agents installed as Claude skills, 299€.
 
 Should my first digital product be free?
 
@@ -2763,7 +2763,7 @@ Anthropic's Agent Skills documentation describes three layers. The name and desc
 
 That design is why I like skills for business work. You can install fifteen of them and Claude only reads the one that fits the conversation. The rest sit there costing almost nothing, and the one you need runs the same method every time. You stop pasting the same prompt into every new chat.
 
-I build skills for my own businesses and sell a set of them as playbooks in The Stack. So everything below comes from writing skills that have to produce a document someone can use the next morning.
+I build skills for my own businesses and sell a set of them as agents in The Stack. So everything below comes from writing skills that have to produce a document someone can use the next morning.
 
 ## What goes inside a skill folder?
 
@@ -2846,7 +2846,7 @@ These are the four I'd check first when a skill misbehaves.
 
 ## Skip the build: skills for your business
 
-If you'd rather use skills than write them, The Stack is 15 AI playbooks that install as Claude skills. They cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.
+If you'd rather use skills than write them, The Stack is 15 AI agents that install as Claude skills. They cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.
 Get the free Expertise Audit →
 
 ## Questions people ask
