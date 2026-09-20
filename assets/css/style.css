@@ -585,6 +585,20 @@ section.alt .alt-card { background: #fff; }
 }
 .card h3 { font-size: 1.3rem; }
 .price { font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink-soft); }
+.price-was { text-decoration: line-through; color: var(--muted); margin-right: 6px; }
+.badge-founding {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: #a15b1f;
+  background: #fdf1e2;
+  border: 1px solid #f0d4ac;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
 .card > p { color: var(--ink-soft); font-size: 0.97rem; }
 .card ul { list-style: none; display: grid; gap: 10px; }
 .card li { padding-left: 24px; position: relative; font-size: 0.94rem; color: var(--ink-soft); }
