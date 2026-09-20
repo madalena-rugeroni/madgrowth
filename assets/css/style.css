@@ -517,6 +517,7 @@ section.alt .alt-card { background: #fff; }
 .phase-index strong { font-size: 0.95rem; }
 .phase-index span { font-size: 0.8rem; color: var(--muted); }
 
+#skills { scroll-margin-top: 84px; }
 .phase { margin-top: 64px; scroll-margin-top: 96px; }
 .phase-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 16px; margin-bottom: 18px; flex-wrap: wrap; }
 .phase-head h3 { font-size: 1.4rem; }
