@@ -185,7 +185,6 @@ We build your business together over three months, and you do the work between s
 - A strategy doc updated after every session
 - Reviews of your positioning, offer page, website copy and launch plan
 - The Stack included
-- The Launched Guarantee: do the work between sessions and I'll keep working with you at no cost until your offer is positioned, your site is live and your launch is done
 - Limited to 10 active clients
 See if you can launch in 90 days →
 A free 15-minute call. Bring your diagnostic profile.
@@ -1168,7 +1167,7 @@ Claude skills
 
 Claude is only as good as the method you give it. These are fifteen AI agents, plus a free one, that install as Claude skills and take you from idea to launch: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch. Each one asks about your business first and hands you a finished document.
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026
 
 The short answer
 - Claude skills are folders of instructions that Claude loads when a request matches them, so it runs the same method every time.
@@ -1338,7 +1337,7 @@ Guide
 
 # What to sell after leaving a tech job
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 9 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 9 min read
 
 The thing to sell after leaving a tech job is an outcome you've delivered more than once, to a buyer who already spends money to get it. Put it in one sentence: who buys, what problem, your proof. Then test that sentence with 10 real buyers. The website and the product can wait.
 
@@ -1504,7 +1503,7 @@ Guide
 
 # How to become a fractional executive
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 To become a fractional executive, pick one leadership problem you've solved more than once. Package it as a monthly role with a set number of days and named outcomes. Then sell it to companies that need that leader before they can justify a full-time hire. Your first two or three clients should come from people who already know your work. And start alongside your job only if your contract and your employer's interests allow it.
 
@@ -1678,7 +1677,7 @@ Guide
 
 # How to price fractional and consulting services
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 Price fractional and consulting work from two numbers: what the problem costs your client, and what their alternative costs (usually a full-time hire). Sell a monthly retainer or a fixed-price offer, with three options on the table. Keep your day rate private. It's your floor, and no client ever needs to see it.
 
@@ -1857,7 +1856,7 @@ Guide
 
 # Fractional, consulting or software: which business should you start after tech?
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 If you need income within a few months, start with fractional or consulting work. Build software when you can go a year or more without it paying you, or when client work already covers your bills while you build. That's my rule, and I run both kinds of business myself.
 
@@ -2021,7 +2020,7 @@ Guide
 
 # How to build a micro SaaS from your tech career
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 To build a micro SaaS from a tech career, pick a painful workflow you've run many times at work, sell a fix to the people who still run it before you write much code, and price it for businesses. Expect a first payment within months, and several years before it replaces a senior salary. I'd plan for both from day one.
 
@@ -2199,7 +2198,7 @@ Guide
 
 # How to build an audience business from your expertise
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 To build an audience business from your expertise, pick a narrow beat you know from your career and say something specific about it. Do it on one platform where your readers already spend time, on a schedule you can keep for a year, and move them onto an email list you control. Then design the offer early. At small audience sizes, services and products earn far more than subscriptions or sponsorships.
 
@@ -2382,7 +2381,7 @@ Guide
 
 # How to start an agency after a career in tech
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 To start an agency after a career in tech, pick one type of client and one outcome you've already delivered. Sell it as a fixed, productized offer before you take custom work, and set up delivery so a small senior team and written processes do the work. Win your first clients from people who know your work, and price for a margin that still holds once you're paying other people. That last part is the one I'd check twice.
 
@@ -2547,7 +2546,7 @@ Guide
 
 # How to sell digital products from your expertise
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 10 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 10 min read
 
 To sell digital products from your expertise, pick one format your buyer already pays for (a template, a toolkit, an AI agent, a course or a fixed-scope service), pre-sell it before you build it, and plan more time for distribution than for the product. The selling is what decides whether it works.
 
@@ -2744,7 +2743,7 @@ Guide
 
 # How to create a Claude skill (with a working example)
 
-Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 17 September 2026 · 8 min read
+Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026 · 8 min read
 
 A Claude skill is a folder with one file, SKILL.md, that tells Claude how to do a specific job and when to do it. To create one, you write a short description of when to use it, the steps Claude should follow and what the finished output looks like. Then you add the folder to Claude Code, or zip it and upload it in the Claude app.
 
