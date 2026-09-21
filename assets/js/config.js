@@ -5,12 +5,18 @@
    ============================================================ */
 window.MG = {
   // --- Stripe Payment Links (see README) ---
-  // The Stack: 299€ one-time. The Read: 599€ one-time — fully async,
-  // no call to book, so its success URL should point at wherever the
-  // intake happens (a form collecting site/LinkedIn/offer details),
-  // not Calendly. That intake form doesn't exist yet — set one up
-  // (Tally/Typeform/Google Form) and point the Stripe success URL at
-  // it before launch.
+  // The Stack: 299€ one-time, self-serve.
+  //
+  // The Read: 599€ one-time, fully async. The post-payment chain is
+  // live and wired end to end:
+  //   Stripe "After payment" redirects to
+  //     /audit/intake/?order={CHECKOUT_SESSION_ID}
+  //   → audit/intake/index.html reads ?order into a hidden field
+  //   → FormSubmit posts the answers to madalena@madgrowth.io,
+  //     reply-to set to the buyer, so the order id ties the intake
+  //     to the payment.
+  // The buyer then gets a confirmation from Madalena by hand; the
+  // 5 business days run from that confirmation, not from submission.
   STRIPE_LINK_STACK: "https://buy.stripe.com/9B6eVe2JXftc7xZ2WJ0Ny01",
   STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
