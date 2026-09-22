@@ -19,6 +19,22 @@ Experienced operators usually have the credibility to go independent. Where they
 
 - [From operator to owner](https://www.madgrowth.io/newsletter/): Madalena's free weekly newsletter for leaders in tech who want income beyond their job. Experiments, numbers and mistakes from building businesses. 3-minute read, every Thursday.
 
+
+## Newsletter archive
+
+- [How I ended up on a call with Greg Isenberg, and what he told me to change](https://www.madgrowth.io/newsletter/on-a-call-with-greg-isenberg/): Greg Isenberg reviewed Madgrowth and Mazo: bundle software with advisory, give visitors a smaller first step than a call, and price in USD. What I changed.
+- [Testing a business idea used to cost €50K. Now it costs €50 and an afternoon.](https://www.madgrowth.io/newsletter/what-used-to-cost-50k-now-costs-50/): The cost of building has collapsed; validation and distribution are the hard part now. Why the builder-distributor is the most valuable person in tech, and what I'm teaching at Nova SBE.
+- [The best investment I ever made wasn't in a brokerage account](https://www.madgrowth.io/newsletter/money-questions-i-dont-usually-answer/): Recording a podcast about money for Santander made me say out loud what I'd been avoiding: expertise compounds like capital, and I priced mine like it didn't matter for years.
+- [I can't code. I built a SaaS anyway (in a weekend, with Claude Code).](https://www.madgrowth.io/newsletter/i-cant-code-i-built-a-saas-anyway/): How I vibe-coded Mazo, an AI go-to-market advisor for B2B SaaS founders, with zero development background: why, what went into it, and what happened when I posted it.
+- [You have a track record nobody knows about. Waiting is the decision.](https://www.madgrowth.io/newsletter/a-track-record-nobody-knows-about/): A senior PM with 15 years in tech, a niche and real results told me he can't build in public because his employer would see. Why waiting is itself a decision, and how to start quietly.
+- [Someone asked me how to get passive income. Here's the honest answer.](https://www.madgrowth.io/newsletter/how-to-get-passive-income/): Three friends in a group chat asked for a podcast on getting rich. What I told them: zero-employee businesses cost under $500 to start, trust is the real asset, and action comes before expertise.
+- [How I ended up here: from Google to Too Good To Go to a portfolio of my own businesses](https://www.madgrowth.io/newsletter/how-i-ended-up-here/): Madalena Rugeroni's story: chasing a job at Google, a failed startup, running Too Good To Go in three countries, a wrong turn into crypto, Head of Growth at a B2B SaaS, and the decision to build a portfolio of businesses instead.
+- [The Offer Ladder: the five-tier business model I wish I'd known earlier](https://www.madgrowth.io/newsletter/the-offer-ladder/): A five-tier system for building a product suite one layer at a time: lead magnet, micro-offer, core product, high-touch offer, continuity. Which two tiers to start with and why.
+- [From one income stream to five: what happened when I started building in public](https://www.madgrowth.io/newsletter/from-one-to-multiple-revenue-streams/): Relying on one income makes you fragile. How showing up consistently on LinkedIn turned into a digital product, paid advisory, a newsletter, speaking and company programs, and the stack-don't-wait playbook.
+- [The four-part playbook I use to build lean, profitable businesses without funding](https://www.madgrowth.io/newsletter/the-playbook-for-two-profitable-businesses/): From a hotel in Mexico: the playbook behind Favorite People and Madgrowth. Pick a niche you understand, use low-code tools, capture intent not attention, and build a brand, not just a product.
+- [€3.5K in 30 days from a digital product: what actually worked](https://www.madgrowth.io/newsletter/3-5k-in-30-days-what-worked/): A 30-day test: build an income stream without a team, ads or a big audience. Under €300 spent, a 71% newsletter open rate, daily posting, and five things that made it work.
+- [Build income that doesn't need you first, then the business you love](https://www.madgrowth.io/newsletter/before-you-start-your-business-read-this/): Favorite People is profitable, growing 230% year over year, and still not passive. Why I'd build a scalable income stream before a business that needs you daily, and what that changes.
+
 ## Who it's for
 
 - Directors, VPs, heads of growth, product and engineering leaders, and consultants with 5 to 10+ years in tech who want more autonomy and something of their own.
@@ -47,6 +63,10 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 - [How to start an agency after a career in tech](https://www.madgrowth.io/guides/how-to-start-an-agency/): To start an agency, pick one client type and outcome, sell a productized offer first, price for margin and hand delivery to a small senior team and systems.
 - [How to sell digital products from your expertise](https://www.madgrowth.io/guides/how-to-sell-digital-products/): Sell digital products by choosing a format your buyer already pays for, pre-selling it, then doing the distribution. Formats, pricing and platforms compared.
 
+- [Fractional executive rates in 2026: day rates and retainers by role](https://www.madgrowth.io/guides/fractional-executive-rates/): Fractional CMO, CTO, CPO and COO rates for 2026: day rates, monthly retainers and hourly bands in the US, UK and Europe, with the method I use to set a rate from the seller's side.
+- [How to start fractional or consulting work while still employed](https://www.madgrowth.io/guides/fractional-while-employed/): Start fractional or consulting work while employed: what to check in your contract (non-compete, moonlighting, IP), a time model that fits around a job, how to tell your employer, and how to land the first client quietly.
+- [Laid off from tech: take the next job, go fractional, or build something?](https://www.madgrowth.io/guides/what-to-do-after-tech-layoff/): A decision guide for the weeks after a tech layoff: how much runway you have, whether to take the next job, go fractional, or build a product, and how to use severance as seed money without wasting it.
+
 ## Claude skills
 
 - [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app, and the full list of The Stack's 15 AI agents (installed as Claude skills) with what each one produces.
@@ -54,7 +74,7 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 
 ## About Madalena Rugeroni
 
-- [About on madgrowth.io](https://www.madgrowth.io/#about)
+- [About Madalena Rugeroni](https://www.madgrowth.io/about/): career, press, short bio
 - [LinkedIn](https://www.linkedin.com/in/madalenarugeroni)
 - [Madgrowth on LinkedIn](https://www.linkedin.com/company/madgrowth-io)
 - [X](https://x.com/madalenarug)

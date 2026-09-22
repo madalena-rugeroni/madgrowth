@@ -53,26 +53,183 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://www.madgrowth.io/#org",
+      "name": "Madgrowth",
+      "url": "https://www.madgrowth.io/",
+      "logo": "https://www.madgrowth.io/assets/img/logo.png",
+      "email": "madalena@madgrowth.io",
+      "legalName": "Madalena Rugeroni, Unipessoal Lda",
+      "vatID": "PT517207427",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lisbon",
+        "addressCountry": "PT"
+      },
+      "founder": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/madgrowth-io",
+        "https://x.com/madalenarug",
+        "https://www.crunchbase.com/organization/madgrowth"
+      ],
+      "description": "Madgrowth helps leaders in tech with 5 to 10+ years of experience turn that experience into a business they own: a fractional role, a services business or software.",
+      "foundingDate": "2025"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.madgrowth.io/#madalena",
+      "name": "Madalena Rugeroni",
+      "url": "https://www.madgrowth.io/about/",
+      "image": "https://www.madgrowth.io/assets/img/madalena.jpg",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/madalenarugeroni",
+        "https://x.com/madalenarug",
+        "https://www.crunchbase.com/person/madalena-rugeroni",
+        "https://getmazo.com",
+        "https://pwitech.medium.com/madalena-rugeroni-country-manager-at-too-good-to-go-9d58bfddda9a",
+        "https://lidermagazine.sapo.pt/autor/madalena-rugeroni/",
+        "https://eco.sapo.pt/especiais/madalena-rugeroni-quando-falava-da-too-good-to-go-havia-um-ceticismo-brutal/"
+      ],
+      "description": "Madalena Rugeroni is the founder of Madgrowth, where she helps leaders in tech turn what they know into a business they own: fractional roles, advisory practices, agencies and software. Ex-Google, former General Manager of Too Good To Go for Spain and Portugal, she has scaled startups from zero to $10M and advises founders on go-to-market. Based in Lisbon.",
+      "knowsAbout": [
+        "Go-to-market strategy",
+        "Positioning",
+        "Pricing",
+        "Offer design",
+        "Fractional leadership",
+        "Consulting business models",
+        "Startup growth",
+        "B2B SaaS"
+      ],
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "Google"
+        },
+        {
+          "@type": "Organization",
+          "name": "Too Good To Go"
+        },
+        {
+          "@type": "Organization",
+          "name": "Bitpanda"
+        },
+        {
+          "@type": "Organization",
+          "name": "Amplemarket"
+        }
+      ],
+      "nationality": "PT",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lisbon, Portugal"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.madgrowth.io/#website",
+      "url": "https://www.madgrowth.io/",
+      "name": "Madgrowth",
+      "publisher": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
       "@type": "WebPage",
       "@id": "https://www.madgrowth.io/newsletter/#webpage",
       "url": "https://www.madgrowth.io/newsletter/",
       "name": "Newsletter for leaders in tech building a business · Madgrowth",
       "description": "From operator to owner: a weekly 3-minute newsletter for leaders in tech who want income beyond their job. Experiments, numbers and mistakes from building businesses.",
-      "isPartOf": { "@id": "https://www.madgrowth.io/#website" },
-      "about": { "@id": "https://www.madgrowth.io/#org" },
-      "author": { "@id": "https://www.madgrowth.io/#madalena" },
+      "isPartOf": {
+        "@id": "https://www.madgrowth.io/#website"
+      },
+      "about": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "author": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
       "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Madgrowth", "item": "https://www.madgrowth.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Newsletter", "item": "https://www.madgrowth.io/newsletter/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Madgrowth",
+          "item": "https://www.madgrowth.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Newsletter",
+          "item": "https://www.madgrowth.io/newsletter/"
+        }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.madgrowth.io/newsletter/#blog",
+      "name": "From operator to owner",
+      "url": "https://www.madgrowth.io/newsletter/",
+      "description": "Weekly newsletter for leaders in tech who want income beyond their job. Experiments, numbers and mistakes from building businesses.",
+      "author": {
+        "@id": "https://www.madgrowth.io/#madalena"
+      },
+      "publisher": {
+        "@id": "https://www.madgrowth.io/#org"
+      },
+      "inLanguage": "en",
+      "blogPost": [
+        {
+          "@id": "https://www.madgrowth.io/newsletter/on-a-call-with-greg-isenberg/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/what-used-to-cost-50k-now-costs-50/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/i-cant-code-i-built-a-saas-anyway/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/a-track-record-nobody-knows-about/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/money-questions-i-dont-usually-answer/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/how-to-get-passive-income/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/how-i-ended-up-here/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/from-one-to-multiple-revenue-streams/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/the-playbook-for-two-profitable-businesses/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/3-5k-in-30-days-what-worked/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/before-you-start-your-business-read-this/#article"
+        },
+        {
+          "@id": "https://www.madgrowth.io/newsletter/the-offer-ladder/#article"
+        }
       ]
     }
   ]
 }
-  </script>
+</script>
 </head>
 <body>
 
@@ -83,7 +240,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="../guides/">Guides</a></li>
       <li><a href="../archetypes/">Archetypes</a></li>
-      <li><a href="../#about">About</a></li>
+      <li><a href="../about/">About</a></li>
       <li><a href="../#pricing">Products</a></li>
       <li><a href="../newsletter/">Newsletter</a></li>
       <li><a class="btn btn-primary nav-cta" href="../diagnostic/" data-event="diagnostic_start">Find your best-fit business</a></li>
@@ -108,7 +265,7 @@
           <p class="form-status" role="status" aria-live="polite"></p>
           <p class="news-meta"><span>Every Thursday</span><span>3-minute read</span><span>Free, unsubscribe anytime</span><a href="../privacy/">Privacy policy</a></p>
         </div>
-        <a class="founder-line reveal" href="../#about">
+        <a class="founder-line reveal" href="../about/">
           <img src="../assets/img/madalena.jpg" alt="Madalena Rugeroni" width="44" height="44" onerror="this.hidden=true">
           <span><strong>Written by Madalena Rugeroni</strong> · founder of Madgrowth, Mazo and Favorite People · ex-Google · scaled startups from 0 to $10M in revenue</span>
         </a>
@@ -137,6 +294,28 @@
     </div>
   </section>
 
+  <section id="archive">
+    <div class="wrap">
+      <span class="eyebrow reveal reveal-d1">Archive</span>
+      <h2 class="reveal reveal-d2">Past issues</h2>
+      <p class="reveal">Every issue, in full, as it was sent. Newest first.</p>
+      <ul class="footer-list stagger" style="max-width:760px">
+        <li><a href="on-a-call-with-greg-isenberg/"><strong>How I ended up on a call with Greg Isenberg, and what he told me to change</strong></a><br><span class="card-sub">21 Sep 2026 · Greg Isenberg reviewed Madgrowth and Mazo: bundle software with advisory, give visitors a smaller first step than a call, and price in USD. What I changed.</span></li>
+        <li><a href="what-used-to-cost-50k-now-costs-50/"><strong>Testing a business idea used to cost €50K. Now it costs €50 and an afternoon.</strong></a><br><span class="card-sub">7 Aug 2026 · The cost of building has collapsed; validation and distribution are the hard part now. Why the builder-distributor is the most valuable person in tech, and what I&#x27;m teaching at Nova SBE.</span></li>
+        <li><a href="money-questions-i-dont-usually-answer/"><strong>The best investment I ever made wasn&#x27;t in a brokerage account</strong></a><br><span class="card-sub">27 Jul 2026 · Recording a podcast about money for Santander made me say out loud what I&#x27;d been avoiding: expertise compounds like capital, and I priced mine like it didn&#x27;t matter for years.</span></li>
+        <li><a href="i-cant-code-i-built-a-saas-anyway/"><strong>I can&#x27;t code. I built a SaaS anyway (in a weekend, with Claude Code).</strong></a><br><span class="card-sub">9 Jul 2026 · How I vibe-coded Mazo, an AI go-to-market advisor for B2B SaaS founders, with zero development background: why, what went into it, and what happened when I posted it.</span></li>
+        <li><a href="a-track-record-nobody-knows-about/"><strong>You have a track record nobody knows about. Waiting is the decision.</strong></a><br><span class="card-sub">25 Jun 2026 · A senior PM with 15 years in tech, a niche and real results told me he can&#x27;t build in public because his employer would see. Why waiting is itself a decision, and how to start quietly.</span></li>
+        <li><a href="how-to-get-passive-income/"><strong>Someone asked me how to get passive income. Here&#x27;s the honest answer.</strong></a><br><span class="card-sub">11 Dec 2025 · Three friends in a group chat asked for a podcast on getting rich. What I told them: zero-employee businesses cost under $500 to start, trust is the real asset, and action comes before expertise.</span></li>
+        <li><a href="how-i-ended-up-here/"><strong>How I ended up here: from Google to Too Good To Go to a portfolio of my own businesses</strong></a><br><span class="card-sub">28 Nov 2025 · Madalena Rugeroni&#x27;s story: chasing a job at Google, a failed startup, running Too Good To Go in three countries, a wrong turn into crypto, Head of Growth at a B2B SaaS, and the decision to build a portfolio of businesses instead.</span></li>
+        <li><a href="the-offer-ladder/"><strong>The Offer Ladder: the five-tier business model I wish I&#x27;d known earlier</strong></a><br><span class="card-sub">5 Jun 2025 · A five-tier system for building a product suite one layer at a time: lead magnet, micro-offer, core product, high-touch offer, continuity. Which two tiers to start with and why.</span></li>
+        <li><a href="from-one-to-multiple-revenue-streams/"><strong>From one income stream to five: what happened when I started building in public</strong></a><br><span class="card-sub">8 May 2025 · Relying on one income makes you fragile. How showing up consistently on LinkedIn turned into a digital product, paid advisory, a newsletter, speaking and company programs, and the stack-don&#x27;t-wait playbook.</span></li>
+        <li><a href="the-playbook-for-two-profitable-businesses/"><strong>The four-part playbook I use to build lean, profitable businesses without funding</strong></a><br><span class="card-sub">17 Apr 2025 · From a hotel in Mexico: the playbook behind Favorite People and Madgrowth. Pick a niche you understand, use low-code tools, capture intent not attention, and build a brand, not just a product.</span></li>
+        <li><a href="3-5k-in-30-days-what-worked/"><strong>€3.5K in 30 days from a digital product: what actually worked</strong></a><br><span class="card-sub">6 Mar 2025 · A 30-day test: build an income stream without a team, ads or a big audience. Under €300 spent, a 71% newsletter open rate, daily posting, and five things that made it work.</span></li>
+        <li><a href="before-you-start-your-business-read-this/"><strong>Build income that doesn&#x27;t need you first, then the business you love</strong></a><br><span class="card-sub">27 Feb 2025 · Favorite People is profitable, growing 230% year over year, and still not passive. Why I&#x27;d build a scalable income stream before a business that needs you daily, and what that changes.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="final-cta">
     <div class="wrap stagger">
       <h2 class="reveal">Get Thursday's issue.</h2>
@@ -159,7 +338,7 @@
       <div class="footer-about">
         <a class="brand" href="../">madgrowth</a>
         <p>AI agents and 1:1 advisory for leaders in tech starting their own business.</p>
-        <a class="footer-person" href="../#about">
+        <a class="footer-person" href="../about/">
           <img src="../assets/img/madalena.jpg" alt="" width="40" height="40" loading="lazy">
           <span><strong>Madalena Rugeroni</strong>Founder of Madgrowth, Mazo and Favorite People</span>
         </a>
@@ -186,7 +365,7 @@
       <nav class="footer-col" aria-label="Company">
         <h2>Company</h2>
         <ul class="footer-links">
-          <li><a href="../#about">About Madalena</a></li>
+          <li><a href="../about/">About Madalena</a></li>
           <li><a href="mailto:madalena@madgrowth.io">Contact</a></li>
           <li><a href="../privacy/">Privacy</a></li>
           <li><a href="../terms/">Terms</a></li>
