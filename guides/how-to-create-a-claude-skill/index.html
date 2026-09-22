@@ -134,8 +134,8 @@
       "citation": [
         "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
         "https://code.claude.com/docs/en/skills",
-        "https://support.claude.com/en/articles/12512198-creating-custom-skills",
-        "https://support.claude.com/en/articles/12512180-using-skills-in-claude"
+        "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+        "https://support.claude.com/en/articles/12512180-use-skills-in-claude"
       ]
     },
     {
@@ -309,7 +309,7 @@ which variant to test first and why.</code></pre>
 <h3>The rules for the frontmatter</h3>
 <ul>
 <li><strong>name</strong>: lowercase letters, numbers and hyphens, up to 64 characters. Anthropic's docs also reserve the words "claude" and "anthropic", so keep them out of the name.</li>
-<li><strong>description</strong>: what the skill does and when to use it. The developer docs allow up to 1,024 characters, but the <a href="https://support.claude.com/en/articles/12512198-creating-custom-skills" rel="noopener">Claude help center</a> gives a 200-character limit for skills uploaded to the Claude app. My rule: stay under 200, and one file works everywhere.</li>
+<li><strong>description</strong>: what the skill does and when to use it. The developer docs allow up to 1,024 characters, but the <a href="https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" rel="noopener">Claude help center</a> gives a 200-character limit for skills uploaded to the Claude app. My rule: stay under 200, and one file works everywhere.</li>
 </ul>
 <p>In Claude Code, the frontmatter can also decide who gets to start the skill. According to the <a href="https://code.claude.com/docs/en/skills" rel="noopener">Claude Code skills docs</a>, <code>disable-model-invocation: true</code> means only you can run it with <code>/skill-name</code>. I'd use that for anything you don't want Claude kicking off on its own.</p>
 
@@ -347,7 +347,7 @@ which variant to test first and why.</code></pre>
 <ol>
 <li>Turn on code execution in Settings. Skills need it.</li>
 <li>Zip the folder so the skill folder itself sits at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.</li>
-<li>Upload it under Customize &gt; Skills and switch it on. Menu names change, so check the <a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude" rel="noopener">help center</a> if you can't find it.</li>
+<li>Upload it under Customize &gt; Skills and switch it on. Menu names change, so check the <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" rel="noopener">help center</a> if you can't find it.</li>
 </ol>
 <p>Skills don't sync between Claude Code, the Claude app and the API. Install the skill separately in each place you use it.</p>
 <h3>Testing it</h3>
