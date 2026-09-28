@@ -2,3 +2,10 @@
 DNS-CUTOVER.md
 INTERNAL-NOTES.md
 stack-build/dist/
+
+# The Stack's source. This repo is PUBLIC and serves madgrowth.io via
+# GitHub Pages, so anything committed here is readable by anyone — and
+# stays readable from history even after a delete. The skills are the
+# 299€ product; they live in the private madgrowth-stack repo instead.
+# stack-build/build.sh reads them from this path on disk.
+.claude/skills/
