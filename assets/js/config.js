@@ -41,10 +41,14 @@ window.MG = {
   // Form the Stack thank-you page posts to. This must be a form with NO
   // automation attached to it: buyers land here whether or not they opted
   // into the newsletter, and the tags below decide what happens next.
-  // Reusing the newsletter form would subscribe people who said no.
-  // Create it in Kit (Grow → Landing Pages & Forms), paste the id here.
-  // Until then the capture form stays hidden rather than failing on a buyer.
-  KIT_STACK_FORM_ID: "KIT_STACK_FORM_ID",
+  // Reusing the newsletter form would subscribe people who said no — the
+  // Builder Diagnostic form, for instance, starts its own nurture sequence.
+  // "The Stack - buyers": nothing attached, and confirmation email off so
+  // buyers land active instead of waiting on a double opt-in they'd never
+  // complete. Verified end to end: subscribe -> tags -> automation ->
+  // "The Stack — Onboarding", delivery email out in ~1 minute.
+  // If this is ever blanked the capture form hides rather than failing.
+  KIT_STACK_FORM_ID: "9972351",
   // Kit tag IDs (numeric). Find them in Kit → Grow → Tags.
   // One tag per Builder Archetype.
   // One tag per Builder Archetype, plus "newsletter".
