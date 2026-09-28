@@ -29,10 +29,58 @@
     }
   }
 
-  function track(name, params) {
-    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
-    if (window.posthog && typeof window.posthog.capture === "function") window.posthog.capture(name, params || {});
+  // `beacon` matters on any click that navigates away. capture() and gtag()
+  // both send over XHR by default, and the browser tears those requests down
+  // the moment it starts unloading the page — so a click on a plain <a> was
+  // being recorded only when the request happened to win the race. That is
+  // why diagnostic_cta_click logged once across 38 placements while
+  // diagnostic_start logged 60 times: people were clicking, the event was
+  // dying on navigation. sendBeacon is queued by the browser and survives
+  // unload, which is exactly what it exists for.
+  function track(name, params, beacon) {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", name, beacon
+        ? assign({ transport_type: "beacon" }, params || {})
+        : (params || {}));
+    }
+    if (window.posthog && typeof window.posthog.capture === "function") {
+      window.posthog.capture(name, params || {}, beacon ? { transport: "sendBeacon" } : undefined);
+    }
     if (window.lintrk) window.lintrk("track", { event: name });
+  }
+
+  function assign(target, src) {
+    for (var k in src) { if (Object.prototype.hasOwnProperty.call(src, k)) target[k] = src[k]; }
+    return target;
+  }
+
+  // Where on the page a click happened, so 38 identical CTAs stop being one
+  // undifferentiated number. Footer is tested before nav because the footer
+  // contains its own <nav> columns.
+  function placementOf(el) {
+    if (el.closest("footer")) return "footer";
+    if (el.closest(".site-header") || el.closest("header nav")) return "nav";
+    var sec = el.closest("section");
+    if (sec) {
+      if (sec.id) return sec.id;
+      var cls = String(sec.className || "").split(/\s+/);
+      for (var i = 0; i < cls.length; i++) {
+        if (cls[i] && cls[i] !== "alt" && cls[i] !== "reveal") return cls[i];
+      }
+      return "section";
+    }
+    return "body";
+  }
+
+  // A click that leaves the page: a real href that is not an in-page anchor,
+  // not opening in a new tab, and not a modified click (those keep the page).
+  function navigatesAway(el, e) {
+    if (!el || el.tagName !== "A") return false;
+    var href = el.getAttribute("href");
+    if (!href || href.charAt(0) === "#") return false;
+    if (el.target && el.target !== "_self") return false;
+    if (e && (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1)) return false;
+    return true;
   }
 
   // ---------- JS error reporting ----------
@@ -244,8 +292,11 @@
 
     // ---------- Analytics click events ----------
     document.querySelectorAll("[data-event]").forEach(function (el) {
-      el.addEventListener("click", function () {
-        track(el.getAttribute("data-event"));
+      el.addEventListener("click", function (e) {
+        track(el.getAttribute("data-event"), {
+          placement: el.getAttribute("data-placement") || placementOf(el),
+          page: location.pathname
+        }, navigatesAway(el, e));
       });
     });
 

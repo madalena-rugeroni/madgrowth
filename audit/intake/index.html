@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/config.js"></script>
   <style>
     .intake { max-width: 720px; }
     .intake h1 { margin-bottom: 12px; }
@@ -215,13 +216,48 @@
     </div>
   </div>
 </footer>
+<script src="../../assets/js/main.js" defer></script>
 <script>
 (function () {
   var ENDPOINT = "https://formsubmit.co/ajax/86e5daedf3853fb19517df046744cea7";
   var form = document.getElementById("intake");
   var status = document.getElementById("intake-status");
   var params = new URLSearchParams(window.location.search);
-  document.getElementById("order").value = params.get("order") || "";
+  var order = params.get("order") || "";
+  document.getElementById("order").value = order;
+
+  // Stripe sends buyers here after paying for The Read, with the checkout
+  // session id on the URL — so arriving here with an order id is the only
+  // signal this site gets that money actually changed hands. Fire it once
+  // per order so a refresh or a back-button return does not double-count.
+  //
+  // This is a stopgap, not the real thing: it misses anyone who closes the
+  // tab before the redirect lands, and the URL could be visited directly.
+  // PostHog's native Stripe source is the authoritative version.
+  (function reportPurchase() {
+    if (!order) return;
+    var KEY = "mg_purchase_" + order;
+    try { if (window.localStorage && localStorage.getItem(KEY)) return; } catch (e) {}
+    function send() {
+      if (!window.MGutil || typeof window.MGutil.track !== "function") return false;
+      window.MGutil.track("purchase", {
+        product: "the_read",
+        product_name: "The Read",
+        value: 599,
+        currency: "EUR",
+        order_id: order,
+        source: "stripe_redirect"
+      });
+      try { if (window.localStorage) localStorage.setItem(KEY, "1"); } catch (e) {}
+      return true;
+    }
+    // main.js is deferred, so MGutil may not exist yet on first tick.
+    if (send()) return;
+    var tries = 0;
+    var t = setInterval(function () {
+      if (send() || ++tries > 40) clearInterval(t);
+    }, 100);
+  })();
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();

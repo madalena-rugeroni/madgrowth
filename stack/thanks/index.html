@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank you · The Stack · Madgrowth</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script src="../../assets/js/config.js"></script>
+  <style>
+    .thanks { max-width: 620px; }
+    .thanks h1 { margin-bottom: 14px; }
+    .thanks p { color: var(--ink-soft); }
+    .thanks p + p { margin-top: 14px; }
+    .thanks .order {
+      font-family: var(--font-mono); font-size: 12px; color: var(--muted);
+      margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line);
+      overflow-wrap: anywhere;
+    }
+    .thanks .next { margin-top: 30px; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="../../">madgrowth</a>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <div class="thanks">
+        <span class="eyebrow">The Stack</span>
+        <h1>You're in. Thank you.</h1>
+        <p>Your payment went through and your order is confirmed.</p>
+
+        <!--
+          DELIVERY COPY — Madalena, replace the paragraph below with how The
+          Stack actually reaches the buyer (emailed link, download, Gumroad,
+          repo invite, whatever it is). It is left deliberately vague because
+          the site does not state a delivery method anywhere, and a guess here
+          would be a promise made to someone who has already paid.
+
+          Do not point the Stripe Payment Link at this page until that
+          paragraph is true.
+        -->
+        <p>Check your inbox for your receipt. I'll be in touch at the email address you paid with.</p>
+
+        <p class="next">
+          <a class="btn btn-primary" href="../../diagnostic/" data-event="diagnostic_cta_click">Run the Builder Diagnostic</a>
+        </p>
+
+        <p class="order" id="order-line" hidden></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><a href="../../">← Back to madgrowth.io</a></p>
+  </div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var order = params.get("order") || "";
+
+  if (order) {
+    var line = document.getElementById("order-line");
+    line.textContent = "Order reference: " + order;
+    line.hidden = false;
+  }
+
+  // Stripe redirects here after payment with the checkout session id, so
+  // landing here with an order id is this site's only signal that a sale
+  // happened. Recorded once per order, so a refresh does not double-count.
+  //
+  // Stopgap, same caveats as the Read intake page: it misses anyone who
+  // closes the tab before the redirect, and the URL can be visited directly.
+  // PostHog's native Stripe source is the authoritative record.
+  (function reportPurchase() {
+    if (!order) return;
+    var KEY = "mg_purchase_" + order;
+    try { if (window.localStorage && localStorage.getItem(KEY)) return; } catch (e) {}
+    function send() {
+      if (!window.MGutil || typeof window.MGutil.track !== "function") return false;
+      window.MGutil.track("purchase", {
+        product: "the_stack",
+        product_name: "The Stack",
+        value: 299,
+        currency: "EUR",
+        order_id: order,
+        source: "stripe_redirect"
+      });
+      try { if (window.localStorage) localStorage.setItem(KEY, "1"); } catch (e) {}
+      return true;
+    }
+    if (send()) return;
+    var tries = 0;
+    var t = setInterval(function () {
+      if (send() || ++tries > 40) clearInterval(t);
+    }, 100);
+  })();
+})();
+</script>
+</body>
+</html>
