@@ -1,0 +1,19 @@
+THE STACK · by Madgrowth
+Fifteen AI skills plus mg-start. Setup takes about five minutes.
+
+IF YOU USE CLAUDE CODE
+1. Copy every folder inside "for-claude-code" into ~/.claude/skills/
+   (or into your project's .claude/skills/ folder if you only want them there).
+2. Open Claude Code in the folder where you want your documents saved.
+3. Type /mg-start
+
+IF YOU USE THE CLAUDE APP (web or desktop)
+1. Open Settings, then Capabilities, then Skills.
+2. Upload each zip inside "for-claude-app", one per skill.
+3. Start a new chat and type: Run the mg-start skill
+
+WHERE TO START
+mg-start asks eight questions about your business, once. Every other skill reads your answers and loads the playbook for your kind of business.
+Then work through the skills in order, or start wherever the pressure is. Each skill saves a document the next one builds on.
+
+Updates are free. Questions? Reply to your download email or write to madalena@madgrowth.io.

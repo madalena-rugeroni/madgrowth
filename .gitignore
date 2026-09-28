@@ -1,3 +1,4 @@
 .DS_Store
 DNS-CUTOVER.md
 INTERNAL-NOTES.md
+stack-build/dist/
