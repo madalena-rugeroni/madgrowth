@@ -527,6 +527,22 @@
       }).then(function (res) {
         if (!res.ok) throw new Error("Kit subscription failed: " + res.status);
         return res.json().catch(function () { return {}; });
+      }).then(function (json) {
+        // Kit answers 200 even when it refused the subscription — the real
+        // outcome is in the body, not the HTTP status. Without this check a
+        // rejected signup (wrong form id, spam block, address Kit won't
+        // take) resolves, every caller says "You're in", and the address is
+        // gone. Found by posting to a form id that doesn't exist: HTTP 200,
+        // body {"status":"failed"}, visitor told it worked.
+        //
+        // "quarantined" is NOT a failure: Kit is asking the visitor to clear
+        // a bot check, and callers surface that themselves.
+        if (json && json.status === "failed") {
+          var msgs = json.errors && json.errors.messages;
+          throw new Error("Kit subscription failed: " +
+            (msgs && msgs.length ? msgs[0] : "unknown error"));
+        }
+        return json;
       });
     }
   };
