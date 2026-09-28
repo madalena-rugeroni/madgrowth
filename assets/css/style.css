@@ -794,6 +794,47 @@ html.js .reveal-scale.is-visible { transform: none; }
   margin-bottom: 10px;
 }
 .progress-bar { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+/* Sliced into one segment per scenario so a first-time visitor can count
+   the length of the diagnostic instead of reading a featureless bar. The
+   mask applies to the fill as well, so progress sweeps across the pips. */
+.progress-bar.steps-10 {
+  height: 8px;
+  border-radius: 2px;
+  --gap: 4px;
+  -webkit-mask: repeating-linear-gradient(to right, #000 0 calc(10% - var(--gap)), transparent calc(10% - var(--gap)) 10%);
+  mask: repeating-linear-gradient(to right, #000 0 calc(10% - var(--gap)), transparent calc(10% - var(--gap)) 10%);
+}
+.progress-bar.steps-10 .progress-fill { border-radius: 0; }
+
+/* What you get at the end. Sits above the first question because the
+   drop-off is before question 1 and in questions 1-3, so the payoff has
+   to be visible before anyone decides whether to start answering. */
+.diag-payoff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 22px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  background: var(--bg-alt);
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.diag-payoff-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  flex: none;
+}
+@media (max-width: 560px) {
+  .diag-payoff { padding: 12px 14px; font-size: 0.9rem; }
+}
 .progress-fill {
   height: 100%;
   width: 0%;
@@ -809,7 +850,11 @@ html.js .reveal-scale.is-visible { transform: none; }
   padding: 40px 32px;
   transition: opacity 0.22s ease, transform 0.22s ease;
 }
-.statement-card.is-switching { opacity: 0; transform: translateY(10px); }
+/* Hidden start state for a newly-swapped scenario. transition:none makes
+   entering the state instant; diagnostic.js removes the class after a
+   forced reflow so the card's own transition animates the new question
+   in. The old card is never faded out — see swapScenario(). */
+.statement-card.is-entering { opacity: 0; transform: translateY(8px); transition: none; }
 .statement-card .num {
   font-family: var(--font-mono);
   font-size: 13px;
@@ -874,6 +919,26 @@ html.js .reveal-scale.is-visible { transform: none; }
 }
 .option-stack .opt:hover::before { transform: scaleY(1); }
 .option-stack .opt:active { transform: translateX(3px) scale(0.99); }
+.option-stack .opt:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--ink);
+}
+/* The clicked option, marked in the same frame as the click. Without a
+   visible picked state, an answer looked like it did nothing until the
+   next scenario appeared, which produced rage clicks on the options. */
+.option-stack .opt.is-picked {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  transform: translateX(3px);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.option-stack .opt.is-picked::before { transform: scaleY(1); }
+.option-stack .opt.is-picked .key { color: var(--accent-ink); font-weight: 700; }
+/* Set while the next scenario is swapping in: keeps a second click from
+   answering the same scenario twice. */
+.option-stack.is-locked { pointer-events: none; }
+.option-stack.is-locked .opt:not(.is-picked) { opacity: 0.55; }
 .option-stack .opt .key {
   font-family: var(--font-mono);
   font-size: 12px;

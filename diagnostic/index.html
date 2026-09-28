@@ -219,12 +219,21 @@
       <p class="lead">10 scenarios, 3 minutes. Find out how you're wired to build and which businesses fit that wiring. There are no right answers, so pick what's true for you.</p>
     </div>
 
+    <p class="diag-payoff">
+      <span class="diag-payoff-label">At the end</span>
+      your Builder Archetype, your wiring across five dimensions, and the businesses built for how you work — plus the free Expertise Audit skill.
+    </p>
+
     <div class="diag-progress">
       <div class="meta">
         <span id="progress-label">Scenario 1 of 10</span>
-        <span id="progress-dim"></span>
+        <span id="progress-dim">About 3 min left</span>
       </div>
-      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <!-- 10 slices, one per scenario, so the length of the diagnostic is
+           countable at a glance on the first screen. -->
+      <div class="progress-bar steps-10" id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" aria-label="Scenarios answered">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
     </div>
 
     <div class="statement-card">

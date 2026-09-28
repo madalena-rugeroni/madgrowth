@@ -255,6 +255,18 @@
   var current = 0;
   var started = false;
   var result = null;
+  // True from the moment an answer is picked until the next scenario is
+  // on screen. Without this, a second click inside the swap window ran
+  // answer() again on the same index and queued a second current++, so
+  // one impatient double-click skipped a scenario and left a hole in
+  // answers[] — which then threw in computeResult() and left the
+  // visitor stuck on the last scenario with no result at all.
+  var busy = false;
+  // diagnostic_complete used to fire again on every re-click of the last
+  // answer, which inflated completions (one test session logged it 7
+  // times). The busy lock already stops the re-click; this makes the
+  // event itself fire-once regardless of how finish() is reached.
+  var completed = false;
 
   var el = {
     run: document.getElementById("diag-run"),
@@ -265,6 +277,8 @@
     back: document.getElementById("btn-back"),
     progressLabel: document.getElementById("progress-label"),
     progressFill: document.getElementById("progress-fill"),
+    progressBar: document.getElementById("progress-bar"),
+    progressDim: document.getElementById("progress-dim"),
     name: document.getElementById("result-name"),
     tagline: document.getElementById("result-tagline"),
     dims: document.getElementById("dim-grid"),
@@ -312,22 +326,54 @@
     }, 20);
   }
 
-  // Wraps a scenario-index mutation (advance/back) in a brief fade+dip
-  // transition on the statement card, skipped entirely under reduced
-  // motion so nothing ever waits on an animation that won't play.
-  function renderTransitioned(mutate) {
+  // How long the picked option stays on screen before the next scenario
+  // replaces it. Short on purpose: the visitor already got instant
+  // feedback from .is-picked, so this only needs to be long enough to
+  // read as "that one registered".
+  var PICK_HOLD = 150;
+  // Minimum time the input stays locked once a scenario has been
+  // rendered, so one physical double-click can never answer two
+  // scenarios. Below the ~200ms a deliberate second click takes.
+  var DOUBLE_CLICK_GUARD = 120;
+
+  // Swaps in the next scenario. The old card is not faded out — the
+  // picked option stays crisp until the moment it's replaced, then the
+  // new question fades in. Fading out first (the previous behaviour)
+  // wiped the visitor's own click off the screen before it had
+  // registered, which read as an unresponsive page.
+  function swapScenario(mutate) {
     var card = document.querySelector(".statement-card");
     if (!card || reducedMotion) {
       mutate();
       render();
+      // Render instantly (reduced motion means no animation), but still
+      // hold the input lock briefly: the swap is immediate here, so
+      // without it a fast second click would land on the next question's
+      // option and answer it by accident.
+      window.setTimeout(function () { busy = false; }, DOUBLE_CLICK_GUARD);
       return;
     }
-    card.classList.add("is-switching");
-    window.setTimeout(function () {
-      mutate();
-      render();
-      card.classList.remove("is-switching");
-    }, 200);
+    // .is-entering sets the hidden state with transition:none, so this
+    // jump is instant; removing it after a forced reflow lets the card's
+    // normal transition animate the new question in.
+    card.classList.add("is-entering");
+    mutate();
+    render();
+    void card.offsetWidth;
+    card.classList.remove("is-entering");
+    busy = false;
+  }
+
+  // Roughly 18s per scenario. Shown next to "Scenario 1 of 10" so the
+  // first screen says how short this is — the drop-off is concentrated
+  // before question 1 and in questions 1-3, so the length has to be
+  // legible before anyone commits to answering.
+  var SECS_PER_SCENARIO = 18;
+  function setTimeLeft(idx) {
+    if (!el.progressDim) return;
+    var remaining = SCENARIOS.length - idx;
+    var mins = Math.max(1, Math.round((remaining * SECS_PER_SCENARIO) / 60));
+    el.progressDim.textContent = "About " + mins + " min left";
   }
 
   function render() {
@@ -337,8 +383,11 @@
     el.progressLabel.textContent = "Scenario " + (current + 1) + " of " + SCENARIOS.length;
     el.progressFill.style.width = ((current / SCENARIOS.length) * 100) + "%";
     el.back.disabled = current === 0;
+    setTimeLeft(current);
+    if (el.progressBar) el.progressBar.setAttribute("aria-valuenow", current);
 
     el.options.innerHTML = "";
+    el.options.classList.remove("is-locked");
     s.options.forEach(function (opt, i) {
       var btn = document.createElement("button");
       btn.type = "button";
@@ -350,22 +399,39 @@
   }
 
   function answer(optionIndex) {
+    if (busy) return;
     if (!started) {
       started = true;
       track("diagnostic_start");
     }
     answers[current] = optionIndex;
-    if (current < SCENARIOS.length - 1) {
-      renderTransitioned(function () { current++; });
-    } else {
-      finish();
+    busy = true;
+
+    // Acknowledge the click in the same frame: mark the chosen option,
+    // stop the stack taking further clicks, and move the progress bar.
+    // This is the whole point of the lock — the visitor sees their pick
+    // land immediately instead of clicking into a card that fades away.
+    var btns = el.options.querySelectorAll(".opt");
+    if (btns[optionIndex]) btns[optionIndex].classList.add("is-picked");
+    el.options.classList.add("is-locked");
+    el.progressFill.style.width = (((current + 1) / SCENARIOS.length) * 100) + "%";
+    setTimeLeft(current + 1);
+    if (el.progressBar) el.progressBar.setAttribute("aria-valuenow", current + 1);
+
+    var isLast = current === SCENARIOS.length - 1;
+    if (reducedMotion) {
+      if (isLast) finish(); else swapScenario(function () { current++; });
+      return;
     }
+    window.setTimeout(function () {
+      if (isLast) finish(); else swapScenario(function () { current++; });
+    }, PICK_HOLD);
   }
 
   function back() {
-    if (current > 0) {
-      renderTransitioned(function () { current--; answers.length = current; });
-    }
+    if (busy || current === 0) return;
+    busy = true;
+    swapScenario(function () { current--; answers.length = current; });
   }
 
   // ---------- Scoring ----------
@@ -382,8 +448,13 @@
   function computeResult() {
     var sums = { b: 0, r: 0, p: 0, l: 0, v: 0 };
     SCENARIOS.forEach(function (s, i) {
-      var w = s.options[answers[i]].w;
-      Object.keys(w).forEach(function (k) { sums[k] += w[k]; });
+      var opt = s.options[answers[i]];
+      // Defensive: an unanswered scenario must never throw here. finish()
+      // already routes back to any gap, so this only matters if some
+      // future change reintroduces one — a slightly off score beats a
+      // blank page and a visitor who never sees their archetype.
+      if (!opt) return;
+      Object.keys(opt.w).forEach(function (k) { sums[k] += opt.w[k]; });
     });
     // Standardize each axis, clamp to -2..+2
     var wiring = {};
@@ -415,15 +486,32 @@
 
   function pct(v) { return Math.round(50 + v * 25); } // -2..2 → 0..100
 
+  function firstUnanswered() {
+    for (var i = 0; i < SCENARIOS.length; i++) {
+      if (typeof answers[i] !== "number") return i;
+    }
+    return -1;
+  }
+
   function finish() {
+    // Belt and braces: if anything ever leaves a scenario unanswered,
+    // send the visitor to it rather than scoring an incomplete run.
+    var gap = firstUnanswered();
+    if (gap > -1) {
+      swapScenario(function () { current = gap; });
+      return;
+    }
     result = computeResult();
     var A = ARCHETYPES[result.primary];
     var S = ARCHETYPES[result.secondary];
 
-    track("diagnostic_complete", {
-      archetype: result.primary,
-      archetype_secondary: result.secondary
-    });
+    if (!completed) {
+      completed = true;
+      track("diagnostic_complete", {
+        archetype: result.primary,
+        archetype_secondary: result.secondary
+      });
+    }
 
     el.name.textContent = A.name;
     el.tagline.textContent = A.tagline;
@@ -554,6 +642,9 @@
   document.addEventListener("keydown", function (e) {
     if (el.run.classList.contains("hidden")) return;
     if (e.target.tagName === "INPUT") return;
+    // e.repeat: a held-down key would otherwise fire answer() dozens of
+    // times and race through the scenarios.
+    if (busy || e.repeat) return;
     var k = e.key.toUpperCase();
     var idx = KEYS.indexOf(k);
     if (idx === -1 && /^[1-4]$/.test(e.key)) idx = parseInt(e.key, 10) - 1;
