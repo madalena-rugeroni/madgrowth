@@ -41,6 +41,11 @@ stage="$dist/The Stack"
 
 [ -d "$src" ] || { echo "error: $src not found"; exit 1; }
 
+# Version stamp. "Free updates, forever" only works if a buyer can tell which
+# build they have and you can say what changed. Override with:
+#   STACK_VERSION=1.1 ./stack-build/build.sh
+version="${STACK_VERSION:-$(date +%Y.%m.%d)}"
+
 rm -rf "$dist"
 mkdir -p "$stage/for-claude-code" "$stage/for-claude-app"
 
@@ -69,6 +74,8 @@ done
 )
 
 cp "$root/stack-build/START HERE.txt" "$stage/START HERE.txt"
+printf '\n\nVersion %s — you can always re-download the latest from the link in your email.\n' \
+  "$version" >> "$stage/START HERE.txt"
 
 # ---- the outer zip -------------------------------------------------------
 (
@@ -77,14 +84,30 @@ cp "$root/stack-build/START HERE.txt" "$stage/START HERE.txt"
 )
 
 # ---- verify before anyone ships it --------------------------------------
+# These checks read each command's output into a variable instead of piping
+# it to `grep -q`. With `set -o pipefail` a pipe into `grep -q` is a trap:
+# grep exits the moment it matches, the writer gets SIGPIPE, and pipefail
+# reports the *pipeline* as failed even though the match succeeded. It fires
+# or doesn't depending on whether the writer finished first, so the build
+# failed on a different, random handful of skills every run — and a real
+# failure would have been indistinguishable from the noise.
 fail=0
 for skill in "$stage/for-claude-code"/mg-*; do
-  [ -f "$skill/SKILL.md" ] || { echo "MISSING SKILL.md: $skill"; fail=1; }
-  head -1 "$skill/SKILL.md" | grep -q '^---' \
-    || { echo "BAD frontmatter: $skill"; fail=1; }
+  if [ ! -f "$skill/SKILL.md" ]; then
+    echo "MISSING SKILL.md: $skill"; fail=1; continue
+  fi
+  first_line=$(head -1 "$skill/SKILL.md")
+  case "$first_line" in
+    ---*) ;;
+    *) echo "BAD frontmatter: $skill"; fail=1 ;;
+  esac
 done
 for z in "$stage/for-claude-app"/*.zip; do
-  unzip -l "$z" | grep -q 'SKILL.md' || { echo "BAD app zip: $z"; fail=1; }
+  listing=$(unzip -Z1 "$z" 2>/dev/null) || listing=""
+  case "$listing" in
+    *SKILL.md*) ;;
+    *) echo "BAD app zip: $z"; fail=1 ;;
+  esac
 done
 # Nothing in the paid build should be pitching the paid build.
 if grep -rl 'buy\.stripe\.com' "$stage/for-claude-code" >/dev/null 2>&1; then
@@ -95,5 +118,5 @@ fi
 [ "$fail" -eq 0 ] || { echo "BUILD FAILED"; exit 1; }
 
 echo
-echo "Built $count skills -> $dist/the-stack.zip"
+echo "Built $count skills (version $version) -> $dist/the-stack.zip"
 echo "$(du -h "$dist/the-stack.zip" | cut -f1) — upload as a new revision of the existing Drive file."
