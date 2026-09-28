@@ -612,7 +612,10 @@
     var wiringSummary = DIMENSIONS.map(function (d) {
       return d.name.toLowerCase() + ":" + pct(result.wiring[d.key]);
     }).join(" ");
-    window.MGKit.subscribe(el.gateEmail.value, [result.primary], {
+    // "newsletter" alongside the archetype: the consent copy above
+    // promises the newsletter, so the subscriber carries the same tag a
+    // newsletter-form signup would (see KIT_TAGS in config.js).
+    window.MGKit.subscribe(el.gateEmail.value, [result.primary, "newsletter"], {
       archetype: result.primary,
       archetype_secondary: result.secondary,
       wiring: wiringSummary,

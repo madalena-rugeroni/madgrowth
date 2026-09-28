@@ -32,12 +32,22 @@ window.MG = {
   KIT_NEWSLETTER_FORM_ID: "7572611",
   // Kit tag IDs (numeric). Find them in Kit → Grow → Tags.
   // One tag per Builder Archetype.
+  // One tag per Builder Archetype, plus "newsletter".
+  //
+  // "newsletter" is the same tag the newsletter form applies. The
+  // diagnostic gate promises the newsletter in its consent copy, and
+  // until now diagnostic signups only actually received it because
+  // broadcasts happen to target "all subscribers" — the day one is sent
+  // to the Newsletter subscribers tag instead, they would silently stop
+  // getting it while still having been promised it. Tagging at signup
+  // makes the promise hold regardless of how a broadcast is targeted.
   KIT_TAGS: {
     "broadcaster": "23370413",
     "advisor": "23370414",
     "productizer": "23370416",
     "venture-builder": "23370418",
-    "orchestrator": "23370420"
+    "orchestrator": "23370420",
+    "newsletter": "5968512"
   },
 
 
