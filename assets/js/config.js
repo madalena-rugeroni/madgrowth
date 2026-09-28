@@ -18,6 +18,14 @@ window.MG = {
   // The buyer then gets a confirmation from Madalena by hand; the
   // 5 business days run from that confirmation, not from submission.
   STRIPE_LINK_STACK: "https://buy.stripe.com/9B6eVe2JXftc7xZ2WJ0Ny01",
+
+  // --- Advertised prices, in EUR ---
+  // Advertised price must equal the charged price, so these track Stripe.
+  // The Stack is 299 as a founding price through 30 September 2026 and 399
+  // from 1 October. STACK_PRICE_EUR is the value sent with the "purchase"
+  // event on /stack/thanks/ — change it the same day the Stripe link and the
+  // page copy change, or reported revenue silently understates every sale.
+  STACK_PRICE_EUR: 299,
   STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
   // --- Calendly ---
@@ -30,6 +38,13 @@ window.MG = {
   // Newsletter form ("Newsletter form" in Kit, the one the welcome
   // automation listens to). Used by /newsletter/.
   KIT_NEWSLETTER_FORM_ID: "7572611",
+  // Form the Stack thank-you page posts to. This must be a form with NO
+  // automation attached to it: buyers land here whether or not they opted
+  // into the newsletter, and the tags below decide what happens next.
+  // Reusing the newsletter form would subscribe people who said no.
+  // Create it in Kit (Grow → Landing Pages & Forms), paste the id here.
+  // Until then the capture form stays hidden rather than failing on a buyer.
+  KIT_STACK_FORM_ID: "KIT_STACK_FORM_ID",
   // Kit tag IDs (numeric). Find them in Kit → Grow → Tags.
   // One tag per Builder Archetype.
   // One tag per Builder Archetype, plus "newsletter".
@@ -47,7 +62,14 @@ window.MG = {
     "productizer": "23370416",
     "venture-builder": "23370418",
     "orchestrator": "23370420",
-    "newsletter": "5968512"
+    "newsletter": "5968512",
+    // Applied to every Stack buyer on the thank-you page. Kit's automation
+    // uses it to start "The Stack — Onboarding", so it goes on regardless
+    // of whether the buyer wanted the newsletter.
+    "stack-customer": "24062185",
+    // The consent audit trail the diagnostic already uses; applied here
+    // only when the buyer ticks the newsletter box.
+    "gdpr-consent": "8086275"
   },
 
 

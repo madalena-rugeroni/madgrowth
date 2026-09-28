@@ -22,6 +22,32 @@
       overflow-wrap: anywhere;
     }
     .thanks .next { margin-top: 30px; }
+    .stack-keep {
+      margin-top: 34px; padding: 22px 22px 24px;
+      border: 1px solid var(--line); border-radius: 12px;
+    }
+    .stack-keep h2 { font-size: 18px; margin: 0 0 8px; }
+    .stack-keep p { margin: 0 0 16px; font-size: 15px; }
+    .stack-keep .field { display: flex; flex-direction: column; gap: 10px; }
+    .stack-keep input[type="email"] {
+      width: 100%; padding: 12px 14px; font: inherit; font-size: 15px;
+      border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
+      color: var(--ink);
+    }
+    .stack-keep .consent {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 14px; color: var(--ink-soft); line-height: 1.45;
+    }
+    .stack-keep .consent input { margin-top: 3px; flex: 0 0 auto; }
+    .stack-keep button { margin-top: 4px; }
+    .form-status { margin-top: 12px; font-size: 14px; }
+    .form-status.ok { color: var(--ok, #157f3d); }
+    .form-status.err { color: var(--err, #b3261e); }
+    @media (min-width: 560px) {
+      .stack-keep .row { display: flex; gap: 10px; }
+      .stack-keep .row input[type="email"] { flex: 1 1 auto; }
+      .stack-keep .row button { margin-top: 0; white-space: nowrap; }
+    }
   </style>
 </head>
 <body>
@@ -38,17 +64,43 @@
         <h1>You're in. Thank you.</h1>
         <p>Your payment went through and your order is confirmed.</p>
 
-        <!--
-          DELIVERY COPY — Madalena, replace the paragraph below with how The
-          Stack actually reaches the buyer (emailed link, download, Gumroad,
-          repo invite, whatever it is). It is left deliberately vague because
-          the site does not state a delivery method anywhere, and a guess here
-          would be a promise made to someone who has already paid.
+        <p><strong>Your download link is on its way</strong> to the email address you paid with. It normally arrives within a minute, and it contains the zip plus setup instructions for both Claude Code and the Claude app. Setup takes about five minutes.</p>
 
-          Do not point the Stripe Payment Link at this page until that
-          paragraph is true.
+        <p>If it hasn't arrived in ten minutes, check your Promotions and spam folders, then email <a href="mailto:madalena@madgrowth.io">madalena@madgrowth.io</a> and I'll send it straight over. Your Stripe receipt comes separately.</p>
+
+        <!--
+          Buyer capture. Stripe has the buyer's email but a static page can't
+          read it, so this asks for it again — it is also where the newsletter
+          consent lives, which Stripe can't give us either.
+
+          Both tags matter and they are deliberately independent:
+            stack-customer  always — starts "The Stack — Onboarding" in Kit
+            newsletter      only when the box is ticked
+
+          The box is unticked by default and must stay that way. A pre-ticked
+          box is not consent.
+
+          Hidden entirely until KIT_STACK_FORM_ID is set in config.js, so a
+          buyer never meets a form that silently fails.
         -->
-        <p>Check your inbox for your receipt. I'll be in touch at the email address you paid with.</p>
+        <div class="stack-keep" id="stack-keep" hidden>
+          <h2>Want the rest of it?</h2>
+          <p>I'll send your onboarding emails here: how to get it installed, which skills to run first, and the free updates as they ship.</p>
+          <form id="stack-keep-form" novalidate>
+            <div class="field">
+              <div class="row">
+                <label class="sr-only" for="stack-email">Your email address</label>
+                <input type="email" id="stack-email" name="email" placeholder="the email you paid with" autocomplete="email" required>
+                <button class="btn btn-primary" type="submit">Send them</button>
+              </div>
+              <label class="consent">
+                <input type="checkbox" id="stack-consent" name="consent">
+                <span>Also send me the Madgrowth newsletter — most Thursdays, on building this in the open. Unsubscribe any time.</span>
+              </label>
+            </div>
+          </form>
+          <p class="form-status" id="stack-keep-status" role="status" aria-live="polite"></p>
+        </div>
 
         <p class="next">
           <a class="btn btn-primary" href="../../diagnostic/" data-event="diagnostic_cta_click">Run the Builder Diagnostic</a>
@@ -92,7 +144,9 @@
       window.MGutil.track("purchase", {
         product: "the_stack",
         product_name: "The Stack",
-        value: 299,
+        // From config, not hardcoded: the founding price rises to 399 on
+        // 1 October and a literal here would understate every later sale.
+        value: (window.MG || {}).STACK_PRICE_EUR,
         currency: "EUR",
         order_id: order,
         source: "stripe_redirect"
@@ -106,6 +160,71 @@
       if (send() || ++tries > 40) clearInterval(t);
     }, 100);
   })();
+
+  // ---------- Buyer capture + newsletter consent ----------
+  // main.js is deferred, so MGKit/MGutil are not there yet at parse time.
+  document.addEventListener("DOMContentLoaded", function () {
+    var MG = window.MG || {};
+    var box = document.getElementById("stack-keep");
+    var form = document.getElementById("stack-keep-form");
+    var status = document.getElementById("stack-keep-status");
+    var email = document.getElementById("stack-email");
+    var consent = document.getElementById("stack-consent");
+    var button = form.querySelector('button[type="submit"]');
+
+    if (!window.MGKit || !window.MGutil) return;
+    // No form configured yet: show nothing rather than a form that 404s.
+    if (window.MGutil.isPlaceholder(MG.KIT_STACK_FORM_ID)) {
+      console.warn("Madgrowth config: set KIT_STACK_FORM_ID in assets/js/config.js — Stack buyer capture is hidden until then");
+      return;
+    }
+    box.hidden = false;
+
+    function say(msg, cls) {
+      status.className = "form-status" + (cls ? " " + cls : "");
+      status.textContent = msg;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var value = (email.value || "").trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        say("Enter a valid email address.", "err");
+        email.focus();
+        return;
+      }
+      var optedIn = !!consent.checked;
+      // Every buyer is a customer; only the ticked box adds the newsletter.
+      var tags = ["stack-customer"];
+      if (optedIn) tags.push("newsletter", "gdpr-consent");
+
+      var fields = { stack_purchased_at: new Date().toISOString() };
+      if (order) fields.order_id = order;
+      if (optedIn) {
+        fields.consent_source = "stack_thanks_page";
+        fields.consent_at = new Date().toISOString();
+      }
+
+      button.disabled = true;
+      say("One moment…");
+
+      window.MGKit.subscribe(value, tags, fields, MG.KIT_STACK_FORM_ID)
+        .then(function () {
+          say(optedIn
+            ? "Done. Your onboarding emails and the newsletter are on their way."
+            : "Done. Your onboarding emails are on their way.", "ok");
+          form.reset();
+          window.MGutil.track("stack_buyer_capture", {
+            newsletter_opt_in: optedIn,
+            order_id: order || null
+          });
+        })
+        .catch(function () {
+          say("That didn't go through. Email madalena@madgrowth.io and I'll add you by hand.", "err");
+        })
+        .then(function () { button.disabled = false; });
+    });
+  });
 })();
 </script>
 </body>

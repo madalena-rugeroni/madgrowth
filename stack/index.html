@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Stack: 15 AI agents to launch your business · Madgrowth</title>
-  <meta name="description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from Dunford, Enns and Hormozi. 299€.">
+  <meta name="description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from Dunford, Enns and Hormozi. Founding price 299€ through 30 September, then 399€.">
   <meta name="author" content="Madalena Rugeroni">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://www.madgrowth.io/stack/">
@@ -14,14 +14,14 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://www.madgrowth.io/stack/">
   <meta property="og:title" content="The Stack: 15 AI agents to decide, position, package, price and launch">
-  <meta property="og:description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. 299€.">
+  <meta property="og:description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. Founding price 299€ through 30 September, then 399€.">
   <meta property="og:image" content="https://www.madgrowth.io/assets/img/og/stack.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="The Stack by Madgrowth: 15 AI agents, 299€ one-time">
+  <meta property="og:image:alt" content="The Stack by Madgrowth: 15 AI agents, founding price 299€ one-time">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Stack: 15 AI agents to decide, position, package, price and launch">
-  <meta name="twitter:description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. 299€.">
+  <meta name="twitter:description" content="Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. Founding price 299€ through 30 September, then 399€.">
   <meta name="twitter:image" content="https://www.madgrowth.io/assets/img/og/stack.jpg">
   <link rel="apple-touch-icon" href="../assets/img/logo.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Helvetica,Arial,sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
@@ -145,7 +145,7 @@
       "@id": "https://www.madgrowth.io/stack/#webpage",
       "url": "https://www.madgrowth.io/stack/",
       "name": "The Stack: 15 AI agents to launch your business · Madgrowth",
-      "description": "Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. 299€.",
+      "description": "Fifteen AI agents that run in Claude to decide, position, package, price and launch your business, using frameworks from April Dunford, Blair Enns and Alex Hormozi. Founding price 299€ through 30 September, then 399€.",
       "isPartOf": {
         "@id": "https://www.madgrowth.io/#website"
       },
@@ -173,6 +173,7 @@
         "url": "https://www.madgrowth.io/stack/",
         "price": "299.00",
         "priceCurrency": "EUR",
+        "priceValidUntil": "2026-09-30",
         "availability": "https://schema.org/InStock",
         "seller": {
           "@id": "https://www.madgrowth.io/#org"
@@ -203,6 +204,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Is the 299\u20ac price going up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. 299\u20ac is the founding price and it runs through Sept 30. After that The Stack is 399\u20ac. You pay once either way, and updates are free."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What do I need to run it?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -215,14 +224,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I have to run the agents in order?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Run the setup step first, then start wherever the pressure is. The recommended sequence starts with the Go / No-Go, and you're free to skip around."
           }
         },
         {
@@ -257,7 +258,7 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#how">How it Works</a></li>
-      <li><a href="#skills">The Agents</a></li>
+      <li><a href="#agents">The Agents</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a class="btn btn-primary nav-cta" href="#" data-link="STRIPE_LINK_STACK" data-event="stack_checkout_click">Get the Stack · 299€</a></li>
     </ul>
@@ -272,12 +273,13 @@
     <div class="wrap stack-hero">
       <div>
         <span class="eyebrow reveal">The Stack · 15 AI agents</span>
-        <h1 class="reveal">Fifteen AI agents for ambitious people who want to go from idea to launch.</h1>
-        <p class="lead reveal">Whether it's software, a service, media or a product, each needs different positioning, pricing and launch methods. The Stack classifies your business first. Every agent then runs the frameworks built for that model and helps you position, price and launch it with confidence.</p>
+        <h1 class="reveal">Fifteen AI agents that take you from idea to a launched, priced offer.</h1>
+        <p class="lead reveal">Answer eight questions once. Every agent after that runs the frameworks built for your exact business model — software, services, product, local or media.</p>
         <div class="hero-ctas reveal">
           <a class="btn btn-primary btn-magnetic" href="#" data-link="STRIPE_LINK_STACK" data-event="stack_checkout_click">Get the Stack · 299€ →</a>
-          <a class="textlink" href="#skills">See the fifteen agents ↓</a>
+          <a class="textlink" href="#agents">See the fifteen agents ↓</a>
         </div>
+        <p class="cta-note reveal">Founding price through Sept 30. 399€ after that.</p>
         <a class="founder-line reveal" href="../about/">
           <img src="../assets/img/madalena.jpg" alt="Madalena Rugeroni" width="44" height="44" onerror="this.hidden=true">
           <span><strong>Built by Madalena Rugeroni</strong> · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue</span>
@@ -287,23 +289,16 @@
       <aside class="spec-card reveal" aria-label="What's in the Stack">
         <div class="spec-top">
           <span class="spec-name">The Stack</span>
-          <span class="spec-price">299€<small>one-time</small></span>
+          <span class="spec-price"><span class="spec-was">399€</span>299€<small>one-time</small></span>
         </div>
+        <span class="badge-founding">Founding price · through Sept 30</span>
         <ul class="spec-phases">
-          <li><a href="#phase-start">Start here</a><span>Audit + setup</span></li>
-          <li><a href="#phase-decide">Decide</a><span>1 agent</span></li>
-          <li><a href="#phase-position">Position it</a><span>4 agents</span></li>
-          <li><a href="#phase-package">Package it</a><span>3 agents</span></li>
-          <li><a href="#phase-audience">Audience</a><span>2 agents</span></li>
-          <li><a href="#phase-launch">Launch it</a><span>5 agents</span></li>
+          <li><span>15 agents</span><span>Idea → launch</span></li>
+          <li><span>6 business models</span><span>A version for each</span></li>
+          <li><span>50+ frameworks</span><span>Credited to their authors</span></li>
+          <li><span>Free Expertise Audit</span><span>Included</span></li>
         </ul>
-        <div>
-          <p class="spec-label">An agent for each model</p>
-          <div class="spec-models">
-            <span class="pill">Services</span><span class="pill">Software</span><span class="pill">Product</span><span class="pill">Local</span><span class="pill">Media</span><span class="pill">Marketplaces</span>
-          </div>
-        </div>
-        <p class="spec-note">Free updates. Installs as Claude skills, in the app or Claude Code.</p>
+        <p class="spec-note">Installs as Claude skills, in the app or Claude Code. Free updates, forever.</p>
       </aside>
     </div>
   </section>
@@ -317,134 +312,117 @@
         <div class="flow-step reveal">
           <span class="flow-num">1</span>
           <h3>Classify your business</h3>
-          <p>The setup step asks about your model, stage, sales motion, price point, team, Builder Archetype, geography and how much you can build yourself. It takes a few minutes.</p>
+          <p>Eight questions: model, stage, sales motion, price band, team, geography. A few minutes, once.</p>
         </div>
         <div class="flow-step reveal">
           <span class="flow-num">2</span>
-          <h3>Load the agent</h3>
-          <p>Every agent opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.</p>
+          <h3>Load any agent</h3>
+          <p>It opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.</p>
         </div>
         <div class="flow-step reveal">
           <span class="flow-num">3</span>
-          <h3>Keep the output</h3>
-          <p>Each agent ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next one builds on it, so start wherever the pressure is.</p>
+          <h3>Keep the document</h3>
+          <p>An ICP, an offer, a price, a page spec, a launch calendar. The next agent builds on it, so start wherever the pressure is.</p>
         </div>
       </div>
 
-      <div class="models-strip reveal" id="models">
-        <div><strong>Services</strong><span>Fractional roles, consulting, advisory, agencies</span></div>
-        <div><strong>Software</strong><span>B2B SaaS, sales-led or product-led</span></div>
-        <div><strong>Product</strong><span>Consumer and digital products sold online</span></div>
-        <div><strong>Local</strong><span>Businesses built around a place</span></div>
-        <div><strong>Media</strong><span>Newsletters, podcasts, communities</span></div>
-        <div><strong>Marketplaces</strong><span>A layer on top of any model</span></div>
+      <div class="models-line reveal" id="models">
+        <span class="spec-label">A version for each model</span>
+        <div class="spec-models">
+          <span class="pill">Services</span><span class="pill">Software</span><span class="pill">Product</span><span class="pill">Local</span><span class="pill">Media</span><span class="pill">Marketplaces</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ The skills ============ -->
-  <section id="skills">
+  <!-- ============ The agents ============ -->
+  <section id="agents">
     <div class="wrap">
       <span class="eyebrow reveal reveal-d1">The agents</span>
-      <h2 class="reveal reveal-d2">What each agent produces and the frameworks behind it</h2>
-      <p class="lead reveal reveal-d3">Frameworks are listed for the models where they apply. They're credited to their authors, who aren't affiliated with Madgrowth.</p>
+      <h2 class="reveal reveal-d2">Fifteen agents. One system.</h2>
+      <p class="lead reveal reveal-d3">Each one ends with a document, and the next one picks it up.</p>
 
-      <nav class="phase-index reveal" aria-label="Agent phases">
-        <a href="#phase-start"><strong>Start here</strong><span>Free + setup</span></a>
-        <a href="#phase-decide"><strong>Decide</strong><span>Agent 01</span></a>
-        <a href="#phase-position"><strong>Position it</strong><span>Agents 02 to 05</span></a>
-        <a href="#phase-package"><strong>Package it</strong><span>Agents 06 to 08</span></a>
-        <a href="#phase-audience"><strong>Audience</strong><span>Agents 09 and 10</span></a>
-        <a href="#phase-launch"><strong>Launch it</strong><span>Agents 11 to 15</span></a>
-      </nav>
+      <div class="step-ribbon reveal">
+        <div><strong>Learn it</strong><span>01–02</span></div>
+        <div><strong>Package it</strong><span>03–04</span></div>
+        <div><strong>Position it</strong><span>05–06</span></div>
+        <div><strong>Decide</strong><span>07</span></div>
+        <div><strong>Launch it</strong><span>08–15</span></div>
+      </div>
 
-      <div class="phase reveal" id="phase-start">
-        <div class="phase-head">
-          <div>
-            <h3>Start here</h3>
-            <p>Run these two first. The Expertise Audit is also free on its own.</p>
-          </div>
-          <span class="phase-range">Free + setup</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">Free</span><h4>Expertise Audit</h4></div>
-                <p class="skill-out">Your three strongest angles from the career you already have, each with who buys, the problem in their words and your proof.</p>
-              </div>
+      <p class="agent-pre reveal">Before agent 01: the <strong>setup step</strong>, eight questions that every agent reads, and the free <strong>Expertise Audit</strong> — your three strongest angles from the career you already have. Both included.</p>
+
+      <div class="agent-grid reveal">
+        <article class="agent"><span class="skill-num">01</span><h3>Talk to Customers</h3><p>Ten conversations, and what you actually heard.</p></article>
+        <article class="agent"><span class="skill-num">02</span><h3>Your Customer</h3><p>An ICP with an evidence grade on every claim.</p></article>
+        <article class="agent"><span class="skill-num">03</span><h3>Your Offer</h3><p>What's included, for whom, with what guarantee.</p></article>
+        <article class="agent"><span class="skill-num">04</span><h3>Pricing</h3><p>A price you can defend, and the anchor that holds it.</p></article>
+        <article class="agent"><span class="skill-num">05</span><h3>Positioning</h3><p>Why they pick you over the alternative.</p></article>
+        <article class="agent"><span class="skill-num">06</span><h3>Messaging</h3><p>One core message, three proof-backed pillars.</p></article>
+        <article class="agent"><span class="skill-num">07</span><h3>Go / No-Go</h3><p>A verdict on your idea, scored against how you work.</p></article>
+        <article class="agent"><span class="skill-num">08</span><h3>Landing Page</h3><p>A section-by-section page spec, copy included.</p></article>
+        <article class="agent"><span class="skill-num">09</span><h3>Lead Magnet</h3><p>One thing worth an email address, and the bridge to paid.</p></article>
+        <article class="agent"><span class="skill-num">10</span><h3>Launch</h3><p>A day-by-day calendar, from warm list to launch day.</p></article>
+        <article class="agent"><span class="skill-num">11</span><h3>Get Customers</h3><p>Three channels to test, one to bet on.</p></article>
+        <article class="agent"><span class="skill-num">12</span><h3>Convert</h3><p>Your path from lead to paid, scripted.</p></article>
+        <article class="agent"><span class="skill-num">13</span><h3>Retain</h3><p>The first 90 days after they say yes.</p></article>
+        <article class="agent"><span class="skill-num">14</span><h3>Founder Content</h3><p>A point of view and a cadence you can keep up.</p></article>
+        <article class="agent"><span class="skill-num">15</span><h3>The Numbers</h3><p>A 12-month model, and whether the economics work.</p></article>
+      </div>
+
+      <div class="fw-band reveal">
+        <p class="fw-intro">No agent invents a method. Each runs published frameworks, matched to your model and credited to their authors.</p>
+        <p class="fw-names">April Dunford · Blair Enns · Alex Hormozi · Bob Moesta · Madhavan Ramanujam · David C. Baker · Eugene Schwartz · Teresa Torres · Donald Miller · Jeff Walker · Brian Balfour · Anthony Pierri · Daniel Priestley · Alan Weiss · Emma Stratton · Peep Laja · Marty Neumeier · Dan Ariely · Nir Eyal</p>
+        <details class="fw-detail">
+          <summary>See the framework each agent runs for your model</summary>
+          <div class="fw-grid">
+            <div class="fw-item">
+              <h4><span class="skill-num">Free</span> Expertise Audit</h4>
               <ul class="fw-list">
                 <li><span class="pill">All models</span><span>David C. Baker's test for experts: what you've done repeatedly, what people already come to you for and who has budget for it</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">Setup</span><h4>Start</h4></div>
-                <p class="skill-out">A context file every other skill reads, so you answer these questions once.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">Setup</span> Start</h4>
               <ul class="fw-list">
                 <li><span class="pill">Covers</span><span>Business model, stage, sales motion, price band, solo or team, Builder Archetype, geography and build capacity</span></li>
               </ul>
-            </article>
-        </div>
-      </div>
-
-      <div class="phase reveal" id="phase-decide">
-        <div class="phase-head">
-          <div>
-            <h3>Decide</h3>
-            <p>Is this idea worth building, and is it right for you? A verdict before you spend months on it.</p>
-          </div>
-          <span class="phase-range">Agent 01</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">01</span><h4>Go / No-Go</h4></div>
-                <p class="skill-out">A go, no-go or not-yet verdict on your business idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest way to test it and a pre-mortem. Run it again later with more data.</p>
-              </div>
-              <ul class="fw-list">
-                <li><span class="pill">Modes</span><span>Quick roast for a raw idea, full gate before you spend money, post-launch check once you have data</span></li>
-              </ul>
-            </article>
-        </div>
-      </div>
-
-      <div class="phase reveal" id="phase-position">
-        <div class="phase-head">
-          <div>
-            <h3>Position it</h3>
-            <p>Who you serve, why they pick you and how you say it.</p>
-          </div>
-          <span class="phase-range">Agents 02 to 05</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">02</span><h4>Talk to Customers</h4></div>
-                <p class="skill-out">An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">01</span> Talk to Customers</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>Trigger-moment research and Blair Enns's diagnose-first method</span></li>
                 <li><span class="pill">Software</span><span>The Mom Test and Teresa Torres's Continuous Discovery Habits</span></li>
                 <li><span class="pill">Product</span><span>Bob Moesta's switch interview</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">03</span><h4>Your Customer</h4></div>
-                <p class="skill-out">An ICP with the trigger moment, the buying unit and an evidence grade on every claim.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">02</span> Your Customer</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>Jobs to be done and trigger-moment mapping</span></li>
                 <li><span class="pill">Software</span><span>April Dunford's best-fit customer derivation</span></li>
                 <li><span class="pill">Product</span><span>Bob Moesta's Four Forces of Progress</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">04</span><h4>Positioning</h4></div>
-                <p class="skill-out">Your competitive alternatives, what's different, the value that enables, who cares most and your market category.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">03</span> Your Offer</h4>
+              <ul class="fw-list">
+                <li><span class="pill">All models</span><span>The Value Proposition Canvas</span></li>
+                <li><span class="pill">Services</span><span>Alex Hormozi's Grand Slam Offer</span></li>
+                <li><span class="pill">Software</span><span>Madhavan Ramanujam's leaders, fillers and killers</span></li>
+                <li><span class="pill">Product</span><span>Mark Joyner's The Irresistible Offer</span></li>
+              </ul>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">04</span> Pricing</h4>
+              <ul class="fw-list">
+                <li><span class="pill">Services</span><span>Blair Enns's Pricing Creativity and Alan Weiss on value-based fees</span></li>
+                <li><span class="pill">Software</span><span>Madhavan Ramanujam's Monetizing Innovation</span></li>
+                <li><span class="pill">Product</span><span>Dan Ariely on anchoring and William Poundstone's Priceless</span></li>
+              </ul>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">05</span> Positioning</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>David C. Baker and Blair Enns on expertise positioning</span></li>
                 <li><span class="pill">Software</span><span>April Dunford's Obviously Awesome and Anthony Pierri</span></li>
@@ -452,91 +430,32 @@
                 <li><span class="pill">Local</span><span>Category, geography and trust</span></li>
                 <li><span class="pill">Media</span><span>Beat, point of view and format</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">05</span><h4>Messaging</h4></div>
-                <p class="skill-out">A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and answers to the top objections.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">06</span> Messaging</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>The expertise claim from Baker and Enns, and Donald Miller's StoryBrand</span></li>
                 <li><span class="pill">Software</span><span>Anthony Pierri's headline formula and Emma Stratton's Make It Punchy</span></li>
                 <li><span class="pill">Product</span><span>Copyhackers voice-of-customer research</span></li>
               </ul>
-            </article>
-        </div>
-      </div>
-
-      <div class="phase reveal" id="phase-package">
-        <div class="phase-head">
-          <div>
-            <h3>Package it</h3>
-            <p>What you sell, what it costs and whether the numbers work.</p>
-          </div>
-          <span class="phase-range">Agents 06 to 08</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">06</span><h4>Your Offer</h4></div>
-                <p class="skill-out">Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">07</span> Go / No-Go</h4>
               <ul class="fw-list">
-                <li><span class="pill">All models</span><span>The Value Proposition Canvas</span></li>
-                <li><span class="pill">Services</span><span>Alex Hormozi's Grand Slam Offer</span></li>
-                <li><span class="pill">Software</span><span>Madhavan Ramanujam's leaders, fillers and killers</span></li>
-                <li><span class="pill">Product</span><span>Mark Joyner's The Irresistible Offer</span></li>
+                <li><span class="pill">Modes</span><span>Quick roast for a raw idea, full gate before you spend money, post-launch check once you have data</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">07</span><h4>Pricing</h4></div>
-                <p class="skill-out">The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">08</span> Landing Page</h4>
               <ul class="fw-list">
-                <li><span class="pill">Services</span><span>Blair Enns's Pricing Creativity and Alan Weiss on value-based fees</span></li>
-                <li><span class="pill">Software</span><span>Madhavan Ramanujam's Monetizing Innovation</span></li>
-                <li><span class="pill">Product</span><span>Dan Ariely on anchoring and William Poundstone's Priceless</span></li>
+                <li><span class="pill">Services</span><span>StoryBrand, or problem-agitate-solve long form</span></li>
+                <li><span class="pill">Software</span><span>Fletch and Anthony Pierri's homepage frameworks</span></li>
+                <li><span class="pill">Product</span><span>Eugene Schwartz's awareness levels</span></li>
+                <li><span class="pill">All models</span><span>Peep Laja's page scoring</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">08</span><h4>The Numbers</h4></div>
-                <p class="skill-out">The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.</p>
-              </div>
-              <ul class="fw-list">
-                <li><span class="pill">All models</span><span>Lean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, contribution margin), bottom-up TAM and break-even</span></li>
-              </ul>
-            </article>
-        </div>
-      </div>
-
-      <div class="phase reveal" id="phase-audience">
-        <div class="phase-head">
-          <div>
-            <h3>Audience</h3>
-            <p>Attention and leads before you need them.</p>
-          </div>
-          <span class="phase-range">Agents 09 and 10</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">09</span><h4>Founder Content</h4></div>
-                <p class="skill-out">Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.</p>
-              </div>
-              <ul class="fw-list">
-                <li><span class="pill">Services</span><span>David C. Baker's advice to publish the thinking you'd sell</span></li>
-                <li><span class="pill">Software</span><span>Andy Raskin's strategic narrative</span></li>
-                <li><span class="pill">Product</span><span>Founder story and distinctive brand assets</span></li>
-                <li><span class="pill">Media</span><span>An editorial system</span></li>
-              </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">10</span><h4>Lead Magnet</h4></div>
-                <p class="skill-out">One lead magnet with its promise, format, the segment it captures and the bridge to your paid offer.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">09</span> Lead Magnet</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>An audit or diagnostic</span></li>
                 <li><span class="pill">Software</span><span>A free tool</span></li>
@@ -544,36 +463,9 @@
                 <li><span class="pill">Local</span><span>A first-visit offer</span></li>
                 <li><span class="pill">Media</span><span>A content upgrade</span></li>
               </ul>
-            </article>
-        </div>
-      </div>
-
-      <div class="phase reveal" id="phase-launch">
-        <div class="phase-head">
-          <div>
-            <h3>Launch it</h3>
-            <p>The page, the launch, the first customers and keeping them.</p>
-          </div>
-          <span class="phase-range">Agents 11 to 15</span>
-        </div>
-        <div class="skill-panel">
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">11</span><h4>Landing Page</h4></div>
-                <p class="skill-out">A section-by-section page spec with the copy, ordered for one conversion goal and scored for clarity, relevance, value and anxiety.</p>
-              </div>
-              <ul class="fw-list">
-                <li><span class="pill">Services</span><span>StoryBrand, or problem-agitate-solve long form</span></li>
-                <li><span class="pill">Software</span><span>Fletch and Anthony Pierri's homepage frameworks</span></li>
-                <li><span class="pill">Product</span><span>Eugene Schwartz's awareness levels</span></li>
-                <li><span class="pill">All models</span><span>Peep Laja's page scoring</span></li>
-              </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">12</span><h4>Launch</h4></div>
-                <p class="skill-out">A pre-launch, launch and post-launch plan with your warm list, the assets and a day-by-day calendar.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">10</span> Launch</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>The founding-client offer</span></li>
                 <li><span class="pill">Software</span><span>Design partners, then beta, then launch week</span></li>
@@ -581,12 +473,9 @@
                 <li><span class="pill">Local</span><span>Soft opening, then grand opening</span></li>
                 <li><span class="pill">Marketplaces</span><span>Supply first</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">13</span><h4>Get Customers</h4></div>
-                <p class="skill-out">Three channels to test, one to focus on, the numbers that decide and your weekly routine.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">11</span> Get Customers</h4>
               <ul class="fw-list">
                 <li><span class="pill">All models</span><span>The Bullseye framework from Traction and Brian Balfour's channel-model fit</span></li>
                 <li><span class="pill">Services</span><span>Daniel Priestley's Key Person of Influence</span></li>
@@ -594,12 +483,9 @@
                 <li><span class="pill">Product</span><span>Paid acquisition unit economics</span></li>
                 <li><span class="pill">Marketplaces</span><span>Solving the cold-start problem</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">14</span><h4>Convert</h4></div>
-                <p class="skill-out">Your path from lead to paid: discovery call, proposal and follow-up, or funnel, checkout and lifecycle emails.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">12</span> Convert</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>Blair Enns's Win Without Pitching</span></li>
                 <li><span class="pill">Software</span><span>SPIN Selling, Sandler and Great Demo! for sales-led; activation for product-led</span></li>
@@ -607,26 +493,40 @@
                 <li><span class="pill">Local</span><span>The CLOSER sales framework</span></li>
                 <li><span class="pill">Media</span><span>Sponsor sales</span></li>
               </ul>
-            </article>
-            <article class="skill-row">
-              <div>
-                <div class="skill-head"><span class="skill-num">15</span><h4>Retain</h4></div>
-                <p class="skill-out">A client's first 90 days after they say yes: the activation milestone, onboarding, the engagement loop and when to ask for renewal or referrals.</p>
-              </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">13</span> Retain</h4>
               <ul class="fw-list">
                 <li><span class="pill">Services</span><span>Kickoff to a quick win within 30 days</span></li>
                 <li><span class="pill">Software</span><span>Activation and net revenue retention</span></li>
                 <li><span class="pill">Product</span><span>Post-purchase flows, RFM segmentation and Nir Eyal's Hook model</span></li>
                 <li><span class="pill">Local</span><span>Rebooking at checkout</span></li>
               </ul>
-            </article>
-        </div>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">14</span> Founder Content</h4>
+              <ul class="fw-list">
+                <li><span class="pill">Services</span><span>David C. Baker's advice to publish the thinking you'd sell</span></li>
+                <li><span class="pill">Software</span><span>Andy Raskin's strategic narrative</span></li>
+                <li><span class="pill">Product</span><span>Founder story and distinctive brand assets</span></li>
+                <li><span class="pill">Media</span><span>An editorial system</span></li>
+              </ul>
+            </div>
+            <div class="fw-item">
+              <h4><span class="skill-num">15</span> The Numbers</h4>
+              <ul class="fw-list">
+                <li><span class="pill">All models</span><span>Lean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, contribution margin), bottom-up TAM and break-even</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </div>
 
+      <!-- PRICE: founding 299€ / full 399€ / deadline Sept 30 -->
       <div class="stack-buy reveal">
         <div>
           <h3>All fifteen agents, plus the Expertise Audit</h3>
-          <p>299€ one-time. Free updates. Installs as Claude skills, in the app or Claude Code.</p>
+          <p><span class="buy-was">399€</span> <strong>299€ one-time</strong> · founding price through Sept 30 · free updates</p>
         </div>
         <a class="btn btn-primary btn-magnetic" href="#" data-link="STRIPE_LINK_STACK" data-event="stack_checkout_click">Get the Stack · 299€ →</a>
       </div>
@@ -640,16 +540,16 @@
       <h2 class="reveal reveal-d2">Questions, answered</h2>
       <div class="faq-list stagger">
         <details class="reveal">
+          <summary>Is the 299€ price going up?</summary>
+          <p>Yes. 299€ is the founding price and it runs through Sept 30. After that The Stack is 399€. You pay once either way, and updates are free.</p>
+        </details>
+        <details class="reveal">
           <summary>What do I need to run it?</summary>
           <p>Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.</p>
         </details>
         <details class="reveal">
           <summary>How is this different from a set of prompts?</summary>
           <p>Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced.</p>
-        </details>
-        <details class="reveal">
-          <summary>Do I have to run the agents in order?</summary>
-          <p>No. Run the setup step first, then start wherever the pressure is. The recommended sequence starts with the Go / No-Go, and you're free to skip around.</p>
         </details>
         <details class="reveal">
           <summary>What if my business doesn't fit one model neatly?</summary>
@@ -667,7 +567,7 @@
   <section class="final-cta">
     <div class="wrap stagger">
       <h2 class="reveal">Build your offer with the agent that fits your business.</h2>
-      <p class="reveal">299€ one-time, with free updates. Or start free with the Builder Diagnostic.</p>
+      <p class="reveal">299€ one-time through Sept 30, then 399€. Free updates. Or start free with the <a class="cta-link" href="../diagnostic/">Builder Diagnostic</a>.</p>
       <a class="btn btn-primary btn-magnetic reveal" href="#" data-link="STRIPE_LINK_STACK" data-event="stack_checkout_click">Get the Stack · 299€</a>
     </div>
   </section>

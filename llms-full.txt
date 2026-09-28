@@ -142,15 +142,16 @@ Start free: the Builder Diagnostic shows which business fits how you work and th
 
 Do it yourself · 15 AI agents
 
-299€ · one-time
+Founding price · through Sept 30
+399€ 299€ · one-time (399€ from 1 October 2026)
 
 Fifteen AI agents that run in Claude and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
-- Decide: Go / No-Go, scored against your Builder Archetype and your business idea
-- Position it: Talk to Customers · Your Customer · Positioning · Messaging
-- Package it: Your Offer · Pricing · The Numbers
-- Audience: Founder Content · Lead Magnet
-- Launch it: Landing Page · Launch · Get Customers · Convert · Retain
+- Learn it (01–02): Talk to Customers · Your Customer
+- Package it (03–04): Your Offer · Pricing
+- Position it (05–06): Positioning · Messaging
+- Decide (07): Go / No-Go, scored against your Builder Archetype and your business idea
+- Launch it (08–15): Landing Page · Lead Magnet · Launch · Get Customers · Convert · Retain · Founder Content · The Numbers
 - Run them in any order. The system keeps track.
 - Free updates
 Get the Stack · 299€
@@ -271,250 +272,349 @@ See which business fits how you work →
 ---
 
 URL: https://www.madgrowth.io/stack/
-Title: The Stack: 15 AI agents to decide, position, price and launch · Madgrowth
+Title: The Stack: 15 AI agents to launch your business · Madgrowth
 
 The Stack · 15 AI agents
+# Fifteen AI agents that take you from idea to a launched, priced offer.
 
-# Fifteen AI agents, each with a version for your kind of business.
+Answer eight questions once. Every agent after that runs the frameworks built for your exact business model — software, services, product, local or media.
 
-A SaaS product and a fractional CMO practice need different positioning, pricing and launch methods. The Stack classifies your business first. Every agent then runs the frameworks built for that model and hands you a finished document.
+Get the Stack · 299€ → See the fifteen agents ↓
+Founding price through Sept 30. 399€ after that.
 
-Get the Stack · 299€ → See the fifteen agents ↓    Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
-The Stack 299€one-time
-- Start hereAudit + setup
-- Decide1 agent
-- Position it4 agents
-- Package it3 agents
-- Audience2 agents
-- Launch it5 agents
+Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
+The Stack
+399€
+299€ one-time
+Founding price · through Sept 30
+15 agents
+Idea → launch
+6 business models
+A version for each
+50+ frameworks
+Credited to their authors
+Free Expertise Audit
+Included
 
-An agent for each model
-
-ServicesSoftwareProductLocalMediaMarketplaces
-Free updates. Installs as Claude skills, in the app or Claude Code.
+Installs as Claude skills, in the app or Claude Code. Free updates, forever.
 
 How it works
-
 ## Answer the setup questions once. Every agent uses them.
 
 1
-
 ### Classify your business
 
-The setup step asks about your model, stage, sales motion, price point, team, Builder Archetype, geography and how much you can build yourself. It takes a few minutes.
+Eight questions: model, stage, sales motion, price band, team, geography. A few minutes, once.
 
 2
+### Load any agent
 
-### Load the agent
-
-Every agent opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
+It opens the version for your model. A fractional CMO pricing a retainer gets Blair Enns. A SaaS founder gets Madhavan Ramanujam.
 
 3
+### Keep the document
 
-### Keep the output
+An ICP, an offer, a price, a page spec, a launch calendar. The next agent builds on it, so start wherever the pressure is.
 
-Each agent ends with a document: an ICP, an offer, a price, a page spec, a launch calendar. The next one builds on it, so start wherever the pressure is.
-
-ServicesFractional roles, consulting, advisory, agencies
-SoftwareB2B SaaS, sales-led or product-led
-ProductConsumer and digital products sold online
-LocalBusinesses built around a place
-MediaNewsletters, podcasts, communities
-MarketplacesA layer on top of any model
+A version for each model
+Services
+Software
+Product
+Local
+Media
+Marketplaces
 
 The agents
+## Fifteen agents. One system.
 
-## What each agent produces and the frameworks behind it
+Each one ends with a document, and the next one picks it up.
 
-Frameworks are listed for the models where they apply. They're credited to their authors, who aren't affiliated with Madgrowth.
+Learn it
+01–02
+Package it
+03–04
+Position it
+05–06
+Decide
+07
+Launch it
+08–15
+Before agent 01: the setup step, eight questions that every agent reads, and the free Expertise Audit — your three strongest angles from the career you already have. Both included.
 
-### Start here
+01
+### Talk to Customers
 
-Run these two first. The Expertise Audit is also free on its own.
-Free + setup
+Ten conversations, and what you actually heard.
 
-FreeExpertise Audit
-Your three strongest angles from the career you already have, each with who buys, the problem in their words and your proof.
+02
+### Your Customer
 
-- All modelsDavid C. Baker's test for experts: what you've done repeatedly, what people already come to you for and who has budget for it
+An ICP with an evidence grade on every claim.
 
-SetupStart
-A context file every other skill reads, so you answer these questions once.
+03
+### Your Offer
 
-- CoversBusiness model, stage, sales motion, price band, solo or team, Builder Archetype, geography and build capacity
+What's included, for whom, with what guarantee.
 
-### Decide
+04
+### Pricing
 
-Is this idea worth building, and is it right for you? A verdict before you spend months on it.
-Agent 01
+A price you can defend, and the anchor that holds it.
 
-01Go / No-Go
-A go, no-go or not-yet verdict on your business idea, scored against your Builder Archetype, with the assumption that decides it, the cheapest way to test it and a pre-mortem. Run it again later with more data.
+05
+### Positioning
 
-- ModesQuick roast for a raw idea, full gate before you spend money, post-launch check once you have data
+Why they pick you over the alternative.
 
-### Position it
+06
+### Messaging
 
-Who you serve, why they pick you and how you say it.
-Agents 02 to 05
+One core message, three proof-backed pillars.
 
-02Talk to Customers
-An interview guide, a plan for ten conversations and a summary of what you heard, with every claim graded on evidence.
+07
+### Go / No-Go
 
-- ServicesTrigger-moment research and Blair Enns's diagnose-first method
-- SoftwareThe Mom Test and Teresa Torres's Continuous Discovery Habits
-- ProductBob Moesta's switch interview
+A verdict on your idea, scored against how you work.
 
-03Your Customer
-An ICP with the trigger moment, the buying unit and an evidence grade on every claim.
+08
+### Landing Page
 
-- ServicesJobs to be done and trigger-moment mapping
-- SoftwareApril Dunford's best-fit customer derivation
-- ProductBob Moesta's Four Forces of Progress
+A section-by-section page spec, copy included.
 
-04Positioning
-Your competitive alternatives, what's different, the value that enables, who cares most and your market category.
+09
+### Lead Magnet
 
-- ServicesDavid C. Baker and Blair Enns on expertise positioning
-- SoftwareApril Dunford's Obviously Awesome and Anthony Pierri
-- ProductMarty Neumeier, Al Ries and Jack Trout
-- LocalCategory, geography and trust
-- MediaBeat, point of view and format
+One thing worth an email address, and the bridge to paid.
 
-05Messaging
-A messaging house with one core message and three proof-backed pillars, plus your one-liner, pitch, headlines and answers to the top objections.
+10
+### Launch
 
-- ServicesThe expertise claim from Baker and Enns, and Donald Miller's StoryBrand
-- SoftwareAnthony Pierri's headline formula and Emma Stratton's Make It Punchy
-- ProductCopyhackers voice-of-customer research
+A day-by-day calendar, from warm list to launch day.
 
-### Package it
+11
+### Get Customers
 
-What you sell, what it costs and whether the numbers work.
-Agents 06 to 08
+Three channels to test, one to bet on.
 
-06Your Offer
-Your offer in one paragraph: what's included, for whom, how it's packaged and the guarantee.
+12
+### Convert
 
-- All modelsThe Value Proposition Canvas
-- ServicesAlex Hormozi's Grand Slam Offer
-- SoftwareMadhavan Ramanujam's leaders, fillers and killers
-- ProductMark Joyner's The Irresistible Offer
+Your path from lead to paid, scripted.
 
-07Pricing
-The value metric, the pricing model, your price points and the anchor, backed by willingness-to-pay research.
+13
+### Retain
 
-- ServicesBlair Enns's Pricing Creativity and Alan Weiss on value-based fees
-- SoftwareMadhavan Ramanujam's Monetizing Innovation
-- ProductDan Ariely on anchoring and William Poundstone's Priceless
+The first 90 days after they say yes.
 
-08The Numbers
-The five metrics for your model, a 12-month model and a verdict on whether the economics work at your price.
+14
+### Founder Content
 
-- All modelsLean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, contribution margin), bottom-up TAM and break-even
+A point of view and a cadence you can keep up.
 
-### Audience
+15
+### The Numbers
 
-Attention and leads before you need them.
-Agents 09 and 10
+A 12-month model, and whether the economics work.
 
-09Founder Content
-Content pillars, a point of view, the right platform, a cadence you can keep up and a plan to reuse every piece.
+No agent invents a method. Each runs published frameworks, matched to your model and credited to their authors.
 
-- ServicesDavid C. Baker's advice to publish the thinking you'd sell
-- SoftwareAndy Raskin's strategic narrative
-- ProductFounder story and distinctive brand assets
-- MediaAn editorial system
+April Dunford · Blair Enns · Alex Hormozi · Bob Moesta · Madhavan Ramanujam · David C. Baker · Eugene Schwartz · Teresa Torres · Donald Miller · Jeff Walker · Brian Balfour · Anthony Pierri · Daniel Priestley · Alan Weiss · Emma Stratton · Peep Laja · Marty Neumeier · Dan Ariely · Nir Eyal
 
-10Lead Magnet
-One lead magnet with its promise, format, the segment it captures and the bridge to your paid offer.
+See the framework each agent runs for your model
+Free
+Expertise Audit
+All models
+David C. Baker's test for experts: what you've done repeatedly, what people already come to you for and who has budget for it
 
-- ServicesAn audit or diagnostic
-- SoftwareA free tool
-- ProductA quiz
-- LocalA first-visit offer
-- MediaA content upgrade
+Setup
+Start
+Covers
+Business model, stage, sales motion, price band, solo or team, Builder Archetype, geography and build capacity
 
-### Launch it
+01
+Talk to Customers
+Services
+Trigger-moment research and Blair Enns's diagnose-first method
+Software
+The Mom Test and Teresa Torres's Continuous Discovery Habits
+Product
+Bob Moesta's switch interview
 
-The page, the launch, the first customers and keeping them.
-Agents 11 to 15
+02
+Your Customer
+Services
+Jobs to be done and trigger-moment mapping
+Software
+April Dunford's best-fit customer derivation
+Product
+Bob Moesta's Four Forces of Progress
 
-11Landing Page
-A section-by-section page spec with the copy, ordered for one conversion goal and scored for clarity, relevance, value and anxiety.
+03
+Your Offer
+All models
+The Value Proposition Canvas
+Services
+Alex Hormozi's Grand Slam Offer
+Software
+Madhavan Ramanujam's leaders, fillers and killers
+Product
+Mark Joyner's The Irresistible Offer
 
-- ServicesStoryBrand, or problem-agitate-solve long form
-- SoftwareFletch and Anthony Pierri's homepage frameworks
-- ProductEugene Schwartz's awareness levels
-- All modelsPeep Laja's page scoring
+04
+Pricing
+Services
+Blair Enns's Pricing Creativity and Alan Weiss on value-based fees
+Software
+Madhavan Ramanujam's Monetizing Innovation
+Product
+Dan Ariely on anchoring and William Poundstone's Priceless
 
-12Launch
-A pre-launch, launch and post-launch plan with your warm list, the assets and a day-by-day calendar.
+05
+Positioning
+Services
+David C. Baker and Blair Enns on expertise positioning
+Software
+April Dunford's Obviously Awesome and Anthony Pierri
+Product
+Marty Neumeier, Al Ries and Jack Trout
+Local
+Category, geography and trust
+Media
+Beat, point of view and format
 
-- ServicesThe founding-client offer
-- SoftwareDesign partners, then beta, then launch week
-- ProductJeff Walker's Product Launch Formula or the drop model
-- LocalSoft opening, then grand opening
-- MarketplacesSupply first
+06
+Messaging
+Services
+The expertise claim from Baker and Enns, and Donald Miller's StoryBrand
+Software
+Anthony Pierri's headline formula and Emma Stratton's Make It Punchy
+Product
+Copyhackers voice-of-customer research
 
-13Get Customers
-Three channels to test, one to focus on, the numbers that decide and your weekly routine.
+07
+Go / No-Go
+Modes
+Quick roast for a raw idea, full gate before you spend money, post-launch check once you have data
 
-- All modelsThe Bullseye framework from Traction and Brian Balfour's channel-model fit
-- ServicesDaniel Priestley's Key Person of Influence
-- SoftwareBalfour's Four Fits, Predictable Revenue or growth loops
-- ProductPaid acquisition unit economics
-- MarketplacesSolving the cold-start problem
+08
+Landing Page
+Services
+StoryBrand, or problem-agitate-solve long form
+Software
+Fletch and Anthony Pierri's homepage frameworks
+Product
+Eugene Schwartz's awareness levels
+All models
+Peep Laja's page scoring
 
-14Convert
-Your path from lead to paid: discovery call, proposal and follow-up, or funnel, checkout and lifecycle emails.
+09
+Lead Magnet
+Services
+An audit or diagnostic
+Software
+A free tool
+Product
+A quiz
+Local
+A first-visit offer
+Media
+A content upgrade
 
-- ServicesBlair Enns's Win Without Pitching
-- SoftwareSPIN Selling, Sandler and Great Demo! for sales-led; activation for product-led
-- ProductBaymard checkout research and lifecycle flows
-- LocalThe CLOSER sales framework
-- MediaSponsor sales
+10
+Launch
+Services
+The founding-client offer
+Software
+Design partners, then beta, then launch week
+Product
+Jeff Walker's Product Launch Formula or the drop model
+Local
+Soft opening, then grand opening
+Marketplaces
+Supply first
 
-15Retain
-A client's first 90 days after they say yes: the activation milestone, onboarding, the engagement loop and when to ask for renewal or referrals.
+11
+Get Customers
+All models
+The Bullseye framework from Traction and Brian Balfour's channel-model fit
+Services
+Daniel Priestley's Key Person of Influence
+Software
+Balfour's Four Fits, Predictable Revenue or growth loops
+Product
+Paid acquisition unit economics
+Marketplaces
+Solving the cold-start problem
 
-- ServicesKickoff to a quick win within 30 days
-- SoftwareActivation and net revenue retention
-- ProductPost-purchase flows, RFM segmentation and Nir Eyal's Hook model
-- LocalRebooking at checkout
+12
+Convert
+Services
+Blair Enns's Win Without Pitching
+Software
+SPIN Selling, Sandler and Great Demo! for sales-led; activation for product-led
+Product
+Baymard checkout research and lifecycle flows
+Local
+The CLOSER sales framework
+Media
+Sponsor sales
+
+13
+Retain
+Services
+Kickoff to a quick win within 30 days
+Software
+Activation and net revenue retention
+Product
+Post-purchase flows, RFM segmentation and Nir Eyal's Hook model
+Local
+Rebooking at checkout
+
+14
+Founder Content
+Services
+David C. Baker's advice to publish the thinking you'd sell
+Software
+Andy Raskin's strategic narrative
+Product
+Founder story and distinctive brand assets
+Media
+An editorial system
+
+15
+The Numbers
+All models
+Lean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, contribution margin), bottom-up TAM and break-even
 
 ### All fifteen agents, plus the Expertise Audit
 
-299€ one-time. Free updates. Installs as Claude skills, in the app or Claude Code.
+399€
+299€ one-time · founding price through Sept 30 · free updates
+
 Get the Stack · 299€ →
 
 FAQ
-
 ## Questions, answered
 
-What do I need to run it?
+Is the 299€ price going up?
+Yes. 299€ is the founding price and it runs through Sept 30. After that The Stack is 399€. You pay once either way, and updates are free.
 
+What do I need to run it?
 Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
 
 How is this different from a set of prompts?
-
 Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced.
 
-Do I have to run the agents in order?
-
-No. Run the setup step first, then start wherever the pressure is. The recommended sequence starts with the Go / No-Go, and you're free to skip around.
-
 What if my business doesn't fit one model neatly?
-
 The setup step picks the closest model and notes the hybrid, for example services with a digital product on the side. Each agent uses the main model and flags where the second one changes the advice.
 
 What if I want help using it?
-
 The Read gives you my written diagnosis of what the agents produced. The Build is the same system with me 1:1 for three months. Compare the options →
 
 ## Build your offer with the agent that fits your business.
 
-299€ one-time, with free updates. Or start free with the Builder Diagnostic.
+299€ one-time through Sept 30, then 399€. Free updates. Or start free with the Builder Diagnostic.
+
 Get the Stack · 299€
 
 ---
