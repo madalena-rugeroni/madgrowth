@@ -35,6 +35,82 @@
     if (window.lintrk) window.lintrk("track", { event: name });
   }
 
+  // ---------- JS error reporting ----------
+  // A TypeError in diagnostic.js once killed the whole diagnostic for
+  // anyone who double-clicked an answer, and nothing surfaced it: it was
+  // only found weeks later, indirectly, through dead-click data. This
+  // reports uncaught errors so a broken script shows up as an event with
+  // a file and line number instead of silent drop-off.
+  //
+  // Deliberately narrow, because an unfiltered handler is mostly noise:
+  // only same-origin /assets/ scripts are reported, so browser
+  // extensions, injected third-party code and cross-origin scripts
+  // (which are opaque anyway) are ignored. Repeats of the same error are
+  // sent once, and the whole thing caps out per page load.
+  (function () {
+    var MAX_PER_PAGE = 5;
+    var sent = 0;
+    var seen = {};
+
+    // Same-origin and under /assets/ — i.e. a script from this site.
+    function isOurs(src) {
+      if (!src) return false;
+      try {
+        var u = new URL(src, location.href);
+        return u.origin === location.origin && u.pathname.indexOf("/assets/") === 0;
+      } catch (e) { return false; }
+    }
+
+    function report(name, params) {
+      if (sent >= MAX_PER_PAGE) return;
+      var key = name + "|" + params.message + "|" + params.source + "|" + params.lineno;
+      if (seen[key]) return;
+      seen[key] = 1;
+      sent++;
+      params.page = location.pathname;
+      track(name, params);
+    }
+
+    window.addEventListener("error", function (e) {
+      // Resource failures (a script or stylesheet that 404s) surface on
+      // the same event but target an element instead of window, and carry
+      // no message. Worth reporting for our own assets: a diagnostic.js
+      // that never loads looks identical to one that silently breaks.
+      if (e.target && e.target !== window && e.target.tagName) {
+        var url = e.target.src || e.target.href;
+        if (!isOurs(url)) return;
+        report("js_resource_error", {
+          message: e.target.tagName.toLowerCase() + " failed to load",
+          source: String(url).replace(location.origin, ""),
+          lineno: 0
+        });
+        return;
+      }
+      if (!isOurs(e.filename)) return;
+      report("js_error", {
+        message: String(e.message || "unknown").slice(0, 300),
+        source: String(e.filename || "").replace(location.origin, ""),
+        lineno: e.lineno || 0,
+        colno: e.colno || 0,
+        stack: e.error && e.error.stack ? String(e.error.stack).slice(0, 500) : ""
+      });
+    }, true); // capture phase: resource errors don't bubble
+
+    window.addEventListener("unhandledrejection", function (e) {
+      var r = e.reason;
+      var stack = r && r.stack ? String(r.stack) : "";
+      // No filename on a rejection, so fall back to the stack to decide
+      // whether this came from our own code. No stack, no report.
+      if (!stack || stack.indexOf(location.origin + "/assets/") === -1) return;
+      report("js_unhandled_rejection", {
+        message: String((r && r.message) || r || "unknown").slice(0, 300),
+        source: "promise",
+        lineno: 0,
+        stack: stack.slice(0, 500)
+      });
+    });
+  })();
+
   // ---------- Consent (GA4 Consent Mode + PostHog) ----------
   // GA4 starts with analytics_storage denied (see the inline head snippet).
   // PostHog uses cookieless_mode "on_reject": nothing is stored on the
