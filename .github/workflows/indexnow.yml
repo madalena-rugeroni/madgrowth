@@ -1,0 +1,54 @@
+name: IndexNow ping
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The default shallow clone has no parent commits, so `git diff` against
+          # github.event.before would fail with "bad object".
+          fetch-depth: 0
+
+      - name: Submit changed URLs to IndexNow (Bing, Yandex, Seznam, Naver)
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          # `before` is all zeros on a branch's first push and unreachable after a
+          # force push, so check the commit exists before diffing against it.
+          if [ -n "${BEFORE:-}" ] \
+             && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+             && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" -- '*.html' \
+              | sed -E 's#(^|/)index\.html$#/#; s#^/?#https://www.madgrowth.io/#' \
+              | sort -u)
+          else
+            CHANGED=""
+          fi
+
+          # Manual runs and first/force pushes have no usable diff: fall back to
+          # the sitemap rather than failing the job.
+          if [ -z "$CHANGED" ]; then
+            echo "No diffable HTML changes. Falling back to the sitemap."
+            CHANGED=$(curl -sS --fail https://www.madgrowth.io/sitemap.xml \
+              | grep -oE '<loc>[^<]+</loc>' \
+              | sed -E 's#</?loc>##g' \
+              | sort -u)
+          fi
+
+          echo "Submitting $(printf '%s\n' $CHANGED | wc -l) URL(s):"
+          printf '  %s\n' $CHANGED
+
+          URLS=$(printf '%s\n' $CHANGED | jq -R . | jq -s .)
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"www.madgrowth.io\",\"key\":\"2f49b80e736a40a58e88d6eaa985d1ff\",\"keyLocation\":\"https://www.madgrowth.io/2f49b80e736a40a58e88d6eaa985d1ff.txt\",\"urlList\":$URLS}" \
+            -w "\nIndexNow HTTP %{http_code}\n"
