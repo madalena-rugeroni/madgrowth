@@ -10,6 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- GA4 with Consent Mode: analytics cookies only after the visitor accepts.
+       Needed here too: MGutil.track() forwards the purchase event to gtag, so
+       without this block the sale reaches PostHog but never reaches GA4. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var mgConsent = null;
+    try { mgConsent = localStorage.getItem("mg_consent"); } catch (e) {}
+    gtag('consent', 'default', {
+      analytics_storage: mgConsent === 'granted' ? 'granted' : 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-6H3NDWYBL8');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6H3NDWYBL8"></script>
   <script src="../../assets/js/config.js"></script>
   <style>
     .thanks { max-width: 620px; }
@@ -22,31 +40,10 @@
       overflow-wrap: anywhere;
     }
     .thanks .next { margin-top: 30px; }
-    .stack-keep {
-      margin-top: 34px; padding: 22px 22px 24px;
-      border: 1px solid var(--line); border-radius: 12px;
-    }
-    .stack-keep h2 { font-size: 18px; margin: 0 0 8px; }
-    .stack-keep p { margin: 0 0 16px; font-size: 15px; }
-    .stack-keep .field { display: flex; flex-direction: column; gap: 10px; }
-    .stack-keep input[type="email"] {
-      width: 100%; padding: 12px 14px; font: inherit; font-size: 15px;
-      border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
-      color: var(--ink);
-    }
-    .stack-keep .consent {
-      display: flex; gap: 10px; align-items: flex-start;
-      font-size: 14px; color: var(--ink-soft); line-height: 1.45;
-    }
-    .stack-keep .consent input { margin-top: 3px; flex: 0 0 auto; }
-    .stack-keep button { margin-top: 4px; }
-    .form-status { margin-top: 12px; font-size: 14px; }
-    .form-status.ok { color: var(--ok, #157f3d); }
-    .form-status.err { color: var(--err, #b3261e); }
-    @media (min-width: 560px) {
-      .stack-keep .row { display: flex; gap: 10px; }
-      .stack-keep .row input[type="email"] { flex: 1 1 auto; }
-      .stack-keep .row button { margin-top: 0; white-space: nowrap; }
+    .thanks .soft-optin {
+      margin-top: 26px; padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 14px; color: var(--muted);
     }
   </style>
 </head>
@@ -69,38 +66,26 @@
         <p>If it hasn't arrived in ten minutes, check your Promotions and spam folders, then email <a href="mailto:madalena@madgrowth.io">madalena@madgrowth.io</a> and I'll send it straight over. Your Stripe receipt comes separately.</p>
 
         <!--
-          Buyer capture. Stripe has the buyer's email but a static page can't
-          read it, so this asks for it again — it is also where the newsletter
-          consent lives, which Stripe can't give us either.
+          The email capture form that used to sit here is gone. Make now
+          reads the address straight off the Stripe checkout and creates the
+          Kit subscriber, so asking a buyer to retype an address we already
+          have was friction for nothing — and it only ever worked for people
+          who didn't close the tab.
 
-          Both tags matter and they are deliberately independent:
-            stack-customer  always — starts "The Stack — Onboarding" in Kit
-            newsletter      only when the box is ticked
+          The newsletter consent checkbox went with it. Buyers are added to
+          the newsletter under the soft opt-in for existing customers
+          (ePrivacy Art. 13(2) / DL 7/2004): their address was collected in
+          the course of a sale, the newsletter is Madgrowth's own similar
+          content, and they get an unsubscribe link in every email plus the
+          notice below at the point of collection.
 
-          The box is unticked by default and must stay that way. A pre-ticked
-          box is not consent.
-
-          Hidden entirely until KIT_STACK_FORM_ID is set in config.js, so a
-          buyer never meets a form that silently fails.
+          That notice is doing real legal work, so keep it visible on the
+          page. The same sentence inside the linked terms would NOT do —
+          that is the bundled-consent pattern GDPR Art. 7(2) rules out.
+          Soft opt-in covers Madgrowth's own content only; it is not a basis
+          for marketing Mazo or anything else to this list.
         -->
-        <div class="stack-keep" id="stack-keep" hidden>
-          <h2>Want the rest of it?</h2>
-          <p>I'll send your onboarding emails here: how to get it installed, which skills to run first, and the free updates as they ship.</p>
-          <form id="stack-keep-form" novalidate>
-            <div class="field">
-              <div class="row">
-                <label class="sr-only" for="stack-email">Your email address</label>
-                <input type="email" id="stack-email" name="email" placeholder="the email you paid with" autocomplete="email" required>
-                <button class="btn btn-primary" type="submit">Send them</button>
-              </div>
-              <label class="consent">
-                <input type="checkbox" id="stack-consent" name="consent">
-                <span>Also send me the Madgrowth newsletter — most Thursdays, on building this in the open. Unsubscribe any time.</span>
-              </label>
-            </div>
-          </form>
-          <p class="form-status" id="stack-keep-status" role="status" aria-live="polite"></p>
-        </div>
+        <p class="soft-optin">I'll also add you to the Madgrowth newsletter — most Thursdays, on building this in the open. Every email has an unsubscribe link, and one click is enough.</p>
 
         <p class="next">
           <a class="btn btn-primary" href="../../diagnostic/" data-event="diagnostic_cta_click">Run the Builder Diagnostic</a>
@@ -141,7 +126,7 @@
     try { if (window.localStorage && localStorage.getItem(KEY)) return; } catch (e) {}
     function send() {
       if (!window.MGutil || typeof window.MGutil.track !== "function") return false;
-      window.MGutil.track("purchase", {
+      var delivered = window.MGutil.track("purchase", {
         product: "the_stack",
         product_name: "The Stack",
         // From config, not hardcoded: the founding price rises to 399 on
@@ -151,6 +136,10 @@
         order_id: order,
         source: "stripe_redirect"
       });
+      // Only remember the order once an analytics sink actually took it.
+      // Flagging on "called" would burn the order permanently if the retry
+      // loop ran before gtag/posthog existed.
+      if (!delivered) return false;
       try { if (window.localStorage) localStorage.setItem(KEY, "1"); } catch (e) {}
       return true;
     }
@@ -161,70 +150,6 @@
     }, 100);
   })();
 
-  // ---------- Buyer capture + newsletter consent ----------
-  // main.js is deferred, so MGKit/MGutil are not there yet at parse time.
-  document.addEventListener("DOMContentLoaded", function () {
-    var MG = window.MG || {};
-    var box = document.getElementById("stack-keep");
-    var form = document.getElementById("stack-keep-form");
-    var status = document.getElementById("stack-keep-status");
-    var email = document.getElementById("stack-email");
-    var consent = document.getElementById("stack-consent");
-    var button = form.querySelector('button[type="submit"]');
-
-    if (!window.MGKit || !window.MGutil) return;
-    // No form configured yet: show nothing rather than a form that 404s.
-    if (window.MGutil.isPlaceholder(MG.KIT_STACK_FORM_ID)) {
-      console.warn("Madgrowth config: set KIT_STACK_FORM_ID in assets/js/config.js — Stack buyer capture is hidden until then");
-      return;
-    }
-    box.hidden = false;
-
-    function say(msg, cls) {
-      status.className = "form-status" + (cls ? " " + cls : "");
-      status.textContent = msg;
-    }
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var value = (email.value || "").trim();
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-        say("Enter a valid email address.", "err");
-        email.focus();
-        return;
-      }
-      var optedIn = !!consent.checked;
-      // Every buyer is a customer; only the ticked box adds the newsletter.
-      var tags = ["stack-customer"];
-      if (optedIn) tags.push("newsletter", "gdpr-consent");
-
-      var fields = { stack_purchased_at: new Date().toISOString() };
-      if (order) fields.order_id = order;
-      if (optedIn) {
-        fields.consent_source = "stack_thanks_page";
-        fields.consent_at = new Date().toISOString();
-      }
-
-      button.disabled = true;
-      say("One moment…");
-
-      window.MGKit.subscribe(value, tags, fields, MG.KIT_STACK_FORM_ID)
-        .then(function () {
-          say(optedIn
-            ? "Done. Your onboarding emails and the newsletter are on their way."
-            : "Done. Your onboarding emails are on their way.", "ok");
-          form.reset();
-          window.MGutil.track("stack_buyer_capture", {
-            newsletter_opt_in: optedIn,
-            order_id: order || null
-          });
-        })
-        .catch(function () {
-          say("That didn't go through. Email madalena@madgrowth.io and I'll add you by hand.", "err");
-        })
-        .then(function () { button.disabled = false; });
-    });
-  });
 })();
 </script>
 </body>

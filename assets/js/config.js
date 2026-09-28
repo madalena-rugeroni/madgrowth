@@ -38,16 +38,11 @@ window.MG = {
   // Newsletter form ("Newsletter form" in Kit, the one the welcome
   // automation listens to). Used by /newsletter/.
   KIT_NEWSLETTER_FORM_ID: "7572611",
-  // Form the Stack thank-you page posts to. This must be a form with NO
-  // automation attached to it: buyers land here whether or not they opted
-  // into the newsletter, and the tags below decide what happens next.
-  // Reusing the newsletter form would subscribe people who said no — the
-  // Builder Diagnostic form, for instance, starts its own nurture sequence.
-  // "The Stack - buyers": nothing attached, and confirmation email off so
-  // buyers land active instead of waiting on a double opt-in they'd never
-  // complete. Verified end to end: subscribe -> tags -> automation ->
-  // "The Stack — Onboarding", delivery email out in ~1 minute.
-  // If this is ever blanked the capture form hides rather than failing.
+  // "The Stack - buyers" (no automation attached, confirmation email off).
+  // Currently UNUSED: the thank-you page no longer captures emails, because
+  // Make reads the address straight off the Stripe checkout and creates the
+  // Kit subscriber itself. Kept because the form exists in Kit and is the
+  // obvious fallback if that ever needs to move back into the page.
   KIT_STACK_FORM_ID: "9972351",
   // Kit tag IDs (numeric). Find them in Kit → Grow → Tags.
   // One tag per Builder Archetype.
@@ -67,12 +62,15 @@ window.MG = {
     "venture-builder": "23370418",
     "orchestrator": "23370420",
     "newsletter": "5968512",
-    // Applied to every Stack buyer on the thank-you page. Kit's automation
-    // uses it to start "The Stack — Onboarding", so it goes on regardless
-    // of whether the buyer wanted the newsletter.
+    // Both of these are applied by MAKE, not by this site: the Stack
+    // scenario tags the buyer straight off the Stripe webhook. Listed here
+    // so the ids live in one place, not because the site sends them.
+    // "stack-customer" starts "The Stack — Onboarding" in Kit.
     "stack-customer": "24062185",
-    // The consent audit trail the diagnostic already uses; applied here
-    // only when the buyer ticks the newsletter box.
+    // Consent audit trail, used by the diagnostic gate. NOT applied to Stack
+    // buyers: they are on the soft opt-in for existing customers, which is a
+    // different legal basis, and recording it as consent would be a false
+    // audit record. Their basis is stamped on newsletter_basis instead.
     "gdpr-consent": "8086275"
   },
 
