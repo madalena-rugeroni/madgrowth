@@ -478,7 +478,6 @@ section.alt .alt-card { background: #fff; }
 .spec-name { font-weight: 700; font-size: 1.1rem; }
 .spec-price { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.02em; }
 .spec-price small { font-size: 0.82rem; font-weight: 500; color: var(--muted); letter-spacing: 0; margin-left: 6px; }
-.spec-was { font-size: 1.05rem; font-weight: 500; color: var(--muted); text-decoration: line-through; letter-spacing: 0; margin-right: 8px; }
 .spec-phases { list-style: none; border-top: 1px solid var(--line); width: 100%; }
 .spec-phases li { display: flex; justify-content: space-between; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 0.94rem; }
 .spec-phases a { color: var(--ink); font-weight: 500; }
@@ -549,7 +548,6 @@ section.alt .alt-card { background: #fff; }
 .stack-buy h3 { font-size: 1.3rem; color: #fff; }
 .stack-buy p { color: #c9c9c9; font-size: 0.95rem; margin-top: 6px; }
 .stack-buy p strong { color: #fff; }
-.buy-was { text-decoration: line-through; color: #8a8a8a; }
 .stack-buy .btn-primary { background: #fff; color: var(--ink); }
 .stack-buy .btn-primary:hover { background: var(--accent-ink); color: #fff; }
 
@@ -597,22 +595,6 @@ section.alt .alt-card { background: #fff; }
 }
 .card h3 { font-size: 1.3rem; }
 .price { font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink-soft); }
-.price-was { text-decoration: line-through; color: var(--muted); margin-right: 6px; font-weight: 400; }
-.price-now { font-weight: 800; font-size: 1.2rem; color: var(--ink); letter-spacing: -0.01em; }
-.badge-founding {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--accent-ink);
-  background: var(--accent-glow);
-  border: 1px solid var(--accent);
-  padding: 5px 11px;
-  border-radius: 999px;
-}
 .card > p { color: var(--ink-soft); font-size: 0.97rem; }
 .card ul { list-style: none; display: grid; gap: 10px; }
 .card li { padding-left: 24px; position: relative; font-size: 0.94rem; color: var(--ink-soft); }

@@ -5,7 +5,7 @@
    ============================================================ */
 window.MG = {
   // --- Stripe Payment Links (see README) ---
-  // The Stack: 299€ one-time, self-serve.
+  // The Stack: 399€ one-time, self-serve.
   //
   // The Read: 599€ one-time, fully async. The post-payment chain is
   // live and wired end to end:
@@ -21,11 +21,11 @@ window.MG = {
 
   // --- Advertised prices, in EUR ---
   // Advertised price must equal the charged price, so these track Stripe.
-  // The Stack is 299 as a founding price through 30 September 2026 and 399
-  // from 1 October. STACK_PRICE_EUR is the value sent with the "purchase"
-  // event on /stack/thanks/ — change it the same day the Stripe link and the
-  // page copy change, or reported revenue silently understates every sale.
-  STACK_PRICE_EUR: 299,
+  // The Stack is 399 one-time, with no founding or promotional price beside
+  // it. STACK_PRICE_EUR is the value sent with the "purchase" event on
+  // /stack/thanks/ — change it the same day the Stripe link and the page copy
+  // change, or reported revenue silently misstates every sale.
+  STACK_PRICE_EUR: 399,
   STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
   // --- Calendly ---

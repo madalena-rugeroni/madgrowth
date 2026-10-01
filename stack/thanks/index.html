@@ -129,8 +129,8 @@
       var delivered = window.MGutil.track("purchase", {
         product: "the_stack",
         product_name: "The Stack",
-        // From config, not hardcoded: the founding price rises to 399 on
-        // 1 October and a literal here would understate every later sale.
+        // From config, not hardcoded: a literal here would silently misstate
+        // every sale the next time the price moves.
         value: (window.MG || {}).STACK_PRICE_EUR,
         currency: "EUR",
         order_id: order,

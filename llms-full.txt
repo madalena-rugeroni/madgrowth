@@ -90,7 +90,7 @@ A content plan built from your messaging and one lead magnet that leads to your 
 Who pays first?
 The landing page, the launch plan, your acquisition channels, the sales conversation and a client's first 90 days.
 
-The Stack · 299€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Read · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
+The Stack · 399€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Read · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
 
 Who it's for
 
@@ -142,8 +142,7 @@ Start free: the Builder Diagnostic shows which business fits how you work and th
 
 Do it yourself · 15 AI agents
 
-Founding price · through Sept 30
-399€ 299€ · one-time (399€ from 1 October 2026)
+399€ · one-time
 
 Fifteen AI agents that run in Claude and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
@@ -154,7 +153,7 @@ Fifteen AI agents that run in Claude and work as one system. The first asks eigh
 - Launch it (08–15): Landing Page · Lead Magnet · Launch · Get Customers · Convert · Retain · Founder Content · The Numbers
 - Run them in any order. The system keeps track.
 - Free updates
-Get the Stack · 299€
+Get the Stack · 399€
 See every agent and the frameworks behind it →
 
 Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
@@ -246,7 +245,7 @@ Price against the cost of the problem and the full-time hire the client would ot
 
 The Stack, The Read or The Build?
 
-They follow the same five steps. The Stack is the fifteen agents to run on your own (299€ once). The Read is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1 (1,200€/month, 3-month minimum). If you're unsure, book the free 20-minute call from The Build card.
+They follow the same five steps. The Stack is the fifteen agents to run on your own (399€ once). The Read is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1 (1,200€/month, 3-month minimum). If you're unsure, book the free 20-minute call from The Build card.
 
 Do I have to run the skills in order?
 
@@ -279,14 +278,12 @@ The Stack · 15 AI agents
 
 Answer eight questions once. Every agent after that runs the frameworks built for your exact business model — software, services, product, local or media.
 
-Get the Stack · 299€ → See the fifteen agents ↓
-Founding price through Sept 30. 399€ after that.
+Get the Stack · 399€ → See the fifteen agents ↓
+One-time payment. Free updates.
 
 Built by Madalena Rugeroni · ex-Google, advisor and investor · scaled startups from 0 to $10M in revenue
 The Stack
-399€
-299€ one-time
-Founding price · through Sept 30
+399€ one-time
 15 agents
 Idea → launch
 6 business models
@@ -588,16 +585,15 @@ Lean Analytics' One Metric That Matters, unit economics (CAC, LTV, payback, cont
 
 ### All fifteen agents, plus the Expertise Audit
 
-399€
-299€ one-time · founding price through Sept 30 · free updates
+399€ one-time · free updates
 
-Get the Stack · 299€ →
+Get the Stack · 399€ →
 
 FAQ
 ## Questions, answered
 
-Is the 299€ price going up?
-Yes. 299€ is the founding price and it runs through Sept 30. After that The Stack is 399€. You pay once either way, and updates are free.
+Is 399€ a one-time price or a subscription?
+One-time. You pay 399€ once, you keep all fifteen agents, and updates are free.
 
 What do I need to run it?
 Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
@@ -613,9 +609,9 @@ The Read gives you my written diagnosis of what the agents produced. The Build i
 
 ## Build your offer with the agent that fits your business.
 
-299€ one-time through Sept 30, then 399€. Free updates. Or start free with the Builder Diagnostic.
+399€ one-time. Free updates. Or start free with the Builder Diagnostic.
 
-Get the Stack · 299€
+Get the Stack · 399€
 
 ---
 
@@ -1370,7 +1366,7 @@ No. Madgrowth is an independent business run by Madalena Rugeroni. The skills ar
 
 ## Start with the free Expertise Audit
 
-The Expertise Audit finds your three strongest monetizable angles from the career you already have, in about ten minutes. It comes by email with the free Builder Diagnostic. When you're ready for the rest, The Stack is 299€ one-time.
+The Expertise Audit finds your three strongest monetizable angles from the career you already have, in about ten minutes. It comes by email with the free Builder Diagnostic. When you're ready for the rest, The Stack is 399€ one-time.
 Get the free Expertise Audit →
 Madgrowth is independent and not affiliated with Anthropic. Claude is a product of Anthropic.
 
@@ -2667,7 +2663,7 @@ The formats that fit experienced operators:
 
 - Templates. One asset that saves one specific piece of work: a board deck, a hiring scorecard, a pricing calculator, an incident review doc.
 - Toolkits. Several templates plus instructions for one job. For example, everything a new head of product needs for their first quarterly planning cycle.
-- AI agents and Claude skills. A Claude skill is a folder of instructions (a SKILL.md file plus optional reference files) that Claude loads when a task matches it. You sell your method, and the buyer runs it on their own situation. This is the format I'd bet on for operators right now, because it applies your thinking to the buyer's case every time they run it. The Stack is my example: 15 AI agents for positioning, pricing and launching a business, sold for 299€ and installed as Claude skills. The format itself is explained in Claude skills for business.
+- AI agents and Claude skills. A Claude skill is a folder of instructions (a SKILL.md file plus optional reference files) that Claude loads when a task matches it. You sell your method, and the buyer runs it on their own situation. This is the format I'd bet on for operators right now, because it applies your thinking to the buyer's case every time they run it. The Stack is my example: 15 AI agents for positioning, pricing and launching a business, sold for 399€ and installed as Claude skills. The format itself is explained in Claude skills for business.
 - Self-serve courses. Recorded lessons with exercises, bought once and watched at the buyer's pace.
 - Paid communities. A monthly membership around a shared problem. It only works if you show up every week, so I'd treat it as an audience business more than a product.
 A productized service is a fixed scope of work at a fixed price, sold like a product and delivered by you. You're still doing the work, so it sits outside the definition above. It's often the right first step anyway, so it gets its own section below.
@@ -2828,7 +2824,7 @@ It depends on scope, so I'd start with the smallest version that delivers one re
 
 Can you make money selling Claude skills?
 
-Yes, if the skill packages a method people already pay for and ends with an output they can use straight away. The buyers already work in Claude, so the market is smaller than for a PDF template, and the install step needs clear instructions. I sell The Stack this way: 15 AI agents installed as Claude skills, 299€.
+Yes, if the skill packages a method people already pay for and ends with an output they can use straight away. The buyers already work in Claude, so the market is smaller than for a PDF template, and the install step needs clear instructions. I sell The Stack this way: 15 AI agents installed as Claude skills, 399€.
 
 Should my first digital product be free?
 
