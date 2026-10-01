@@ -243,7 +243,9 @@
       window.MGutil.track("purchase", {
         product: "the_read",
         product_name: "The Read",
-        value: 599,
+        // From config, not hardcoded, for the same reason as the Stack page: a
+        // literal here misstates every sale the next time the price moves.
+        value: (window.MG || {}).READ_PRICE_EUR,
         currency: "EUR",
         order_id: order,
         source: "stripe_redirect"
@@ -252,6 +254,30 @@
       return true;
     }
     // main.js is deferred, so MGutil may not exist yet on first tick.
+    if (send()) return;
+    var tries = 0;
+    var t = setInterval(function () {
+      if (send() || ++tries > 40) clearInterval(t);
+    }, 100);
+  })();
+
+  // Email Madalena that the sale happened. Independent of the analytics call
+  // above on purpose: that one is consent-gated downstream and silently no-ops
+  // when the visitor refused cookies, and its de-dupe key is its own. A sale
+  // must reach her inbox either way.
+  (function alertSale() {
+    if (!order) return;
+    function send() {
+      if (!window.MGutil || typeof window.MGutil.notifySale !== "function") return false;
+      return window.MGutil.notifySale({
+        product_name: "The Read",
+        value: (window.MG || {}).READ_PRICE_EUR,
+        currency: "EUR",
+        order_id: order,
+        next: "Buyer is on the intake form now. Confirm by hand once their answers arrive - the 5 business days run from that confirmation."
+      });
+    }
+    // main.js is deferred, so MGutil may not exist yet on the first tick.
     if (send()) return;
     var tries = 0;
     var t = setInterval(function () {

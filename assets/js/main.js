@@ -10,7 +10,7 @@
   var MG = window.MG || {};
 
   function isPlaceholder(v) {
-    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LINKEDIN_PARTNER|POSTHOG_)/.test(String(v));
+    return !v || /^(STRIPE_LINK|CALENDLY|KIT_|LINKEDIN_PARTNER|POSTHOG_|SALE_ALERT)/.test(String(v));
   }
 
   function withUTM(url) {
@@ -547,7 +547,77 @@
     }
   };
 
-  window.MGutil = { withUTM: withUTM, track: track, isPlaceholder: isPlaceholder };
+  // ---------- Sale alert: email Madalena the moment a sale lands ----------
+  //
+  // Why this exists at all: a Stack sale went through on 30 Sep 2026 and the
+  // only reason it was noticed is that the buyer said so. Stripe's own
+  // "successful payments" email is the authoritative alert and it is the
+  // first thing to keep switched on — but it is a dashboard setting that can
+  // be turned off, throttled or filtered without anything here changing, and
+  // when it goes quiet it goes quiet silently. This is the second, independent
+  // signal, so both have to fail before a sale goes unnoticed again.
+  //
+  // Deliberately NOT gated on the cookie banner. It is not analytics: it is
+  // Madgrowth emailing itself a record of its own order, which is the sale's
+  // performance of contract, not tracking of the visitor. Nothing about the
+  // visitor is sent beyond the Stripe order reference, and no cookie or
+  // storage is read for it other than the de-dupe key below.
+  //
+  // What it cannot do: the buyer's email address is not in the redirect URL,
+  // so the alert names the order, not the person. Stripe's receipt and the
+  // Make delivery email carry the address.
+  function notifySale(opts) {
+    opts = opts || {};
+    var order = opts.order_id;
+    if (!order) return false;
+
+    var endpoint = (window.MG || {}).SALE_ALERT_ENDPOINT;
+    if (!endpoint || isPlaceholder(endpoint)) {
+      console.warn("Madgrowth config: set SALE_ALERT_ENDPOINT in assets/js/config.js");
+      return false;
+    }
+
+    // Its own key, separate from the analytics "mg_purchase_" one. If they
+    // shared a key, an analytics send that landed before this one would mark
+    // the order done and the alert would never be sent for it.
+    var KEY = "mg_sale_alert_" + order;
+    try { if (window.localStorage && localStorage.getItem(KEY)) return true; } catch (e) {}
+
+    var price = opts.value;
+    var amount = (price || price === 0) ? price + " " + (opts.currency || "EUR") : "see Stripe";
+
+    // Written to be read on a phone lock screen: product and amount are in
+    // the subject, so the alert does not need opening to be understood.
+    var body = {
+      _subject: "Sale: " + (opts.product_name || "Madgrowth") + " - " + amount,
+      _template: "table",
+      Product: opts.product_name || "unknown",
+      Amount: amount,
+      "Stripe order": order,
+      "Paid at": new Date().toISOString(),
+      "What to do next": opts.next || "",
+      "Open in Stripe": "https://dashboard.stripe.com/payments?query=" + encodeURIComponent(order)
+    };
+
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(body)
+    })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+      .then(function (res) {
+        // Only burn the key once the relay actually accepted it. Flagging on
+        // "sent" would lose the alert for good on a network blip, which is
+        // the exact failure this whole function exists to stop.
+        if (!res.ok || String(res.body.success) !== "true") return;
+        try { if (window.localStorage) localStorage.setItem(KEY, "1"); } catch (e) {}
+      })
+      .catch(function () { /* nothing useful to tell the buyer; keep the key unset */ });
+
+    return true;
+  }
+
+  window.MGutil = { withUTM: withUTM, track: track, isPlaceholder: isPlaceholder, notifySale: notifySale };
 
   // ---------- Newsletter forms: <form data-kit-form="newsletter"> ----------
   document.addEventListener("DOMContentLoaded", function () {

@@ -150,6 +150,30 @@
     }, 100);
   })();
 
+  // Email Madalena that the sale happened. Independent of the analytics call
+  // above on purpose: that one is consent-gated downstream and silently no-ops
+  // when the visitor refused cookies, and its de-dupe key is its own. A sale
+  // must reach her inbox either way.
+  (function alertSale() {
+    if (!order) return;
+    function send() {
+      if (!window.MGutil || typeof window.MGutil.notifySale !== "function") return false;
+      return window.MGutil.notifySale({
+        product_name: "The Stack",
+        value: (window.MG || {}).STACK_PRICE_EUR,
+        currency: "EUR",
+        order_id: order,
+        next: "Make sends the download automatically. Check it went out."
+      });
+    }
+    // main.js is deferred, so MGutil may not exist yet on the first tick.
+    if (send()) return;
+    var tries = 0;
+    var t = setInterval(function () {
+      if (send() || ++tries > 40) clearInterval(t);
+    }, 100);
+  })();
+
 })();
 </script>
 </body>

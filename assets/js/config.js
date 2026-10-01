@@ -27,6 +27,23 @@ window.MG = {
   // change, or reported revenue silently misstates every sale.
   STACK_PRICE_EUR: 399,
   STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
+  // The Read is 599 one-time. Same rule as STACK_PRICE_EUR: this is the value
+  // reported with the "purchase" event and named in the sale alert, so it moves
+  // the same day the Stripe link and the page copy move.
+  READ_PRICE_EUR: 599,
+
+  // --- Sale alerts to madalena@madgrowth.io ---
+  // FormSubmit relay that emails Madalena the moment a sale lands. Same
+  // endpoint the Read intake posts to, so there is one address to maintain and
+  // it is already a proven delivery path.
+  //
+  // This is the BACKUP alert, not the primary one. The primary is Stripe's own
+  // "Successful payments" email, in Stripe Dashboard - Settings - Personal -
+  // Notifications, switched on for the MADGROWTH account. Keep that on: it
+  // fires from Stripe's servers on every sale whatever the buyer's browser
+  // does, whereas this one needs the buyer to land back on the site. Neither
+  // alone is enough, which is the point of having both.
+  SALE_ALERT_ENDPOINT: "https://formsubmit.co/ajax/86e5daedf3853fb19517df046744cea7",
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on The Build card (per brief §3.5).
