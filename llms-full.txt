@@ -146,10 +146,10 @@ Do it yourself · 15 AI agents
 
 Fifteen AI agents that run in Claude and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
-- Learn it (01–02): Talk to Customers · Your Customer
-- Package it (03–04): Your Offer · Pricing
-- Position it (05–06): Positioning · Messaging
-- Decide (07): Go / No-Go, scored against your Builder Archetype and your business idea
+- Learn it (01–02): Your Customer · Your Offer
+- Package it (03–04): Pricing · Positioning
+- Position it (05–06): Messaging · Go / No-Go
+- Decide (07): Talk to Customers, ten conversations and what you actually heard
 - Launch it (08–15): Landing Page · Lead Magnet · Launch · Get Customers · Convert · Retain · Founder Content · The Numbers
 - Run them in any order. The system keeps track.
 - Free updates
@@ -339,39 +339,39 @@ Launch it
 Before agent 01: the setup step, eight questions that every agent reads, and the free Expertise Audit — your three strongest angles from the career you already have. Both included.
 
 01
-### Talk to Customers
-
-Ten conversations, and what you actually heard.
-
-02
 ### Your Customer
 
 An ICP with an evidence grade on every claim.
 
-03
+02
 ### Your Offer
 
 What's included, for whom, with what guarantee.
 
-04
+03
 ### Pricing
 
 A price you can defend, and the anchor that holds it.
 
-05
+04
 ### Positioning
 
 Why they pick you over the alternative.
 
-06
+05
 ### Messaging
 
 One core message, three proof-backed pillars.
 
-07
+06
 ### Go / No-Go
 
 A verdict on your idea, scored against how you work.
+
+07
+### Talk to Customers
+
+Ten conversations, and what you actually heard.
 
 08
 ### Landing Page
@@ -429,15 +429,6 @@ Covers
 Business model, stage, sales motion, price band, solo or team, Builder Archetype, geography and build capacity
 
 01
-Talk to Customers
-Services
-Trigger-moment research and Blair Enns's diagnose-first method
-Software
-The Mom Test and Teresa Torres's Continuous Discovery Habits
-Product
-Bob Moesta's switch interview
-
-02
 Your Customer
 Services
 Jobs to be done and trigger-moment mapping
@@ -446,7 +437,7 @@ April Dunford's best-fit customer derivation
 Product
 Bob Moesta's Four Forces of Progress
 
-03
+02
 Your Offer
 All models
 The Value Proposition Canvas
@@ -457,7 +448,7 @@ Madhavan Ramanujam's leaders, fillers and killers
 Product
 Mark Joyner's The Irresistible Offer
 
-04
+03
 Pricing
 Services
 Blair Enns's Pricing Creativity and Alan Weiss on value-based fees
@@ -466,7 +457,7 @@ Madhavan Ramanujam's Monetizing Innovation
 Product
 Dan Ariely on anchoring and William Poundstone's Priceless
 
-05
+04
 Positioning
 Services
 David C. Baker and Blair Enns on expertise positioning
@@ -479,7 +470,7 @@ Category, geography and trust
 Media
 Beat, point of view and format
 
-06
+05
 Messaging
 Services
 The expertise claim from Baker and Enns, and Donald Miller's StoryBrand
@@ -488,10 +479,19 @@ Anthony Pierri's headline formula and Emma Stratton's Make It Punchy
 Product
 Copyhackers voice-of-customer research
 
-07
+06
 Go / No-Go
 Modes
 Quick roast for a raw idea, full gate before you spend money, post-launch check once you have data
+
+07
+Talk to Customers
+Services
+Trigger-moment research and Blair Enns's diagnose-first method
+Software
+The Mom Test and Teresa Torres's Continuous Discovery Habits
+Product
+Bob Moesta's switch interview
 
 08
 Landing Page
