@@ -17,7 +17,7 @@ window.MG = {
   //     to the payment.
   // The buyer then gets a confirmation from Madalena by hand; the
   // 5 business days run from that confirmation, not from submission.
-  STRIPE_LINK_STACK: "https://buy.stripe.com/9B6eVe2JXftc7xZ2WJ0Ny01",
+  STRIPE_LINK_STACK: "https://buy.stripe.com/14AfZi5W91CmaKbcxj0Ny02",
 
   // --- Advertised prices, in EUR ---
   // Advertised price must equal the charged price, so these track Stripe.
