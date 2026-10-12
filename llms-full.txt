@@ -90,7 +90,7 @@ A content plan built from your messaging and one lead magnet that leads to your 
 Who pays first?
 The landing page, the launch plan, your acquisition channels, the sales conversation and a client's first 90 days.
 
-The Stack · 399€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Read · 599€ I review where you are A written diagnosis across the five steps and what to fix first. You do the work.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
+The Stack · 399€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
 
 Who it's for
 
@@ -136,7 +136,7 @@ Products
 
 ## Start where you are
 
-Start free: the Builder Diagnostic shows which business fits how you work and the Expertise Audit finds your angle. From there, run the agents yourself with The Stack, get my written review with The Read, or build it with me in The Build.
+Start free: the Builder Diagnostic shows which business fits how you work and the Expertise Audit finds your angle. From there, run the agents yourself with The Stack, or build it with me in The Build.
 
 ### The Stack
 
@@ -157,20 +157,6 @@ Get the Stack · 399€
 See every agent and the frameworks behind it →
 
 Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
-
-### The Read
-
-Written diagnosis · 5 business days
-
-599€ · one-time
-
-An honest assessment before you spend three months on the wrong thing. Send me what you have: the idea, your LinkedIn, a draft offer or a live site. I'll score it against the five steps (decide, position, package, audience, launch), show you where it breaks and what to fix first. It's the scorecard I use on my own launches. If the angle is weak, I'll tell you.
-
-- Scored across all 5 steps, with a 90-day roadmap
-- Written diagnosis within 5 business days of confirming your intake, fully async
-- A direct verdict: some Reads conclude you should wait, tighten the offer yourself or start with The Stack
-- Credited toward The Build if you continue within 14 days
-Get the Read · 599€
 
 ### The Build
 
@@ -243,9 +229,9 @@ How should I price a fractional role or consulting offer?
 
 Price against the cost of the problem and the full-time hire the client would otherwise make, and sell a defined monthly scope in place of hours. The Pricing skill in The Stack runs this with Blair Enns and Alan Weiss for services and Madhavan Ramanujam for software.
 
-The Stack, The Read or The Build?
+The Stack or The Build?
 
-They follow the same five steps. The Stack is the fifteen agents to run on your own (399€ once). The Read is my written review of where you are on each step (599€). The Build is all five steps with me, 1:1 (1,200€/month, 3-month minimum). If you're unsure, book the free 20-minute call from The Build card.
+They follow the same five steps. The Stack is the fifteen agents to run on your own (399€ once). The Build is all five steps with me, 1:1 (1,200€/month, 3-month minimum). If you're unsure, book the free 20-minute call from The Build card.
 
 Do I have to run the skills in order?
 
@@ -253,7 +239,7 @@ No. The first agent you run asks eight questions about your business, once. Ever
 
 Can I talk to you before starting The Build?
 
-Yes. Book the 20-minute call from The Build card and bring your diagnostic profile. If you want an in-depth review of your plan, that's The Read.
+Yes. Book the 20-minute call from The Build card and bring your diagnostic profile.
 
 I'm already running a startup. Where can I get go-to-market help?
 
@@ -605,7 +591,7 @@ What if my business doesn't fit one model neatly?
 The setup step picks the closest model and notes the hybrid, for example services with a digital product on the side. Each agent uses the main model and flags where the second one changes the advice.
 
 What if I want help using it?
-The Read gives you my written diagnosis of what the agents produced. The Build is the same system with me 1:1 for three months. Compare the options →
+The Build is the same system with me 1:1 for three months. Compare the options →
 
 ## Build your offer with the agent that fits your business.
 
@@ -1739,7 +1725,7 @@ Fractional is the wrong fit if you don't want to own a function's results week t
 
 ## Check whether fractional suits how you work
 
-The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype and which business models fit it, fractional roles included. If you already have a draft offer and want my written view before you take it to your network, that's The Read.
+The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype and which business models fit it, fractional roles included. If you already have a draft offer and want help taking it to your network, that's The Build.
 Run the Builder Diagnostic
 
 ## Questions people ask
@@ -1803,7 +1789,7 @@ Jonathan Stark has been making the case against hourly billing for years: it pun
 
 I agree with both. A day rate is a useful number to keep in your head and a weak thing to sell.
 
-The Read on this site is a simple productized example: a written diagnosis at a fixed 599€, delivered within 5 business days of confirming the intake. The buyer knows the price, the scope and the date before they pay.
+The Stack on this site is a simple productized example: fifteen AI agents at a fixed 399€, delivered the moment you pay. The buyer knows the price and the scope before they pay.
 
 ## How much do fractional executives charge in Europe?
 
@@ -1918,7 +1904,7 @@ How to do it without drama:
 
 ## Find the pricing model that fits how you work
 
-The Builder Diagnostic is free and takes about 3 minutes. It shows your Builder Archetype and which business models suit how you like to work, so you know whether a retainer, a fixed-price offer or a product should come first. If you already have an offer and want a written verdict on it, The Read scores your angle, positioning and offer for 599€.
+The Builder Diagnostic is free and takes about 3 minutes. It shows your Builder Archetype and which business models suit how you like to work, so you know whether a retainer, a fixed-price offer or a product should come first. If you already have an offer and want it priced and positioned, The Stack runs that for 399€.
 Take the Builder Diagnostic
 
 ## Questions people ask
@@ -2082,7 +2068,7 @@ Most people have a main archetype and a second pull. An Advisor with some Ventur
 
 ## Find the model that fits how you work
 
-The free Builder Diagnostic takes about 3 minutes. It tells you your Builder Archetype and which business models suit it, so you can rule out the wrong ones before you spend months on them. If you already have an idea and want my direct written verdict on it, The Read (599€) covers your angle, positioning, offer and launch plan.
+The free Builder Diagnostic takes about 3 minutes. It tells you your Builder Archetype and which business models suit it, so you can rule out the wrong ones before you spend months on them. If you already have an idea, The Stack (399€) covers your angle, positioning, offer and launch plan.
 Take the Builder Diagnostic
 
 ## Questions people ask
@@ -2608,7 +2594,7 @@ A new agency becomes a freelancer with overhead when the founder still does most
 
 ## Find out whether an agency fits how you work
 
-The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, whether you lean Orchestrator, and which business models suit you. If you already have a niche and a draft offer and want my written view before you sell it, that's The Read.
+The free Builder Diagnostic takes about 3 minutes. It shows your Builder Archetype, whether you lean Orchestrator, and which business models suit you. If you already have a niche and a draft offer and want to build it with me, that's The Build.
 Run the Builder Diagnostic
 
 ## Questions people ask
@@ -2796,7 +2782,7 @@ Productized service examples for tech leaders:
 - A two-week product analytics setup: tracking plan, implementation checklist and one dashboard.
 - A security readiness assessment for a startup preparing for its first enterprise deals.
 - An onboarding teardown: a recorded walkthrough of a product's first-run experience plus a prioritised fix list.
-- My own Read: a written diagnosis of where someone is in building their business, 599€, delivered within 5 business days of confirming the intake.
+- My own Stack: fifteen AI agents that take someone from idea to a launched, priced offer, 399€, delivered the moment they pay.
 It also asks less of you than a fractional role: a defined piece of work with an end date, and no weekly seat in a leadership team.
 
 The path from service to product is short. Deliver the service, keep the templates and checklists you use internally, then sell those to the buyers who can't afford the service. The service pays for the product and tells you what goes in it.

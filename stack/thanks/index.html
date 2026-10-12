@@ -117,7 +117,7 @@
   // landing here with an order id is this site's only signal that a sale
   // happened. Recorded once per order, so a refresh does not double-count.
   //
-  // Stopgap, same caveats as the Read intake page: it misses anyone who
+  // Stopgap: it misses anyone who
   // closes the tab before the redirect, and the URL can be visited directly.
   // PostHog's native Stripe source is the authoritative record.
   (function reportPurchase() {

@@ -6,17 +6,6 @@
 window.MG = {
   // --- Stripe Payment Links (see README) ---
   // The Stack: 399€ one-time, self-serve.
-  //
-  // The Read: 599€ one-time, fully async. The post-payment chain is
-  // live and wired end to end:
-  //   Stripe "After payment" redirects to
-  //     /audit/intake/?order={CHECKOUT_SESSION_ID}
-  //   → audit/intake/index.html reads ?order into a hidden field
-  //   → FormSubmit posts the answers to madalena@madgrowth.io,
-  //     reply-to set to the buyer, so the order id ties the intake
-  //     to the payment.
-  // The buyer then gets a confirmation from Madalena by hand; the
-  // 5 business days run from that confirmation, not from submission.
   STRIPE_LINK_STACK: "https://buy.stripe.com/14AfZi5W91CmaKbcxj0Ny02",
 
   // --- Advertised prices, in EUR ---
@@ -26,7 +15,6 @@ window.MG = {
   // /stack/thanks/ — change it the same day the Stripe link and the page copy
   // change, or reported revenue silently misstates every sale.
   STACK_PRICE_EUR: 399,
-  STRIPE_LINK_AUDIT: "https://buy.stripe.com/14AeVeacp1CmaKb1SF0Ny00",
 
   // --- Calendly ---
   // Free 15-min fit check. Used ONLY on The Build card (per brief §3.5).
