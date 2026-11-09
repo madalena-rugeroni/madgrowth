@@ -68,7 +68,7 @@ The Builder Diagnostic sorts people into five Builder Archetypes, a framework cr
 
 ## Claude skills
 
-- [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app, and the full list of The Stack's 15 AI agents (installed as Claude skills) with what each one produces.
+- [Claude skills for business](https://www.madgrowth.io/claude-skills/): what Claude skills are, how to install them in Claude Code and the Claude app (The Stack also ships a Codex version), and the full list of The Stack's 15 AI agents (installed as Claude skills) with what each one produces.
 - [How to create a Claude skill](https://www.madgrowth.io/guides/how-to-create-a-claude-skill/): folder structure, a working SKILL.md example, how to write descriptions Claude triggers on, and how to install and test a skill.
 
 ## About Madalena Rugeroni
