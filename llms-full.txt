@@ -1322,7 +1322,8 @@ They work as one system. A setup step classifies your business once, writes it t
 | Where | How to install | How to run
 | Claude Code | Put each skill folder in ~/.claude/skills/ for all projects, or .claude/skills/ in one project | Ask naturally, or type /skill-name
 | Claude app | Turn on code execution in Settings, then upload each skill as a zip under Customize > Skills and switch it on | Ask naturally. Claude picks the skill that matches
-Skills don't sync between Claude Code and the app, so install them wherever you work. Sources: the Claude Code skills docs and the Claude help center. If you'd like to write your own, read how to create a Claude skill, with a working SKILL.md example.
+| Codex | Put each skill folder in ~/.agents/skills/ for all projects, or .agents/skills/ in one project (older versions use ~/.codex/skills/), then restart Codex | Ask naturally, or type $skill-name
+Skills don't sync between Claude Code, the Claude app and Codex, so install them wherever you work. Sources: the Claude Code skills docs and the Claude help center. If you'd like to write your own, read how to create a Claude skill, with a working SKILL.md example.
 
 ## Are third-party Claude skills safe?
 
@@ -1348,7 +1349,7 @@ Yes. In Claude Code, skills are folders in ~/.claude/skills/ or a project's .cla
 
 Is Madgrowth affiliated with Anthropic?
 
-No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic.
+No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic, and they also work in Codex, which is made by OpenAI.
 
 ## Start with the free Expertise Audit
 
@@ -2906,7 +2907,12 @@ Install it where you work. Then test that it triggers at the right moments befor
 - Turn on code execution in Settings. Skills need it.
 - Zip the folder so the skill folder itself sits at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.
 - Upload it under Customize > Skills and switch it on. Menu names change, so check the help center if you can't find it.
-Skills don't sync between Claude Code, the Claude app and the API. Install the skill separately in each place you use it.
+### In Codex
+
+- Save the folder to ~/.agents/skills/offer-one-liner/ to use it in every project, or to .agents/skills/offer-one-liner/ inside a repository. Older Codex versions read ~/.codex/skills/ instead. Restart Codex so it picks the skill up.
+- Ask for something that should trigger it, or run it directly with $offer-one-liner. If the skill asks questions through a Claude-only tool, tell Codex to ask them in chat instead.
+
+Skills don't sync between Claude Code, the Claude app, Codex and the API. Install the skill separately in each place you use it.
 
 ### Testing it
 
