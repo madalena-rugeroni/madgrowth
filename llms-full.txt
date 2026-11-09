@@ -156,7 +156,7 @@ Fifteen AI agents that run in Claude and work as one system. The first asks eigh
 Get the Stack · 399€
 See every agent and the frameworks behind it →
 
-Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
+Installs as skills in Claude (app or Claude Code) or Codex. If you'd rather have someone keeping you on track, look at The Build.
 
 ### The Build
 
@@ -279,7 +279,7 @@ Credited to their authors
 Free Expertise Audit
 Included
 
-Installs as Claude skills, in the app or Claude Code. Free updates, forever.
+Installs as skills in Claude (app or Claude Code) or Codex. Free updates, forever.
 
 How it works
 ## Answer the setup questions once. Every agent uses them.
@@ -582,7 +582,7 @@ Is 399€ a one-time price or a subscription?
 One-time. You pay 399€ once, you keep all fifteen agents, and updates are free.
 
 What do I need to run it?
-Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
+Claude (app or Claude Code) or Codex. Each agent installs as a skill. You add them once and run them in your own account, so your business details stay with you.
 
 How is this different from a set of prompts?
 Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced.
