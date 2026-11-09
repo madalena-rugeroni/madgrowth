@@ -2,6 +2,7 @@
 DNS-CUTOVER.md
 INTERNAL-NOTES.md
 stack-build/dist/
+stack-build/out/
 
 # The Stack's source. This repo is PUBLIC and serves madgrowth.io via
 # GitHub Pages, so anything committed here is readable by anyone — and

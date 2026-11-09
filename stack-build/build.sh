@@ -16,7 +16,7 @@
 # WHY OVERRIDES EXIST
 # -------------------
 # .claude/skills/ is the free/working set. Two of those skills say things
-# that are wrong to show someone who has already paid 299 EUR:
+# that are wrong to show someone who has already paid for The Stack:
 #
 #   mg-expertise-audit  ends with a "buy The Stack" pitch and is told not to
 #                       chain into any other mg-* skill, because in the free
