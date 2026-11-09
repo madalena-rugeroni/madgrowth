@@ -380,7 +380,12 @@ which variant to test first and why.</code></pre>
 <li>Zip the folder so the skill folder itself sits at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.</li>
 <li>Upload it under Customize &gt; Skills and switch it on. Menu names change, so check the <a href="https://support.claude.com/en/articles/12512180-use-skills-in-claude" rel="noopener">help center</a> if you can't find it.</li>
 </ol>
-<p>Skills don't sync between Claude Code, the Claude app and the API. Install the skill separately in each place you use it.</p>
+<h3>In Codex</h3>
+<ol>
+<li>Save the folder to <code>~/.agents/skills/offer-one-liner/</code> to use it in every project, or to <code>.agents/skills/offer-one-liner/</code> inside a repository. Codex picks up new skills automatically; restart it if the skill doesn't appear.</li>
+<li>Ask for something that should trigger it, or run it directly with <code>$offer-one-liner</code> (or pick it from <code>/skills</code>). If the skill asks questions through a Claude-only tool, tell Codex to ask them in chat instead.</li>
+</ol>
+<p>Skills don't sync between Claude Code, the Claude app, Codex and the API. Install the skill separately in each place you use it.</p>
 <h3>Testing it</h3>
 <p>Don't skip this part. A skill that never fires is just a file you forgot you wrote.</p>
 <ul>

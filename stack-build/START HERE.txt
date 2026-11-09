@@ -12,6 +12,14 @@ IF YOU USE THE CLAUDE APP (web or desktop)
 2. Upload each zip inside "for-claude-app", one per skill.
 3. Start a new chat and type: Run the mg-start skill
 
+IF YOU USE CODEX (CLI, IDE extension or ChatGPT desktop app)
+1. Copy every folder inside "for-codex" into ~/.agents/skills/
+   (or into your project's .agents/skills/ folder if you only want them there).
+2. Open Codex in the folder where you want your documents saved.
+   Codex finds new skills by itself; if mg-start doesn't show up, restart Codex.
+3. Type $mg-start (or /skills and pick mg-start). In the ChatGPT desktop app, type @mg-start instead.
+Codex asks the setup questions in chat rather than as clickable options. Same questions, same documents.
+
 WHERE TO START
 mg-start asks eight questions about your business, once. Every other skill reads your answers and loads the playbook for your kind of business.
 Then work through the skills in order, or start wherever the pressure is. Each skill saves a document the next one builds on.

@@ -90,7 +90,7 @@ A content plan built from your messaging and one lead magnet that leads to your 
 Who pays first?
 The landing page, the launch plan, your acquisition channels, the sales conversation and a client's first 90 days.
 
-The Stack · 399€ You run all five steps 15 AI agents, one per task, that run in Claude.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
+The Stack · 399€ You run all five steps 15 AI agents, one per task, that run in Claude or Codex.   The Build · 1,200€/month We do all five together 1:1 with me for 90 days, with The Stack included.
 
 Who it's for
 
@@ -144,7 +144,7 @@ Do it yourself · 15 AI agents
 
 399€ · one-time
 
-Fifteen AI agents that run in Claude and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
+Fifteen AI agents that run in Claude or Codex and work as one system. The first asks eight questions about your business. Every agent after that reads your answers and uses the version for your model: services, software, product, local or media. They draw on frameworks from April Dunford, Blair Enns, Alex Hormozi, Bob Moesta and others, and each one ends with a document you keep.
 
 - Learn it (01–02): Your Customer · Your Offer
 - Package it (03–04): Pricing · Positioning
@@ -156,7 +156,7 @@ Fifteen AI agents that run in Claude and work as one system. The first asks eigh
 Get the Stack · 399€
 See every agent and the frameworks behind it →
 
-Installs as Claude skills, in the app or Claude Code. If you'd rather have someone keeping you on track, look at The Build.
+Installs as skills in Claude (app or Claude Code) or Codex. If you'd rather have someone keeping you on track, look at The Build.
 
 ### The Build
 
@@ -279,7 +279,7 @@ Credited to their authors
 Free Expertise Audit
 Included
 
-Installs as Claude skills, in the app or Claude Code. Free updates, forever.
+Installs as skills in Claude (app or Claude Code) or Codex. Free updates, forever.
 
 How it works
 ## Answer the setup questions once. Every agent uses them.
@@ -582,7 +582,7 @@ Is 399€ a one-time price or a subscription?
 One-time. You pay 399€ once, you keep all fifteen agents, and updates are free.
 
 What do I need to run it?
-Claude, in the app or Claude Code. Each agent installs as a Claude skill. You add them once and run them in your own account, so your business details stay with you.
+Claude (app or Claude Code) or Codex. Each agent installs as a skill. You add them once and run them in your own account, so your business details stay with you.
 
 How is this different from a set of prompts?
 Each agent is a full workflow with its own questions, a version for each business model and an output template. They share one context file, so later agents use what earlier ones produced.
@@ -1247,14 +1247,14 @@ Claude skills
 
 # Claude skills for business: position, price and launch an offer
 
-Claude is only as good as the method you give it. These are fifteen AI agents, plus a free one, that install as Claude skills and take you from idea to launch: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch. Each one asks about your business first and hands you a finished document.
+Claude is only as good as the method you give it. These are fifteen AI agents, plus a free one, that install as skills in Claude or Codex and take you from idea to launch: whether to build it, who buys, how you're positioned, what you sell, what it costs and how you launch. Each one asks about your business first and hands you a finished document.
 
 Madalena Rugeroni · Founder of Madgrowth · ex-Google · Updated 18 September 2026
 
 The short answer
 - Claude skills are folders of instructions that Claude loads when a request matches them, so it runs the same method every time.
 - They work in Claude Code (as folders) and in the Claude app (uploaded as a zip under Customize > Skills), on every Claude plan with code execution turned on.
-- The Stack by Madgrowth is 15 AI agents that install as Claude skills, plus the free Expertise Audit, covering go/no-go, customers, positioning, offer, pricing, content, launch, acquisition, conversion and retention.
+- The Stack by Madgrowth is 15 AI agents that install as skills in Claude or Codex, plus the free Expertise Audit, covering go/no-go, customers, positioning, offer, pricing, content, launch, acquisition, conversion and retention.
 - Each agent reads one shared context file and uses the version for your business model: services, software, product, local, media or marketplaces.
 
 ## What are Claude skills?
@@ -1322,7 +1322,8 @@ They work as one system. A setup step classifies your business once, writes it t
 | Where | How to install | How to run
 | Claude Code | Put each skill folder in ~/.claude/skills/ for all projects, or .claude/skills/ in one project | Ask naturally, or type /skill-name
 | Claude app | Turn on code execution in Settings, then upload each skill as a zip under Customize > Skills and switch it on | Ask naturally. Claude picks the skill that matches
-Skills don't sync between Claude Code and the app, so install them wherever you work. Sources: the Claude Code skills docs and the Claude help center. If you'd like to write your own, read how to create a Claude skill, with a working SKILL.md example.
+| Codex | Put each skill folder in ~/.agents/skills/ for all projects, or .agents/skills/ in one project. Codex picks up new skills automatically; restart it if one doesn't appear | Ask naturally, type $skill-name, or run /skills
+Skills don't sync between Claude Code, the Claude app and Codex, so install them wherever you work. Sources: the Claude Code skills docs and the Claude help center. If you'd like to write your own, read how to create a Claude skill, with a working SKILL.md example.
 
 ## Are third-party Claude skills safe?
 
@@ -1348,7 +1349,7 @@ Yes. In Claude Code, skills are folders in ~/.claude/skills/ or a project's .cla
 
 Is Madgrowth affiliated with Anthropic?
 
-No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic.
+No. Madgrowth is an independent business run by Madalena Rugeroni. The skills are built to run in Claude, which is made by Anthropic, and they also work in Codex, which is made by OpenAI.
 
 ## Start with the free Expertise Audit
 
@@ -2175,7 +2176,7 @@ A concierge MVP is your product delivered by hand while the customer pays as if 
 
 Pre-sales work the same way. Offer a founding-customer deal, like a discounted annual plan paid now for access when the first version ships. A few people paying in advance tell you more than a hundred signups.
 
-The Stack's Go/No-Go agent runs this check for software ideas and gives a go, no-go or not-yet verdict, with the one assumption to test next. It's part of The Stack, fifteen agents that run in Claude.
+The Stack's Go/No-Go agent runs this check for software ideas and gives a go, no-go or not-yet verdict, with the one assumption to test next. It's part of The Stack, fifteen agents that run in Claude or Codex.
 
 ## Can you build a micro SaaS MVP with AI tools?
 
@@ -2906,7 +2907,12 @@ Install it where you work. Then test that it triggers at the right moments befor
 - Turn on code execution in Settings. Skills need it.
 - Zip the folder so the skill folder itself sits at the root of the zip, with SKILL.md inside it. A zip with SKILL.md loose at the root is the most common upload mistake.
 - Upload it under Customize > Skills and switch it on. Menu names change, so check the help center if you can't find it.
-Skills don't sync between Claude Code, the Claude app and the API. Install the skill separately in each place you use it.
+### In Codex
+
+- Save the folder to ~/.agents/skills/offer-one-liner/ to use it in every project, or to .agents/skills/offer-one-liner/ inside a repository. Codex picks up new skills automatically; restart it if the skill doesn't appear.
+- Ask for something that should trigger it, or run it directly with $offer-one-liner (or pick it from /skills). If the skill asks questions through a Claude-only tool, tell Codex to ask them in chat instead.
+
+Skills don't sync between Claude Code, the Claude app, Codex and the API. Install the skill separately in each place you use it.
 
 ### Testing it
 
@@ -2927,7 +2933,7 @@ These are the four I'd check first when a skill misbehaves.
 
 ## Skip the build: skills for your business
 
-If you'd rather use skills than write them, The Stack is 15 AI agents that install as Claude skills. They cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.
+If you'd rather use skills than write them, The Stack is 15 AI agents that install as skills in Claude or Codex. They cover go/no-go, positioning, pricing, offers and launches for each business model. Start with the free Expertise Audit, which comes with the Builder Diagnostic.
 Get the free Expertise Audit →
 
 ## Questions people ask

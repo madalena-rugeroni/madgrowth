@@ -11,11 +11,12 @@
 #     START HERE.txt
 #     for-claude-code/mg-*/           <- copied into ~/.claude/skills/
 #     for-claude-app/mg-*.zip         <- uploaded one at a time in Settings
+#     for-codex/mg-*/                 <- copied into ~/.agents/skills/ (Codex)
 #
 # WHY OVERRIDES EXIST
 # -------------------
 # .claude/skills/ is the free/working set. Two of those skills say things
-# that are wrong to show someone who has already paid 299 EUR:
+# that are wrong to show someone who has already paid for The Stack:
 #
 #   mg-expertise-audit  ends with a "buy The Stack" pitch and is told not to
 #                       chain into any other mg-* skill, because in the free
@@ -47,7 +48,7 @@ stage="$dist/The Stack"
 version="${STACK_VERSION:-$(date +%Y.%m.%d)}"
 
 rm -rf "$dist"
-mkdir -p "$stage/for-claude-code" "$stage/for-claude-app"
+mkdir -p "$stage/for-claude-code" "$stage/for-claude-app" "$stage/for-codex"
 
 # ---- for-claude-code: one folder per skill -------------------------------
 # README.md is internal notes, not part of the product.
@@ -73,6 +74,25 @@ done
   done
 )
 
+# ---- for-codex: same skills, plus a tool-mapping note --------------------
+# Codex reads the same SKILL.md format (name + description frontmatter), but
+# the skills were written against Claude tool names: AskUserQuestion (click
+# widgets) and the Skill tool (chaining mg-* skills). Codex has neither by
+# those names, so each copy gets a short compatibility block right after the
+# frontmatter. The skill text itself is untouched.
+note="$root/stack-build/codex-compat.md"
+[ -f "$note" ] || { echo "error: $note not found"; exit 1; }
+for skill in "$stage/for-claude-code"/mg-*; do
+  name="$(basename "$skill")"
+  cp -R "$skill" "$stage/for-codex/$name"
+  f="$stage/for-codex/$name/SKILL.md"
+  # frontmatter = lines 1..(second '---'); insert the note after it
+  end=$(awk 'NR>1 && /^---[[:space:]]*$/ {print NR; exit}' "$f")
+  [ -n "$end" ] || { echo "BAD frontmatter (codex): $name"; exit 1; }
+  { head -n "$end" "$f"; echo; cat "$note"; echo; tail -n +"$((end + 1))" "$f"; } > "$f.tmp"
+  mv "$f.tmp" "$f"
+done
+
 cp "$root/stack-build/START HERE.txt" "$stage/START HERE.txt"
 printf '\n\nVersion %s — you can always re-download the latest from the link in your email.\n' \
   "$version" >> "$stage/START HERE.txt"
@@ -92,7 +112,7 @@ printf '\n\nVersion %s — you can always re-download the latest from the link i
 # failed on a different, random handful of skills every run — and a real
 # failure would have been indistinguishable from the noise.
 fail=0
-for skill in "$stage/for-claude-code"/mg-*; do
+for skill in "$stage/for-claude-code"/mg-* "$stage/for-codex"/mg-*; do
   if [ ! -f "$skill/SKILL.md" ]; then
     echo "MISSING SKILL.md: $skill"; fail=1; continue
   fi
